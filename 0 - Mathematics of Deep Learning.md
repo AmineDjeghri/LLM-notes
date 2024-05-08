@@ -2,12 +2,12 @@
 
 ## Table des matières
 - [Statistics and basic ML](#statistics-and-basic-ml)
-  - 0. [Intuitive explanation of maximum likelihood estimation](#0-intuitive-explanation-of-maximum-likelihood-estimation)
-  - 1. [Calculation of the Likelihood Formula](#1-calculation-of-the-likelihood-formula)
-  - 2. [Benefits in Gaussian Distribution](#2-benefits-in-gaussian-dsitribution)
-  - 3. [Order of Likelihoods](#3-order-of-likelihoods)
-  - 4. [Computational Complexity](#4-computational-complexity)
-  - 5. [Why use negative log likelihood](#5-why-use-negative-log-likelihood)
+  - [Intuitive explanation of maximum likelihood estimation](#intuitive-explanation-of-maximum-likelihood-estimation)
+  - [Calculation of the Likelihood Formula](#calculation-of-the-likelihood-formula)
+  - [Benefits in Gaussian Distribution](#benefits-in-gaussian-dsitribution)
+  - [Order of Likelihoods](#order-of-likelihoods)
+  - [Computational Complexity](#computational-complexity)
+  - [Why use negative log likelihood](#why-use-negative-log-likelihood)
 - [Relationship to Entropy and Cross-Entropy](#relationship-to-entropy-and-cross-entropy)
   - [Negative Log Likelihood](#negative-log-likelihood-nll)
   - [Practical Example](#practical-example)
@@ -20,11 +20,11 @@
 
 # Statistics and basic ML:
 
-## 0. Intuitive explanation of maximum likelihood estimation
+## Intuitive explanation of maximum likelihood estimation
 
 Maximum likelihood estimation is a method that determines values for the parameters of a model. The parameter values are found such that they maximise the likelihood that the process described by the model produced the data that were actually observed.
 
-## 1. Calculation of the likelihood formula
+## Calculation of the likelihood formula
 
 It is extremely useful for example when you want to calculate the *joint likelihood* for a set of independent and identically distributed points. Assuming that you have your points:
 
@@ -68,7 +68,7 @@ Transforming this into the formula for cross-entropy, we negate this sum to mini
 
 This result shows that maximizing the likelihood is equivalent to minimizing the cross-entropy between the predicted and actual distributions, a key objective in training classification models.
 
-## 2. Benefits in Gaussian Distribution
+## Benefits in Gaussian Distribution
 
 Also in the case of Gaussian, it allows you to avoid computation of the exponential:
 
@@ -78,20 +78,20 @@ Which becomes:
 
 \[ \ln p(x \mid \Theta) = -\frac{d}{2} \ln(2\pi) - \frac{1}{2} \ln(\det \Sigma) - \frac{1}{2} (x - \mu)^T \Sigma^{-1} (x - \mu) \]
 
-## 3. Order of Likelihoods
+## Order of Likelihoods
 
 ln is a monotonically increasing function, thus log-likelihoods have the same relations of order as the likelihoods:
 
 \[ p(x \mid \Theta_1) > p(x \mid \Theta_2) \Leftrightarrow \ln p(x \mid \Theta_1) > \ln p(x \mid \Theta_2) \]
 
-## 4. Computational Complexity
+## Computational Complexity
 
 From a standpoint of computational complexity, you can imagine that first of all summing is less expensive than multiplication (although nowadays these are almost equal). But what is even more important, likelihoods would become very small and you will run out of your floating point precision very quickly, yielding an underflow. That's why it is way more convenient to use the logarithm of the likelihood by hand, using a pocket calculator - almost impossible.
 
 Additionally in the classification framework you can simplify calculations even further. The relations of order will remain valid if you drop the division by 2 and the ln(2π) term. You can do that because these are class independent. Also, as one might notice if variance of both classes is the same (\(\Sigma_1 = \Sigma_2\)), then you can also remove the ln(\det \Sigma) term.
 
 
-## 5. Why use negative log likelihood:
+## Why use negative log likelihood:
 
 The likelihood expression for the total probability is actually quite a pain to differentiate, so it is almost always simplified by taking the natural logarithm of the expression. This is absolutely fine because the natural logarithm is a monotonically increasing function. This means that if the value on the x-axis increases, the value on the y-axis also increases (see figure below). This is important because it ensures that the maximum value of the log of the probability occurs at the same point as the original probability function. Therefore, we can work with the simpler log-likelihood instead of the original likelihood.
 
