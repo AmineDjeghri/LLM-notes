@@ -165,3 +165,29 @@ One common application of Bayesian inference is in the Bayesian networks, which 
 ### Challenges
 
 While Bayesian inference has many advantages, it also faces computational challenges, especially in dealing with high-dimensional data or complex models. Advanced computational techniques like Markov Chain Monte Carlo methods are often used to approximate the posterior distributions.
+
+# Weight 
+
+### Xavier Initialization
+Xavier initialization is designed specifically for keeping the forward and backward propagation scales roughly the same in deep networks. 
+
+#### Theory and Formula
+The key idea behind Xavier initialization is to maintain the variance of activations and backpropagated gradients throughout the network. For a layer with `n_in` inputs and `n_out` outputs, the Xavier initialization sets a layer’s weights W to be sampled from a distribution with zero mean and a variance of \( \frac{2}{{n_{\text{in}} + n_{\text{out}}}} \) (for the uniform distribution, it ranges between \(-\sqrt{\frac{6}{{n_{\text{in}} + n_{\text{out}}}}}\) and \(\sqrt{\frac{6}{{n_{\text{in}} + n_{\text{out}}}}}\)).
+
+#### When to Use
+Xavier initialization works best with layers followed by a sigmoidal activation function like logistic sigmoid or hyperbolic tangent.
+
+### He Initialization
+He initialization is a strategy designed to address some of the problems that can occur with weights in deep neural networks, especially those with ReLU activation functions.
+
+#### Theory and Formula
+He initialization specifically considers the needs of ReLU activations to maintain the mean and variance of the outputs over each layer. It initializes the weights of the \(i^{th}\) layer from a random normal distribution with a mean of 0 and a variance of \( \frac{2}{{n_{\text{in}}}} \), where \(n_{\text{in}}\) is the number of incoming network connections from the previous layer.
+
+#### When to Use
+He initialization is especially effective for networks that use ReLU activation functions because it helps in avoiding problems related to the "dying ReLU" where neurons stop participating in the forward or backward propagation due to zero gradients.
+
+### Impact
+
+By carefully initializing the weights, these methods help in speeding up the convergence of the training process by ensuring that all layers in the model initially have gradients that are neither too large nor too small. This improves the ability of the model to learn from the training data efficiently and effectively.
+
+The choice between Xavier and He initialization generally depends on the activation function used in the network. Xavier is preferred for sigmoid and tanh functions, while He is better suited for ReLUs. This customization according to the activation function helps in optimizing the training process and leads to better performance of the neural network models.
