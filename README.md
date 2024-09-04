@@ -1,10 +1,9 @@
-# Large language models (LLMs)
+# LLM-notes
 
 Documents containing questions & answers about DL, NLP and everything to quick refresh your memory about LLMs
 
-If you're using Windows, i suggest you to use WSL and install pytorch & CUDA inside it :
-- WSL Conda script installation : https://github.com/AmineDjeghri/AwesomeWindows11/blob/master/cuda_pytorch_install.md
-
+- Include the repo to ai-cloud-project & ai-on-premise-project templates
+- 
 
 ## Cool repositories that you need to check out
 - https://github.com/abi/screenshot-to-code/tree/main

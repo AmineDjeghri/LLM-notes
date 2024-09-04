@@ -4,5 +4,18 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <variables></variables>
+    <build-profile instance="llm-notes-docs">
+        <variables>
+            <noindex-content>false</noindex-content>
+        </variables>
+
+        <footer>
+            <copyright>2024 Amine Djeghri</copyright>
+            <social type="twitter" href="https://twitter.com/aminedjeghri"/>
+            <social type="linkedin" href="https://linkedin.com/in/aminedjeghri"/>
+            <link href="https://aminedjeghri.com">Official Website</link>
+        </footer>
+
+    </build-profile>
 
 </buildprofiles>

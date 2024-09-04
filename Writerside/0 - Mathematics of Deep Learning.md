@@ -26,7 +26,7 @@ Maximum likelihood estimation is a method that determines values for the paramet
 
 ## 2.2. Calculation of the likelihood formula
 
-It is extremely useful for example when you want to calculate the *joint likelihood* for a set of independent and identically distributed points. Assuming that you have your points:
+It is extremely useful, for example, when you want to calculate the *joint likelihood* for a set of independent and identically distributed points. Assuming that you have your points:
 
 \[ X = \{x_1, x_2, \ldots, x_N\} \]
 
