@@ -1,6 +1,6 @@
-# Deep Learning & Mathematics notes
+# 1. Deep Learning & Mathematics notes
 
-## Table des matières
+## 1.1. Table des matières
 - [Statistics and basic ML](#statistics-and-basic-ml)
   - [Intuitive explanation of maximum likelihood estimation](#intuitive-explanation-of-maximum-likelihood-estimation)
   - [Calculation of the Likelihood Formula](#calculation-of-the-likelihood-formula)
@@ -18,13 +18,13 @@
   - [Challenges](#challenges)
 
 
-# Statistics and basic ML:
+# 2. Statistics and basic ML:
 
-## Intuitive explanation of maximum likelihood estimation
+## 2.1. Intuitive explanation of maximum likelihood estimation
 
 Maximum likelihood estimation is a method that determines values for the parameters of a model. The parameter values are found such that they maximise the likelihood that the process described by the model produced the data that were actually observed.
 
-## Calculation of the likelihood formula
+## 2.2. Calculation of the likelihood formula
 
 It is extremely useful for example when you want to calculate the *joint likelihood* for a set of independent and identically distributed points. Assuming that you have your points:
 
@@ -38,7 +38,7 @@ where \(\Theta\) are the model parameters: vector of means \(\mu\) and covarianc
 
 \[ \ln p(X \mid \Theta) = \sum_{i=1}^N \ln p(x_i \mid \Theta) \]
 
-### Transition to Cross-Entropy
+### 2.2.1. Transition to Cross-Entropy
 
 Utilizing the properties of logarithms, specifically the rule that \(\ln(a \cdot b) = \ln a + \ln b\), the product of probabilities turns into a sum of logarithms, which is the foundation of cross-entropy in information theory.
 
@@ -48,7 +48,7 @@ Given the model's predicted probabilities for each class and the true distributi
 
 \[ H(p, q) = -\sum p(x) \ln q(x) \]
 
-#### Derivation from Log-Likelihood to Cross-Entropy
+#### 2.2.1.1. Derivation from Log-Likelihood to Cross-Entropy
 
 Starting from the log-likelihood for categorical distributions:
 
@@ -68,7 +68,7 @@ Transforming this into the formula for cross-entropy, we negate this sum to mini
 
 This result shows that maximizing the likelihood is equivalent to minimizing the cross-entropy between the predicted and actual distributions, a key objective in training classification models.
 
-## Benefits in Gaussian Distribution
+## 2.3. Benefits in Gaussian Distribution
 
 Also in the case of Gaussian, it allows you to avoid computation of the exponential:
 
@@ -78,20 +78,20 @@ Which becomes:
 
 \[ \ln p(x \mid \Theta) = -\frac{d}{2} \ln(2\pi) - \frac{1}{2} \ln(\det \Sigma) - \frac{1}{2} (x - \mu)^T \Sigma^{-1} (x - \mu) \]
 
-## Order of Likelihoods
+## 2.4. Order of Likelihoods
 
 ln is a monotonically increasing function, thus log-likelihoods have the same relations of order as the likelihoods:
 
 \[ p(x \mid \Theta_1) > p(x \mid \Theta_2) \Leftrightarrow \ln p(x \mid \Theta_1) > \ln p(x \mid \Theta_2) \]
 
-## Computational Complexity
+## 2.5. Computational Complexity
 
 From a standpoint of computational complexity, you can imagine that first of all summing is less expensive than multiplication (although nowadays these are almost equal). But what is even more important, likelihoods would become very small and you will run out of your floating point precision very quickly, yielding an underflow. That's why it is way more convenient to use the logarithm of the likelihood by hand, using a pocket calculator - almost impossible.
 
 Additionally in the classification framework you can simplify calculations even further. The relations of order will remain valid if you drop the division by 2 and the ln(2π) term. You can do that because these are class independent. Also, as one might notice if variance of both classes is the same (\(\Sigma_1 = \Sigma_2\)), then you can also remove the ln(\det \Sigma) term.
 
 
-## Why use negative log likelihood:
+## 2.6. Why use negative log likelihood:
 
 The likelihood expression for the total probability is actually quite a pain to differentiate, so it is almost always simplified by taking the natural logarithm of the expression. This is absolutely fine because the natural logarithm is a monotonically increasing function. This means that if the value on the x-axis increases, the value on the y-axis also increases (see figure below). This is important because it ensures that the maximum value of the log of the probability occurs at the same point as the original probability function. Therefore, we can work with the simpler log-likelihood instead of the original likelihood.
 
@@ -104,13 +104,13 @@ The likelihood expression for the total probability is actually quite a pain to 
 
 
 
-# Relationship to Entropy and Cross-Entropy
+# 3. Relationship to Entropy and Cross-Entropy
 
 - **Entropy** and **Cross-Entropy**:
   - **Entropy** in information theory measures the average amount of information (or uncertainty) inherent in a variable's possible outcomes. It's originally a concept from thermodynamics, but Claude Shannon adapted it for use in telecommunications to measure the unpredictability of a message.
   - **Cross-Entropy** measures the average number of bits needed to identify an event from a set of possibilities if a wrong probability distribution is used instead of the true distribution. It's a measure of the difference between two probability distributions: the true distribution \( p \) and the estimated distribution \( q \).
 
-### Negative Log-Likelihood (NLL)
+### 3.1. Negative Log-Likelihood (NLL)
 
 When discussing NLL in the context of machine learning models like those used in classification tasks, you often deal with minimizing the cross-entropy between the predicted probability distribution and the actual distribution of the labels. Here's how this relates to bits and information theory:
 
@@ -125,18 +125,18 @@ When discussing NLL in the context of machine learning models like those used in
    - When NLL is expressed in bits, each term \( -\log_2 q(x_i) \) (where \( x_i \) is the true label) measures the number of bits required to encode the event \( x_i \) using the predicted probability \( q \). Lower values of \( q(x_i) \) (when the prediction is uncertain or wrong) lead to higher values of \( -\log_2 q(x_i) \), indicating that more bits are required to encode the event due to the prediction error.
    - Minimizing NLL thus means minimizing the average number of bits needed to correctly encode the labels given the predictions. A perfect model, which predicts the true distribution exactly, would have a cross-entropy equal to the entropy of the true distribution (the theoretical lower bound in bits).
 
-### Practical Example
+### 3.2. Practical Example
 
 If a model predicts that a certain event has a probability of 0.5, the information content of that event occurring is \( \log_2(2) = 1 \) bit. If the true probability of the event is actually 1 (it always happens), the cross-entropy would be higher because the model's prediction introduces uncertainty (inefficiency in coding).
 
 In summary, expressing NLL in bits provides a direct interpretation in terms of the efficiency of the prediction. Minimizing NLL in bits can be seen as optimizing the model to reduce the average 'coding cost' in bits, making it as efficient as possible in terms of the information-theoretic encoding of predictions.
 
 
-# Bayesian Inference and Deep Learning
+# 4. Bayesian Inference and Deep Learning
 
 Bayesian inference is a method of statistical inference in which Bayes' theorem is used to update the probability for a hypothesis as more evidence or information becomes available. It is fundamentally a method of learning from evidence as it accumulates. Bayesian inference contrasts with frequentist approaches, which do not, in contrast, allow for the possibility of hypothesis probabilities being updated with new evidence.
 
-### Basics of Bayesian Inference
+### 4.1. Basics of Bayesian Inference
 
 Bayesian inference revolves around updating our belief about the unknown parameters of a model based on observing data. This is expressed mathematically as:
 
@@ -148,13 +148,13 @@ where:
 - \( P(\Theta) \) is the prior probability of the model parameters.
 - \( P(X) \) is the marginal likelihood or evidence, which acts as a normalizing constant.
 
-### Application in Machine Learning
+### 4.2. Application in Machine Learning
 
 In machine learning, Bayesian methods are used to continuously update the probability of a model as more data becomes available, making it particularly useful in dynamically changing environments. This approach allows models to improve as they learn from new data, reflecting changes that might occur in real-world scenarios.
 
 One common application of Bayesian inference is in the Bayesian networks, which are graphical models that represent the probabilistic relationships among a set of variables. Another application is Bayesian optimization, which is used for optimizing complex functions where the objective evaluations are expensive.
 
-### Advantages of Bayesian Inference
+### 4.3. Advantages of Bayesian Inference
 
 1. **Incorporation of Prior Knowledge:** Bayesian inference naturally allows the incorporation of prior knowledge through the prior distribution, which can provide robustness especially when the data is limited or noisy.
   
@@ -162,31 +162,31 @@ One common application of Bayesian inference is in the Bayesian networks, which 
 
 3. **Flexibility:** Bayesian methods can adapt to new data incrementally, without needing to retrain from scratch, which is advantageous in continuous learning systems.
 
-### Challenges
+### 4.4. Challenges
 
 While Bayesian inference has many advantages, it also faces computational challenges, especially in dealing with high-dimensional data or complex models. Advanced computational techniques like Markov Chain Monte Carlo methods are often used to approximate the posterior distributions.
 
-# Weight 
+# 5. Weight
 
-### Xavier Initialization
+### 5.1. Xavier Initialization
 Xavier initialization is designed specifically for keeping the forward and backward propagation scales roughly the same in deep networks. 
 
-#### Theory and Formula
+#### 5.1.1. Theory and Formula
 The key idea behind Xavier initialization is to maintain the variance of activations and backpropagated gradients throughout the network. For a layer with `n_in` inputs and `n_out` outputs, the Xavier initialization sets a layer’s weights W to be sampled from a distribution with zero mean and a variance of \( \frac{2}{{n_{\text{in}} + n_{\text{out}}}} \) (for the uniform distribution, it ranges between \(-\sqrt{\frac{6}{{n_{\text{in}} + n_{\text{out}}}}}\) and \(\sqrt{\frac{6}{{n_{\text{in}} + n_{\text{out}}}}}\)).
 
-#### When to Use
+#### 5.1.2. When to Use
 Xavier initialization works best with layers followed by a sigmoidal activation function like logistic sigmoid or hyperbolic tangent.
 
-### He Initialization
+### 5.2. He Initialization
 He initialization is a strategy designed to address some of the problems that can occur with weights in deep neural networks, especially those with ReLU activation functions.
 
-#### Theory and Formula
+#### 5.2.1. Theory and Formula
 He initialization specifically considers the needs of ReLU activations to maintain the mean and variance of the outputs over each layer. It initializes the weights of the \(i^{th}\) layer from a random normal distribution with a mean of 0 and a variance of \( \frac{2}{{n_{\text{in}}}} \), where \(n_{\text{in}}\) is the number of incoming network connections from the previous layer.
 
-#### When to Use
+#### 5.2.2. When to Use
 He initialization is especially effective for networks that use ReLU activation functions because it helps in avoiding problems related to the "dying ReLU" where neurons stop participating in the forward or backward propagation due to zero gradients.
 
-### Impact
+### 5.3. Impact
 
 By carefully initializing the weights, these methods help in speeding up the convergence of the training process by ensuring that all layers in the model initially have gradients that are neither too large nor too small. This improves the ability of the model to learn from the training data efficiently and effectively.
 
