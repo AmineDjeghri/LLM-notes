@@ -1,4 +1,26 @@
 
+
+
+By adhering to these best practices, engineering teams can significantly improve their efficiency, code quality, and project success rates.
+
+main problems also  : 
+- planning : pas de planning, du tac au tac, ou planning déffini au fur et à mesure… ou non respect du planning par le mangement et forcer le rush
+- equipe : pas d’équipe ou bien pas de réunion d’équipe de synchro,
+
+
+How ot work & organize : 
+- Kanban and trasks : really important . Having an objective of tasks to complete
+- write about the ai-project-template (pre-commits, pushs, validation, local testing )
+- - Local testing : never submit your project if it can not be run locally (and preferably, any project needs to be dockerized and run locally)
+- Never solo a dev: what do i mean by this ? if you are a project manager, You can not hire a frontend developer and tell him waht to do, test then pay him . NO !  you do need a technical project leader. This person will be aware of what is done in the project, will valdiate technilaccy what the others do, and will be the atom of the project. If a new developer arrives, he will know on what to work, and how to do it.
+- Do not waste the developer’s time unless you want to waste money : working toguether , meetings between the right devs & each one has its own skills: you work on you task, input & output results, you do not oblige people to modify someone’s work to be adapted for the need. Unless this person is aware of the change. A frontend developer is not obliged to modfy the backend if the results do not correspond. He can prototype what he needs and ask the backend dev to do it. if there is no more backend dev, well, it’s a preoblem. But wait, do not call that fast the backend dev, make sure that you have a plan on what else the backend dev needs to do. 
+
+- on boarding or developping : working on something requires many things to think about before send it to production. Many people just take into account the time to develop the solution and to test it  but  : 
+	- checking that the  solution works before starting developping (locally) and taht impies installing stuff (preferably the solution is dockerized so you can directly code in it)
+	- checking that the solution works locally when you finish and all the tests pass
+	- checking taht the solution is deployed (and this is were things take fire)
+
+
 What is my opinion on the companies, subjects, & projects i worked on.
 
 give example for everything 
