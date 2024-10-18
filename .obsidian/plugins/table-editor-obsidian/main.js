@@ -10479,7 +10479,7 @@ absolute_reference ::= absolute_row absolute_column | absolute_row | absolute_co
 absolute_row ::= "@" ( "I" | "<" | ">" | int )
 absolute_column ::= "$" ( "<" | ">" | int )
 
-single_param_function_call ::= single_param_function "(" source ")" 
+single_param_function_call ::= single_param_function "(" source ")"
 single_param_function      ::= "mean" | "sum"
 
 conditional_function_call ::= "if(" predicate "," " "? source "," " "? source ")"

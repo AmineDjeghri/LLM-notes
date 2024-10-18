@@ -18,5 +18,8 @@
   "Components@@scrollbar-hide": false,
   "Components@@restored-scrollbars": false,
   "Components@@setting-item-title-icon-remove": false,
-  "Appearance-light@@card-layout-open-light": true
+  "Appearance-light@@card-layout-open-light": true,
+  "Appearance-dark@@card-layout-open-dark": true,
+  "Appearance-dark@@background-underlying-select-dark": "background-underlying-default-dark",
+  "Appearance-dark@@theme-dark-style-select": "theme-dark-background-darker"
 }
