@@ -83,17 +83,21 @@ Site : https://www.promptfoo.dev/
 	
 	- **Docs**: [docs](https://www.promptfoo.dev/docs/intro/)
     - **GitHub**: https://github.com/promptfoo/promptfoo
-    - **Price & Licensing**: Free
+    - **Price**  
+	    - Free for all features 
+	    - paid  for cloud based support and custom stuff
+	    - Licensing: ?
+	    - price site : https://www.promptfoo.dev/pricing/
 
-	- **Deployment**: Local
+	- **Deployment**: Local (or cloud but paid)
     - **Type** : package 
     - **Runtime**: nodejs
     - **Updates & Maintenance**: Regular updates as features are improved and expanded.
 	    - **Support Channel**: Email support, community forums.
 	    - **Frequency of Updates**: Monthly
 	    - **Community Support**: GitHub repository with active issues, forums for discussions.
-        - GitHub Stars: Approximately 150+
-	    - **Maturity**: Relatively new but rapidly evolving with a growing user base (+40k dev)
+        - **GitHub Stars**: Approximately 5k
+	    - **Maturity**: Relatively new but rapidly evolving with a growing user base (+40k developpers)
     -
 	- **Privacy & Security**:
 	    - **Data Handling**: User data is handled in accordance with privacy standards; specifics can be found in their privacy policy.
