@@ -48,7 +48,7 @@ Every tool has this fields of comparaison :
 	- Output & reporting :
 		- formats (csv, json)
 		- Visualization tools (web server, cli)
-	- Features:
+	- Features: add link to doc’s feature if available
 		- found in the docs/website
 		- metrics
 		- Qualitative & quantitative metrics : Does it provide numerical scores, qualitative feedback, or both?
@@ -139,16 +139,16 @@ Site : https://www.promptfoo.dev/
 	       
 	- **Features**:
 	    - **Found in the docs/website**: Comprehensive documentation available outlining features and usage.
-	    - **Metrics**: Provides insights into prompt effectiveness and model performance.
-	    - **Qualitative & Quantitative Metrics**: Offers both numerical scores and qualitative feedback.
-	    - **Custom Metrics**: Users can define their own evaluation criteria.
-	    - **Readteam**: Support for collaborative evaluation.
+	    - **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
+	    - **Qualitative & Quantitative Metrics**:  TO VERIFY
+	    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
+	    - **Readteam**: Yes. https://www.promptfoo.dev/docs/category/red-teaming/
 	    - **Monitoring**: Real-time monitoring of prompt performance.
-	    - **CI/CD**: Integrates with CI/CD pipelines for automated evaluations.
+	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	    - **Dataset Generation**: Capable of generating datasets for testing and evaluation purposes.
 	    - **Easy Unit Test (like pytest)**: Supports unit testing of prompts and responses.
 	    - **Benchmarks**: Provides benchmarking against standard datasets.
-	    - **Model Compatibility**: Compatible with various language models (e.g., GPT-3, etc.).
+	    - **Model Compatibility**:  Yes. https://www.promptfoo.dev/docs/providers/
 	    - **Custom Models**: Users can integrate their own models for evaluation.
 	    - **Tasks**: Supports various tasks including RAG (Retrieval-Augmented Generation) and chatbots.
 	    - **Human in the Loop**: Allows for human evaluation alongside automated metrics.
