@@ -16,8 +16,12 @@
 ### LangSmith (by LangChain)
 
 ### DeepEval (by ConfidentAI)
-
-
+ - Free :
+	- Github : https://github.com/confident-ai/deepeval
+	- pip installable
+	- 
+- Paid :
+	- pricing : https://www.confident-ai.com/pricing
 ### Prompt-flow Tracing (by Azure)
 ### Langfuse
 ### Validate (by Tonic)
