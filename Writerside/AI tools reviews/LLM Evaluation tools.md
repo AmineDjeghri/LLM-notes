@@ -38,6 +38,8 @@ Every tool has this fields of comparaison :
 		- Frequency of updates
 		-  Community support (github stars, forums, issues,)
 		- Maturity
+		- Used by 
+		- Team 
 	- Privacy & security:
 		- Data handling
 		- Compliance / Data location
@@ -113,8 +115,11 @@ Site : https://www.promptfoo.dev/
 			- Dedicated support team
 
 	- **Usage and Deployment**: 
-		- Local : CLI, Web viewer
-		- 
+		- Local : CLI, Web viewer, node package, python & js support
+		- Docker for self hosting
+		- `share` command creates a publicly accessible URL, which means anyone who knows the URL can view your results. If you don't want anyone to see your results, you should keep your URL secret.
+
+After 2 weeks, all data associated with the URL is permanently deleted.
     - **Type** : package 
     - **Runtime**: nodejs
     - **Updates & Maintenance**: Regular updates as features are improved and expanded.
@@ -123,6 +128,8 @@ Site : https://www.promptfoo.dev/
 	    - **Community Support**: GitHub repository with active issues, forums for discussions.
         - **GitHub Stars**: Approximately 5k
 	    - **Maturity**: Relatively new but rapidly evolving with a growing user base (+40k developpers)
+	    - Used by : 
+	    - Team : 
     -
 	- **Privacy & Security**: 
 	    - **Data Handling**: Local, if cloud → Check the pricing
