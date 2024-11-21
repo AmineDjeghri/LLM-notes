@@ -25,7 +25,7 @@ langsmith :
 dspy
 
 Every tool has this fields of comparaison : 
-- Package / web platform (separate them if they are different):
+- Package / web platform (separate them if they are different or if they have different prices):
 	- description
 	- site/github
 	- docs
