@@ -1,3 +1,5 @@
+
+
 ## Embeddings : 
 - MTEB (Massive Text Embedding Benchmark) Leaderboard
 	- leaderboard : https://huggingface.co/spaces/mteb/leaderboard
@@ -13,11 +15,13 @@
 - LLM Safety Leaderboard
 	- leaderboard : https://huggingface.co/spaces/AI-Secure/llm-trustworthy-leaderboard
 
-## Chatbots
+## Chat
 - Chatbot Arena (formerly LMSYS) :using votes / human feedback 
 	- leaderboard (mirror): https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 	- leaderboard (official website): https://lmarena.ai/?leaderboard
-- 
+- Open LLM Leaderboard (open source models)
+	- leaderboard : https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard
+	- blog : https://huggingface.co/docs/leaderboards/open_llm_leaderboard/about
 
 ## Coding
 - EvalPlus Leaderboard
@@ -32,3 +36,11 @@
 - Open LLM Leaderboard (CO2 kg)
 	- Leaderboard : https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard
 	- blog : https://huggingface.co/docs/leaderboards/open_llm_leaderboard/emissions
+- Artificial Analysis LLM Performance
+	- leaderboard : https://huggingface.co/spaces/ArtificialAnalysis/LLM-Performance-Leaderboard
+	- 
+
+
+## Other leaderboards
+- leaderboards on huggingface  : https://huggingface.co/docs/leaderboards/leaderboards/finding_page
+- 
