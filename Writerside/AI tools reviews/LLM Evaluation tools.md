@@ -13,6 +13,8 @@
 
 ### DeepEval
 
+### AutoRAG
+
 
 ## Evaluation benchmarks
 
