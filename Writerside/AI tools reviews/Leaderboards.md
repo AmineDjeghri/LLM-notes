@@ -1,10 +1,8 @@
-
-
 ## Embeddings : 
 - MTEB (Massive Text Embedding Benchmark) Leaderboard
 	- leaderboard : https://huggingface.co/spaces/mteb/leaderboard
 	- paper : https://arxiv.org/pdf/2210.07316
-- LLMs:
+	  
 ## Function calling
 - Berkeley Function-Calling Leaderboard  
 	- Leaderboard https://gorilla.cs.berkeley.edu/leaderboard.html
@@ -22,13 +20,13 @@
 - Open LLM Leaderboard (open source models)
 	- leaderboard : https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard
 	- blog : https://huggingface.co/docs/leaderboards/open_llm_leaderboard/about
-
+- MMMU
+	- leaderboard : https://mmmu-benchmark.github.io/#leaderboard
 ## Coding
 - EvalPlus Leaderboard
 	- leaderboard : https://evalplus.github.io/leaderboard.html
 	- github : https://github.com/evalplus/evalplus
 	- paper : https://openreview.net/forum?id=1qvx610Cu7
-
 
 ## Performance  & hardware
 - LLM-Perf (latency, throughput, memory & energy)
@@ -36,9 +34,8 @@
 - Open LLM Leaderboard (CO2 kg)
 	- Leaderboard : https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard
 	- blog : https://huggingface.co/docs/leaderboards/open_llm_leaderboard/emissions
-- Artificial Analysis LLM Performance
+- Artificial Analysis LLM Performance (price, speed)
 	- leaderboard : https://huggingface.co/spaces/ArtificialAnalysis/LLM-Performance-Leaderboard
-	- 
 
 
 ## Other leaderboards
