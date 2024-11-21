@@ -1,12 +1,12 @@
 
-| Tool name | Description | Hosting | Benchmark | Evaluation | Redteam | monitoring | CLI | UI  |     |
-| --------- | ----------- | ------- | --------- | ---------- | ------- | ---------- | --- | --- | --- |
-| Promptfoo |             | Local   |           |            | ✅       |            |     |     |     |
-| Langsmith |             |         |           |            |         |            |     |     |     |
-| Giskard   |             |         |           |            |         |            |     |     |     |
-| DeepEval  |             |         |           |            | ✅       |            |     |     |     |
-|           |             |         |           |            |         |            |     |     |     |
-|           |             |         |           |            |         |            |     |     |     |
+| Tool name | Description | Hosting | Benchmark | Evaluation | Redteam | monitoring | CLI | UI  | runtime |
+| --------- | ----------- | ------- | --------- | ---------- | ------- | ---------- | --- | --- | ------- |
+| Promptfoo |             | Local   |           |            | ✅       |            |     |     | nvm     |
+| Langsmith |             |         |           |            |         |            |     |     |         |
+| Giskard   |             |         |           |            |         |            |     |     | pip     |
+| DeepEval  |             |         |           |            | ✅       |            |     |     | pip     |
+|           |             |         |           |            |         |            |     |     |         |
+|           |             |         |           |            |         |            |     |     |         |
 
 ## Dashboard & reporting
 ### Promptfoo
@@ -15,7 +15,7 @@
 
 ### LangSmith (by LangChain)
 
-### DeepEval
+### DeepEval (by ConfidentAI)
 
 
 ### Prompt-flow Tracing (by Azure)
