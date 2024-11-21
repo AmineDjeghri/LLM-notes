@@ -8,12 +8,7 @@
 |           |             |         |           |            |         |            |     |     |         |
 |           |             |         |           |            |         |            |     |     |         |
 
-- Features
-- Maturity
-- Data location
-- Easy to use
-- Licensing
-Metrics
+
 
 langsmith : 
 	- test  
@@ -30,18 +25,42 @@ langsmith :
 dspy
 
 Every tool has this fields of comparaison : 
-- Package :
+- Package / web platform (separate them if they are different):
 	- description
 	- site/github
 	- docs
-	- price 
-- Web platform :
-	- description
-	- site/github 
-	- docs:
-	- price : free, freemium, paid - pricing page 
-	- local, cloud
-	- 
+	- price & licencing: free, freemium, paid - pricing page 
+	- deployment : local, cloud, container
+	- Runtime : python, nodejs …
+	- Updates & maintenance
+		- Support channel
+		- Frequency of updates
+		-  Community support (github stars, forums, issues,)
+		- Maturity
+	- Privacy & security:
+		- Data handling
+		- Compliance / Data location
+	- Output & reporting :
+		- formats (csv, json)
+		- Visualization tools (web server, cli)
+	- Features:
+		- found in the docs/website
+		- metrics
+		- Qualitative & quantitative metrics : Does it provide numerical scores, qualitative feedback, or both?
+		- custom metrics
+		- Readteam
+		- Monitoring
+		- CI/CD
+		- dataset generation
+		- easy unit test (like pytest)
+		- benchmarks
+		- model compatibility 
+		- custom models
+		- tasks (rag, chatbot, agents)
+		- Human in the loop : Does it allow for human evaluation alongside automated metrics?
+		- Static & dynamic evaluation : Can it evaluate models in real-time or only after completion?
+		- Easy to use
+ 
 ## Dashboard & reporting
 ### Promptfoo
 
