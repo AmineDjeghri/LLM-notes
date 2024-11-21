@@ -88,6 +88,28 @@ Site : https://www.promptfoo.dev/
 	    - paid  for cloud based support and custom stuff
 	    - Licensing: ?
 	    - price site : https://www.promptfoo.dev/pricing/
+	    - Free Forever : 
+			- All LLM evaluation features
+			- All model providers and integrations
+			- No usage limits
+			- Custom integration with your own app
+			- Run locally or self-host on your own infrastructure
+			- Vulnerability scanning
+			- Community support
+		- Enterprise : For teams that need advanced features and cloud-based support
+			- All Community features
+			- Team sharing & collaboration
+			- Continuous monitoring
+			- Centralized security/compliance dashboard
+			- Customized red teaming plugins
+			- SSO and Access Control
+			- Cloud deployment
+			- Priority support & SLA guarantees
+		- On-Premise : For organizations that require full control over their infrastructure
+			- All Enterprise features
+			- Deployment on your own infrastructure
+			- Complete data isolation
+			- Dedicated support team
 
 	- **Deployment**: Local (or cloud but paid)
     - **Type** : package 
