@@ -31,7 +31,7 @@ Every tool has this fields of comparaison :
 	- site/github
 	- docs
 	- price & licencing: free, freemium, paid - pricing page 
-	- deployment : local, cloud, container
+	- Usage and deployment : local, cloud, container, CLI, web viewer
 	- Runtime : python, nodejs …
 	- Updates & maintenance
 		- Support channel
@@ -41,6 +41,7 @@ Every tool has this fields of comparaison :
 	- Privacy & security:
 		- Data handling
 		- Compliance / Data location
+		- Telemetry
 	- Output & reporting :
 		- formats (csv, json)
 		- Visualization tools (web server, cli)
@@ -111,22 +112,25 @@ Site : https://www.promptfoo.dev/
 			- Complete data isolation
 			- Dedicated support team
 
-	- **Deployment**: Local (or cloud but paid)
+	- **Usage and Deployment**: 
+		- Local : CLI, Web viewer
+		- 
     - **Type** : package 
     - **Runtime**: nodejs
     - **Updates & Maintenance**: Regular updates as features are improved and expanded.
-	    - **Support Channel**: Email support, community forums.
-	    - **Frequency of Updates**: Monthly
+	    - **Support Channel**: Discord, Email support, Github , book a time
+	    - **Frequency of Updates**: daily
 	    - **Community Support**: GitHub repository with active issues, forums for discussions.
         - **GitHub Stars**: Approximately 5k
 	    - **Maturity**: Relatively new but rapidly evolving with a growing user base (+40k developpers)
     -
-	- **Privacy & Security**:
-	    - **Data Handling**: User data is handled in accordance with privacy standards; specifics can be found in their privacy policy.
-	    - **Compliance / Data Location**: GDPR compliant; data is stored in secure cloud environments.  
+	- **Privacy & Security**: 
+	    - **Data Handling**: Local, if cloud → Check the pricing
+	    - **Compliance / Data Location**:  Local, if cloud → Check the pricing
+	    - **Telemetry** : `on` per default, can be disabled `PROMPTFOO_DISABLE_TELEMETRY=1`
 	        
 	- **Output & Reporting**:
-	    - **Formats**: CSV, JSON
+	    - **Formats**:  JSON
 	    - **Visualization Tools**: Web-based interface, CLI options available for advanced users.  
 	        
 	- **Features**:
