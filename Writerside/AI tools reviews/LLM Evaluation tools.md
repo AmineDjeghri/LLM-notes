@@ -28,6 +28,7 @@ Every tool has this fields of comparaison :
 - Package / web platform (separate them if they are different or if they have different prices):
 	- Review date 
 	- description
+	- FAQ
 	- site/github
 	- docs
 	- price & licencing: free, freemium, paid - pricing page 
@@ -83,7 +84,7 @@ Site : https://www.promptfoo.dev/
       It provides 2 main features : 
 		- [**Red teaming**](https://www.promptfoo.dev/docs/red-team/quickstart/) - LLM security scans
 		- [**Evaluations**](https://www.promptfoo.dev/docs/getting-started/) - LLM quality benchmarks
-	
+	- FAQ : https://www.promptfoo.dev/docs/faq/
 	- **Docs**: [docs](https://www.promptfoo.dev/docs/intro/)
     - **GitHub**: https://github.com/promptfoo/promptfoo
     - **Price**  
@@ -114,12 +115,12 @@ Site : https://www.promptfoo.dev/
 			- Complete data isolation
 			- Dedicated support team
 
-	- **Usage and Deployment**: 
+	- **Usage, outputs  and Deployment**: 
 		- Local : CLI, Web viewer, node package, python & js support
 		- Docker for self hosting
-		- `share` command creates a publicly accessible URL, which means anyone who knows the URL can view your results. If you don't want anyone to see your results, you should keep your URL secret.
-
-After 2 weeks, all data associated with the URL is permanently deleted.
+		- `share` command creates a publicly accessible URL, which means anyone who knows the URL can view your results. If you don't want anyone to see your results, you should keep your URL secret. After 2 weeks, all data associated with the URL is permanently deleted.
+	    - **Export Formats**:  JSON
+	    - **Visualization Tools**: Web-based interface, CLI 
     - **Type** : package 
     - **Runtime**: nodejs
     - **Updates & Maintenance**: Regular updates as features are improved and expanded.
@@ -135,11 +136,7 @@ After 2 weeks, all data associated with the URL is permanently deleted.
 	    - **Data Handling**: Local, if cloud → Check the pricing
 	    - **Compliance / Data Location**:  Local, if cloud → Check the pricing
 	    - **Telemetry** : `on` per default, can be disabled `PROMPTFOO_DISABLE_TELEMETRY=1`
-	        
-	- **Output & Reporting**:
-	    - **Formats**:  JSON
-	    - **Visualization Tools**: Web-based interface, CLI options available for advanced users.  
-	        
+	       
 	- **Features**:
 	    - **Found in the docs/website**: Comprehensive documentation available outlining features and usage.
 	    - **Metrics**: Provides insights into prompt effectiveness and model performance.
