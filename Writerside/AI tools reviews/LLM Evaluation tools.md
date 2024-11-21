@@ -1,12 +1,12 @@
 
-| Tool name | Description | Hosting | Evaluation | Redteam | monitoring | CLI | UI  |     |
-| --------- | ----------- | ------- | ---------- | ------- | ---------- | --- | --- | --- |
-| Promptfoo |             | Local   |            | ✅       |            |     |     |     |
-| Langsmith |             |         |            |         |            |     |     |     |
-| Giskard   |             |         |            |         |            |     |     |     |
-| DeepEval  |             |         |            | ✅       |            |     |     |     |
-|           |             |         |            |         |            |     |     |     |
-|           |             |         |            |         |            |     |     |     |
+| Tool name | Description | Hosting | Benchmark | Evaluation | Redteam | monitoring | CLI | UI  |     |
+| --------- | ----------- | ------- | --------- | ---------- | ------- | ---------- | --- | --- | --- |
+| Promptfoo |             | Local   |           |            | ✅       |            |     |     |     |
+| Langsmith |             |         |           |            |         |            |     |     |     |
+| Giskard   |             |         |           |            |         |            |     |     |     |
+| DeepEval  |             |         |           |            | ✅       |            |     |     |     |
+|           |             |         |           |            |         |            |     |     |     |
+|           |             |         |           |            |         |            |     |     |     |
 
 ## Dashboard & reporting
 ### Promptfoo
