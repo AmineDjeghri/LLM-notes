@@ -63,7 +63,50 @@ Every tool has this fields of comparaison :
  
 ## Dashboard & reporting
 ### Promptfoo
-
+- **LLM Evaluation tool**: 
+	- Type : package
+    - **Description**: PromptFoo is a tool designed to help users evaluate and optimize prompts for language models, enabling better performance and results in natural language processing tasks.
+    - **GitHub**: https://github.com/promptfoo/promptfoo
+    - Site : https://www.promptfoo.dev/
+    - **Docs**: [Documentation](https://www.promptfoo.dev/docs)
+    - **Price & Licensing**: Free
+    - **Deployment**: Local
+    - **Runtime**: nodejs
+    - **Updates & Maintenance**: Regular updates as features are improved and expanded.
+    - **Support Channel**: Email support, community forums.
+    - **Frequency of Updates**: Monthly
+    - **Community Support**: GitHub repository with active issues, forums for discussions.
+        - GitHub Stars: Approximately 150+
+    - **Maturity**: Relatively new but rapidly evolving with a growing user base (+40k dev)
+    -
+	- **Privacy & Security**:
+	    - **Data Handling**: User data is handled in accordance with privacy standards; specifics can be found in their privacy policy.
+	    - **Compliance / Data Location**: GDPR compliant; data is stored in secure cloud environments.  
+	        
+	- **Output & Reporting**:
+	    - **Formats**: CSV, JSON
+	    - **Visualization Tools**: Web-based interface, CLI options available for advanced users.  
+	        
+	- **Features**:
+	    - **Found in the docs/website**: Comprehensive documentation available outlining features and usage.
+	    - **Metrics**: Provides insights into prompt effectiveness and model performance.
+	    - **Qualitative & Quantitative Metrics**: Offers both numerical scores and qualitative feedback.
+	    - **Custom Metrics**: Users can define their own evaluation criteria.
+	    - **Readteam**: Support for collaborative evaluation.
+	    - **Monitoring**: Real-time monitoring of prompt performance.
+	    - **CI/CD**: Integrates with CI/CD pipelines for automated evaluations.
+	    - **Dataset Generation**: Capable of generating datasets for testing and evaluation purposes.
+	    - **Easy Unit Test (like pytest)**: Supports unit testing of prompts and responses.
+	    - **Benchmarks**: Provides benchmarking against standard datasets.
+	    - **Model Compatibility**: Compatible with various language models (e.g., GPT-3, etc.).
+	    - **Custom Models**: Users can integrate their own models for evaluation.
+	    - **Tasks**: Supports various tasks including RAG (Retrieval-Augmented Generation) and chatbots.
+	    - **Human in the Loop**: Allows for human evaluation alongside automated metrics.
+	    - **Static & Dynamic Evaluation**: Capable of evaluating models in real-time.
+	    - **Easy to Use**: User-friendly interface designed for quick adoption.  
+          
+        
+		
 ### Giskard (by Giskard-AI)
 
 ### LangSmith (by LangChain)
