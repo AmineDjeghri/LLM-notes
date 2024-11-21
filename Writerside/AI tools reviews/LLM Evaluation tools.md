@@ -26,6 +26,7 @@ dspy
 
 Every tool has this fields of comparaison : 
 - Package / web platform (separate them if they are different or if they have different prices):
+	- Review date 
 	- description
 	- site/github
 	- docs
@@ -62,22 +63,37 @@ Every tool has this fields of comparaison :
 		- Easy to use
  
 ## Dashboard & reporting
-### Promptfoo
+### Promptfoo 
+Provides 3 products : LLM Evaluation tool, Gen AI Secrurity, Vulnerability scanner
+Site : https://www.promptfoo.dev/
 - **LLM Evaluation tool**: 
-	- Type : package
-    - **Description**: PromptFoo is a tool designed to help users evaluate and optimize prompts for language models, enabling better performance and results in natural language processing tasks.
+	- **Review date** : 21/11/2024
+    - **Description**: an [open-source](https://github.com/promptfoo/promptfoo) CLI and library for evaluating and red-teaming LLM apps.
+      With promptfoo, you can:
+		- Build reliable prompts, models, and RAGs with benchmarks specific to your use-case
+		- Secure your apps with automated [red teaming](https://www.promptfoo.dev/docs/red-team/) and pentesting
+		- Speed up evaluations with caching, concurrency, and live reloading
+		- Score outputs automatically by defining [metrics](https://www.promptfoo.dev/docs/configuration/expected-outputs/)
+		- Use as a [CLI](https://www.promptfoo.dev/docs/usage/command-line/), [library](https://www.promptfoo.dev/docs/usage/node-package/), or in [CI/CD](https://www.promptfoo.dev/docs/integrations/github-action/)
+		- Use OpenAI, Anthropic, Azure, Google, HuggingFace, open-source models like Llama, or integrate custom API providers for [any LLM API](https://www.promptfoo.dev/docs/providers/)
+      Test your prompts, agents, and RAGs. Red teaming, pentesting, and vulnerability scanning for LLMs. Compare performance of GPT, Claude, Gemini, Llama, and more. Simple declarative configs with command line and CI/CD integration.
+      It provides 2 main features : 
+		- [**Red teaming**](https://www.promptfoo.dev/docs/red-team/quickstart/) - LLM security scans
+		- [**Evaluations**](https://www.promptfoo.dev/docs/getting-started/) - LLM quality benchmarks
+	
+	- **Docs**: [docs](https://www.promptfoo.dev/docs/intro/)
     - **GitHub**: https://github.com/promptfoo/promptfoo
-    - Site : https://www.promptfoo.dev/
-    - **Docs**: [Documentation](https://www.promptfoo.dev/docs)
     - **Price & Licensing**: Free
-    - **Deployment**: Local
+
+	- **Deployment**: Local
+    - **Type** : package 
     - **Runtime**: nodejs
     - **Updates & Maintenance**: Regular updates as features are improved and expanded.
-    - **Support Channel**: Email support, community forums.
-    - **Frequency of Updates**: Monthly
-    - **Community Support**: GitHub repository with active issues, forums for discussions.
+	    - **Support Channel**: Email support, community forums.
+	    - **Frequency of Updates**: Monthly
+	    - **Community Support**: GitHub repository with active issues, forums for discussions.
         - GitHub Stars: Approximately 150+
-    - **Maturity**: Relatively new but rapidly evolving with a growing user base (+40k dev)
+	    - **Maturity**: Relatively new but rapidly evolving with a growing user base (+40k dev)
     -
 	- **Privacy & Security**:
 	    - **Data Handling**: User data is handled in accordance with privacy standards; specifics can be found in their privacy policy.
