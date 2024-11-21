@@ -42,5 +42,7 @@
 
 
 ## Other leaderboards
-- leaderboards on huggingface  : https://huggingface.co/docs/leaderboards/leaderboards/finding_page
+- HF leaderboards : https://huggingface.co/spaces?sort=trending&search=leaderboard
+- HF Arenas : https://huggingface.co/spaces?sort=trending&search=arena
+- Other leaderboards on huggingface  : https://huggingface.co/docs/leaderboards/leaderboards/finding_page
 - 
