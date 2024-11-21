@@ -1,18 +1,26 @@
 
+| Tool name | Description | Hosting | Evaluation | Redteam | monitoring | CLI | UI  |     |
+| --------- | ----------- | ------- | ---------- | ------- | ---------- | --- | --- | --- |
+| Promptfoo |             | Local   |            | ✅       |            |     |     |     |
+| Langsmith |             |         |            |         |            |     |     |     |
+| Giskard   |             |         |            |         |            |     |     |     |
+| DeepEval  |             |         |            | ✅       |            |     |     |     |
+|           |             |         |            |         |            |     |     |     |
+|           |             |         |            |         |            |     |     |     |
+
 ## Dashboard & reporting
 ### Promptfoo
 
-### Prompt-flow Tracing (by Azure)
-### Langfuse
+### Giskard (by Giskard-AI)
 
 ### LangSmith (by LangChain)
 
-### Giskard (by Giskard-AI)
-
-### Validate (by Tonic)
-
 ### DeepEval
 
+
+### Prompt-flow Tracing (by Azure)
+### Langfuse
+### Validate (by Tonic)
 ### AutoRAG
 
 
