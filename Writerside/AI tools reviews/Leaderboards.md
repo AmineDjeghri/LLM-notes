@@ -26,3 +26,7 @@
 	- paper : https://openreview.net/forum?id=1qvx610Cu7
 
 
+## Performance  (latency, throughput, memory & energy)
+- LLM-Perf 
+	- Leaderboard : https://huggingface.co/spaces/optimum/llm-perf-leaderboard
+	- 
