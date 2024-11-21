@@ -16,7 +16,7 @@
 ### LangSmith (by LangChain)
 
 ### DeepEval (by ConfidentAI)
- - Free :
+ - Package :
 	- Github : https://github.com/confident-ai/deepeval
 	- pip installable
 	- 
