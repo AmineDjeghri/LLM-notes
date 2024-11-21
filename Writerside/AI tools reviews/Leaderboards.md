@@ -17,7 +17,7 @@
 - Chatbot Arena (formerly LMSYS) :using votes / human feedback 
 	- leaderboard (mirror): https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 	- leaderboard (official website): https://lmarena.ai/?leaderboard
-	- 
+- 
 
 ## Coding
 - EvalPlus Leaderboard
@@ -31,4 +31,4 @@
 	- Leaderboard : https://huggingface.co/spaces/optimum/llm-perf-leaderboard
 - Open LLM Leaderboard (CO2 kg)
 	- Leaderboard : https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard
-- 
+	- blog : https://huggingface.co/docs/leaderboards/open_llm_leaderboard/emissions
