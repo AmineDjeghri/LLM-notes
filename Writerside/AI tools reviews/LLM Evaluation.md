@@ -1,6 +1,9 @@
 
 # LLM Evaluation
 
+
+https://arxiv.org/pdf/2306.05685
+
 ## RAG Evaluation
 
 RAG systems are composed of a retrieval and an LLM based generation module, and provide LLMs with knowledge from a reference textual database, which enables them to act as a natural language layer between a user and textual databases, reducing the risk of hallucinations.
