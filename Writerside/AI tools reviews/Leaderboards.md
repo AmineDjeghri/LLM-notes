@@ -29,4 +29,6 @@
 ## Performance  & hardware
 - LLM-Perf (latency, throughput, memory & energy)
 	- Leaderboard : https://huggingface.co/spaces/optimum/llm-perf-leaderboard
-	- 
+- Open LLM Leaderboard (CO2 kg)
+	- Leaderboard : https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard
+- 
