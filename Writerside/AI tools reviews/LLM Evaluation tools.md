@@ -1,75 +1,7 @@
-
-| Tool name | Description | Hosting | Benchmark | Evaluation | Redteam | monitoring | CLI | UI  | runtime |
-| --------- | ----------- | ------- | --------- | ---------- | ------- | ---------- | --- | --- | ------- |
-| Promptfoo |             | Local   |           |            | ✅       |            |     |     | nvm     |
-| Langsmith |             |         |           |            |         |            |     |     |         |
-| Giskard   |             |         |           |            |         |            |     |     | pip     |
-| DeepEval  |             |         |           |            | ✅       |            |     |     | pip     |
-|           |             |         |           |            |         |            |     |     |         |
-|           |             |         |           |            |         |            |     |     |         |
-
-
-
-langsmith : 
-	- test  
-	- est ce que les données sont secure meme si on utilise nos modèles
-	- est ce que les données sont dans un tenant
-
-- Giskard feature 
-- comparer les features
-- Giskard (free vs paid)
-- utiliser Giskard avec openai (emulation openai)
-- Giskard vs Promptfoo (free vs free)
-
-
-dspy
-
-Every tool has this fields of comparaison : 
-- Package / web platform (separate them if they are different or if they have different prices):
-	- Review date 
-	- description
-	- FAQ
-	- site/github
-	- docs
-	- price & licencing: free, freemium, paid - pricing page 
-	- Usage and deployment : local, cloud, container, CLI, web viewer
-	- Runtime : python, nodejs …
-	- Updates & maintenance
-		- Support channel
-		- Frequency of updates
-		-  Community support (github stars, forums, issues,)
-		- Maturity
-		- Used by 
-		- Team 
-	- Privacy & security:
-		- Data handling
-		- Compliance / Data location
-		- Telemetry
-	- Output & reporting :
-		- formats (csv, json)
-		- Visualization tools (web server, cli)
-	- Features: add link to doc’s feature if available
-		- found in the docs/website
-		- metrics
-		- Qualitative & quantitative metrics : Does it provide numerical scores, qualitative feedback, or both?
-		- custom metrics
-		- Readteam
-		- Monitoring
-		- CI/CD
-		- dataset generation
-		- easy unit test (like pytest)
-		- benchmarks
-		- model compatibility 
-		- custom models
-		- tasks (rag, chatbot, agents)
-		- Human in the loop : Does it allow for human evaluation alongside automated metrics?
-		- Static & dynamic evaluation : Can it evaluate models in real-time or only after completion?
-		- Easy to use
- 
-## Dashboard & reporting
 ### Promptfoo 
 Provides 3 products : LLM Evaluation tool, Gen AI Secrurity, Vulnerability scanner
 Site : https://www.promptfoo.dev/
+
 - **LLM Evaluation tool**: 
 	- **Review date** : 21/11/2024
     - **Description**: an [open-source](https://github.com/promptfoo/promptfoo) CLI and library for evaluating and red-teaming LLM apps.
@@ -138,23 +70,23 @@ Site : https://www.promptfoo.dev/
 	    - **Telemetry** : `on` per default, can be disabled `PROMPTFOO_DISABLE_TELEMETRY=1`
 	       
 	- **Features**:
-	    - **Found in the docs/website**: Comprehensive documentation available outlining features and usage.
-	    - **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
-	    - **Qualitative & Quantitative Metrics**:  TO VERIFY
-	    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
-	    - **Readteam**: Yes. https://www.promptfoo.dev/docs/category/red-teaming/
-	    - **Monitoring**: Real-time monitoring of prompt performance.
-	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
-	    - **Dataset Generation**: Capable of generating datasets for testing and evaluation purposes.
-	    - **Easy Unit Test (like pytest)**: Supports unit testing of prompts and responses.
-	    - **Benchmarks**: Provides benchmarking against standard datasets.
 	    - **Model Compatibility**:  Yes. https://www.promptfoo.dev/docs/providers/
-	    - **Custom Models**: Users can integrate their own models for evaluation.
-	    - **Tasks**: Supports various tasks including RAG (Retrieval-Augmented Generation) and chatbots.
-	    - **Human in the Loop**: Allows for human evaluation alongside automated metrics.
-	    - **Static & Dynamic Evaluation**: Capable of evaluating models in real-time.
-	    - **Easy to Use**: User-friendly interface designed for quick adoption.  
-          
+	    - **Custom Models**: Yes
+	    - **Evaluation** :
+			- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
+		    - **Qualitative & Quantitative Metrics**:  TO VERIFY
+		    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
+		    -  **Tasks**: TO VERIFY
+		    - **Human in the Loop**: Yes but TO VERIFY
+		    - **Static & Dynamic Evaluation**: TO VERIFY
+		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
+		    - **Benchmarks**: TO VERIFY
+		- **Readteam**: Yes. https://www.promptfoo.dev/docs/category/red-teaming/
+	    - **Monitoring**: TO Verify
+	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
+	    - **Dataset Generation**: Yes. https://www.promptfoo.dev/docs/configuration/datasets/
+		- **Easy to Use**: Easy
+	    - **Easy to learn** : Easy to Advanced  
         
 		
 ### Giskard (by Giskard-AI)
