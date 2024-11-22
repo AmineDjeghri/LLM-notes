@@ -61,7 +61,7 @@ Site : https://www.promptfoo.dev/
 	    - **Community Support**: GitHub repository with active issues, forums for discussions.
         - **GitHub Stars**: Approximately 5k
 	    - **Maturity**: Relatively new but rapidly evolving with a growing user base (+40k developpers)
-	    - Used by : 
+	    - **Used by** : Pomptfoo has run 16 million probes this year at companies like Shopify Doordash Anthropic Microsoft
 	    - Team : 
     -
 	- **Privacy & Security**: 
