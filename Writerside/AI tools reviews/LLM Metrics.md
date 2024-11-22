@@ -101,6 +101,11 @@ It uses Precision@K
 - Normalized Discounted Cumulative Gain (NDCG):
 [source](https://www.pinecone.io/learn/offline-evaluation/#Normalized-Discounted-Cumulative-Gain-(NDCG@K))
 
+
+
+## RedTeaming merics : 
+https://www.promptfoo.dev/docs/red-team/llm-vulnerability-types/#common-llm-vulnerabilities-by-application-type
+
 #### Generation Metrics
 [source](https://aman.ai/primers/ai/evaluation-metrics/#evaluation-metrics-for-generative-text-models)
 
