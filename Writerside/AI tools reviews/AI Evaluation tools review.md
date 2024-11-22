@@ -1,5 +1,6 @@
 ### Promptfoo 
-Provides 2 products : LLM Evaluation tool & Gen AI Secrurity, Vulnerability scanner
+Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
+
 Site : https://www.promptfoo.dev/
 
 - **LLM Evaluation tool**: 
