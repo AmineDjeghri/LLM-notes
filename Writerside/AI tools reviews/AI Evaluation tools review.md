@@ -81,7 +81,8 @@ Site : https://www.promptfoo.dev/
 		    - **Static & Dynamic Evaluation**: TO VERIFY
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Benchmarks**: TO VERIFY
-		- **Readteam**: Yes. https://www.promptfoo.dev/docs/category/red-teaming/
+		- **Redteam**: Yes. https://www.promptfoo.dev/docs/category/red-teaming/
+		- **Custom Redteaming**
 	    - **Monitoring**: TO Verify
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	    - **Dataset Generation**: Yes. https://www.promptfoo.dev/docs/configuration/datasets/
