@@ -1,5 +1,5 @@
 ### Promptfoo 
-Provides 3 products : LLM Evaluation tool, Gen AI Secrurity, Vulnerability scanner
+Provides 2 products : LLM Evaluation tool & Gen AI Secrurity, Vulnerability scanner
 Site : https://www.promptfoo.dev/
 
 - **LLM Evaluation tool**: 
