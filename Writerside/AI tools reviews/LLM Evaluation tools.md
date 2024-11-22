@@ -77,7 +77,7 @@ Site : https://www.promptfoo.dev/
 		    - **Qualitative & Quantitative Metrics**:  TO VERIFY
 		    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
 		    -  **Tasks**: TO VERIFY
-		    - **Human in the Loop**: Yes but TO VERIFY
+		    - **Human in the Loop**: Yes but  
 		    - **Static & Dynamic Evaluation**: TO VERIFY
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Benchmarks**: TO VERIFY
