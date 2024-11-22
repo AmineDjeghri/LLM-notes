@@ -81,9 +81,9 @@ Site : https://www.promptfoo.dev/
 		    - **Static & Dynamic Evaluation**: TO VERIFY
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Benchmarks**: TO VERIFY
-		- **Redteam**: Yes. https://www.promptfoo.dev/docs/category/red-teaming/
+		- **Redteam**: Yes (plugins and custom plugins). https://www.promptfoo.dev/docs/category/red-teaming/
 		- **Custom Redteaming**
-	    - **Monitoring**: TO Verify
+	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	    - **Dataset Generation**: Yes. https://www.promptfoo.dev/docs/configuration/datasets/
 		- **Easy to Use**: Easy
