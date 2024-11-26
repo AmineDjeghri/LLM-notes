@@ -69,7 +69,11 @@ Site : https://www.promptfoo.dev/
 	- **Privacy & Security**: 
 	    - **Data Handling**: Local, if cloud → Check the pricing
 	    - **Compliance / Data Location**:  Local, if cloud → Check the pricing
-	    - **Telemetry** : `on` per default, can be disabled `PROMPTFOO_DISABLE_TELEMETRY=1`
+	    - **Telemetry** :  You can disable all data being sent to Promptfoo by using the following environment variables: 
+		    - PROMPTFOO_DISABLE_UPDATE=1: Disables version checks (only sends your current version, nothing else). 
+		    - PROMPTFOO_DISABLE_REDTEAM_REMOTE_GENERATION=1: Disables the inference endpoint used for unaligned models (covers a subset of harmful plugins and some security plugins). 
+		    - PROMPTFOO_DISABLE_SHARING=1: Requires explicit opt-in when using the promptfoo share command. 
+		    - PROMPTFOO_DISABLE_TELEMETRY=1: Disables all telemetry data.
 	       
 	- **Features**:
 	    - **Model Compatibility**:  Yes. https://www.promptfoo.dev/docs/providers/
