@@ -82,10 +82,9 @@ Site : https://www.promptfoo.dev/
 	    - **Evaluation** :
 			- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
 				- pre-implemented metrics : deterministic metrics, model-graded metrics …
-		    - **Qualitative & Quantitative Metrics**:  ==TO VERIFY==
+		    - **Qualitative & Quantitative Metrics**: both (score or llm-based)
 		    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
-		    -  **Tasks**: ==TO VERIFY==
-		    - **Human in the Loop**: Yes but  
+		    - **Human in the Loop**: Yes (vote, set score, comment)
 		    - **Real time / Dynamic Evaluation**: No
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Benchmarks**: ==TO VERIFY==
@@ -102,9 +101,9 @@ Site : https://www.promptfoo.dev/
 	    - **Easy to learn** : Easy to Advanced  
         
 		
-### Giskard (by Giskard-AI)
 
 ### LangSmith (by LangChain)
+
 
 ### DeepEval (by ConfidentAI)
  - Package :
@@ -128,7 +127,8 @@ Site : https://www.promptfoo.dev/
 	- docs : https://docs.confident-ai.com/docs/confident-ai-introduction
 	- paid, only 7 days trial , pricing : https://www.confident-ai.com/pricing
 	- 
-	
+### Giskard (by Giskard-AI)
+
 ### Prompt-flow Tracing (by Azure)
 ### Langfuse
 ### Validate (by Tonic)
