@@ -86,7 +86,7 @@ Site : https://www.promptfoo.dev/
 		    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
 		    -  **Tasks**: ==TO VERIFY==
 		    - **Human in the Loop**: Yes but  
-		    - **Static & Dynamic Evaluation**: ==TO VERIFY==
+		    - **Real time / Dynamic Evaluation**: No
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Benchmarks**: ==TO VERIFY==
 		- **Redteam**: 
