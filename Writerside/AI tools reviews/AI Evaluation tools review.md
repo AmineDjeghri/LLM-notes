@@ -89,7 +89,9 @@ Site : https://www.promptfoo.dev/
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Benchmarks**: TO VERIFY
 		- **Redteam**: 
-			- Metrics : Yes, called plugins. Some plugins (harmful and security) use promptfoo models and send data to their cloud  but can be deactivated. 
+			- link : https://www.promptfoo.dev/docs/red-team/quickstart/
+			- Metrics : Yes, called plugins. scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated. 
+			- 
 			- Link (plugins and custom plugins). https://www.promptfoo.dev/docs/category/red-teaming/ 
 			- Custom Metrics : Yes 100% custom
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
