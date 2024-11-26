@@ -53,6 +53,7 @@
   "openExportedFile": true,
   "env": {},
   "showExportProgressBar": true,
+  "showOverwriteConfirmation": true,
   "lastExportDirectory": {
     "darwin": "/Users/z736kw/Downloads"
   },

@@ -81,19 +81,19 @@ Site : https://www.promptfoo.dev/
 	    - **Evaluation** :
 			- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
 				- pre-implemented metrics : deterministic metrics, model-graded metrics …
-		    - **Qualitative & Quantitative Metrics**:  TO VERIFY
+		    - **Qualitative & Quantitative Metrics**:  ==TO VERIFY==
 		    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
-		    -  **Tasks**: TO VERIFY
+		    -  **Tasks**: ==TO VERIFY==
 		    - **Human in the Loop**: Yes but  
-		    - **Static & Dynamic Evaluation**: TO VERIFY
+		    - **Static & Dynamic Evaluation**: ==TO VERIFY==
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
-		    - **Benchmarks**: TO VERIFY
+		    - **Benchmarks**: ==TO VERIFY==
 		- **Redteam**: 
 			- link : https://www.promptfoo.dev/docs/red-team/quickstart/
 			- Metrics : Yes, called plugins. scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated. 
 			- 
 			- Link (plugins and custom plugins). https://www.promptfoo.dev/docs/category/red-teaming/ 
-			- Custom Metrics : Yes 100% custom
+			- Custom Metrics : Yes 100% custom, but use their models ? ==TO VERIFY==
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	    - **Dataset Generation**: Yes. https://www.promptfoo.dev/docs/configuration/datasets/
