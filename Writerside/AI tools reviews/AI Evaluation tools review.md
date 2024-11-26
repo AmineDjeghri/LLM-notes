@@ -75,7 +75,7 @@ Site : https://www.promptfoo.dev/
 	    - **Custom Models**: Yes
 	    - **Evaluation** :
 			- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
-				- implemented metrics : deterministic metrics and model-graded metrics
+				- pre-implemented metrics : deterministic metrics, model-graded metrics …
 		    - **Qualitative & Quantitative Metrics**:  TO VERIFY
 		    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
 		    -  **Tasks**: TO VERIFY
