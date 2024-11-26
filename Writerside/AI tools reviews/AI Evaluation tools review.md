@@ -89,9 +89,9 @@ Site : https://www.promptfoo.dev/
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Benchmarks**: TO VERIFY
 		- **Redteam**: 
-			- Metrics : Yes but the default plugins use promptfoo models and send data to their cloud (plugins and custom plugins). https://www.promptfoo.dev/docs/category/red-teaming/ 
+			- Metrics : Yes, called plugins. Some plugins (harmful and security) use promptfoo models and send data to their cloud  but can be deactivated. 
+			- Link (plugins and custom plugins). https://www.promptfoo.dev/docs/category/red-teaming/ 
 			- Custom Metrics : Yes 100% custom
-			- 
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	    - **Dataset Generation**: Yes. https://www.promptfoo.dev/docs/configuration/datasets/
