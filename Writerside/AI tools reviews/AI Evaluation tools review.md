@@ -3,7 +3,7 @@ Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 
 Site : https://www.promptfoo.dev/
 
-- **LLM Evaluation tool**: 
+- **LLM Evaluation tool and redteaming tool**: 
 	- **Review date** : 21/11/2024
     - **Description**: an [open-source](https://github.com/promptfoo/promptfoo) CLI and library for evaluating and red-teaming LLM apps.
       With promptfoo, you can:
