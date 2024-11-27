@@ -99,8 +99,6 @@ glossary :
 		    - **Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
 		- **Redteam**: 
 			- link : https://www.promptfoo.dev/docs/red-team/quickstart/
-			-  can override target and attacker models
-			- ==override grader ?==
 			- Metrics : Yes, called plugins. scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated / override
 			- Link (plugins and custom plugins). https://www.promptfoo.dev/docs/category/red-teaming/ 
 			- Custom Metrics : Yes,
