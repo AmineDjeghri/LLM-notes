@@ -100,16 +100,17 @@ glossary :
 		- **Redteam**: 
 			- **Doc** : https://www.promptfoo.dev/docs/red-team/quickstart/
 			- **Models** : 
-				- Target models used to generate output :
-				- Attacker models : used to generated adversial outputs : https://www.promptfoo.dev/docs/red-team/configuration/#providers
+				- Two type of models :
+					- target models (used to generate output) : 
+					- Attacker models (used to generated adversial outputs) https://www.promptfoo.dev/docs/red-team/configuration/#providers
 				- **model compatibility** Yes (https://www.promptfoo.dev/docs/red-team/configuration/#providers)
-				- **Custom/override target models** :yes
+				- **Custom/override models** :yes
 			- Attacker models : https://www.promptfoo.dev/docs/red-team/configuration/#providers
 				- 
 			- **Metrics** : Yes, called plugins. 
 				- https://www.promptfoo.dev/docs/category/red-teaming/ 
-				- **Pre-implemented metrics** : Scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated / override
-				- **Custom Metrics** : Yes
+				- **Pre-implemented metrics** : Yes. Scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated / override
+				- **Custom Metrics** : Yes . https://www.promptfoo.dev/docs/red-team/configuration/#custom-plugins
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	    - **Dataset Generation**: Yes. https://www.promptfoo.dev/docs/configuration/datasets/
