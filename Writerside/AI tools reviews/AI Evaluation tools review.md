@@ -90,7 +90,7 @@ glossary :
 					- deterministic metrics
 					- model-graded metrics : 
 						- override prompts : yes
-						- override models (generator, grader) : yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/#overriding-the-llm-grader
+						- override Evaluator/grader : yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/#overriding-the-llm-grader
 			    - **Qualitative & Quantitative Metrics**: both (score or llm-based)
 			    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
 		    - **Human in the Loop**: Yes (vote, set score, comment)
