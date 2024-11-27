@@ -81,11 +81,11 @@ glossary :
 		    - PROMPTFOO_DISABLE_TELEMETRY=1: Disables all telemetry data.
 	       
 	- **Features**:
-		- **Models** : used to generate an output
-		    - **Model Compatibility**:  Yes. https://www.promptfoo.dev/docs/providers/
-		    - **Custom/override models**: Yes
 	    - **Evaluation** :
 			- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
+				- **Models** : used to generate an output
+				    - **Model Compatibility**:  Yes. https://www.promptfoo.dev/docs/providers/
+				    - **Custom/override models**: Yes
 				- **pre-implemented metrics** : 
 					- deterministic metrics
 					- model-graded metrics : 
