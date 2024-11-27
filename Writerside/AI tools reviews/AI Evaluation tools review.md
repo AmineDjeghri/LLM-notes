@@ -90,9 +90,10 @@ Site : https://www.promptfoo.dev/
 		    - **Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
 		- **Redteam**: 
 			- link : https://www.promptfoo.dev/docs/red-team/quickstart/
+			-  can override target and attacker models
 			- Metrics : Yes, called plugins. scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated / override
 			- Link (plugins and custom plugins). https://www.promptfoo.dev/docs/category/red-teaming/ 
-			- Custom Metrics : Yes, can override target and attacker.
+			- Custom Metrics : Yes,
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	    - **Dataset Generation**: Yes. https://www.promptfoo.dev/docs/configuration/datasets/
