@@ -99,9 +99,7 @@ glossary :
 		    - **Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
 		- **Redteam**: 
 			- **Doc** : https://www.promptfoo.dev/docs/red-team/quickstart/
-			- **Models** : 
-				- Three types of models :
-					- Generator/ target models (used to generate output) 
+			- **Models** :  Generator/ target models (used to generate output) 
 				- **model compatibility** Yes (https://www.promptfoo.dev/docs/red-team/configuration/#providers)
 				- **Custom/override models** :yes
 			- **Metrics** : Yes, called plugins. 
@@ -110,6 +108,7 @@ glossary :
 					- Scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated / override
 					- Custom/Override Attacker models (used to generated adversial outputs) https://www.promptfoo.dev/docs/red-team/configuration/#providers
 					- Custom/Override Grader/evaluator : https://www.promptfoo.dev/docs/guides/llm-redteaming/#configuring-the-grader
+					- Unaligned model : some plugins like the hamrful plugins use promptfoo free models and can not yet be overriden. You need to remove PROMPTFOO_DISABLE_REDTEAM_REMOTE_GENERATION=True from your env to use these plugins.
 				- **Custom Metrics** : Yes . https://www.promptfoo.dev/docs/red-team/configuration/#custom-plugins
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
