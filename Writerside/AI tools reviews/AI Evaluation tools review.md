@@ -82,10 +82,10 @@ glossary :
 	       
 	- **Features**:
 	    - **Evaluation** :
+		    - **Models** : used to generate an output
+			    - **Model Compatibility**:  Yes. https://www.promptfoo.dev/docs/providers/
+			    - **Custom/override models**: Yes
 			- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
-				- **Models** : used to generate an output
-				    - **Model Compatibility**:  Yes. https://www.promptfoo.dev/docs/providers/
-				    - **Custom/override models**: Yes
 				- **pre-implemented metrics** : 
 					- deterministic metrics
 					- model-graded metrics : 
@@ -98,6 +98,9 @@ glossary :
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
 		- **Redteam**: 
+			- Target models : used to generate output 
+				- model compatibility (https://www.promptfoo.dev/docs/red-team/configuration/#providers)
+				- Custom/override target models :yes
 			- link : https://www.promptfoo.dev/docs/red-team/quickstart/
 			- Metrics : Yes, called plugins. scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated / override
 			- Link (plugins and custom plugins). https://www.promptfoo.dev/docs/category/red-teaming/ 
