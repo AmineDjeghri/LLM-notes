@@ -102,7 +102,7 @@ Site : https://www.promptfoo.dev/
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	    - **Dataset Generation**: Yes. https://www.promptfoo.dev/docs/configuration/datasets/
 		- **Easy to Use**: Easy
-	    - **Easy to learn** : Easy to Advanced  
+	    - **Easy to learn** : Medium
         
 		
 
