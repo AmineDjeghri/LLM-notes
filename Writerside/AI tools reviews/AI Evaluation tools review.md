@@ -89,7 +89,7 @@ glossary :
 				- **pre-implemented metrics** : 
 					- deterministic metrics
 					- model-graded metrics : 
-						- override prompts : YES
+						- override prompts : yes
 						- override models (generator, grader) : yes
 			    - **Qualitative & Quantitative Metrics**: both (score or llm-based)
 			    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
