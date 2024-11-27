@@ -99,7 +99,9 @@ glossary :
 		    - **Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
 		- **Redteam**: 
 			- **Doc** : https://www.promptfoo.dev/docs/red-team/quickstart/
-			- **Models** : used to generate output (called target models.)
+			- **Models** : 
+				- Target models used to generate output :
+				- Attacker models : used to generated adversial outputs : https://www.promptfoo.dev/docs/red-team/configuration/#providers
 				- **model compatibility** Yes (https://www.promptfoo.dev/docs/red-team/configuration/#providers)
 				- **Custom/override target models** :yes
 			- Attacker models : https://www.promptfoo.dev/docs/red-team/configuration/#providers
