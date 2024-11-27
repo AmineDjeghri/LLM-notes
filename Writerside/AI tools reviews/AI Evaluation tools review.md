@@ -4,6 +4,10 @@ Author : Amine DJEGHRI
 Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 
 Site : https://www.promptfoo.dev/
+glossary :
+- grader : model that evaluates the llm output in the redteam plugins
+- target : 
+- ==target :== 
 
 - **LLM Evaluation tool and redteaming tool**: 
 	- **Review date** : 21/11/2024
@@ -89,9 +93,6 @@ Site : https://www.promptfoo.dev/
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
 		- **Redteam**: 
-			- ==attacker :== 
-			- == evaluator model :  grader :==
-			- ==target :== 
 			- link : https://www.promptfoo.dev/docs/red-team/quickstart/
 			-  can override target and attacker models
 			- ==override grader ?==
