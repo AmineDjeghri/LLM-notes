@@ -98,13 +98,15 @@ glossary :
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
 		- **Redteam**: 
-			- Target models : used to generate output 
-				- model compatibility (https://www.promptfoo.dev/docs/red-team/configuration/#providers)
-				- Custom/override target models :yes
-			- link : https://www.promptfoo.dev/docs/red-team/quickstart/
-			- Metrics : Yes, called plugins. scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated / override
-			- Link (plugins and custom plugins). https://www.promptfoo.dev/docs/category/red-teaming/ 
-			- Custom Metrics : Yes,
+			- **Doc** : https://www.promptfoo.dev/docs/red-team/quickstart/
+			- **Models** : used to generate output (called target models.)
+				- **model compatibility** Yes (https://www.promptfoo.dev/docs/red-team/configuration/#providers)
+				- **Custom/override target models** :yes
+			- 
+			- **Metrics** : Yes, called plugins. 
+				- https://www.promptfoo.dev/docs/category/red-teaming/ 
+				- **Pre-implemented metrics** : Scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated / override
+				- **Custom Metrics** : Yes
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	    - **Dataset Generation**: Yes. https://www.promptfoo.dev/docs/configuration/datasets/
