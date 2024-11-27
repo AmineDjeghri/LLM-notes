@@ -82,7 +82,7 @@ glossary :
 	       
 	- **Features**:
 	    - **Evaluation** :
-		    - **Models** : used to generate an output
+		    - **Generator Models** : used to generate an output
 			    - **Model Compatibility**:  Yes. https://www.promptfoo.dev/docs/providers/
 			    - **Custom/override models**: Yes
 			- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
@@ -102,7 +102,7 @@ glossary :
 			- **Models** : used to generate output (called target models.)
 				- **model compatibility** Yes (https://www.promptfoo.dev/docs/red-team/configuration/#providers)
 				- **Custom/override target models** :yes
-			- 
+			- Attacker models
 			- **Metrics** : Yes, called plugins. 
 				- https://www.promptfoo.dev/docs/category/red-teaming/ 
 				- **Pre-implemented metrics** : Scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated / override
