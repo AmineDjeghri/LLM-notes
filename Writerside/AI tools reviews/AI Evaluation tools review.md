@@ -86,11 +86,11 @@ glossary :
 			    - **Model Compatibility**:  Yes. https://www.promptfoo.dev/docs/providers/
 			    - **Custom/override models**: Yes
 			- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
-				- **pre-implemented metrics** : 
+				- **pre-implemented metrics** : yes
 					- deterministic metrics
 					- model-graded metrics : 
 						- override prompts : yes
-						- override models (generator, grader) : yes
+						- override models (generator, grader) : yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/#overriding-the-llm-grader
 			    - **Qualitative & Quantitative Metrics**: both (score or llm-based)
 			    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
 		    - **Human in the Loop**: Yes (vote, set score, comment)
@@ -102,14 +102,14 @@ glossary :
 			- **Models** : 
 				- Three types of models :
 					- Generator/ target models (used to generate output) 
-					- Attacker models (used to generated adversial outputs) https://www.promptfoo.dev/docs/red-team/configuration/#providers
-					- Grader/evaluator : 
 				- **model compatibility** Yes (https://www.promptfoo.dev/docs/red-team/configuration/#providers)
 				- **Custom/override models** :yes
-				- 
 			- **Metrics** : Yes, called plugins. 
 				- https://www.promptfoo.dev/docs/category/red-teaming/ 
-				- **Pre-implemented metrics** : Yes. Scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated / override
+				- **Pre-implemented metrics** : Yes. 
+					- Scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated / override
+					- Custom/Override Attacker models (used to generated adversial outputs) https://www.promptfoo.dev/docs/red-team/configuration/#providers
+					- Custom/Override Grader/evaluator : https://www.promptfoo.dev/docs/guides/llm-redteaming/#configuring-the-grader
 				- **Custom Metrics** : Yes . https://www.promptfoo.dev/docs/red-team/configuration/#custom-plugins
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
