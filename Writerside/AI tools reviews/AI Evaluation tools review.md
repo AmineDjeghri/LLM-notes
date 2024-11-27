@@ -85,9 +85,15 @@ glossary :
 	    - **Custom Models**: Yes
 	    - **Evaluation** :
 			- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
-				- pre-implemented metrics : deterministic metrics, model-graded metrics …
+				- pre-implemented metrics : 
+					- deterministic metrics
+					- model-graded metrics : 
+						- override prompts : YES
+						- override models (generator, grader) : yes
 		    - **Qualitative & Quantitative Metrics**: both (score or llm-based)
 		    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
+		    - override the llms used in the default metrics : YES
+		    - override the prompts used in the default
 		    - **Human in the Loop**: Yes (vote, set score, comment)
 		    - **Real time / Dynamic Evaluation**: No
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
