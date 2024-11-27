@@ -100,12 +100,12 @@ glossary :
 		- **Redteam**: 
 			- **Doc** : https://www.promptfoo.dev/docs/red-team/quickstart/
 			- **Models** : 
-				- Two type of models :
-					- target models (used to generate output) : 
+				- Three types of models :
+					- Generator/ target models (used to generate output) 
 					- Attacker models (used to generated adversial outputs) https://www.promptfoo.dev/docs/red-team/configuration/#providers
+					- Grader/evaluator : 
 				- **model compatibility** Yes (https://www.promptfoo.dev/docs/red-team/configuration/#providers)
 				- **Custom/override models** :yes
-			- Attacker models : https://www.promptfoo.dev/docs/red-team/configuration/#providers
 				- 
 			- **Metrics** : Yes, called plugins. 
 				- https://www.promptfoo.dev/docs/category/red-teaming/ 
