@@ -2,38 +2,41 @@ Author : Amine DJEGHRI
 
 
 
-| Features                  | Promptfoo                    | Langsmith | Giskard |
-| ------------------------- | ---------------------------- | --------- | ------- |
-| **review date**           | 21/11/2024                   |           |         |
-| **reviewed** **version**  | 0.99                         |           |         |
-| **Price**                 | not communicated             |           |         |
-| **Licence**               | Free/ entreprise/ on-premise |           |         |
-| **deployment**            | local, docker, cloud         |           |         |
-| **viz tool**              | cli, web                     |           |         |
-| **export format**         | json                         |           |         |
-| **type/runtime**          | Nodejs package               |           |         |
-| **Updates frequency**     | Nodejs                       |           |         |
-| **Maturity**              | New, evolving, +40k          |           |         |
-| **Popularity**            | +40k devs, 5k github stars   |           |         |
-| **Privacy/Data**          | ✅                            |           |         |
-| **Evaluation**            |                              |           |         |
-| - Custom/override models  | ✅                            |           |         |
-| - Pre-implemented metrics | ✅                            |           |         |
-| - Custom metrics          | ✅                            |           |         |
-| - Human evaluation UI     | ✅                            |           |         |
-| - Real time evaluation    | ❌                            |           |         |
-| **Redteaming**            |                              |           |         |
-| - Custom/override models  | 3/4                          |           |         |
-| - Pre-implemented metrics | ✅ (+30)                      |           |         |
-| - custom metrics          | ✅                            |           |         |
-| -Annotate/Human feedback  | ✅                            |           |         |
-| Monitoring                | ✅ (paid)                     |           |         |
-| **Dataset generation**    | ❌                            |           |         |
-| -Annotate/Human feedback  | ❌                            |           |         |
-| **Prompt generation**     | ❌                            |           |         |
-| CI/CD                     | ✅                            |           |         |
-| Easy to use               | easy                         |           |         |
-| Easy to learn             | medium                       |           |         |
+| Features                  | Promptfoo                    | Langsmith  | Giskard |
+| ------------------------- | ---------------------------- | ---------- | ------- |
+| **review date**           | 21/11/2024                   |            |         |
+| **reviewed** **version**  | 0.99                         |            |         |
+| **Price**                 | not communicated             |            |         |
+| **Licence**               | Free/ entreprise/ on-premise |            |         |
+| **deployment**            | local, docker, cloud         |            |         |
+| **viz tool**              | cli, web                     |            |         |
+| **type/runtime**          | Nodejs package               |            |         |
+| **Updates frequency**     | Nodejs                       |            |         |
+| **Maturity**              | New, evolving                |            |         |
+| **Popularity**            | +40k devs, 5k github stars   | +250k devs |         |
+| **Privacy/Data**          | ✅                            |            |         |
+| **Evaluation**            |                              |            |         |
+| - Custom/override models  | ✅                            |            |         |
+| - Pre-implemented metrics | ✅                            |            |         |
+| - Custom metrics          | ✅                            |            |         |
+| - Annotate/Human feedback | ✅                            |            |         |
+| - Real time evaluation    | ❌                            |            |         |
+| - export format           | json                         |            |         |
+| **Redteaming**            |                              |            |         |
+| - Custom/override models  | 3/4                          |            |         |
+| - Pre-implemented metrics | ✅ (+30)                      |            |         |
+| - custom metrics          | ✅                            |            |         |
+| - Annotate/Human feedback | ✅                            |            |         |
+| **Dataset generation**    | ❌                            |            |         |
+| - generate dataset        | ⚠️ (config. only)            |            |         |
+| - Annotate/Human feedback | ❌                            |            |         |
+| - export format           | yaml                         |            |         |
+| **Prompt generation**     | ❌                            |            |         |
+| **Monitoring**            | ✅ (paid)                     |            |         |
+| **CI/CD**                 | ✅                            |            |         |
+| **Easy to use**           | easy                         | easy       |         |
+| **Easy to learn**         | medium                       | easy       |         |
+|                           |                              |            |         |
 
 ### Promptfoo 
 Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
@@ -93,7 +96,6 @@ glossary :
 		- Local : CLI, Web viewer, node package, python & js support
 		- Docker for self hosting
 		- `share` command creates a publicly accessible URL, which means anyone who knows the URL can view your results. If you don't want anyone to see your results, you should keep your URL secret. After 2 weeks, all data associated with the URL is permanently deleted.
-	    - **Export Formats**:  JSON
 	    - **Visualization Tools**: Web-based interface, CLI 
     - **Type/runtime** : NodeJS
     - **Updates & Maintenance**: Regular updates as features are improved and expanded.
@@ -127,10 +129,11 @@ glossary :
 						- override Evaluator/grader : yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/#overriding-the-llm-grader
 			    - **Qualitative & Quantitative Metrics**: both (score or llm-based)
 			    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
-		    - **Annotation/Human in the Loop**: Yes (vote, set score, comment)
+		    - **Annotate/Human feedback**: Yes (vote, set score, comment)
 		    - **Real time / Dynamic Evaluation**: No
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Pre-implemented Dataset Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
+		    - **Export Formats**:  JSON
 		- **Redteam**: 
 			- **Doc** : https://www.promptfoo.dev/docs/red-team/quickstart/
 			- **Models** :  Generator, evaluator, attacker, unaligned models 
@@ -144,12 +147,14 @@ glossary :
 				- **Pre-implemented metrics** : Yes. 
 					- Scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo unaligned  uncensored models and send data to their cloud  but can be deactivated.
 				- **Custom Metrics** : Yes . https://www.promptfoo.dev/docs/red-team/configuration/#custom-plugins
-			-  **Annotation/Human in the Loop**: Yes (vote, set score, comment)
+			-  **Annotate/Human feedback**: Yes (vote, set score, comment)
+		    - **Export Formats**:  JSON
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	    - **Dataset Generation**:  No
-		    - Only generates configs. https://www.promptfoo.dev/docs/configuration/datasets/
-		    -  **Annotation/Human in the Loop**: No
+		    - **Generate datasets** : No. Only generates configs. https://www.promptfoo.dev/docs/configuration/datasets/
+		    -  **Annotate/Human feedback**: No
+		    - **Export Formats**:  Yaml
 		- **Easy to Use**: Easy
 	    - **Easy to learn** : Medium
         
