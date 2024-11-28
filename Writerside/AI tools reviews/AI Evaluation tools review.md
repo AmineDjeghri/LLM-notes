@@ -145,7 +145,7 @@ glossary :
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	    - **Dataset Generation**:  No
-		    - Only generates configs. Yes. https://www.promptfoo.dev/docs/configuration/datasets/
+		    - Only generates configs. https://www.promptfoo.dev/docs/configuration/datasets/
 		- **Easy to Use**: Easy
 	    - **Easy to learn** : Medium
         
