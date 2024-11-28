@@ -26,9 +26,11 @@ Author : Amine DJEGHRI
 | - Custom/override models  | 3/4                          |           |         |
 | - Pre-implemented metrics | ✅ (+30)                      |           |         |
 | - custom metrics          | ✅                            |           |         |
+| -Annotate/Human feedback  | ✅                            |           |         |
 | Monitoring                | ✅ (paid)                     |           |         |
-| Dataset generation        | ⚠️                           |           |         |
-| Prompt generation         | ❌                            |           |         |
+| **Dataset generation**    | ❌                            |           |         |
+| -Annotate/Human feedback  | ❌                            |           |         |
+| **Prompt generation**     | ❌                            |           |         |
 | CI/CD                     | ✅                            |           |         |
 | Easy to use               | easy                         |           |         |
 | Easy to learn             | medium                       |           |         |
@@ -125,7 +127,7 @@ glossary :
 						- override Evaluator/grader : yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/#overriding-the-llm-grader
 			    - **Qualitative & Quantitative Metrics**: both (score or llm-based)
 			    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
-		    - **Human in the Loop**: Yes (vote, set score, comment)
+		    - **Annotation/Human in the Loop**: Yes (vote, set score, comment)
 		    - **Real time / Dynamic Evaluation**: No
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Pre-implemented Dataset Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
@@ -142,10 +144,12 @@ glossary :
 				- **Pre-implemented metrics** : Yes. 
 					- Scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo unaligned  uncensored models and send data to their cloud  but can be deactivated.
 				- **Custom Metrics** : Yes . https://www.promptfoo.dev/docs/red-team/configuration/#custom-plugins
+			-  **Annotation/Human in the Loop**: Yes (vote, set score, comment)
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	    - **Dataset Generation**:  No
 		    - Only generates configs. https://www.promptfoo.dev/docs/configuration/datasets/
+		    -  **Annotation/Human in the Loop**: No
 		- **Easy to Use**: Easy
 	    - **Easy to learn** : Medium
         
