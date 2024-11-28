@@ -161,6 +161,7 @@ glossary :
 		    - **Use human feedback** : No
 		    - **Export Formats**:  Yaml
 		    - **Visualization Tools**: ?
+		- **Prompt engineering** :  
 		- **Easy to Use**: Easy
 	    - **Easy to learn** : Medium
         
