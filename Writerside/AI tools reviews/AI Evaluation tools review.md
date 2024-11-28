@@ -160,8 +160,8 @@ glossary :
 		    -  **Annotate/Human feedback**: No
 		    - **Use human feedback** : No
 		    - **Export Formats**:  Yaml
-		    - **Visualization Tools**: ?
-		- **Prompt engineering** :  
+		    - **Visualization Tools**: web base, file
+		- **Prompt engineering** :  ??
 		- **Easy to Use**: Easy
 	    - **Easy to learn** : Medium
         
