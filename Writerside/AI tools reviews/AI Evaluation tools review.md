@@ -21,7 +21,7 @@ Author : Amine DJEGHRI
 | - Pre-implemented metrics | ✅                            |           |         |
 | - Custom metrics          | ✅                            |           |         |
 | - Human evaluation UI     | ✅                            |           |         |
-| - Real time evaluation    | ✅                            |           |         |
+| - Real time evaluation    | ❌                            |           |         |
 | **Redteaming**            |                              |           |         |
 | - Custom/override models  | 3/4                          |           |         |
 | - Pre-implemented metrics | ✅ (+30)                      |           |         |
