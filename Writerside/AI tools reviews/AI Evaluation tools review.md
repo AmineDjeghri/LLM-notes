@@ -1,5 +1,21 @@
 Author : Amine DJEGHRI
 
+
+
+| Features         | Promptfoo                    | Langsmith | Giskard |     |     |     |
+| ---------------- | ---------------------------- | --------- | ------- | --- | --- | --- |
+| review date      | 21/11/2024                   |           |         |     |     |     |
+| reviewed version | 0.99                         |           |         |     |     |     |
+| Price            |                              |           |         |     |     |     |
+| Licence          | Free/ entreprise/ on-premise |           |         |     |     |     |
+| deployment       | local, docker,..             |           |         |     |     |     |
+| viz tool         |                              |           |         |     |     |     |
+| export format    |                              |           |         |     |     |     |
+| type             |                              |           |         |     |     |     |
+| runtime          |                              |           |         |     |     |     |
+| maturity         |                              |           |         |     |     |     |
+|                  |                              |           |         |     |     |     |
+
 ### Promptfoo 
 Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 
@@ -60,16 +76,16 @@ glossary :
 		- `share` command creates a publicly accessible URL, which means anyone who knows the URL can view your results. If you don't want anyone to see your results, you should keep your URL secret. After 2 weeks, all data associated with the URL is permanently deleted.
 	    - **Export Formats**:  JSON
 	    - **Visualization Tools**: Web-based interface, CLI 
-    - **Type** : package 
+    - **Type** : package / website
     - **Runtime**: nodejs
     - **Updates & Maintenance**: Regular updates as features are improved and expanded.
 	    - **Support Channel**: Discord, Email support, Github , book a time
-	    - **Frequency of Updates**: daily
+	    - **Frequency of Updates**: 3 times a week
 	    - **Community Support**: GitHub repository with active issues, forums for discussions.
         - **GitHub Stars**: Approximately 5k
 	    - **Maturity**: Relatively new but rapidly evolving with a growing user base (+40k developpers)
 	    - **Used by** : Pomptfoo has run 16 million probes this year at companies like Shopify Doordash Anthropic Microsoft Discord
-	    - Team : 
+	    - Team : ==TO COMPLETE==
     -
 	- **Privacy & Security**: 
 	    - **Data Handling**: Local, if cloud → Check the pricing
