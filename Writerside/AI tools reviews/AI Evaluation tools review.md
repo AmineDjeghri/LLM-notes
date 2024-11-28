@@ -130,6 +130,7 @@ glossary :
 			    - **Qualitative & Quantitative Metrics**: both (score or llm-based)
 			    - **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
 		    - **Annotate/Human feedback**: Yes (vote, set score, comment)
+		    - **Use Human Feedback** : No
 		    - **Real time / Dynamic Evaluation**: No
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Pre-implemented Dataset Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
@@ -149,6 +150,7 @@ glossary :
 					- Scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo unaligned  uncensored models and send data to their cloud  but can be deactivated.
 				- **Custom Metrics** : Yes . https://www.promptfoo.dev/docs/red-team/configuration/#custom-plugins
 			-  **Annotate/Human feedback**: Yes (vote, set score, comment)
+			- **Use Human Feedback** : No
 		    - **Export Formats**:  JSON
 		    - **Visualization Tools**: Web-based interface, CLI 
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
@@ -156,7 +158,7 @@ glossary :
 	    - **Dataset Generation**:  No
 		    - **Generate datasets** : No. Only generates configs. https://www.promptfoo.dev/docs/configuration/datasets/
 		    -  **Annotate/Human feedback**: No
-		    - **Regenerate with human feedback** : No
+		    - **Use human feedback** : No
 		    - **Export Formats**:  Yaml
 		    - **Visualization Tools**: ?
 		- **Easy to Use**: Easy
