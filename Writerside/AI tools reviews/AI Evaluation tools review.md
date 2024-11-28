@@ -103,8 +103,8 @@ glossary :
 			    - **Custom/override models**: Yes
 			- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
 				- **pre-implemented metrics** : yes
-					- predifined metrics : 
-					- model-graded metrics : using LLM to evaluate
+					- deterministic metrics : contains, equals, exact-match Yes
+					- model-graded metrics : using LLM to evaluate Yes
 						- override prompts : yes
 						- override Evaluator/grader : yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/#overriding-the-llm-grader
 			    - **Qualitative & Quantitative Metrics**: both (score or llm-based)
