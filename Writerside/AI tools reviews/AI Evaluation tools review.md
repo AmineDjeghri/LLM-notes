@@ -156,6 +156,7 @@ glossary :
 	    - **Dataset Generation**:  No
 		    - **Generate datasets** : No. Only generates configs. https://www.promptfoo.dev/docs/configuration/datasets/
 		    -  **Annotate/Human feedback**: No
+		    - **Regenerate with human feedback** : No
 		    - **Export Formats**:  Yaml
 		    - **Visualization Tools**: ?
 		- **Easy to Use**: Easy

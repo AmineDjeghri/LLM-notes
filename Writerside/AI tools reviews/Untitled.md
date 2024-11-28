@@ -1,0 +1,45 @@
+
+## Evaluation tools and framework : 
+
+- Package name or  web platform (separate them if they are different or if they have different prices):
+	- Review date 
+	- description
+	- FAQ
+	- site/github
+	- docs
+	- price & licencing: free, freemium, paid - pricing page 
+	- Usage and deployment : local, cloud, container, CLI, web viewer
+	- Runtime : python, nodejs …
+	- Updates & maintenance
+		- Support channel
+		- Frequency of updates
+		-  Community support (github stars, forums, issues,)
+		- Maturity
+		- Used by 
+		- Team 
+	- Privacy & security:
+		- Data handling
+		- Compliance / Data location
+		- Telemetry
+	- Output & reporting :
+		- formats (csv, json)
+		- Visualization tools (web server, cli)
+	- Features: 
+	- **Features**: add link to doc’s feature if available (found in docs or websites)
+	    - **Model Compatibility**:  
+	    - **Custom Models**: 
+	    - **Evaluation** :
+			- **Metrics**: 
+		    - **Qualitative & Quantitative Metrics**:  
+		    - **Custom Metrics**: 
+		    -  **Tasks**: 
+		    - **Human in the Loop**: 
+		    - **Static & Dynamic Evaluation**: 
+		    - **Easy Unit Test (like pytest)**: 
+		    - **Benchmarks**: 
+		- **Readteam**
+	    - **Monitoring**
+	    - **CI/CD**
+	    - **Dataset Generation**
+		- **Easy to Use**
+	    - **Easy to learn** 
