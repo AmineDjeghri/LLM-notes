@@ -28,6 +28,7 @@ Author : Amine DJEGHRI
 | - custom metrics          | ✅                            |           |         |
 | Monitoring                | ✅ (paid)                     |           |         |
 | Dataset generation        | ✅                            |           |         |
+| Prompt generation         |                              |           |         |
 | CI/CD                     | ✅                            |           |         |
 | Easy to use               | easy                         |           |         |
 | Easy to learn             | medium                       |           |         |
