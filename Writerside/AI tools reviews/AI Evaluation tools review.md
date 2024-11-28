@@ -2,19 +2,35 @@ Author : Amine DJEGHRI
 
 
 
-| Features         | Promptfoo                    | Langsmith | Giskard |     |     |     |
-| ---------------- | ---------------------------- | --------- | ------- | --- | --- | --- |
-| review date      | 21/11/2024                   |           |         |     |     |     |
-| reviewed version | 0.99                         |           |         |     |     |     |
-| Price            |                              |           |         |     |     |     |
-| Licence          | Free/ entreprise/ on-premise |           |         |     |     |     |
-| deployment       | local, docker,..             |           |         |     |     |     |
-| viz tool         |                              |           |         |     |     |     |
-| export format    |                              |           |         |     |     |     |
-| type             |                              |           |         |     |     |     |
-| runtime          |                              |           |         |     |     |     |
-| maturity         |                              |           |         |     |     |     |
-|                  |                              |           |         |     |     |     |
+| Features                  | Promptfoo                    | Langsmith | Giskard |
+| ------------------------- | ---------------------------- | --------- | ------- |
+| **review date**           | 21/11/2024                   |           |         |
+| **reviewed** **version**  | 0.99                         |           |         |
+| **Price**                 | not communicated             |           |         |
+| **Licence**               | Free/ entreprise/ on-premise |           |         |
+| **deployment**            | local, docker, cloud         |           |         |
+| **viz tool**              | cli, web                     |           |         |
+| **export format**         | json                         |           |         |
+| **type/runtime**          | Nodejs package               |           |         |
+| **Updates frequency**     | Nodejs                       |           |         |
+| **Maturity**              | New, evolving, +40k          |           |         |
+| **Popularity**            | +40k devs, 5k github stars   |           |         |
+| **Privacy/Data**          | ✅                            |           |         |
+| **Evaluation**            |                              |           |         |
+| - Custom/override models  | ✅                            |           |         |
+| - Pre-implemented metrics | ✅                            |           |         |
+| - Custom metrics          | ✅                            |           |         |
+| - Human evaluation UI     | ✅                            |           |         |
+| - Real time evaluation    | ✅                            |           |         |
+| **Redteaming**            |                              |           |         |
+| - Custom/override models  | 3/4                          |           |         |
+| - Pre-implemented metrics | ✅ (+30)                      |           |         |
+| - custom metrics          | ✅                            |           |         |
+| Monitoring                | ✅ (paid)                     |           |         |
+| Dataset generation        | ✅                            |           |         |
+| CI/CD                     | ✅                            |           |         |
+| Easy to use               | easy                         |           |         |
+| Easy to learn             | medium                       |           |         |
 
 ### Promptfoo 
 Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
@@ -76,16 +92,15 @@ glossary :
 		- `share` command creates a publicly accessible URL, which means anyone who knows the URL can view your results. If you don't want anyone to see your results, you should keep your URL secret. After 2 weeks, all data associated with the URL is permanently deleted.
 	    - **Export Formats**:  JSON
 	    - **Visualization Tools**: Web-based interface, CLI 
-    - **Type** : package / website
-    - **Runtime**: nodejs
+    - **Type/runtime** : NodeJS
     - **Updates & Maintenance**: Regular updates as features are improved and expanded.
 	    - **Support Channel**: Discord, Email support, Github , book a time
 	    - **Frequency of Updates**: 3 times a week
 	    - **Community Support**: GitHub repository with active issues, forums for discussions.
-        - **GitHub Stars**: Approximately 5k
-	    - **Maturity**: Relatively new but rapidly evolving with a growing user base (+40k developpers)
+        - **Popularity/GitHub Stars**: +40k devs, 5k stars
+	    - **Maturity**: Relatively new but rapidly evolving with a growing user base 
 	    - **Used by** : Pomptfoo has run 16 million probes this year at companies like Shopify Doordash Anthropic Microsoft Discord
-	    - Team : ==TO COMPLETE==
+	    - **Team** : ==TO COMPLETE==
     -
 	- **Privacy & Security**: 
 	    - **Data Handling**: Local, if cloud → Check the pricing
@@ -98,7 +113,7 @@ glossary :
 	       
 	- **Features**:
 	    - **Evaluation** :
-		    - **Generator Models** : used to generate an output
+		    - **Generator  & Evaluator models** : used to generate, evaluate an output
 			    - **Model Compatibility**:  Yes. https://www.promptfoo.dev/docs/providers/
 			    - **Custom/override models**: Yes
 			- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
@@ -112,19 +127,19 @@ glossary :
 		    - **Human in the Loop**: Yes (vote, set score, comment)
 		    - **Real time / Dynamic Evaluation**: No
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
-		    - **Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
+		    - **Pre-implemented Dataset Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
 		- **Redteam**: 
 			- **Doc** : https://www.promptfoo.dev/docs/red-team/quickstart/
-			- **Models** :  Generator/ target models (used to generate output) 
-				- **model compatibility** Yes (https://www.promptfoo.dev/docs/red-team/configuration/#providers)
-				- **Custom/override models** :yes but only for 3 models .
+			- **Models** :  Generator, evaluator, attacker, unaligned models 
+				- **model compatibility** Yes, only 3 models (https://www.promptfoo.dev/docs/red-team/configuration/#providers)
+					-  Custom/Override Attacker models (used to generated adversial outputs) https://www.promptfoo.dev/docs/red-team/configuration/#providers
+					- Custom/Override Grader/evaluator : https://www.promptfoo.dev/docs/guides/llm-redteaming/#configuring-the-grader
+					- Unaligned model : some plugins like the hamrful plugins use promptfoo free models and can not yet be overriden. You need to remove PROMPTFOO_DISABLE_REDTEAM_REMOTE_GENERATION=True from your env to use these plugins.
+				- **Custom/override models** :Only the first 3 models.
 			- **Metrics** : Yes, called plugins. 
 				- https://www.promptfoo.dev/docs/category/red-teaming/ 
 				- **Pre-implemented metrics** : Yes. 
-					- Scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo  specialized uncensored models and send data to their cloud  but can be deactivated / override
-					- Custom/Override Attacker models (used to generated adversial outputs) https://www.promptfoo.dev/docs/red-team/configuration/#providers
-					- Custom/Override Grader/evaluator : https://www.promptfoo.dev/docs/guides/llm-redteaming/#configuring-the-grader
-					- Unaligned model : some plugins like the hamrful plugins use promptfoo free models and can not yet be overriden. You need to remove PROMPTFOO_DISABLE_REDTEAM_REMOTE_GENERATION=True from your env to use these plugins.
+					- Scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo unaligned  uncensored models and send data to their cloud  but can be deactivated.
 				- **Custom Metrics** : Yes . https://www.promptfoo.dev/docs/red-team/configuration/#custom-plugins
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
