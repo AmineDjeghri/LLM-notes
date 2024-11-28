@@ -117,7 +117,7 @@ glossary :
 			- **Doc** : https://www.promptfoo.dev/docs/red-team/quickstart/
 			- **Models** :  Generator/ target models (used to generate output) 
 				- **model compatibility** Yes (https://www.promptfoo.dev/docs/red-team/configuration/#providers)
-				- **Custom/override models** :yes
+				- **Custom/override models** :yes but only for 3 models .
 			- **Metrics** : Yes, called plugins. 
 				- https://www.promptfoo.dev/docs/category/red-teaming/ 
 				- **Pre-implemented metrics** : Yes. 
