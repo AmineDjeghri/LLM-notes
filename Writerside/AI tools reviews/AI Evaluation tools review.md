@@ -134,6 +134,7 @@ glossary :
 		    - **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		    - **Pre-implemented Dataset Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
 		    - **Export Formats**:  JSON
+		    - **Visualization Tools**: Web-based interface, CLI 
 		- **Redteam**: 
 			- **Doc** : https://www.promptfoo.dev/docs/red-team/quickstart/
 			- **Models** :  Generator, evaluator, attacker, unaligned models 
@@ -149,12 +150,14 @@ glossary :
 				- **Custom Metrics** : Yes . https://www.promptfoo.dev/docs/red-team/configuration/#custom-plugins
 			-  **Annotate/Human feedback**: Yes (vote, set score, comment)
 		    - **Export Formats**:  JSON
+		    - **Visualization Tools**: Web-based interface, CLI 
 	    - **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	    - **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	    - **Dataset Generation**:  No
 		    - **Generate datasets** : No. Only generates configs. https://www.promptfoo.dev/docs/configuration/datasets/
 		    -  **Annotate/Human feedback**: No
 		    - **Export Formats**:  Yaml
+		    - **Visualization Tools**: ?
 		- **Easy to Use**: Easy
 	    - **Easy to learn** : Medium
         
