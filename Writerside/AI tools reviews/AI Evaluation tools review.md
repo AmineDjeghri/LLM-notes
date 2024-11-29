@@ -242,7 +242,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 - **Features**:
 	- **Evaluation** :
 		- **Generator  & Evaluator models** : used to generate, evaluate an output
-			- **Model Compatibility**:  Yes. https://www.promptfoo.dev/docs/providers/
+			- **Model Compatibility**:  Yes. 
 			- **Custom/override models**: Yes
 		- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
 			- **pre-implemented metrics** : yes
@@ -253,12 +253,12 @@ Provides an all in one platform for every stem of the LLM-powered application li
 			- **Qualitative & Quantitative Metrics**: both (score or llm-based)
 			- **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
 		- **Annotate/Human feedback**: Yes (set score, comment) (inline, or queues)
-		- **Use Human Feedback** : Yes
+		- **Use Human Feedback** : Yes. https://docs.smith.langchain.com/evaluation/concepts#human
 		- **Online/ Real time / Dynamic Evaluation**: Yes https://docs.smith.langchain.com/evaluation/how_to_guides#online-evaluation
-		- **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
-		- **Pre-implemented Dataset Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
-		- **Export Formats**:  JSON
-		- **Visualization Tools**: Web-based interface, CLI 
+		- **Easy Unit Test (like pytest)**: Yes.
+		- **Pre-implemented Dataset Benchmarks**: ·
+		- **Export Formats**:  
+		- **Visualization Tools**: Web-based interface
 	- **==Redteam==**: No
 		- **Doc** : NA
 		- **Models** :  NA
