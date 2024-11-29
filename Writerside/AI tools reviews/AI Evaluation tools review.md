@@ -62,7 +62,7 @@ Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 - **Price**  
 	- Free for all features 
 	- paid  for cloud based support and custom stuff
-	- Licensing: ?
+	- Licensing: Free, Entreprise, On-premise
 	- price site : https://www.promptfoo.dev/pricing/
 	- Free Forever : 
 		- All LLM evaluation features
@@ -178,8 +178,8 @@ Provides an all in one platform for every stem of the LLM-powered application li
 	    - Regression testing :See how performance of the evaluation criteria that you've defined is affected by changes to your application.
 	    - Online evaluation : Continuously track qualitative characteristics of any live application, and spot issues in real-time with LangSmith monitoring.
 	    - monitor cost, latency, quality
-- **FAQ** : https://www.promptfoo.dev/docs/faq/
-- **Docs**: [docs](https://www.promptfoo.dev/docs/intro/)
+- **FAQ** : 
+- **Docs**: [docs](https://docs.smith.langchain.com/)
 - **GitHub**: https://github.com/promptfoo/promptfoo
 - **Price**  
 	- Free for all features 
@@ -283,7 +283,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 ##### What are the main differences between Langfuse and Langsmith
 
 - Langfuse is open source while LangSmith is a closed source project.
-- LangSmith is developed by the LangChain team and integrates very well with the LangChain framework. While Langfuse also maintains [Langchain integrations](https://langfuse.com/docs/integrations/langchain/tracing), you may be better of choosing Langsmith if you plan to exclusively develop using the Langchain and Langgraph frameworks.
+- LangSmith is developed by the LangChain team and integrates very well with the LangChain framework. Langfuse also maintains [Langchain integrations](https://langfuse.com/docs/integrations/langchain/tracing).
 - Langfuse maintains a [large number of integrations](https://langfuse.com/docs/integrations/overview) into many frameworks and libraries. Langsmith focuses on its Langchain integration.
 - Langfuse can be [freely self hosted](https://langfuse.com/docs/deployment/self-host) at no cost while LangSmith needs to be purchased to be self hosted.
 - Comparaison with langsmith : https://astralinsights.ai/wp-content/uploads/2024/06/AI-Comparison-White-Paper-June-2024.pdf
