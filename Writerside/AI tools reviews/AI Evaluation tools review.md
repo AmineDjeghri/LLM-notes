@@ -12,41 +12,42 @@ Author : Amine DJEGHRI
 - [[#Langfuse#AutoRAG|AutoRAG]]
 - [[#Evaluation benchmarks|Evaluation benchmarks]]
 
-| Features                  | Promptfoo                    | Langsmith                 | Langfuse | Giskard |
-| ------------------------- | ---------------------------- | ------------------------- | -------- | ------- |
-| **review date**           | 21/11/2024                   | 27/11/2024                |          |         |
-| **reviewed** **version**  | 0.99                         | 0.8                       |          |         |
-| **Price**                 | NA                           | NA / 39$ um / NA          |          |         |
-| **Licence**               | Free/ entreprise/ on-premise | Developer/Plus/entreprise |          |         |
-| **deployment**            | local, cloud                 | cloud, local(paid)        |          |         |
-| **viz tool**              | cli, web                     | web                       |          |         |
-| **type/runtime**          | Nodejs package               | NA                        |          |         |
-| **Updates frequency**     | 3 days                       | 2 months                  | 3 days   |         |
-| **Maturity**              | New, evolving                | Beta                      |          |         |
-| **Popularity**            | +40k devs, 5k github stars   | +250k devs, langchain     |          |         |
-| **Privacy/Data**          | ✅                            | ⚠️ US servers if cloud    |          |         |
-| **Evaluation**            |                              |                           |          |         |
-| - Custom/override models  | ✅                            |                           |          |         |
-| - Pre-implemented metrics | ✅                            |                           |          |         |
-| - Custom metrics          | ✅                            |                           |          |         |
-| - Annotate/Human feedback | ✅                            |                           |          |         |
-| - Real time evaluation    | ❌                            |                           |          |         |
-| - export format           | json                         |                           |          |         |
-| **Redteaming**            |                              |                           |          |         |
-| - Custom/override models  | 3/4                          |                           |          |         |
-| - Pre-implemented metrics | ✅ (+30)                      |                           |          |         |
-| - custom metrics          | ✅                            |                           |          |         |
-| - Annotate/Human feedback | ✅                            |                           |          |         |
-| **Dataset generation**    | ❌                            |                           |          |         |
-| - generate dataset        | ⚠️ (config. only)            |                           |          |         |
-| - Annotate/Human feedback | ❌                            |                           |          |         |
-| - export format           | yaml                         |                           |          |         |
-| **Prompt generation**     | ❌                            |                           |          |         |
-| **Monitoring**            | ✅ (paid)                     |                           |          |         |
-| **CI/CD**                 | ✅                            |                           |          |         |
-| **Easy to use**           | easy                         | easy                      |          |         |
-| **Easy to learn**         | medium                       | easy                      |          |         |
-|                           |                              |                           |          |         |
+| Features                  | Promptfoo                    | Langsmith                 | Langfuse                                          | Giskard |
+| ------------------------- | ---------------------------- | ------------------------- | ------------------------------------------------- | ------- |
+| **review date**           | 21/11/2024                   | 27/11/2024                |                                                   |         |
+| **reviewed** **version**  | 0.99                         | 0.8                       |                                                   |         |
+| **Price**                 | NA                           | NA / 39$ um / NA          |                                                   |         |
+| **Licence**               | Free/ entreprise/ on-premise | Developer/Plus/entreprise |                                                   |         |
+| usage                     | yaml, code, web(light)       | web, code                 | web, code                                         |         |
+| **deployment**            | local, cloud                 | cloud, local(paid)        | local , cloud(paid)                               |         |
+| **viz tool**              | cli, web                     | web                       |                                                   |         |
+| **local runtime **        | NodeJS or Docker             | N/A                       | Docker                                            |         |
+| **Updates frequency**     | 3 days                       | 2 months                  | 3 days                                            |         |
+| **Maturity**              | New, evolving                | Beta                      | New, Beta                                         |         |
+| **Popularity**            | +40k devs, 5k github stars   | +250k devs, langchain     | 3m installs /month, 7K stars<br>1.8m docker pulls |         |
+| **Privacy/Data**          | ✅                            | ⚠️ US servers if cloud    |                                                   |         |
+| **Evaluation**            |                              |                           |                                                   |         |
+| - Custom/override models  | ✅                            |                           |                                                   |         |
+| - Pre-implemented metrics | ✅                            |                           |                                                   |         |
+| - Custom metrics          | ✅                            |                           |                                                   |         |
+| - Annotate/Human feedback | ✅                            |                           |                                                   |         |
+| - Real time evaluation    | ❌                            |                           |                                                   |         |
+| - export format           | json                         |                           |                                                   |         |
+| **Redteaming**            |                              |                           |                                                   |         |
+| - Custom/override models  | 3/4                          |                           |                                                   |         |
+| - Pre-implemented metrics | ✅ (+30)                      |                           |                                                   |         |
+| - custom metrics          | ✅                            |                           |                                                   |         |
+| - Annotate/Human feedback | ✅                            |                           |                                                   |         |
+| **Dataset generation**    | ❌                            |                           |                                                   |         |
+| - generate dataset        | ⚠️ (config. only)            |                           |                                                   |         |
+| - Annotate/Human feedback | ❌                            |                           |                                                   |         |
+| - export format           | yaml                         |                           |                                                   |         |
+| **Prompt generation**     | ❌                            |                           |                                                   |         |
+| **Monitoring**            | ✅ (paid)                     |                           |                                                   |         |
+| **CI/CD**                 | ✅                            |                           |                                                   |         |
+| **Easy to use**           | easy                         | easy                      |                                                   |         |
+| **Easy to learn**         | medium                       | easy                      |                                                   |         |
+|                           |                              |                           |                                                   |         |
 
 ### Promptfoo 
 Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
@@ -96,7 +97,7 @@ Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 		- Deployment on your own infrastructure
 		- Complete data isolation
 		- Dedicated support team
-
+- **Usage** : Configuration file, code (py, js), web(light)
 - **Deployment**: 
 	- Local 
 	- Cloud 
@@ -220,7 +221,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
         - Shared Slack channel
         - Architectural guidance
         - Dedicated customer success manager
-
+- **Usage** :  web platform , code (python, JS)
 - **Deployment**: 
 	- Cloud 
 	- Self-Host (paid)
