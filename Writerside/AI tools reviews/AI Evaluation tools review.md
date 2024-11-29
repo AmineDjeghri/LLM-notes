@@ -278,6 +278,15 @@ Provides an all in one platform for every stem of the LLM-powered application li
 	- **Easy to Use**: Easy
 	- **Easy to learn** : Easy
 
+
+## Langfuse
+##### What are the main differences between Langfuse and Langsmith
+
+- Langfuse is open source while LangSmith is a closed source project.
+- LangSmith is developed by the LangChain team and integrates very well with the LangChain framework. While Langfuse also maintains [Langchain integrations](https://langfuse.com/docs/integrations/langchain/tracing), you may be better of choosing Langsmith if you plan to exclusively develop using the Langchain and Langgraph frameworks.
+- Langfuse maintains a [large number of integrations](https://langfuse.com/docs/integrations/overview) into many frameworks and libraries. Langsmith focuses on its Langchain integration.
+- Langfuse can be [freely self hosted](https://langfuse.com/docs/deployment/self-host) at no cost while LangSmith needs to be purchased to be self hosted.
+
 ### DeepEval (by ConfidentAI)
  - Package :
 	- <u>Description</u> : 
