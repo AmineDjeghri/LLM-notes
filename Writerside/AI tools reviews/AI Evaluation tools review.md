@@ -23,7 +23,7 @@ Author : Amine DJEGHRI
 | **viz tool**              | cli, web                     | web                             |                                                   |         |
 | **local runtime **        | NodeJS or Docker             | N/A                             | Docker                                            |         |
 | **Updates frequency**     | 3 days                       | 2 months                        | 3 days                                            |         |
-| **Maturity**              | New, evolving                | Beta                            | New, Beta                                         |         |
+| **Maturity**              | New, evolving                | Beta                            | New, evolving                                     |         |
 | **Popularity**            | +40k devs, 5k github stars   | +250k devs, langchain community | 3m installs /month, 7K stars<br>1.8m docker pulls |         |
 | **Privacy/Data**          | ✅                            | ⚠️ US servers if cloud          |                                                   |         |
 | **Evaluation**            |                              |                                 |                                                   |         |
@@ -359,9 +359,10 @@ Langfuse is an **open-source LLM engineering platform** ([GitHub](https://gith
 	- **Support Channel**: Discord Github
 	- **Frequency of Updates**: every 3 days
 	- **Community Support**: Yes
-	- **Popularity/GitHub Stars**:  6k stars,  https://langfuse.com/blog/2024-11-most-used-oss-llmops#detailed-metrics
-	- **Maturity**: In beta but is enough mature in terms of features. A langchain company product.
-	- **Used by** : Many CAC40 and other entreprises
+	- **Popularity/GitHub Stars**:  6k stars, 3m installs /month, 7K stars
+1.8m docker pulls,  https://langfuse.com/blog/2024-11-most-used-oss-llmops#detailed-metrics
+	- **Maturity**: new, evolving , looks stable
+	- **Used by** : 
 	- **Team** : 5, raised 4m $
 -
 - **Privacy & Security**: 
