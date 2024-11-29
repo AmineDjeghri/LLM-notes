@@ -162,11 +162,11 @@ Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 		- **Visualization Tools**: Web-based interface, CLI 
 	- **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	- **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
-	- **Dataset Generation**:  No
+	- **Dataset**:  
 		-  Construct Datasets : 
 			- In web platform : No
-			- Programmatically ; Yes
-		- **Generate datasets** : No. Only generates configs. https://www.promptfoo.dev/docs/configuration/datasets/
+			- Programmatically ; Yes 
+		- **Generate datasets** : No. 
 		- **Export Formats**:  Yaml
 		- **Visualization Tools**: web based
 	- **Prompt engineering** :  
@@ -233,7 +233,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 	- **Community Support**: Langchain community
 	- **Popularity/GitHub Stars**: +250k users, +25k monthly active teams, Langchain has 100K stars.
 	- **Maturity**: In beta but is enough mature in terms of features. A langchain company product.
-	- **Used by** : 
+	- **Used by** : Many CAC40 and other entreprises
 	- **Team** : 20-60 ?
 -
 - **Privacy & Security**: 
@@ -247,7 +247,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 			- **Model Compatibility**:  Yes. 
 			- **Custom/override models**: Yes
 		- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
-			- **pre-implemented metrics** : yes
+			- **pre-implemented metrics** : yes. But very few 
 				- deterministic metrics : contains, equals, exact-match Yes
 				- model-graded metrics : using LLM to evaluate Yes
 					- override prompts : yes
@@ -287,7 +287,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 		- Test multiple prompts : Yes
 		- Generate prompts : Yes
 		- Prompt playground : Yes
-		- **Visualization Tools**: web
+		- Visualization Tools: web
 	- **Easy to Use**: Easy
 	- **Easy to learn** : Easy
 
