@@ -163,9 +163,10 @@ Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 	- **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	- **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	- **Dataset Generation**:  No
+		-  Construct Datasets : 
+			- In web platform : No
+			- Programmatically ; Yes
 		- **Generate datasets** : No. Only generates configs. https://www.promptfoo.dev/docs/configuration/datasets/
-		-  **Annotate/Human feedback**: No
-		- **Use human feedback** : No
 		- **Export Formats**:  Yaml
 		- **Visualization Tools**: web based
 	- **Prompt engineering** :  
