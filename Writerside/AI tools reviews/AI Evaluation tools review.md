@@ -34,10 +34,10 @@ Author : Amine DJEGHRI
 | - Real time evaluation    | ❌                            | ✅                               |                                                   |         |
 | - export format           | json                         |                                 |                                                   |         |
 | **Redteaming**            |                              |                                 |                                                   |         |
-| - Custom/override models  | 3/4                          | ❌                               |                                                   |         |
-| - Pre-implemented metrics | ✅ (+30)                      | ❌                               |                                                   |         |
-| - custom metrics          | ✅                            | ❌                               |                                                   |         |
-| - Annotate/Human feedback | ✅                            | ❌                               |                                                   |         |
+| - Custom/override models  | 3/4                          | ✅                               |                                                   |         |
+| - Pre-implemented metrics | ✅ (+30)                      | ⚠️                              |                                                   |         |
+| - custom metrics          | ✅                            | ✅                               |                                                   |         |
+| - Annotate/Human feedback | ✅                            | ✅                               |                                                   |         |
 | **Dataset **              | ❌                            |                                 |                                                   |         |
 | - Construct dataset       | ⚠️ (config. only)            | ✅                               |                                                   |         |
 | -Generate dataset         | ❌                            | ✅                               |                                                   |         |
@@ -262,18 +262,18 @@ Provides an all in one platform for every stem of the LLM-powered application li
 		- **Pre-implemented Dataset Benchmarks**: ·
 		- **Export Formats**:  
 		- **Visualization Tools**: Web-based interface
-	- **==Redteam==**: No
+	- **==Redteam==**: No. Used like an evaluation feature
 		- **Doc** : NA
-		- **Models** :  NA
-			- **model compatibility** NA
-			- **Custom/override models** : NA
-		- **Metrics** : NA
+		- **Models** :  
+			- **model compatibility** Yes
+			- **Custom/override models** : Yes
+		- **Metrics** : 
 			- **Pre-implemented metrics** : NA
-			- **Custom Metrics** : NA
-		-  **Annotate/Human feedback**: NA
-		- **Use Human Feedback** : NA
-		- **Export Formats**:  NA
-		- **Visualization Tools**: NA
+			- **Custom Metrics** : Yes
+		-  **Annotate/Human feedback**: Yes
+		- **Use Human Feedback** : Yes
+		- **Export Formats**:  ?
+		- **Visualization Tools**: web
 	- **Monitoring**:  Yes. https://docs.smith.langchain.com/old/monitoring
 	- **CI/CD**: Yes. https://docs.smith.langchain.com/evaluation/tutorials/evaluation#set-up-automated-testing-to-run-in-cicd
 	- **Dataset**:  
