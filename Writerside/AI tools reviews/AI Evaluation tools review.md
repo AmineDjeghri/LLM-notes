@@ -224,11 +224,11 @@ Provides an all in one platform for every stem of the LLM-powered application li
 - **Type/runtime** : /
 - **Updates & Maintenance**: Regular updates as features are improved and expanded.
 	- **Support Channel**: Discord, Email support, Github , book a time
-	- **Frequency of Updates**: 3 times a week
-	- **Community Support**: GitHub repository with active issues, forums for discussions.
+	- **Frequency of Updates**: every two months
+	- **Community Support**: 
 	- **Popularity/GitHub Stars**: +250k users, +25k monthly active teams
-	- **Maturity**: Relatively new but rapidly evolving with a growing user base 
-	- **Used by** : Pomptfoo has run 16 million probes this year at companies like Shopify Doordash Anthropic Microsoft Discord
+	- **Maturity**: In beta but is enough mature in terms of features.
+	- **Used by** : 
 	- **Team** : 20-60 ?
 -
 - **Privacy & Security**: 
