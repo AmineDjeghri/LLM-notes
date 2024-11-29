@@ -286,6 +286,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 - LangSmith is developed by the LangChain team and integrates very well with the LangChain framework. While Langfuse also maintains [Langchain integrations](https://langfuse.com/docs/integrations/langchain/tracing), you may be better of choosing Langsmith if you plan to exclusively develop using the Langchain and Langgraph frameworks.
 - Langfuse maintains a [large number of integrations](https://langfuse.com/docs/integrations/overview) into many frameworks and libraries. Langsmith focuses on its Langchain integration.
 - Langfuse can be [freely self hosted](https://langfuse.com/docs/deployment/self-host) at no cost while LangSmith needs to be purchased to be self hosted.
+- Comparaison with langsmith : https://astralinsights.ai/wp-content/uploads/2024/06/AI-Comparison-White-Paper-June-2024.pdf
 
 ### DeepEval (by ConfidentAI)
  - Package :
