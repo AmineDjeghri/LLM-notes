@@ -168,7 +168,9 @@ Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 		- **Export Formats**:  Yaml
 		- **Visualization Tools**: web base, file
 	- **Prompt engineering** :  
-		- Test multiple prompts
+		- Test multiple prompts : Yes
+		- Generate prompts : 
+		- Prompt playground : No
 	- **Easy to Use**: Easy
 	- **Easy to learn** : Medium
         
@@ -285,8 +287,9 @@ Provides an all in one platform for every stem of the LLM-powered application li
 		- **Export Formats**:  Yaml
 		- **Visualization Tools**: web base, file
 	- **Prompt engineering** : 
-		- Test multiple prompts
+		- Test multiple prompts : Yes
 		- Generate prompts : 
+		- Prompt playground : Yes
 		- **Visualization Tools**: web
 	- **Easy to Use**: Easy
 	- **Easy to learn** : Easy
