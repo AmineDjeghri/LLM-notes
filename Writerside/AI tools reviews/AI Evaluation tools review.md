@@ -306,7 +306,7 @@ Langfuse is an **open-source LLM engineering platform** ([GitHub](https://gith
 	- Incrementally adoptable, start with one feature and expand to the full platform over time
 	- API-first, all features are available via API for custom integrations
 	- Optionally, Langfuse can be easily self-hosted
-- **FAQ** : https://www.langchain.com/langsmith (at the bottom)
+- **FAQ** : 
 - **Docs**: [docs](https://docs.smith.langchain.com/)
 - **GitHub**: https://github.com/promptfoo/promptfoo
 - **Price**  
@@ -366,8 +366,9 @@ Langfuse is an **open-source LLM engineering platform** ([GitHub](https://gith
 	- **Team** : 5, raised 4m $
 -
 - **Privacy & Security**: 
-	- **Data Handling**: - Cloud or self-host(paid). If cloud, we will not train on your data, and you own all rights to your data. See LangSmith [Terms of Service](https://www.langchain.com/terms-of-service) for more information.
-	- **Compliance / Data Location**: cloud : Traces are stored in GCP us-central-1. Organizations' traces are logically separated from each other in a Clickhouse database and encrypted in transit and at rest.
+	- https://langfuse.com/docs/data-security-privacy
+	- **Data Handling**: -
+	- **Compliance / Data Location**: 
 	- **Telemetry** :  NA
 	   
 - **Features**:
