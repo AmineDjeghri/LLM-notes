@@ -252,15 +252,15 @@ Provides an all in one platform for every stem of the LLM-powered application li
 					- override Evaluator/grader : yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/#overriding-the-llm-grader
 			- **Qualitative & Quantitative Metrics**: both (score or llm-based)
 			- **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
-		- **Annotate/Human feedback**: Yes (set score, comment)
+		- **Annotate/Human feedback**: Yes (set score, comment) (inline, or queues)
 		- **Use Human Feedback** : Yes
 		- **Online/ Real time / Dynamic Evaluation**: Yes https://docs.smith.langchain.com/evaluation/how_to_guides#online-evaluation
 		- **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		- **Pre-implemented Dataset Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
 		- **Export Formats**:  JSON
 		- **Visualization Tools**: Web-based interface, CLI 
-	- **Redteam**: 
-		- **Doc** : https://www.promptfoo.dev/docs/red-team/quickstart/
+	- **==Redteam==**: 
+		- **Doc** : 
 		- **Models** :  Generator, evaluator, attacker, unaligned models 
 			- **model compatibility** Yes, only 3 models (https://www.promptfoo.dev/docs/red-team/configuration/#providers)
 				-  Custom/Override Attacker models (used to generated adversial outputs) https://www.promptfoo.dev/docs/red-team/configuration/#providers
