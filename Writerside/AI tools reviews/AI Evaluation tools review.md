@@ -275,13 +275,16 @@ Provides an all in one platform for every stem of the LLM-powered application li
 		- **Visualization Tools**: Web-based interface, CLI 
 	- **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	- **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
-	- **Dataset Generation**:  No
-		- **Generate datasets** : No. Only generates configs. https://www.promptfoo.dev/docs/configuration/datasets/
+	- **Dataset Generation**:  Yes
+		- **Generate datasets** : Yes
+			- https://docs.smith.langchain.com/old/evaluation/faq/synthetic-data
+			- 
 		-  **Annotate/Human feedback**: No
 		- **Use human feedback** : No
 		- **Export Formats**:  Yaml
 		- **Visualization Tools**: web base, file
-	- **Prompt engineering** :  ??
+	- **Prompt engineering** :  
+		- Generate prompts : 
 	- **Easy to Use**: Easy
 	- **Easy to learn** : Easy
 
