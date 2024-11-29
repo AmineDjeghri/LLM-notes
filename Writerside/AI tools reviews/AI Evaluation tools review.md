@@ -92,9 +92,10 @@ glossary :
 			- Complete data isolation
 			- Dedicated support team
 
-	- **Usage, outputs  and Deployment**: 
-		- Local : CLI, Web viewer, node package, python & js support
-		- Docker for self hosting
+	- **Deployment**: 
+		- Local 
+		- Cloud 
+		- Docker 
 		- `share` command creates a publicly accessible URL, which means anyone who knows the URL can view your results. If you don't want anyone to see your results, you should keep your URL secret. After 2 weeks, all data associated with the URL is permanently deleted.
 	    - **Visualization Tools**: Web-based interface, CLI 
     - **Type/runtime** : NodeJS
@@ -105,7 +106,7 @@ glossary :
         - **Popularity/GitHub Stars**: +40k devs, 5k stars
 	    - **Maturity**: Relatively new but rapidly evolving with a growing user base 
 	    - **Used by** : Pomptfoo has run 16 million probes this year at companies like Shopify Doordash Anthropic Microsoft Discord
-	    - **Team** : ==TO COMPLETE==
+	    - **Team** : 4
     -
 	- **Privacy & Security**: 
 	    - **Data Handling**: Local, if cloud → Check the pricing
