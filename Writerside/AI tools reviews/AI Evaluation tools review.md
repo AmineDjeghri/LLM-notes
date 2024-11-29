@@ -193,7 +193,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 - **GitHub**: https://github.com/promptfoo/promptfoo
 - **Price**  
 	- Free for all features 
-	- Licensing: ?
+	- Licensing: Startups, Developer, Plus, Entreprise
 	- price site : https://www.promptfoo.dev/pricing/
 	- Free Forever : 
 		- All LLM evaluation features
