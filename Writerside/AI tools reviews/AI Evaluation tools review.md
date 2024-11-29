@@ -12,41 +12,41 @@ Author : Amine DJEGHRI
 - [[#Langfuse#AutoRAG|AutoRAG]]
 - [[#Evaluation benchmarks|Evaluation benchmarks]]
 
-| Features                  | Promptfoo                    | Langsmith  | Giskard |
-| ------------------------- | ---------------------------- | ---------- | ------- |
-| **review date**           | 21/11/2024                   |            |         |
-| **reviewed** **version**  | 0.99                         |            |         |
-| **Price**                 | not communicated             |            |         |
-| **Licence**               | Free/ entreprise/ on-premise |            |         |
-| **deployment**            | local, docker, cloud         |            |         |
-| **viz tool**              | cli, web                     |            |         |
-| **type/runtime**          | Nodejs package               |            |         |
-| **Updates frequency**     | Nodejs                       |            |         |
-| **Maturity**              | New, evolving                |            |         |
-| **Popularity**            | +40k devs, 5k github stars   | +250k devs |         |
-| **Privacy/Data**          | ✅                            | ⚠️         |         |
-| **Evaluation**            |                              |            |         |
-| - Custom/override models  | ✅                            |            |         |
-| - Pre-implemented metrics | ✅                            |            |         |
-| - Custom metrics          | ✅                            |            |         |
-| - Annotate/Human feedback | ✅                            |            |         |
-| - Real time evaluation    | ❌                            |            |         |
-| - export format           | json                         |            |         |
-| **Redteaming**            |                              |            |         |
-| - Custom/override models  | 3/4                          |            |         |
-| - Pre-implemented metrics | ✅ (+30)                      |            |         |
-| - custom metrics          | ✅                            |            |         |
-| - Annotate/Human feedback | ✅                            |            |         |
-| **Dataset generation**    | ❌                            |            |         |
-| - generate dataset        | ⚠️ (config. only)            |            |         |
-| - Annotate/Human feedback | ❌                            |            |         |
-| - export format           | yaml                         |            |         |
-| **Prompt generation**     | ❌                            |            |         |
-| **Monitoring**            | ✅ (paid)                     |            |         |
-| **CI/CD**                 | ✅                            |            |         |
-| **Easy to use**           | easy                         | easy       |         |
-| **Easy to learn**         | medium                       | easy       |         |
-|                           |                              |            |         |
+| Features                  | Promptfoo                    | Langsmith                 | Langfuse | Giskard |
+| ------------------------- | ---------------------------- | ------------------------- | -------- | ------- |
+| **review date**           | 21/11/2024                   | 27/11/2024                |          |         |
+| **reviewed** **version**  | 0.99                         | 0.8                       |          |         |
+| **Price**                 | NA                           | NA / 39$ um / NA          |          |         |
+| **Licence**               | Free/ entreprise/ on-premise | Developer/Plus/entreprise |          |         |
+| **deployment**            | local, docker, cloud         |                           |          |         |
+| **viz tool**              | cli, web                     |                           |          |         |
+| **type/runtime**          | Nodejs package               | NA                        |          |         |
+| **Updates frequency**     | 3 days                       | 2 months                  | 3 days   |         |
+| **Maturity**              | New, evolving                |                           |          |         |
+| **Popularity**            | +40k devs, 5k github stars   | +250k devs                |          |         |
+| **Privacy/Data**          | ✅                            | ⚠️                        |          |         |
+| **Evaluation**            |                              |                           |          |         |
+| - Custom/override models  | ✅                            |                           |          |         |
+| - Pre-implemented metrics | ✅                            |                           |          |         |
+| - Custom metrics          | ✅                            |                           |          |         |
+| - Annotate/Human feedback | ✅                            |                           |          |         |
+| - Real time evaluation    | ❌                            |                           |          |         |
+| - export format           | json                         |                           |          |         |
+| **Redteaming**            |                              |                           |          |         |
+| - Custom/override models  | 3/4                          |                           |          |         |
+| - Pre-implemented metrics | ✅ (+30)                      |                           |          |         |
+| - custom metrics          | ✅                            |                           |          |         |
+| - Annotate/Human feedback | ✅                            |                           |          |         |
+| **Dataset generation**    | ❌                            |                           |          |         |
+| - generate dataset        | ⚠️ (config. only)            |                           |          |         |
+| - Annotate/Human feedback | ❌                            |                           |          |         |
+| - export format           | yaml                         |                           |          |         |
+| **Prompt generation**     | ❌                            |                           |          |         |
+| **Monitoring**            | ✅ (paid)                     |                           |          |         |
+| **CI/CD**                 | ✅                            |                           |          |         |
+| **Easy to use**           | easy                         | easy                      |          |         |
+| **Easy to learn**         | medium                       | easy                      |          |         |
+|                           |                              |                           |          |         |
 
 ### Promptfoo 
 Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
@@ -178,7 +178,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 
 - **Site** : https://www.langchain.com/langsmith
 - **Review date** : 27/11/2024
-- **version** :
+- **version** : 0.8
 - **Description**: An all in one platform : 
 	    - Traces, hub, annotation, datasets
 	    - Collaborate with teammates
@@ -194,42 +194,39 @@ Provides an all in one platform for every stem of the LLM-powered application li
 - **Price**  
 	- Free for all features 
 	- Licensing: Startups, Developer, Plus, Entreprise
-	- price site : https://www.promptfoo.dev/pricing/
-	- Free Forever : 
-		- All LLM evaluation features
-		- All model providers and integrations
-		- No usage limits
-		- Custom integration with your own app
-		- Run locally or self-host on your own infrastructure
-		- Vulnerability scanning
-		- Community support
-	- Enterprise : For teams that need advanced features and cloud-based support
-		- All Community features
-		- Team sharing & collaboration
-		- Continuous monitoring
-		- Centralized security/compliance dashboard
-		- Customized red teaming plugins
-		- SSO and Access Control
-		- Cloud deployment
-		- Priority support & SLA guarantees
-	- On-Premise : For organizations that require full control over their infrastructure
-		- All Enterprise features
-		- Deployment on your own infrastructure
-		- Complete data isolation
-		- Dedicated support team
+	- price site :https://www.langchain.com/pricing-langsmith
+    - **Developer**:
+        - 1 Developer seat
+        - Debugging traces
+        - Dataset collection
+        - Testing and evaluation
+        - Prompt management
+        - Monitoring
+    - **Plus**: 39$/user/month
+        - All features in Developer tier
+        - Up to 10 seats
+        - Higher rate limits
+        - Email support
+    - **Enterprise**:
+        - All features in Plus tier
+        - Custom Single Sign On (SSO)
+        - SLA
+        - Self-hosted deployment options
+        - Custom rate limits
+        - Team trainings
+        - Shared Slack channel
+        - Architectural guidance
+        - Dedicated customer success manager
 
 - **Deployment**: 
-	- Local 
 	- Cloud 
-	- Docker 
-	- `share` command creates a publicly accessible URL, which means anyone who knows the URL can view your results. If you don't want anyone to see your results, you should keep your URL secret. After 2 weeks, all data associated with the URL is permanently deleted.
-	- **Visualization Tools**: Web-based interface, CLI 
-- **Type/runtime** : NodeJS
+	- Self-Host (paid)
+- **Type/runtime** : /
 - **Updates & Maintenance**: Regular updates as features are improved and expanded.
 	- **Support Channel**: Discord, Email support, Github , book a time
 	- **Frequency of Updates**: 3 times a week
 	- **Community Support**: GitHub repository with active issues, forums for discussions.
-	- **Popularity/GitHub Stars**: +40k devs, 5k stars
+	- **Popularity/GitHub Stars**: +250k users, +25k monthly active teams
 	- **Maturity**: Relatively new but rapidly evolving with a growing user base 
 	- **Used by** : Pomptfoo has run 16 million probes this year at companies like Shopify Doordash Anthropic Microsoft Discord
 	- **Team** : 20-60 ?
