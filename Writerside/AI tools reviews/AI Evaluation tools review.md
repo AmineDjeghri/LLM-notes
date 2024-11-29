@@ -228,7 +228,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 	- Self-Host (paid)
 - **Type/runtime** : NA
 - **Updates & Maintenance**: Regular updates as features are improved and expanded.
-	- **Support Channel**: Discord, Email support, Github , book a time
+	- **Support Channel**: Same as langchain
 	- **Frequency of Updates**: every two months
 	- **Community Support**: Langchain community
 	- **Popularity/GitHub Stars**: +250k users, +25k monthly active teams, Langchain has 100K stars.
@@ -297,8 +297,8 @@ Provides an all in one platform for every stem of the LLM-powered application li
 Langfuse is an **open-source LLM engineering platform** ([GitHub](https://github.com/langfuse/langfuse)) that helps teams collaboratively debug, analyze, and iterate on their LLM applications. All platform features are natively integrated to accelerate the development workflow.
 
 - **Site** : https://www.langchain.com/langsmith
-- **Review date** : 27/11/2024
-- **version** : 0.8
+- **Review date** : 29/11/2024
+- **version** : 2.93
 - **Description**: An all in one platform : 
 	- Most used open-source LLMOps platform ([blog post](https://langfuse.com/blog/2024-11-most-used-oss-llmops))
 	- Model and framework agnostic
@@ -313,38 +313,17 @@ Langfuse is an **open-source LLM engineering platform** ([GitHub](https://gith
 	- Free for all features 
 	- Licensing: Startups, Developer, Plus, Entreprise
 	- price site :https://www.langchain.com/pricing-langsmith
-    - **Developer**:
-        - 1 Developer seat
-        - Debugging traces
-        - Dataset collection
-        - Testing and evaluation
-        - Prompt management
-        - Monitoring
-    - **Plus**: 39$/user/month
-        - All features in Developer tier
-        - Up to 10 seats
-        - Higher rate limits
-        - Email support
-    - **Enterprise**:
-        - All features in Plus tier
-        - Custom Single Sign On (SSO)
-        - SLA
-        - Self-hosted deployment options
-        - Custom rate limits
-        - Team trainings
-        - Shared Slack channel
-        - Architectural guidance
-        - Dedicated customer success manager
+    
 - **Usage** :  web platform , code (python, JS)
 - **Deployment**: 
 	- Cloud 
 	- Self-Host (paid)
 - **Type/runtime** : NA
-- **Updates & Maintenance**: Regular updates as features are improved and expanded.
-	- **Support Channel**: Discord, Email support, Github , book a time
-	- **Frequency of Updates**: every two months
-	- **Community Support**: Langchain community
-	- **Popularity/GitHub Stars**: +250k users, +25k monthly active teams, Langchain has 100K stars.
+- **Updates & Maintenance**: 
+	- **Support Channel**: Discord Github
+	- **Frequency of Updates**: every 3 days
+	- **Community Support**: Yes
+	- **Popularity/GitHub Stars**:  6k stars,  https://langfuse.com/blog/2024-11-most-used-oss-llmops#detailed-metrics
 	- **Maturity**: In beta but is enough mature in terms of features. A langchain company product.
 	- **Used by** : Many CAC40 and other entreprises
 	- **Team** : 20-60 ?
