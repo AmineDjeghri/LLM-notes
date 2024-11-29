@@ -137,7 +137,7 @@ Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 			- **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
 		- **Annotate/Human feedback**: Yes (vote, set score, comment)
 		- **Use Human Feedback** : No
-		- **Real time / Dynamic Evaluation**: No
+		- **Online/ Real time / Dynamic Evaluation**: No
 		- **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		- **Pre-implemented Dataset Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
 		- **Export Formats**:  JSON
@@ -166,7 +166,7 @@ Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 		-  **Annotate/Human feedback**: No
 		- **Use human feedback** : No
 		- **Export Formats**:  Yaml
-		- **Visualization Tools**: web base, file
+		- **Visualization Tools**: web based
 	- **Prompt engineering** :  
 		- Test multiple prompts : Yes
 		- Generate prompts : 
@@ -252,9 +252,9 @@ Provides an all in one platform for every stem of the LLM-powered application li
 					- override Evaluator/grader : yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/#overriding-the-llm-grader
 			- **Qualitative & Quantitative Metrics**: both (score or llm-based)
 			- **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
-		- **Annotate/Human feedback**: Yes (vote, set score, comment)
-		- **Use Human Feedback** : No
-		- **Real time / Dynamic Evaluation**: No
+		- **Annotate/Human feedback**: Yes (set score, comment)
+		- **Use Human Feedback** : Yes
+		- **Online/ Real time / Dynamic Evaluation**: Yes https://docs.smith.langchain.com/evaluation/how_to_guides#online-evaluation
 		- **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		- **Pre-implemented Dataset Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
 		- **Export Formats**:  JSON
