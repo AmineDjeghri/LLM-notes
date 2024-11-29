@@ -14,7 +14,7 @@ Author : Amine DJEGHRI
 | **Updates frequency**     | Nodejs                       |            |         |
 | **Maturity**              | New, evolving                |            |         |
 | **Popularity**            | +40k devs, 5k github stars   | +250k devs |         |
-| **Privacy/Data**          | ✅                            |            |         |
+| **Privacy/Data**          | ✅                            | ⚠️         |         |
 | **Evaluation**            |                              |            |         |
 | - Custom/override models  | ✅                            |            |         |
 | - Pre-implemented metrics | ✅                            |            |         |
@@ -164,12 +164,12 @@ Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 		
 
 ### LangSmith (by LangChain)
-Provides 
+Provides an all in one platform for every stem of the LLM-powered application lifecycle.
 
 - **Site** : https://www.langchain.com/langsmith
 - **Review date** : 27/11/2024
 - **version** :
-- **Description**: Get your LLM app from prototype to production. LangSmith is an all-in-one developer platform for every step of the LLM-powered application lifecycle.
+- **Description**: An all in one platform : 
 	    - Traces, hub, annotation, datasets
 	    - Collaborate with teammates
 	    - Layer in human feedback on runs or use AI-assisted evaluation
@@ -183,7 +183,6 @@ Provides
 - **GitHub**: https://github.com/promptfoo/promptfoo
 - **Price**  
 	- Free for all features 
-	- paid  for cloud based support and custom stuff
 	- Licensing: ?
 	- price site : https://www.promptfoo.dev/pricing/
 	- Free Forever : 
