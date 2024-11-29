@@ -1,6 +1,16 @@
 Author : Amine DJEGHRI
 
 
+- [[#Promptfoo|Promptfoo]]
+- [[#LangSmith (by LangChain)|LangSmith (by LangChain)]]
+- [[#Langfuse|Langfuse]]
+		- [[#What are the main differences between Langfuse and Langsmith|What are the main differences between Langfuse and Langsmith]]
+- [[#Langfuse#DeepEval (by ConfidentAI)|DeepEval (by ConfidentAI)]]
+- [[#Langfuse#Giskard (by Giskard-AI)|Giskard (by Giskard-AI)]]
+- [[#Langfuse#Prompt-flow Tracing (by Azure)|Prompt-flow Tracing (by Azure)]]
+- [[#Langfuse#Validate (by Tonic)|Validate (by Tonic)]]
+- [[#Langfuse#AutoRAG|AutoRAG]]
+- [[#Evaluation benchmarks|Evaluation benchmarks]]
 
 | Features                  | Promptfoo                    | Langsmith  | Giskard |
 | ------------------------- | ---------------------------- | ---------- | ------- |
@@ -316,9 +326,6 @@ Provides an all in one platform for every stem of the LLM-powered application li
 ### Langfuse
 ### Validate (by Tonic)
 ### AutoRAG
-
-
-## Evaluation benchmarks
 
 
 
