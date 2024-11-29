@@ -278,14 +278,9 @@ Provides an all in one platform for every stem of the LLM-powered application li
 		- Construct Datasets : 
 			- In web platform : Yes
 			- Programmatically ; Yes
-			- 
 		- **Generate datasets** : Yes
 			- https://docs.smith.langchain.com/old/evaluation/faq/synthetic-data
-			- 
-		-  **Annotate/Human feedback**: No
-		- **Use human feedback** : No
-		- **Export Formats**:  
-		- **Visualization Tools**: web (very light)
+		- **Visualization Tools**: web, export to files ..etc
 	- **Prompt engineering** : 
 		- Test multiple prompts : Yes
 		- Generate prompts : 
