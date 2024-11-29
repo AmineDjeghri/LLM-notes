@@ -12,41 +12,40 @@ Author : Amine DJEGHRI
 - [[#Langfuse#AutoRAG|AutoRAG]]
 - [[#Evaluation benchmarks|Evaluation benchmarks]]
 
-| Features                  | Promptfoo                       | Langsmith                       | Langfuse                                          | Giskard |
-| ------------------------- | ------------------------------- | ------------------------------- | ------------------------------------------------- | ------- |
-| **review date**           | 21/11/2024                      | 27/11/2024                      | 29/11/2024                                        |         |
-| **reviewed** **version**  | 0.99                            | 0.8                             |                                                   |         |
-| **Price**                 | NA                              | NA / 39$ um / NA                |                                                   |         |
-| **Licence**               | Free/ entreprise/ on-premise    | Developer/Plus/entreprise       |                                                   |         |
-| **usage**                 | yaml, code, web(light)          | web, code                       | web, code                                         |         |
-| **deployment**            | local, cloud                    | cloud, local(paid)              | local , cloud(paid)                               |         |
-| **viz tool**              | cli, web                        | web                             |                                                   |         |
-| **local runtime **        | NodeJS or Docker                | N/A                             | Docker                                            |         |
-| **Updates frequency**     | 3 days                          | 2 months                        | 3 days                                            |         |
-| **Maturity**              | New, evolving                   | Beta                            | New, evolving                                     |         |
-| **Popularity**            | +40k devs, 5k github stars      | +250k devs, langchain community | 3m installs /month, 7K stars<br>1.8m docker pulls |         |
-| **Privacy/Data**          | ✅ (local except hamrful plugin) | ⚠️ US servers if cloud          |                                                   |         |
-| **Evaluation**            |                                 |                                 |                                                   |         |
-| - Custom/override models  | ✅                               | ✅                               |                                                   |         |
-| - Pre-implemented metrics | ✅                               | ⚠️                              |                                                   |         |
-| - Custom metrics          | ✅                               | ✅                               |                                                   |         |
-| - Annotate/Human feedback | ✅                               | ✅                               |                                                   |         |
-| - Real time evaluation    | ❌                               | ✅                               |                                                   |         |
-| - export format           | json                            |                                 |                                                   |         |
-| **Redteaming**            |                                 |                                 |                                                   |         |
-| - Custom/override models  | 3/4                             | ✅                               |                                                   |         |
-| - Pre-implemented metrics | ✅ (+30)                         | ⚠️                              |                                                   |         |
-| - custom metrics          | ✅                               | ✅                               |                                                   |         |
-| - Annotate/Human feedback | ✅                               | ✅                               |                                                   |         |
-| **Dataset **              | ❌                               |                                 |                                                   |         |
-| - Construct dataset       | ⚠️ (config. only)               | ✅                               |                                                   |         |
-| -Generate dataset         | ❌                               | ✅                               |                                                   |         |
-| **Prompt generation**     | ❌                               | ✅                               |                                                   |         |
-| **Monitoring**            | ✅ (paid)                        | ✅                               |                                                   |         |
-| **CI/CD**                 | ✅                               | ✅                               |                                                   |         |
-| **Easy to use**           | easy                            | easy                            |                                                   |         |
-| **Easy to learn**         | medium                          | easy                            |                                                   |         |
-|                           |                                 |                                 |                                                   |         |
+| Features                  | Promptfoo                    | Langsmith                                                       | Langfuse                                          | Giskard |     |
+| ------------------------- | ---------------------------- | --------------------------------------------------------------- | ------------------------------------------------- | ------- | --- |
+| **review date**           | 21/11/2024                   | 27/11/2024                                                      | 29/11/2024                                        |         |     |
+| **reviewed** **version**  | 0.99                         |                                                                 |                                                   |         |     |
+| **Price**                 | NA                           | NA / 39$                                                        |                                                   |         |     |
+| **Licence**               | Free/ entreprise/ on-premise | Developer/Plus/ Entreprise                                      |                                                   |         |     |
+| **usage**                 | yaml, code, web(light)       | web, code                                                       |                                                   |         |     |
+| **deployment**            | local, cloud                 | clou                                                            | local , cloud(paid)                               |         |     |
+| **viz tool**              | cli, web                     |                                                                 |                                                   |         |     |
+| **local runtime **        | NodeJS or Docker             | Docker                                                          |                                                   |         |     |
+| **Updates frequency**     | 3 days                       | 3 days                                                          |                                                   |         |     |
+| **Maturity**              | New, evolving                | New, evolving                                                   |                                                   |         |     |
+| **Popularity**            | +40k devs, 5k github stars   | +250k d                                     angcha       munity | 3m installs /month, 7K stars<br>1.8m docker pulls |         |     |
+| **Privacy/Data**          | ✅ (local or in cloud)        | -US servers if cloud<br>-On-premise:for entreprise version      |                                                   |         |     |
+| **Evaluation**            |                              |                                                                 |                                                   |         |     |
+| - Custom/override models  | ✅                            |                                                                 |                                                   |         |     |
+| - Pre-implemented metrics | ✅                            |                                                                 |                                                   |         |     |
+| - Custom metrics          | ✅                            |                                                                 |                                                   |         |     |
+| - Annotate/Human feedback |                              |                                                                 |                                                   |         |     |
+| - Real time evaluation    |                              |                                                                 |                                                   |         |     |
+| - export format           |                              |                                                                 |                                                   |         |     |
+| **Redteaming**            |                              |                                                                 |                                                   |         |     |
+| - Custom/override m       |                              |                                                                 |                                                   |         |     |
+| - Pre-implemented         |                              |                                                                 |                                                   |         |     |
+| - custom metric           |                              |                                                                 |                                                   |         |     |
+| - Annotate/Hu             |                              |                                                                 |                                                   |         |     |
+| **Dataset                 |                              |                                                                 |                                                   |         |     |
+| - Constru                 |                              |                                                                 |                                                   |         |     |
+| -Genera                   |                              |                                                                 |                                                   |         |     |
+| **Pro                     |                              |                                                                 |                                                   |         |     |
+| **M                       |                              |                                                                 |                                                   |         |     |
+| *                         |                              |                                                                 |                                                   |         |     |
+| **                        |                              |                                                                 |                                                   |         |     |
+|                           |                              |                                                                 |                                                   |         |     |
 
 ### Promptfoo 
 Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
@@ -368,7 +367,7 @@ Langfuse is an **open-source LLM engineering platform** ([GitHub](https://gith
 - **Privacy & Security**: 
 	- https://langfuse.com/docs/data-security-privacy
 	- **Data Handling**: -
-	- **Compliance / Data Location**: 
+	- **Compliance / Data Location**: cloud : Traces are stored in GCP us-central-1. Organizations' traces are logically separated from each other in a Clickhouse database and encrypted in transit and at rest.
 	- **Telemetry** :  NA
 	   
 - **Features**:
