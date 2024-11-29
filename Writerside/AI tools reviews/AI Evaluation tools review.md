@@ -14,11 +14,11 @@ Author : Amine DJEGHRI
 
 | Features                  | Promptfoo                    | Langsmith                       | Langfuse                                          | Giskard |
 | ------------------------- | ---------------------------- | ------------------------------- | ------------------------------------------------- | ------- |
-| **review date**           | 21/11/2024                   | 27/11/2024                      |                                                   |         |
+| **review date**           | 21/11/2024                   | 27/11/2024                      | 29/11/2024                                        |         |
 | **reviewed** **version**  | 0.99                         | 0.8                             |                                                   |         |
 | **Price**                 | NA                           | NA / 39$ um / NA                |                                                   |         |
 | **Licence**               | Free/ entreprise/ on-premise | Developer/Plus/entreprise       |                                                   |         |
-| usage                     | yaml, code, web(light)       | web, code                       | web, code                                         |         |
+| **usage**                 | yaml, code, web(light)       | web, code                       | web, code                                         |         |
 | **deployment**            | local, cloud                 | cloud, local(paid)              | local , cloud(paid)                               |         |
 | **viz tool**              | cli, web                     | web                             |                                                   |         |
 | **local runtime **        | NodeJS or Docker             | N/A                             | Docker                                            |         |
@@ -27,24 +27,23 @@ Author : Amine DJEGHRI
 | **Popularity**            | +40k devs, 5k github stars   | +250k devs, langchain community | 3m installs /month, 7K stars<br>1.8m docker pulls |         |
 | **Privacy/Data**          | ✅                            | ⚠️ US servers if cloud          |                                                   |         |
 | **Evaluation**            |                              |                                 |                                                   |         |
-| - Custom/override models  | ✅                            |                                 |                                                   |         |
-| - Pre-implemented metrics | ✅                            |                                 |                                                   |         |
-| - Custom metrics          | ✅                            |                                 |                                                   |         |
-| - Annotate/Human feedback | ✅                            |                                 |                                                   |         |
-| - Real time evaluation    | ❌                            |                                 |                                                   |         |
+| - Custom/override models  | ✅                            | ✅                               |                                                   |         |
+| - Pre-implemented metrics | ✅                            | ⚠️                              |                                                   |         |
+| - Custom metrics          | ✅                            | ✅                               |                                                   |         |
+| - Annotate/Human feedback | ✅                            | ✅                               |                                                   |         |
+| - Real time evaluation    | ❌                            | ✅                               |                                                   |         |
 | - export format           | json                         |                                 |                                                   |         |
 | **Redteaming**            |                              |                                 |                                                   |         |
-| - Custom/override models  | 3/4                          |                                 |                                                   |         |
-| - Pre-implemented metrics | ✅ (+30)                      |                                 |                                                   |         |
-| - custom metrics          | ✅                            |                                 |                                                   |         |
-| - Annotate/Human feedback | ✅                            |                                 |                                                   |         |
+| - Custom/override models  | 3/4                          | ❌                               |                                                   |         |
+| - Pre-implemented metrics | ✅ (+30)                      | ❌                               |                                                   |         |
+| - custom metrics          | ✅                            | ❌                               |                                                   |         |
+| - Annotate/Human feedback | ✅                            | ❌                               |                                                   |         |
 | **Dataset **              | ❌                            |                                 |                                                   |         |
-| - Construct dataset       | ⚠️ (config. only)            |                                 |                                                   |         |
-| - Annotate/Human feedback | ❌                            |                                 |                                                   |         |
-| - export format           | yaml                         |                                 |                                                   |         |
-| **Prompt generation**     | ❌                            |                                 |                                                   |         |
-| **Monitoring**            | ✅ (paid)                     |                                 |                                                   |         |
-| **CI/CD**                 | ✅                            |                                 |                                                   |         |
+| - Construct dataset       | ⚠️ (config. only)            | ✅                               |                                                   |         |
+| -Generate dataset         | ❌                            | ✅                               |                                                   |         |
+| **Prompt generation**     | ❌                            | ✅                               |                                                   |         |
+| **Monitoring**            | ✅ (paid)                     | ✅                               |                                                   |         |
+| **CI/CD**                 | ✅                            | ✅                               |                                                   |         |
 | **Easy to use**           | easy                         | easy                            |                                                   |         |
 | **Easy to learn**         | medium                       | easy                            |                                                   |         |
 |                           |                              |                                 |                                                   |         |
@@ -136,6 +135,7 @@ Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 					- override Evaluator/grader : yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/#overriding-the-llm-grader
 			- **Qualitative & Quantitative Metrics**: both (score or llm-based)
 			- **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
+		- **Regression testing** : Yes
 		- **Annotate/Human feedback**: Yes (vote, set score, comment)
 			- **Use Human Feedback** : No
 		- **Online/ Real time / Dynamic Evaluation**: No
@@ -163,7 +163,7 @@ Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 	- **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
 	- **CI/CD**: Yes and has also github actions support. https://www.promptfoo.dev/docs/integrations/ci-cd/
 	- **Dataset**:  
-		-  Construct Datasets : 
+		-  **Construct Datasets** : 
 			- In web platform : No
 			- Programmatically ; Yes 
 		- **Generate datasets** : No. 
@@ -254,6 +254,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 					- override Evaluator/grader : yes. 
 			- **Qualitative & Quantitative Metrics**: both (score or llm-based)
 			- **Custom Metrics**: Yes. 
+		- **Regression testing** : Yes
 		- **Annotate/Human feedback**: Yes (set score, comment) (inline, or queues)
 			- **Use Human Feedback** : Yes. https://docs.smith.langchain.com/evaluation/concepts#human
 		- **Online/ Real time / Dynamic Evaluation**: Yes https://docs.smith.langchain.com/evaluation/how_to_guides#online-evaluation
@@ -277,7 +278,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 	- **CI/CD**: Yes. https://docs.smith.langchain.com/evaluation/tutorials/evaluation#set-up-automated-testing-to-run-in-cicd
 	- **Dataset**:  
 		- https://docs.smith.langchain.com/old/evaluation/faq/manage-datasets
-		- Construct Datasets : 
+		- **Construct Datasets** : 
 			- In web platform : Yes
 			- Programmatically ; Yes
 		- **Generate datasets** : Yes
