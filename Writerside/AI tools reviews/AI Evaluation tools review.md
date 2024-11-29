@@ -251,7 +251,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 					- override prompts : yes
 					- override Evaluator/grader : yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/#overriding-the-llm-grader
 			- **Qualitative & Quantitative Metrics**: both (score or llm-based)
-			- **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
+			- **Custom Metrics**: Yes. 
 		- **Annotate/Human feedback**: Yes (set score, comment) (inline, or queues)
 		- **Use Human Feedback** : Yes. https://docs.smith.langchain.com/evaluation/concepts#human
 		- **Online/ Real time / Dynamic Evaluation**: Yes https://docs.smith.langchain.com/evaluation/how_to_guides#online-evaluation
