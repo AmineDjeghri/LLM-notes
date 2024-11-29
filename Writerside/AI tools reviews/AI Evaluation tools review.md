@@ -294,6 +294,120 @@ Provides an all in one platform for every stem of the LLM-powered application li
 
 
 ## Langfuse
+Langfuse is an **open-source LLM engineering platform** ([GitHub](https://github.com/langfuse/langfuse)) that helps teams collaboratively debug, analyze, and iterate on their LLM applications. All platform features are natively integrated to accelerate the development workflow.
+
+- **Site** : https://www.langchain.com/langsmith
+- **Review date** : 27/11/2024
+- **version** : 0.8
+- **Description**: An all in one platform : 
+	- Most used open-source LLMOps platform ([blog post](https://langfuse.com/blog/2024-11-most-used-oss-llmops))
+	- Model and framework agnostic
+	- Built for production
+	- Incrementally adoptable, start with one feature and expand to the full platform over time
+	- API-first, all features are available via API for custom integrations
+	- Optionally, Langfuse can be easily self-hosted
+- **FAQ** : https://www.langchain.com/langsmith (at the bottom)
+- **Docs**: [docs](https://docs.smith.langchain.com/)
+- **GitHub**: https://github.com/promptfoo/promptfoo
+- **Price**  
+	- Free for all features 
+	- Licensing: Startups, Developer, Plus, Entreprise
+	- price site :https://www.langchain.com/pricing-langsmith
+    - **Developer**:
+        - 1 Developer seat
+        - Debugging traces
+        - Dataset collection
+        - Testing and evaluation
+        - Prompt management
+        - Monitoring
+    - **Plus**: 39$/user/month
+        - All features in Developer tier
+        - Up to 10 seats
+        - Higher rate limits
+        - Email support
+    - **Enterprise**:
+        - All features in Plus tier
+        - Custom Single Sign On (SSO)
+        - SLA
+        - Self-hosted deployment options
+        - Custom rate limits
+        - Team trainings
+        - Shared Slack channel
+        - Architectural guidance
+        - Dedicated customer success manager
+- **Usage** :  web platform , code (python, JS)
+- **Deployment**: 
+	- Cloud 
+	- Self-Host (paid)
+- **Type/runtime** : NA
+- **Updates & Maintenance**: Regular updates as features are improved and expanded.
+	- **Support Channel**: Discord, Email support, Github , book a time
+	- **Frequency of Updates**: every two months
+	- **Community Support**: Langchain community
+	- **Popularity/GitHub Stars**: +250k users, +25k monthly active teams, Langchain has 100K stars.
+	- **Maturity**: In beta but is enough mature in terms of features. A langchain company product.
+	- **Used by** : Many CAC40 and other entreprises
+	- **Team** : 20-60 ?
+-
+- **Privacy & Security**: 
+	- **Data Handling**: - Cloud or self-host(paid). If cloud, we will not train on your data, and you own all rights to your data. See LangSmith [Terms of Service](https://www.langchain.com/terms-of-service) for more information.
+	- **Compliance / Data Location**: cloud : Traces are stored in GCP us-central-1. Organizations' traces are logically separated from each other in a Clickhouse database and encrypted in transit and at rest.
+	- **Telemetry** :  NA
+	   
+- **Features**:
+	- **Evaluation** :
+		- **Generator  & Evaluator models** : used to generate, evaluate an output
+			- **Model Compatibility**:  Yes. 
+			- **Custom/override models**: Yes
+		- **Metrics**: Yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/
+			- **pre-implemented metrics** : yes. But very few 
+				- deterministic metrics : contains, equals, exact-match Yes
+				- model-graded metrics : using LLM to evaluate Yes
+					- override prompts : yes
+					- override Evaluator/grader : yes. 
+			- **Qualitative & Quantitative Metrics**: both (score or llm-based)
+			- **Custom Metrics**: Yes. 
+		- **Regression testing** : Yes
+		- **Annotate/Human feedback**: Yes (set score, comment) (inline, or queues)
+			- **Use Human Feedback** : Yes. https://docs.smith.langchain.com/evaluation/concepts#human
+		- **Online/ Real time / Dynamic Evaluation**: Yes https://docs.smith.langchain.com/evaluation/how_to_guides#online-evaluation
+		- **Easy Unit Test (like pytest)**: Yes.
+		- **Pre-implemented Dataset Benchmarks**: ·
+		- **Export Formats**:  
+		- **Visualization Tools**: Web-based interface
+	- **==Redteam==**: No. Used like an evaluation feature
+		- **Doc** : NA
+		- **Models** :  
+			- **model compatibility** Yes
+			- **Custom/override models** : Yes
+		- **Metrics** : 
+			- **Pre-implemented metrics** : NA
+			- **Custom Metrics** : Yes
+		-  **Annotate/Human feedback**: Yes
+		- **Use Human Feedback** : Yes
+		- **Export Formats**:  ?
+		- **Visualization Tools**: web
+	- **Monitoring**:  Yes. https://docs.smith.langchain.com/old/monitoring
+	- **CI/CD**: Yes. https://docs.smith.langchain.com/evaluation/tutorials/evaluation#set-up-automated-testing-to-run-in-cicd
+	- **Dataset**:  
+		- https://docs.smith.langchain.com/old/evaluation/faq/manage-datasets
+		- **Construct Datasets** : 
+			- In web platform : Yes
+			- Programmatically ; Yes
+		- **Generate datasets** : Yes
+			- https://docs.smith.langchain.com/old/evaluation/faq/synthetic-data
+		- **Visualization Tools**: web, export to files ..etc
+	- **Prompt engineering** : 
+		- Test multiple prompts : Yes
+		- Generate prompts : Yes
+		- Prompt playground : Yes
+		- Visualization Tools: web
+	- **Easy to Use**: Easy
+	- **Easy to learn** : Easy
+
+
+
+
 ##### What are the main differences between Langfuse and Langsmith
 
 - Langfuse is open source while LangSmith is a closed source project.
