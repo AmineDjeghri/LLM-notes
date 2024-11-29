@@ -258,7 +258,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 			- **Use Human Feedback** : Yes. https://docs.smith.langchain.com/evaluation/concepts#human
 		- **Online/ Real time / Dynamic Evaluation**: Yes https://docs.smith.langchain.com/evaluation/how_to_guides#online-evaluation
 		- **Easy Unit Test (like pytest)**: Yes.
-		- **Pre-implemented Dataset Benchmarks**: ·
+		- **Pre-implemented Dataset Benchmarks**: 
 		- **Export Formats**:  
 		- **Visualization Tools**: Web-based interface
 	- **==Redteam==**: No. Used like an evaluation feature
