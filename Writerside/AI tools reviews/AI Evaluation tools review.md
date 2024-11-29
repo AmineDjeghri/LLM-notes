@@ -18,13 +18,13 @@ Author : Amine DJEGHRI
 | **reviewed** **version**  | 0.99                         | 0.8                       |          |         |
 | **Price**                 | NA                           | NA / 39$ um / NA          |          |         |
 | **Licence**               | Free/ entreprise/ on-premise | Developer/Plus/entreprise |          |         |
-| **deployment**            | local, docker, cloud         |                           |          |         |
-| **viz tool**              | cli, web                     |                           |          |         |
+| **deployment**            | local, cloud                 | cloud, local(paid)        |          |         |
+| **viz tool**              | cli, web                     | web                       |          |         |
 | **type/runtime**          | Nodejs package               | NA                        |          |         |
 | **Updates frequency**     | 3 days                       | 2 months                  | 3 days   |         |
-| **Maturity**              | New, evolving                |                           |          |         |
-| **Popularity**            | +40k devs, 5k github stars   | +250k devs                |          |         |
-| **Privacy/Data**          | ✅                            | ⚠️                        |          |         |
+| **Maturity**              | New, evolving                | Beta                      |          |         |
+| **Popularity**            | +40k devs, 5k github stars   | +250k devs, langchain     |          |         |
+| **Privacy/Data**          | ✅                            | ⚠️ US servers if cloud    |          |         |
 | **Evaluation**            |                              |                           |          |         |
 | - Custom/override models  | ✅                            |                           |          |         |
 | - Pre-implemented metrics | ✅                            |                           |          |         |
@@ -136,7 +136,7 @@ Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 			- **Qualitative & Quantitative Metrics**: both (score or llm-based)
 			- **Custom Metrics**: Yes. Either in the config or external .py or .js scripts
 		- **Annotate/Human feedback**: Yes (vote, set score, comment)
-		- **Use Human Feedback** : No
+			- **Use Human Feedback** : No
 		- **Online/ Real time / Dynamic Evaluation**: No
 		- **Easy Unit Test (like pytest)**: Yes. with a command a config script or webui
 		- **Pre-implemented Dataset Benchmarks**: ·No default datasets. On your own data only. side-by-side comparison view
@@ -156,7 +156,7 @@ Provides 2 tools in one npm package : LLM Evaluation tool & Readteam tool
 				- Scan +30 vulnerabilities type. Some plugins (harmful and security) use promptfoo unaligned  uncensored models and send data to their cloud  but can be deactivated.
 			- **Custom Metrics** : Yes . https://www.promptfoo.dev/docs/red-team/configuration/#custom-plugins
 		-  **Annotate/Human feedback**: Yes (vote, set score, comment)
-		- **Use Human Feedback** : No
+			- **Use Human Feedback** : No
 		- **Export Formats**:  JSON
 		- **Visualization Tools**: Web-based interface, CLI 
 	- **Monitoring**:  Continuous monitoring and Comprehensive Scanning & Compliance are paid and only available in entreprise + on-premise tiers (check the pricing page )
@@ -249,11 +249,11 @@ Provides an all in one platform for every stem of the LLM-powered application li
 				- deterministic metrics : contains, equals, exact-match Yes
 				- model-graded metrics : using LLM to evaluate Yes
 					- override prompts : yes
-					- override Evaluator/grader : yes. https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/#overriding-the-llm-grader
+					- override Evaluator/grader : yes. 
 			- **Qualitative & Quantitative Metrics**: both (score or llm-based)
 			- **Custom Metrics**: Yes. 
 		- **Annotate/Human feedback**: Yes (set score, comment) (inline, or queues)
-		- **Use Human Feedback** : Yes. https://docs.smith.langchain.com/evaluation/concepts#human
+			- **Use Human Feedback** : Yes. https://docs.smith.langchain.com/evaluation/concepts#human
 		- **Online/ Real time / Dynamic Evaluation**: Yes https://docs.smith.langchain.com/evaluation/how_to_guides#online-evaluation
 		- **Easy Unit Test (like pytest)**: Yes.
 		- **Pre-implemented Dataset Benchmarks**: ·
@@ -283,7 +283,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 		- **Visualization Tools**: web, export to files ..etc
 	- **Prompt engineering** : 
 		- Test multiple prompts : Yes
-		- Generate prompts : 
+		- Generate prompts : Yes
 		- Prompt playground : Yes
 		- **Visualization Tools**: web
 	- **Easy to Use**: Easy
