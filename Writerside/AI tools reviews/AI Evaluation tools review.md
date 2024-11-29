@@ -311,13 +311,49 @@ Langfuse is an **open-source LLM engineering platform** ([GitHub](https://gith
 - **GitHub**: https://github.com/promptfoo/promptfoo
 - **Price**  
 	- Free for all features 
-	- Licensing: Startups, Developer, Plus, Entreprise
 	- price site :https://www.langchain.com/pricing-langsmith
+	- **Self-host**  
+		- **Free**: Self-host all core Langfuse features without any limitations
+			- MIT License
+			- All core platform features and APIs (observability, evaluation, prompt management, datasets, etc.)
+			- Unlimited usage
+			- Deployment docs & Helm chart
+			- Community support
+		- **Pro**: $100/user billed monthly
+			- All Open Source features
+			- LLM Playground
+			- Human annotation queues
+			- LLM as a judge evaluators (soon)
+			- Chat & Email support
+		- **Enterprise**: Custom pricing 
+			- All Open Source / Pro features
+			- SSO and fine-grained RBAC
+			- SOC2, ISO27001, and InfoSec reviews
+			- Dedicated support engineer and SLAs
+			- Billing via AWS Marketplace
+	- **Cloud**
+		- **Hobby**: Free
+		    - All platform features (with limits)
+		    - 50k observations/month included
+		    - 30 days data access
+		    - 2 users included
+		    - Community support (Discord & GitHub)
+		- **Pro**: $59/user billed monthly
+		    - 100k observations/month included, additional $10/100k observations
+		    - Unlimited data access
+		    - Unlimited users
+		    - Support via Email/Chat
+		- **Team**: $499/user billed monthly
+		    - 100k observations/month included, additional $10/100k observations
+		    - SSO enforcement, fine-grained RBAC
+		    - SOC2, ISO27001, InfoSec reviews
+		    - Dedicated support channel
+		    - Add-ons: Enterprise support & SLAs, Billing via AWS Marketplace
     
 - **Usage** :  web platform , code (python, JS)
 - **Deployment**: 
 	- Cloud 
-	- Self-Host (paid)
+	- Self-Host 
 - **Type/runtime** : NA
 - **Updates & Maintenance**: 
 	- **Support Channel**: Discord Github
@@ -326,7 +362,7 @@ Langfuse is an **open-source LLM engineering platform** ([GitHub](https://gith
 	- **Popularity/GitHub Stars**:  6k stars,  https://langfuse.com/blog/2024-11-most-used-oss-llmops#detailed-metrics
 	- **Maturity**: In beta but is enough mature in terms of features. A langchain company product.
 	- **Used by** : Many CAC40 and other entreprises
-	- **Team** : 20-60 ?
+	- **Team** : 5, raised 4m $
 -
 - **Privacy & Security**: 
 	- **Data Handling**: - Cloud or self-host(paid). If cloud, we will not train on your data, and you own all rights to your data. See LangSmith [Terms of Service](https://www.langchain.com/terms-of-service) for more information.
