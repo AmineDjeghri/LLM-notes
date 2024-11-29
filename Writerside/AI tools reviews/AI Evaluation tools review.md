@@ -188,7 +188,7 @@ Provides an all in one platform for every stem of the LLM-powered application li
 	    - Regression testing :See how performance of the evaluation criteria that you've defined is affected by changes to your application.
 	    - Online evaluation : Continuously track qualitative characteristics of any live application, and spot issues in real-time with LangSmith monitoring.
 	    - monitor cost, latency, quality
-- **FAQ** : 
+- **FAQ** : https://www.langchain.com/langsmith (at the bottom)
 - **Docs**: [docs](https://docs.smith.langchain.com/)
 - **GitHub**: https://github.com/promptfoo/promptfoo
 - **Price**  
@@ -221,20 +221,20 @@ Provides an all in one platform for every stem of the LLM-powered application li
 - **Deployment**: 
 	- Cloud 
 	- Self-Host (paid)
-- **Type/runtime** : /
+- **Type/runtime** : NA
 - **Updates & Maintenance**: Regular updates as features are improved and expanded.
 	- **Support Channel**: Discord, Email support, Github , book a time
 	- **Frequency of Updates**: every two months
-	- **Community Support**: 
-	- **Popularity/GitHub Stars**: +250k users, +25k monthly active teams
-	- **Maturity**: In beta but is enough mature in terms of features.
+	- **Community Support**: Langchain community
+	- **Popularity/GitHub Stars**: +250k users, +25k monthly active teams, Langchain has 100K stars.
+	- **Maturity**: In beta but is enough mature in terms of features. A langchain company product.
 	- **Used by** : 
 	- **Team** : 20-60 ?
 -
 - **Privacy & Security**: 
 	- **Data Handling**: - Cloud or self-host(paid). If cloud, we will not train on your data, and you own all rights to your data. See LangSmith [Terms of Service](https://www.langchain.com/terms-of-service) for more information.
 	- **Compliance / Data Location**: cloud : Traces are stored in GCP us-central-1. Organizations' traces are logically separated from each other in a Clickhouse database and encrypted in transit and at rest.
-	- **Telemetry** :  
+	- **Telemetry** :  NA
 	   
 - **Features**:
 	- **Evaluation** :
