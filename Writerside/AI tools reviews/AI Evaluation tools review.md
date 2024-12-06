@@ -14,6 +14,12 @@ There are two typle of LLM tools :
 - [[#Langfuse#AutoRAG|AutoRAG]]
 
 
+
+
+Langsmith : 
+- dataset evaluation : https://smith.langchain.com/o/3650c59e-89d2-5ded-b8f1-5a21fa49e342/datasets/5fb03af5-6d8b-4ba5-baac-8bf310bc0df6?paginationState=%7B%22pageIndex%22%3A0%2C%22pageSize%22%3A10%7D 
+- when you click on a metric: https://smith.langchain.com/o/3650c59e-89d2-5ded-b8f1-5a21fa49e342/projects/p/5c622f46-4a8e-4e11-a47d-436348dd48a0/r/67124903-5b72-4124-8924-499dafe80e42?trace_id=67124903-5b72-4124-8924-499dafe80e42&start_time=2024-12-06T15:09:05.528676
+
 ## Summary 
 
 ### price of features comparaison table 
