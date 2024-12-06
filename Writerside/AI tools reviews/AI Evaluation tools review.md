@@ -16,6 +16,41 @@ There are two typle of LLM tools :
 
 ## Summary 
 
+### available features comparaison table 
+| Features                  | Promptfoo                    | Langsmith                                                  | Langfuse                                                 | Giskard                                       |
+| ------------------------- | ---------------------------- | ---------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------- |
+| **Price**                 | NA                           | Free , 39$, Custom                                         | -cloud :free,59,499<br>-self-host:free,100,custom        | Free or ==NM==                                |
+| **Licence**               | Free/ entreprise/ on-premise | Developer/Plus/ Entreprise                                 | -Cloud: hobby, pro, team<br>-Self-Host : os, pro, custom | Opensource or Entreprise                      |
+| **usage**                 | yaml, code, web(light)       | web, code                                                  | web, code                                                | code, web (extremely light (free))            |
+| **deployment**            | local, cloud                 | cloud                                                      | local , cloud(paid)                                      | local or                                      |
+| **viz tool**              | cli, web                     | web                                                        | web                                                      | web (extremely light free version)            |
+| **local runtime **        | NodeJS or Docker             | N/A                                                        | Docker, cloud: ==NM==                                    | Python                                        |
+| **Updates frequency**     | 3 days                       | 2 months                                                   | 3 days                                                   | 2 weeks                                       |
+| **Maturity**              | New, evolving                | Beta                                                       | New, evolving                                            | evolving                                      |
+| **Popularity**            | +40k devs, 5k github stars   | +250k devs, Langchain community                            | 3m installs /month, 7K stars<br>1.8m docker pulls        | 4k stars GH                                   |
+| **Privacy/Data**          | ✅ (local or in cloud)        | -US servers if cloud<br>-On-premise:for entreprise version | ✅ (local or in cloud)                                    | -cloud : ==NM==<br>-on-premise:<br>entreprise |
+| **Evaluation**            |                              |                                                            |                                                          |                                               |
+| - Custom/override models  | Free                         | Free                                                       | Free                                                     | Free                                          |
+| - Pre-implemented metrics | Free                         | F                                                          | ?                                                        | Free                                          |
+| - Custom metrics          | ✅                            | ✅                                                          |                                                          | ✅                                             |
+| - Annotate/Human feedback | ✅                            | ✅                                                          | ✅                                                        | ==NM==                                        |
+| - Real time evaluation    |                              | ✅                                                          | ✅                                                        | To confirm                                    |
+| - export format           | json                         |                                                            |                                                          | json,csv, df,html                             |
+| **Redteaming**            |                              |                                                            |                                                          |                                               |
+| - Custom/override mmodels | ✅ (3/4)                      | ✅                                                          | ✅                                                        | ✅                                             |
+| - Pre-implemented         | ✅ (+30)                      | ⚠️                                                         | ⚠️                                                       | ✅                                             |
+| - custom metric           | ✅                            | ✅                                                          | ✅                                                        | ✅                                             |
+| - Annotate/Human feedback | ✅                            | ✅                                                          | ✅                                                        | ==NM==                                        |
+| **Dataset**               |                              |                                                            |                                                          |                                               |
+| - Construct dataset       | ⚠️ (config. only)            | ✅                                                          | ✅                                                        | ✅                                             |
+| - Generate dataset        | ❌                            | ✅                                                          | ✅                                                        | ✅                                             |
+| **Prompt generation**     | ❌                            | ✅                                                          | ?                                                        | ==NM==                                        |
+| **Monitoring**            | ⚠️ (paid)                    | ✅                                                          | ✅                                                        | ✅                                             |
+| **CI/CD**                 | ✅                            | ✅                                                          | ✅                                                        | ✅                                             |
+| **Difficulty to use**     | easy                         | very easy                                                  | very easy                                                | easy                                          |
+| **Difficulty to learn**   | medium                       | easy                                                       | easy                                                     | medium (bugs)                                 |
+|                           |                              |                                                            |                                                          |                                               |
+
 ### comparaison table 
 
 | Features                  | Promptfoo                    | Langsmith                                                  | Langfuse                                                 | Giskard                                       |
