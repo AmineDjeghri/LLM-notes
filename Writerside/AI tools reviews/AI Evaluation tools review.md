@@ -16,7 +16,7 @@ There are two typle of LLM tools :
 
 ## Summary 
 
-### available features comparaison table 
+### price of features comparaison table 
 | Features                  | Promptfoo                    | Langsmith                                                  | Langfuse                                                 | Giskard                                       |
 | ------------------------- | ---------------------------- | ---------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------- |
 | **Price**                 | NA                           | Free , 39$, Custom                                         | -cloud :free,59,499<br>-self-host:free,100,custom        | Free or ==NM==                                |
@@ -32,10 +32,9 @@ There are two typle of LLM tools :
 | **Evaluation**            |                              |                                                            |                                                          |                                               |
 | - Custom/override models  | Free                         | Free                                                       | Free                                                     | Free                                          |
 | - Pre-implemented metrics | Free                         | F                                                          | ?                                                        | Free                                          |
-| - Custom metrics          | ✅                            | ✅                                                          |                                                          | ✅                                             |
-| - Annotate/Human feedback | ✅                            | ✅                                                          | ✅                                                        | ==NM==                                        |
-| - Real time evaluation    |                              | ✅                                                          | ✅                                                        | To confirm                                    |
-| - export format           | json                         |                                                            |                                                          | json,csv, df,html                             |
+| - Custom metrics          | Free                         | Free                                                       | Free                                                     | Free                                          |
+| - Annotate/Human feedback | Free                         |                                                            | Free                                                     | Paid                                          |
+| - Real time evaluation    | Paid                         |                                                            | Free                                                     | To confirm                                    |
 | **Redteaming**            |                              |                                                            |                                                          |                                               |
 | - Custom/override mmodels | ✅ (3/4)                      | ✅                                                          | ✅                                                        | ✅                                             |
 | - Pre-implemented         | ✅ (+30)                      | ⚠️                                                         | ⚠️                                                       | ✅                                             |
