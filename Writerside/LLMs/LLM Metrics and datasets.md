@@ -1,4 +1,6 @@
 
+
+
 # LLM Evaluation
 
 
@@ -103,13 +105,14 @@ It uses Precision@K
 
 
 
-## RedTeaming merics : 
-https://www.promptfoo.dev/docs/red-team/llm-vulnerability-types/#common-llm-vulnerabilities-by-application-type
+## RedTeaming metrics : 
+- DeepEval redTeaming vulnerabilities :  https://docs.confident-ai.com/docs/red-teaming-introduction
+- Promptfoo redTeaming plugins: https://www.promptfoo.dev/docs/red-team/plugins/
 
 #### Generation Metrics
 [source](https://aman.ai/primers/ai/evaluation-metrics/#evaluation-metrics-for-generative-text-models)
 
-Good sources to read :
+## Papers and sources
 - You need to understand the difference between recall and recall@K. if  K=N in Recall@K, it effectively becomes Recall.
 - [RAGAS paper](https://arxiv.org/pdf/2309.15217) 
 - [Survey RAG eval tools](https://arxiv.org/pdf/2405.07437)

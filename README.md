@@ -3,7 +3,7 @@
 Documents containing questions & answers about DL, NLP and everything to quick refresh your memory about LLMs
 
 - Include the repo to ai-cloud-project & ai-on-premise-project templates
-- 
+- Each file / site has the papers and sources to better understand how things work
 
 ## Cool repositories that you need to check out
 - https://github.com/abi/screenshot-to-code/tree/main
