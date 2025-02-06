@@ -4,7 +4,8 @@
 # LLM Evaluation
 
 
-https://arxiv.org/pdf/2306.05685
+- [ ] [awesome-hallucination-detection](https://github.com/EdinburghNLP/awesome-hallucination-detection) 
+- [ ] [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685)
 
 ## RAG Evaluation
 
