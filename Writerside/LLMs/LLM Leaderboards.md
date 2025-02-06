@@ -22,6 +22,9 @@
 	- blog : https://huggingface.co/docs/leaderboards/open_llm_leaderboard/about
 - MMMU
 	- leaderboard : https://mmmu-benchmark.github.io/#leaderboard
+- Hallucination Leaderboard 
+	- blog : https://huggingface.co/blog/leaderboard-hallucinations
+	- leaderboard : https://huggingface.co/spaces/hallucinations-leaderboard/leaderboard
 ## Coding
 - EvalPlus Leaderboard
 	- leaderboard : https://evalplus.github.io/leaderboard.html
