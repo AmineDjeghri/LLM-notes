@@ -22,4 +22,4 @@ DeepEval / Promptfoo both provide evaluation and red-teaming features.
 
 ## Papers and sources
 
-- 
+- [ ] https://github.com/huggingface/evaluation-guidebook
