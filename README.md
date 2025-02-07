@@ -17,7 +17,9 @@ Documents containing questions & answers about DL, NLP and everything to quick r
 - https://github.com/joshpxyne/gpt-migrate
 
 ## Cool tools and  websites for research 
-- https://notebooklm.google.com/ : create notes, FAQ and podcasts from papers, websites and more
+- https://notebooklm.google.com/ : 
+	- create notes, FAQ and podcasts from papers, websites and more
+	- I find it easier to FAQ & notes generated and switch between them and the paper to get more details.
 - https://www.explainpaper.com/
 - https://paperswithcode.com/
 - 
