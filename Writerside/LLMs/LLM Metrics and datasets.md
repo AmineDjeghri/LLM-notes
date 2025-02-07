@@ -17,6 +17,7 @@
 		- **Task Instructions (TI):** Evaluating factuality in responses prompted by instructions.
 		- **Text Completion (TC):** Identifying hallucinations that appear during generation of informative statements.
 - [x] [awesome-hallucination-detection](https://github.com/EdinburghNLP/awesome-hallucination-detection) : Everything + metrics for each paper ✅ 2025-02-07
+- [ ] [FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation](https://arxiv.org/abs/2305.14251)
 - [ ] Metrics : FactScore, Rouge-L F1, Human annotations, LLMs as a judge 
 
 
