@@ -3,7 +3,7 @@
 
 # LLM Evaluation
 
-### Hallucination 
+### Hallucination (or factuality)
 
 - [x] Hallucination Leaderboard ✅ 2025-02-07
 	- blog : https://huggingface.co/blog/leaderboard-hallucinations
