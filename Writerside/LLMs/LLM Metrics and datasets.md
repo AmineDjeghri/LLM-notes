@@ -4,7 +4,7 @@
 # LLM Evaluation
 
 ### Hallucination 
-- [ ] [awesome-hallucination-detection](https://github.com/EdinburghNLP/awesome-hallucination-detection) 
+- [ ] Awesome repo for hallucination :  [awesome-hallucination-detection](https://github.com/EdinburghNLP/awesome-hallucination-detection) 
 - [ ] [llm-hallucination-survey](https://github.com/HillZhang1999/llm-hallucination-survey#llm-hallucination-survey)
 
 
