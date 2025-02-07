@@ -16,7 +16,8 @@
 		- **Question Answering (QA):** Evaluating truthfulness in answers to knowledge-intensive questions.
 		- **Task Instructions (TI):** Evaluating factuality in responses prompted by instructions.
 		- **Text Completion (TC):** Identifying hallucinations that appear during generation of informative statements.
-- [ ] Awesome repo for hallucination :  [awesome-hallucination-detection](https://github.com/EdinburghNLP/awesome-hallucination-detection) 
+- [x] [awesome-hallucination-detection](https://github.com/EdinburghNLP/awesome-hallucination-detection) : Everything + metrics for each paper ✅ 2025-02-07
+- [ ] Metrics : FactScore, Rouge-L F1, Human annotations, LLMs as a judge 
 
 
 ### LLM as A Judge
