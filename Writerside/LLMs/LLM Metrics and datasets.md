@@ -13,6 +13,7 @@
 
 ### LLM as A Judge
 - [ ] [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685)
+- [ ] https://arxiv.org/pdf/2411.15594
 
 ### Hallucination (or factuality)
 
