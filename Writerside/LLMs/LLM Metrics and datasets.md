@@ -1,5 +1,3 @@
-```table-of-contents
-```
 - [LLM as A Judge](#llm-as-a-judge)
 - [Hallucination (or factuality)](#hallucination-or-factuality)
 - [RAG Evaluation](#rag-evaluation)
