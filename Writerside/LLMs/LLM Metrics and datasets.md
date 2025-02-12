@@ -1,7 +1,10 @@
-
+```table-of-contents
+```
 
 
 # LLM Evaluation
+### LLM as A Judge
+- [ ] [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685)
 
 ### Hallucination (or factuality)
 
@@ -20,9 +23,6 @@
 - [x] [FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation](https://arxiv.org/abs/2305.14251) ✅ 2025-02-07
 - [ ] Metrics : FactScore?  Rouge-L F1, Human annotations, LLMs as a judge , DeepEval hallucination metric
 
-
-### LLM as A Judge
-- [ ] [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685)
 
 ## RAG Evaluation
 
