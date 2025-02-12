@@ -1,13 +1,13 @@
 ```table-of-contents
 ```
-- [[#LLM as A Judge|LLM as A Judge]]
-- [[#Hallucination (or factuality)|Hallucination (or factuality)]]
-- [[#RAG Evaluation|RAG Evaluation]]
-- [[#RAG Evaluation#RAG Evaluation Metrics Examples|RAG Evaluation Metrics Examples]]
-	- [[#RAG Evaluation Metrics Examples#Retrieval (IR) Metrics|Retrieval (IR) Metrics]]
-- [[#RedTeaming metrics :|RedTeaming metrics :]]
-	- [[#RAG Evaluation Metrics Examples#Generation Metrics|Generation Metrics]]
-- [[#Papers and sources|Papers and sources]]
+- [LLM as A Judge](#llm-as-a-judge)
+- [Hallucination (or factuality)](#hallucination-or-factuality)
+- [RAG Evaluation](#rag-evaluation)
+- [RAG Evaluation Metrics Examples](#rag-evaluation-metrics-examples)
+	- [Retrieval (IR) Metrics](#retrieval-ir-metrics)
+- [RedTeaming metrics :](#redteaming-metrics-)
+	- [Generation Metrics](#generation-metrics)
+- [Papers and sources](#papers-and-sources)
 
 # LLM Evaluation
 ### LLM as A Judge
