@@ -22,4 +22,5 @@ DeepEval / Promptfoo both provide evaluation and red-teaming features.
 
 ## Papers and sources
 
+- [ ] https://medium.com/@heyamit10/langsmith-vs-langfuse-ef3d493ea74e
 - [ ] https://github.com/huggingface/evaluation-guidebook
