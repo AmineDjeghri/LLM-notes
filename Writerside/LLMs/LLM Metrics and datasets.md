@@ -15,6 +15,7 @@
 ### LLM as A Judge
 - [ ] [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685)
 - [ ] https://arxiv.org/pdf/2411.15594
+- [ ] granit guard imb : https://arxiv.org/html/2412.07724v1#S6
 
 ### Hallucination (or factuality)
 
@@ -31,7 +32,7 @@
 		- **Text Completion (TC):** Identifying hallucinations that appear during generation of informative statements.
 - [x] [awesome-hallucination-detection](https://github.com/EdinburghNLP/awesome-hallucination-detection) : Everything + metrics for each paper ✅ 2025-02-07
 - [x] [FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation](https://arxiv.org/abs/2305.14251) ✅ 2025-02-07
-- [ ] Metrics : FactScore?  Rouge-L F1, Human annotations, LLMs as a judge , DeepEval hallucination metric
+
 
 
 ## RAG Evaluation
