@@ -74,9 +74,9 @@ Other models :
 | ---------------------------------------- | ------------------ | ------- | -------------------- | ------------------- |
 | Mistral-Large-2411                       |                    |         |                      |                     |
 | Mistral-Small                            |                    |         |                      |                     |
-| Phi-4                                    |                    |         |                      |                     |
+| Phi-4                                    | ❌                  |         |                      |                     |
 | DeepSeek-R1                              |                    |         |                      |                     |
-| phi35-mini-instruct                      |                    | ❌       |                      |                     |
+| phi35-mini-instruct                      | ❌                  | ❌       |                      |                     |
 | ollama/phi-3.5-uncensored                | N/A                |         |                      |                     |
 | ollama/qwen2.5:0.5b                      | N/A                |         |                      |                     |
 | ollama/phi3:3.8b-mini-4k-instruct-q4_K_M | N/A                |         |                      |                     |
