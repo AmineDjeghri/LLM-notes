@@ -73,11 +73,11 @@ Other models :
 
 | Name                                     | Azure AI Inference | LiteLLM | LiteLLM + Instructor (json mode) | ollama + instructor |
 | ---------------------------------------- | ------------------ | ------- | -------------------------------- | ------------------- |
-| Mistral-Large-2411                       |                    |         | ✅                                | N/A                 |
-| Mistral-Small                            |                    |         | ✅                                | N/A                 |
+| Mistral-Large-2411                       | ✅ (json only)      |         | ✅                                | N/A                 |
+| Mistral-Small                            | ✅ (json only)      |         | ✅                                | N/A                 |
 | Phi-4                                    | ❌(Timeout)         |         | ❌(Timeout)                       | N/A                 |
 | DeepSeek-R1                              |                    |         | ✅                                | N/A                 |
 | phi35-mini-instruct                      | ❌ (Timeout)        |         | ❌(Timeout)                       |                     |
 | ollama/phi-3.5-uncensored                | N/A                |         |                                  |                     |
 | ollama/qwen2.5:0.5b                      | N/A                |         |                                  |                     |
-| ollama/phi3:3.8b-mini-4k-instruct-q4_K_M | N/A                |         |                                  |                     |
+| ollama/phi3:3.8b-mini-4k-instruct-q4_K_M | N/A                |         |                                  | ✅                   |
