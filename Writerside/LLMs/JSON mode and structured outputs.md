@@ -24,7 +24,7 @@ Azure OpenAI json_mode :
 ```
 
 
-AzureOpenAI Structured outputs:
+AzureOpenAI Structured outputs: using pydantic or json_schema with schema
 ```python
 class MathReasoning(BaseModel):
     steps: list[Step]
@@ -39,6 +39,8 @@ completion = client.beta.chat.completions.parse(
     response_format=MathReasoning,
 )
 ```
+LiteLLM has the same logic.
+
 
 **sources**
 - https://platform.openai.com/docs/guides/structured-outputs
@@ -58,7 +60,7 @@ prompt : John is 30 years old
 | o1-mini-2024-09-12     | N/A                | ❌       | ❌                   | N/A                 | ❌                    | ❌            |     |
 | o3-mini-2025-01-31     | N/A                | ✅       | ✅                   | N/A                 | ✅                    | ✅            |     |
 
-- Structured Outputs with `response_format: {type: "json_schema", ...}` is only supported with the `gpt-4o-mini`, `gpt-4o-mini-2024-07-18`, and `gpt-4o-2024-08-06` model snapshots and later.
+- Structured Outputs with `response_format: {type: "json_schema", ...}` /pydantic is only supported with the `gpt-4o-mini`, `gpt-4o-mini-2024-07-18`, and `gpt-4o-2024-08-06` model snapshots and later.
 - Models like o1-mini do not support structured output. See [link](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/model-inference/concepts/models.md#azure-openai) 
 Commentaires : 
 - Il faut déployer les dernières versions des modèles 
@@ -68,13 +70,13 @@ Commentaires :
 
 Other models : 
 
-| Name                              | Azure AI Inference | LiteLLM (ollama) | LiteLLM(ollama) + Instructor | ollama + instructor |
-| --------------------------------- | ------------------ | ---------------- | ---------------------------- | ------------------- |
-| Mistral-Large-2411                |                    |                  |                              |                     |
-| Mistral-Small                     |                    |                  |                              |                     |
-| Phi-4                             |                    |                  |                              |                     |
-| DeepSeek-R1                       |                    |                  |                              |                     |
-| phi35-mini-instruct               |                    |                  |                              |                     |
-| phi-3.5-uncensored                | N/A                |                  |                              |                     |
-| qwen2.5:0.5b                      |                    |                  |                              |                     |
-| phi3:3.8b-mini-4k-instruct-q4_K_M |                    |                  |                              |                     |
+| Name                                     | Azure AI Inference | LiteLLM | LiteLLM + Instructor | ollama + instructor |
+| ---------------------------------------- | ------------------ | ------- | -------------------- | ------------------- |
+| Mistral-Large-2411                       |                    |         |                      |                     |
+| Mistral-Small                            |                    |         |                      |                     |
+| Phi-4                                    |                    |         |                      |                     |
+| DeepSeek-R1                              |                    |         |                      |                     |
+| phi35-mini-instruct                      |                    | ❌       |                      |                     |
+| ollama/phi-3.5-uncensored                | N/A                |         |                      |                     |
+| ollama/qwen2.5:0.5b                      | N/A                |         |                      |                     |
+| ollama/phi3:3.8b-mini-4k-instruct-q4_K_M | N/A                |         |                      |                     |
