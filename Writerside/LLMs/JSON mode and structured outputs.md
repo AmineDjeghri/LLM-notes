@@ -52,13 +52,13 @@ LiteLLM has the same logic.
 Schema : Person (age and name)
 prompt : John is 30 years old
 
-| Name                   | Azure AI Inference | LiteLLM | LiteLLM+ Instructor | ollama + instructor | Azure OpenAI (parse) | Azure OpenAI |     |
-| ---------------------- | ------------------ | ------- | ------------------- | ------------------- | -------------------- | ------------ | --- |
-| gpt-4o-mini-2024-07-18 | N/A                | ✅       |                     | N/A                 | ✅                    | ✅            |     |
-| gpt-4o-2024-05-13      | N/A                | ❌       | ✅                   | N/A                 | ❌                    | ✅            |     |
-| o1-2024-12-17          | N/A                | ✅       | ✅                   | N/A                 | ✅                    | ✅            |     |
-| o1-mini-2024-09-12     | N/A                | ❌       | ❌                   | N/A                 | ❌                    | ❌            |     |
-| o3-mini-2025-01-31     | N/A                | ✅       | ✅                   | N/A                 | ✅                    | ✅            |     |
+| Name                   | Azure AI Inference | LiteLLM | LiteLLM+ Instructor (mode=instructor.Mode.JSON) | Azure OpenAI (parse) | Azure OpenAI |     |
+| ---------------------- | ------------------ | ------- | ----------------------------------------------- | -------------------- | ------------ | --- |
+| gpt-4o-mini-2024-07-18 | N/A                | ✅       |                                                 | ✅                    | ✅            |     |
+| gpt-4o-2024-05-13      | N/A                | ❌       | ✅                                               | ❌                    | ✅            |     |
+| o1-2024-12-17          | N/A                | ✅       | ✅                                               | ✅                    | ✅            |     |
+| o1-mini-2024-09-12     | N/A                | ❌       | ❌                                               | ❌                    | ❌            |     |
+| o3-mini-2025-01-31     | N/A                | ✅       | ✅                                               | ✅                    | ✅            |     |
 
 - Structured Outputs with `response_format: {type: "json_schema", ...}` /pydantic is only supported with the `gpt-4o-mini`, `gpt-4o-mini-2024-07-18`, and `gpt-4o-2024-08-06` model snapshots and later.
 - Models like o1-mini do not support structured output. See [link](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/model-inference/concepts/models.md#azure-openai) 
