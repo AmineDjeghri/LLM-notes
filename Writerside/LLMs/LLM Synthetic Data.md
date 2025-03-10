@@ -1,2 +1,2 @@
 - Le meme template peut déclancher le content filtering si on change de modèle (example avec simple config et gpt 4o mini vs Mistral large)
-- 
+- A verifier : Utiliser un schema pour générer des attaques ne fonctionne pas. Il faut utiliser un str ???
