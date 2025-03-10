@@ -1,2 +1,3 @@
 - Le meme template peut déclancher le content filtering si on change de modèle (example avec simple config et gpt 4o mini vs Mistral large)
-- A verifier : Utiliser un schema pour générer des attaques ne fonctionne pas. Il faut utiliser un str ???
+- A verifier : Utiliser les structured outputs pour générer des attaques ne fonctionne pas. Il faut utiliser le json mode.
+	- C’est vérifié : https://learn.microsoft.com/en-us/answers/questions/2103254/azure-openai-gpt-4o-structured-response-format-tri
