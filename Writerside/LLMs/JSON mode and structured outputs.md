@@ -63,21 +63,26 @@ prompt : John is 30 years old
 
 - Structured Outputs with `response_format: {type: "json_schema", ...}` /pydantic is only supported with the `gpt-4o-mini`, `gpt-4o-mini-2024-07-18`, and `gpt-4o-2024-08-06` model snapshots and later.
 - Models like o1-mini do not support structured output. See [link](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/model-inference/concepts/models.md#azure-openai) 
-Commentaires : 
-- Il faut déployer les dernières versions des modèles 
-- il faut enlever le content filtering
-- il faut faire attention à l’api version.
+Notes : 
+- You should always deploy the latest models to get the latest features.
+- You should always use the latest version of azure openai.
 - I recommend calling gpt4o/mini after the result to extract json as structured output as this is supported from 08/09 model versions
 
 Other models : 
+- If you want to use `ollama`, you need to specify `ollama_chat/model_name` instead of `ollama/model_name`. If a model doesn’t support structured_output, pass `instructor.mode.json` to the client : 
 
-| Name                                     | Azure AI Inference | LiteLLM | LiteLLM + Instructor (json mode) | ollama + instructor |
-| ---------------------------------------- | ------------------ | ------- | -------------------------------- | ------------------- |
-| Mistral-Large-2411                       | ✅ (json only)      |         | ✅                                | N/A                 |
-| Mistral-Small                            | ✅ (json only)      |         | ✅                                | N/A                 |
-| Phi-4                                    | ❌(Timeout)         |         | ❌(Timeout)                       | N/A                 |
-| DeepSeek-R1                              |                    |         | ✅                                | N/A                 |
-| phi35-mini-instruct                      | ❌ (Timeout)        |         | ❌(Timeout)                       |                     |
-| ollama/phi-3.5-uncensored                | N/A                |         |                                  |                     |
-| ollama/qwen2.5:0.5b                      | N/A                |         |                                  |                     |
-| ollama/phi3:3.8b-mini-4k-instruct-q4_K_M | N/A                |         |                                  | ✅                   |
+```
+client = instructor.from_litellm(acompletion, mode=instructor.Mode.JSON)
+```
+
+
+| Name                                          | Azure AI Inference | LiteLLM | LiteLLM + Instructor (json mode) |
+| --------------------------------------------- | ------------------ | ------- | -------------------------------- |
+| azure_ai/Mistral-Large-2411                   | ✅ (json only)      |         | ✅                                |
+| azure_ai/Mistral-Small                        | ✅ (json only)      |         | ✅                                |
+| azure_ai/Phi-4                                | ❌(Timeout)         |         | ❌(Timeout)                       |
+| azure_ai/DeepSeek-R1                          |                    |         | ✅                                |
+| azure_ai/phi35-mini-instruct                  | ❌ (Timeout)        |         | ❌(Timeout)                       |
+| ollama_chat/phi-3.5-uncensored                | N/A                |         | ✅ (mode=instructor.Mode.JSON)    |
+| ollama_chat/qwen2.5:0.5b                      | N/A                |         | ✅(mode=instructor.Mode.JSON)     |
+| ollama_chat/phi3:3.8b-mini-4k-instruct-q4_K_M | N/A                |         | ✅(mode=instructor.Mode.JSON)     |
