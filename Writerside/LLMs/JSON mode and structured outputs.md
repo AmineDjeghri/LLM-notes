@@ -67,8 +67,10 @@ Notes :
 - You should always deploy the latest models to get the latest features.
 - You should always use the latest version of azure openai.
 - I recommend calling gpt4o/mini after the result to extract json as structured output as this is supported from 08/09 model versions
+- (azure) To verify : using Structured ouputs with azure may raise content_filtering and false positives ? 
+	- Someone with the same issue : https://learn.microsoft.com/en-us/answers/questions/2103254/azure-openai-gpt-4o-structured-response-format-tri
 
-Other models : 
+
 - If you want to use `ollama`, you need to specify `ollama_chat/model_name` instead of `ollama/model_name`. If a model doesn’t support structured_output, pass `instructor.mode.json` to the client : 
 
 ```
