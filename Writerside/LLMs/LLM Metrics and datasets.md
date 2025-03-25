@@ -33,7 +33,10 @@
 - [x] [awesome-hallucination-detection](https://github.com/EdinburghNLP/awesome-hallucination-detection) : Everything + metrics for each paper ✅ 2025-02-07
 - [x] [FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation](https://arxiv.org/abs/2305.14251) ✅ 2025-02-07
 
-
+### - Perplexity & Shannon: 
+- [x] https://medium.com/@anudevmanjusatheesh/perplexity-unveiled-key-metric-for-evaluating-llm-output-6ffccf5d0d85 ✅ 2025-03
+- [ ] https://www.comet.com/site/blog/perplexity-for-llm-evaluation/
+	
 
 ## RAG Evaluation
 
