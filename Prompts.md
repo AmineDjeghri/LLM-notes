@@ -2,7 +2,29 @@ Good source : https://www.reddit.com/r/ChatGPTPromptGenius
 
 
 ## Summarize AI conversation to be reused 
+
+```
 This chat is getting lengthy. Please provide a concise prompt I can use in a new chat that captures all the essential context from our current discussion. Include any key technical details, decisions made, and next steps we were about to discuss.
+
+```
+
+## Technical doc :
+
+```
+Generate a comprehensive technical README in Markdown format that documents the current state of the project. This should include:
+
+• A clear summary of what the project does.
+• The next recommended steps for development.
+• Any known issues or limitations.
+
+In addition, create a separate file that lists all classes, functions, and variables — along with their descriptions, file names, and line numbers.
+
+Document all TODOs as structured, actionable prompts, organized by task and understandable to another AI, LLM, or coding agent.  
+
+Write everything as if you’re preparing to hand it off to your future self or another language model — aim for clarity, completeness, and self-sufficiency
+
+```
+
 
 ## General
 
