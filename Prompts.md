@@ -1,6 +1,29 @@
 Good source : https://www.reddit.com/r/ChatGPTPromptGenius
+
+
 ## Summarize AI conversation to be reused 
 This chat is getting lengthy. Please provide a concise prompt I can use in a new chat that captures all the essential context from our current discussion. Include any key technical details, decisions made, and next steps we were about to discuss.
+
+## General
+
+**2. Reduce hallucinations:** At the end of your question, add, “_Do a web search and then reply._” This forces generative AI to give accurate answers.
+
+**3. Apply the Feynman technique:** After AI explains a concept, summarize the same concept simply in your own words and ask “_Correct_?” AI will correct you if necessary. This method makes learning so much more engaging and also increases retention.
+
+**5. Embrace the TL;DR:** This is a no-brainer. You can use this prompt for a lot of things. Summarize code, texts, emails, book pages, news, articles, and many other things throughout the day.
+
+**6. Apply the Pareto Principle:** The 80/20 rule is a great way to learn new concepts. Example usage. “_I want to learn [topic]. Use the Pareto_ Principle _(80/20 rule) to create a course for me._”.
+
+**7. Ask for movie recommendations:** Ask AI to give spoiler-free movie recommendations with reviews based on your preferred genres, actors, languages, etc.
+
+**8. Use for web searches:** Instead of going to Google, Ask ChatGPT to find something on the web to bypass SEO-optimized articles and get relevant information quickly.
+
+**9. Rate my work:** Ask ChatGPT to rate anything. This is the prompt you can use for it. “_Rate the above [article] in different aspects and suggest how I can improve it in those areas.”_ I use it to rate my code, articles, understanding, etc.
+
+**10. Keep it short:** Add, **“**_**Give brief, clear answers that include all key details. Be concise but informative.**_**”** at the end, to get better answers.
+
+**11. Enable Incognito mode:** ChatGPT has an option for temporary chat. When enabled, your data will not be saved in history and won’t be used to train the models.
+
 
 ## Jobs and resume match
 ### v1
