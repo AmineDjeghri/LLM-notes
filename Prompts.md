@@ -1,1 +1,5 @@
-## Coding prompt
+## Summarize AI conversation to be reused 
+This chat is getting lengthy. Please provide a concise prompt I can use in a new chat that captures all the essential context from our current discussion. Include any key technical details, decisions made, and next steps we were about to discuss.
+
+
+
