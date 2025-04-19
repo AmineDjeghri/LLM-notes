@@ -24,7 +24,21 @@ This chat is getting lengthy. Please provide a concise prompt I can use in a new
 
 **11. Enable Incognito mode:** ChatGPT has an option for temporary chat. When enabled, your data will not be saved in history and won’t be used to train the models.
 
+## Evaluation and analysis
+1. "Compare the risks and benefits of subject"
+    
+2. "Evaluate potential outcomes of this business strategy"
+    
+3. "Analyze the trade-offs between these competing approaches"
+    
+4. "Analyze the assumptions in my problem-solving approach"
+    
+5. "Help me identify blind spots in my reasoning"
+    
+6. "Design exercises to strengthen my critical thinking"
 
+## 13 ChatGPT prompts that dramatically improved my critical thinking skills
+  https://www.reddit.com/r/ChatGPTPromptGenius/comments/1jmlz3j/13_chatgpt_prompts_that_dramatically_improved_my/
 ## Jobs and resume match
 ### v1
 Act as a senior hiring manager with over 20 years of experience in the [PREFERRED INDUSTRY]. You have firsthand expertise in the [DESIRED ROLE] and a deep understanding of what it takes to succeed in this position. Your task is to identify the ideal candidate based solely on their resume, ensuring they meet and exceed expectations for [JOB DESCRIPTION].
