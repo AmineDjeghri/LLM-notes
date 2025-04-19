@@ -11,7 +11,7 @@ This chat is getting lengthy. Please provide a concise prompt I can use in a new
 ## Technical doc :
 
 ```
-Generate a comprehensive technical README in Markdown format that documents the current state of the project. This should include:
+Generate a comprehensive technical file named  in Markdown format that documents the current state of the project. This should include:
 
 • A clear summary of what the project does.
 • The next recommended steps for development.
