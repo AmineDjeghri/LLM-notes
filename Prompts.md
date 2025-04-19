@@ -11,7 +11,7 @@ This chat is getting lengthy. Please provide a concise prompt I can use in a new
 ## Technical doc :
 
 ```
-Generate a comprehensive technical file named  in Markdown format that documents the current state of the project. This should include:
+Generate a comprehensive technical file named README_FOR_AGENT.md in Markdown format that documents the current state of the project. This should include:
 
 • A clear summary of what the project does.
 • The next recommended steps for development.
@@ -22,6 +22,9 @@ In addition, create a separate file that lists all classes, functions, and varia
 Document all TODOs as structured, actionable prompts, organized by task and understandable to another AI, LLM, or coding agent.  
 
 Write everything as if you’re preparing to hand it off to your future self or another language model — aim for clarity, completeness, and self-sufficiency
+
+Here is a summary of what does the project which you can rewrite it : 
+[List the project description and main structure]
 
 ```
 
