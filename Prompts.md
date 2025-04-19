@@ -27,7 +27,7 @@ Here is a summary of what does the project which you can rewrite it :
 [List the project description and main structure]
 
 ```
-
+Include the result or the generated file when you start a new conversation 
 
 ## General
 
