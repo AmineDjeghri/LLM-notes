@@ -32,7 +32,7 @@ Then include the result or the generated file when you start a new conversation
 
 ```
 [instruction ]
-Read first the file 'README_FOR_AGENT.md' and CODEX_to understand the project :
+Read first the file 'README_FOR_AGENT.md' and CODE_INDEX.md to understand the project.
 ```
 
 
