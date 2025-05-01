@@ -13,7 +13,7 @@ An agentic framework is **not always needed when building an application around
 
 ### LLM vs tool augmented LLM vs agent   
 
-In summary, an LLM-based agent is an autonomous entity that leverages an LLM’s reasoning _and_ its own tooling loop to achieve goals.  It has **high autonomy** (little or no user intervention during execution), uses tools proactively, and often employs explicit planning and state tracking.  Examples include systems like LangChain agents (e.g. the “ReActAgent” or “Planner+Executor”), GPT-4 with plugins driven by a task loop, and open-source projects like AutoGPT (which uses GPT-4/GPT-3.5 to autonomously break down objectives and call APIs).  These agents are suited for complex multi-step tasks (e.g. automated research, coding projects, itinerary planning) where simple one-shot LLM calls would fail.
+In summary, an LLM-based agent is an autonomous entity that leverages an LLM’s reasoning _and_ its own tooling loop to achieve goals.  It has **high autonomy** (little or no user intervention during execution), uses tools proactively, and often employs explicit planning and state tracking.  These agents are suited for complex multi-step tasks (e.g. automated research, coding projects, itinerary planning) where simple one-shot LLM calls would fail.
 
 |**Dimension**|**Foundational LLMs**|**Tool-Augmented LLMs**|**LLM-Based Agents**|
 |---|---|---|---|
