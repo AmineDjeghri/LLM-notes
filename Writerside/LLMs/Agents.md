@@ -26,5 +26,3 @@ In summary, an LLM-based agent is an autonomous entity that leverages an LLM’s
 |**Examples**|GPT-4 (no plugins), Claude, LLaMA, GPT-3 (text only).|ChatGPT/GPT-4 with plugins (browser, code), OpenAI Function Calling, RAG systems.|LangChain Agents (ReActAgent, Plan/Execute), AutoGPT, BabyAGI, GPT-4 “Assistant” with task loops.|
 |**Use Cases**|General text, Q&A on known data, drafting, summarization, chatbots.|Queries needing up-to-date data or compute (e.g. weather lookup, calculation, data analysis).|Complex workflows (booking, research, coding), autonomous agents for tasks, multi-step decision-making.|
 
-**Sources:** Foundational LLMs excel at in-context generation but are closed systems without new data .  Tool-augmented LLMs use interfaces like OpenAI function-calling or plugins to access APIs .  Agents add planning and memory loops on top of tool use (e.g. via ReAct or LangChain frameworks) to act autonomously .
-
