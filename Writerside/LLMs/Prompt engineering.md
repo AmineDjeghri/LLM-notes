@@ -1,8 +1,8 @@
 
 Sources 
 
-- [ ] https://www.learn-agents.diy/basics/prompt-eng
-	- [ ] [promptingguide](https://www.promptingguide.ai/)
+
+- [x] [promptingguide](https://www.promptingguide.ai/) ✅ 2025-05-04
 
 > [!summary] 
 > Today we will master prompt engineering - the skill of being a "psychologist for LLM".

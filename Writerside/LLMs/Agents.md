@@ -3,6 +3,7 @@ Sources :
 
 - [ ] https://huggingface.co/learn/agents-course
 - [ ] [(April 2025) Which Multi‑Agent Framework Should Run Your Enterprise AI?](https://medium.com/@mpuig/which-multi-agent-framework-should-run-your-enterprise-ai-abdc8e09ad89)
+- [ ] https://www.learn-agents.diy/basics/prompt-eng
 
 
 
