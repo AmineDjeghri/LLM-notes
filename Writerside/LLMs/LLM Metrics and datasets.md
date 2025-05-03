@@ -11,6 +11,7 @@
 
 - [ ] https://github.com/Hannibal046/Awesome-LLM
 - [ ] https://github.com/huggingface/evaluation-guidebook
+- [ ] https://www.confident-ai.com/blog/llm-evaluation-metrics-everything-you-need-for-llm-evaluation
 
 ### LLM as A Judge
 - [ ] [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685)

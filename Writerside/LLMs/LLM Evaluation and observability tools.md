@@ -3,14 +3,14 @@ Author : Amine DJEGHRI
 ## LLM Tools
 - **LLM platforms (observability**_,_ **evaluation, monitoring) :** 
 	- langsmith,
-	- langfuse, 
+	- langfuse (my selection) 
 	- Pheonix Arize,
 	- langtrace
 	- Helicone
 - **LLMs testing frameworks** :
 	- promptfoo, 
 	- giskard, 
-	- deep-eval (contains G-Eval and Ragas)
+	- deep-eval (contains G-Eval and Ragas) (my selection) 
 	- ragas
 	- G-eval
 - **Guardrails frameworks** 
