@@ -1,5 +1,4 @@
 
-
 Sources : 
 
 - [ ] https://huggingface.co/learn/agents-course
@@ -29,3 +28,8 @@ In summary, an LLM-based agent is an autonomous entity that leverages an LLM’s
 | **Examples**     | GPT-4 (no plugins), Claude, LLaMA, GPT-3 (text only).                               | ChatGPT/GPT-4 with plugins (browser, code), OpenAI Function Calling, RAG systems.             | LangGraph.                                                                                                  |
 | **Use Cases**    | General text, Q&A on known data, drafting, summarization, chatbots.                 | Queries needing up-to-date data or compute (e.g. weather lookup, calculation, data analysis). | Complex workflows (booking, research, coding), autonomous agents for tasks, multi-step decision-making.     |
 
+
+![[Pasted image 20250504000023.png]]
+
+
+dzada
