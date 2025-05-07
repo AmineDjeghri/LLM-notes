@@ -35,6 +35,19 @@ Then include the result or the generated file when you start a new conversation
 Read first the file 'README_FOR_AGENT.md' and CODE_INDEX.md to understand the project.
 ```
 
+## Weekly work email:
+
+
+```
+
+**Done**
+
+**Todo**
+
+**Blockers**
+
+```
+
 
 ## General
 
