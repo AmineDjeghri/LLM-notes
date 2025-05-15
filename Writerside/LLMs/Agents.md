@@ -33,4 +33,11 @@ In summary, an LLM-based agent is an autonomous entity that leverages an LLM’s
 ![[Pasted image 20250504000023.png]]
 
 
-dzada
+Libraries : 
+
+- Google ADK (my choice)
+- CrewAI
+- LangGraph
+- atomic-agents
+- PydanticAI
+- 
