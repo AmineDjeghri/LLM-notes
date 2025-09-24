@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "Remove URLs",
+      "path": "copilot/copilot-custom-prompts/Remove URLs.md"
+    },
+    {
+      "basename": "Translate to Chinese",
+      "path": "copilot/copilot-custom-prompts/Translate to Chinese.md"
+    },
+    {
+      "basename": "Summarize",
+      "path": "copilot/copilot-custom-prompts/Summarize.md"
+    },
+    {
+      "basename": "Simplify",
+      "path": "copilot/copilot-custom-prompts/Simplify.md"
+    },
+    {
+      "basename": "Make longer",
+      "path": "copilot/copilot-custom-prompts/Make longer.md"
+    },
+    {
+      "basename": "Generate table of contents",
+      "path": "copilot/copilot-custom-prompts/Generate table of contents.md"
+    },
+    {
+      "basename": "Fix grammar and spelling",
+      "path": "copilot/copilot-custom-prompts/Fix grammar and spelling.md"
+    },
+    {
+      "basename": "Generate glossary",
+      "path": "copilot/copilot-custom-prompts/Generate glossary.md"
+    },
+    {
+      "basename": "Explain like I am 5",
+      "path": "copilot/copilot-custom-prompts/Explain like I am 5.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Untitled.base"
+    },
+    {
       "basename": "LLM Evaluation",
       "path": "Writerside/AI tools reviews/LLM Evaluation.md"
     },
@@ -114,6 +154,9 @@
     }
   ],
   "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false,
   "maxLength": null,
   "openType": "tab"
 }

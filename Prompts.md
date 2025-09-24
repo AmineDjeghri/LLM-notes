@@ -1,6 +1,7 @@
 Good source : https://www.reddit.com/r/ChatGPTPromptGenius
 
-
+```table-of-contents
+```
 
 ## Summarize AI conversation to be reused 
 
@@ -368,3 +369,5 @@ Output Requirements:
 - Goal: Extract all usable knowledge, make it actionable, and create strong mental connections for long-term retention.```
 
 ```
+
+
