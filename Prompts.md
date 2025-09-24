@@ -1,6 +1,7 @@
 Good source : https://www.reddit.com/r/ChatGPTPromptGenius
 
 
+
 ## Summarize AI conversation to be reused 
 
 ```
@@ -284,4 +285,86 @@ Basically turns your AI into a briefing assistant that knows the full context of
 
 
 
+## Youtube summarization: 
 
+
+```Follow this **AI-proof, stepwise reasoning process** to extract 100% of usable knowledge, ensure understanding, and make it actionable in real life. Use logic, verification, and reasoning at every step.  
+
+---
+
+Step 0: Preliminary Analysis
+1. Skim the video to identify main themes, sections, and topics.
+2. Predict what key insights or ideas the video is likely to contain.
+
+Step 1: Chunked Conceptual Understanding
+1. Break the video into small, meaningful segments.
+2. Extract all key concepts, arguments, and insights.
+3. For each concept, ask Socratic questions:
+   - Why is this true?
+   - How does it relate to other knowledge I know?
+   - Are there hidden assumptions?
+   - What happens if variables change?
+4. Explain each concept as if teaching a beginner (Feynman Technique).
+
+Step 2: Analogies, Metaphors & Intuition
+1. Provide at least one analogy or metaphor per concept from everyday life, technology, nature, or history.
+2. Check: Does this analogy truly make the concept easier to understand? Revise if needed.
+
+Step 3: Real-Life Application & Simulation
+1. Create 3–5 practical, actionable ways to use the idea in personal life, studies, work, or problem-solving.
+2. Include mini-scenarios or thought experiments to demonstrate application.
+3. Verify: Can someone unfamiliar with the topic implement these steps immediately?
+
+Step 4: Knowledge Connections & Mapping
+1. Connect each concept to similar frameworks, prior knowledge, or historical/modern examples.
+2. Visualize relationships as concept maps, hierarchies, or networks.
+3. Confirm: Are these connections accurate, meaningful, and not forced?
+
+Step 5: Perspectives, Critical Analysis & Predictions
+1. Analyze each concept: strengths, weaknesses, limitations, alternative viewpoints, and predictions.
+2. Self-check: Does the analysis cover all reasonable perspectives?
+
+Step 6: Memory Anchoring & Retention
+1. Create mnemonics, stories, or memorable phrases for high-value concepts.
+2. Highlight must-remember insights for long-term retention.
+
+Step 7: Reflection & Self-Assessment
+1. Generate reflective prompts:
+   - Which ideas challenge my current beliefs?
+   - Which are immediately actionable?
+   - Which concepts surprised me or had the most impact?
+2. Verify: Are these prompts thought-provoking and applicable?
+
+Step 8: Actionable Next Steps
+1. Suggest immediate, medium-term, and long-term actions for each key insight.
+2. Check: Are these steps practical, realistic, and impactful?
+
+Step 9: Confidence Scoring & Verification
+1. Rate certainty and reliability for each extracted idea (0–100%).
+2. Highlight areas needing further research or verification.
+3. Self-verify: Did I miss any major concept or misinterpret anything?
+
+Step 10: Layered Summaries
+1. Quick Summary: High-level key points.
+2. Detailed Summary: Concepts explained with analogies, examples, and applications.
+3. Deep Mastery: Connections, critiques, predictions, and actionable steps.
+
+Step 11: Conclusion & Reflection
+1. Summarize the overall essence of the video.
+2. Highlight the most important lessons and practical benefits.
+3. Suggest next steps for applying knowledge or exploring related areas.
+4. Verify: Does the conclusion capture 100% of the video’s core value?
+
+Step 12: Final Verification
+1. Cross-check that no idea is omitted, misrepresented, or unclear.
+2. Ensure all explanations are coherent, actionable, and memorable.
+3. Confirm that reflective questions, applications, and analogies enhance understanding.
+
+---
+
+Output Requirements:
+- Use clear headings, bullet points, and examples.
+- Make it engaging, structured, and easy to read.
+- Goal: Extract all usable knowledge, make it actionable, and create strong mental connections for long-term retention.```
+
+```
