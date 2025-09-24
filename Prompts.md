@@ -248,6 +248,39 @@ from the file ALL_Graphic Content sexual content_en_2025-04-09.csv select 4 inpu
 i am creating a vulnerability dataset that contains inputs and outputs . Your job is, from the selected 4 inputs,  to generate two types of outputs : one which contains a explicit realistic vulnerable response, and a second with contains a non-vulnerable response or where the llm sometimes refuse to respond .  
 there will be an LLM which will detect try to detect the vulnerable repose and the non-vulnerable response. Make sure the responses are clearly detectable, realistic for the vulnerable one.
 
+## MS CEO prompts
+**5 prompts Satya uses every day:**
+
+**1. Meeting prep that actually works:**
+
+> "Based on my prior interactions with [person], give me 5 things likely top of mind for our next meeting."
+
+This is brilliant because it uses your conversation history to predict what someone wants to talk about. No more awkward "so... what did you want to discuss?" moments.
+
+**2. Project status without the BS:**
+
+> "Draft a project update based on emails, chats, and all meetings in [series]: KPIs vs. targets, wins/losses, risks, competitive moves, plus likely tough questions and answers."
+
+Instead of relying on people to give you sugar-coated updates, the AI pulls from actual communications to give you the real picture.
+
+**3. Reality check on deadlines:**
+
+> "Are we on track for the [Product] launch in November? Check eng progress, pilot program results, risks. Give me a probability."
+
+Love this one. It's asking for an actual probability rather than just "yeah we're on track" (which usually means "probably not but I don't want to be the bearer of bad news").
+
+**4. Time audit:**
+
+> "Review my calendar and email from the last month and create 5 to 7 buckets for projects I spend most time on, with % of time spent and short descriptions."
+
+This could be eye-opening for anyone who feels like they're always busy but can't figure out what they're actually accomplishing.
+
+**5. Never get blindsided again:**
+
+> "Review [select email] + prep me for the next meeting in [series], based on past manager and team discussions."
+
+Basically turns your AI into a briefing assistant that knows the full context of ongoing conversations.
+
 
 
 
