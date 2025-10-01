@@ -1,17 +1,18 @@
+```table-of-contents
+```
 
-
-- Easy guides:
+## Easy guides:
 	- https://www.promptfoo.dev/docs/red-team/
 	- https://www.confident-ai.com/blog/red-teaming-llms-a-step-by-step-guide
 
-- Tools: 
+## Tools: 
 	- DeepTeam (Deepeval)
 	- promptfoo
 	- Giskard
 
-Papers and research:
+## Papers and research:
 - https://github.com/nrimsky/LM-exp
 
 
-Other resources : 
+## Other resources : 
 - Check my github stars /lists to find some resources
