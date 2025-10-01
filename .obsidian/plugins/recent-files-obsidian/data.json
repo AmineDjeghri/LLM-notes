@@ -1,68 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "News and updates",
-      "path": "Writerside/Vision/News and updates.md"
+      "basename": "0 - Mathematics of Deep Learning",
+      "path": "AI & Maths/0 - Mathematics of Deep Learning.md"
     },
     {
-      "basename": "3-LLM Redteaming",
-      "path": "Writerside/LLMs/3-LLM Redteaming.md"
+      "basename": "Pasted image 20240420005706",
+      "path": "Pasted image 20240420005706.png"
     },
     {
-      "basename": "Prompt engineering",
-      "path": "Writerside/LLMs/Prompt engineering.md"
+      "basename": "Productivity guide",
+      "path": "Productivity guide.md"
     },
     {
-      "basename": "1-NLP Intro and cheatsheet",
-      "path": "Writerside/LLMs/1-NLP Intro and cheatsheet.md"
+      "basename": "To classify",
+      "path": "To classify.md"
     },
     {
       "basename": "Python",
       "path": "Python.md"
     },
     {
+      "basename": "Prompts Examples",
+      "path": "Prompts Examples.md"
+    },
+    {
+      "basename": "Prompt engineering",
+      "path": "LLMs/Prompt engineering.md"
+    },
+    {
       "basename": "Template (change title)",
       "path": "Template (change title).md"
     },
     {
-      "basename": "Untitled",
-      "path": "Untitled.base"
+      "basename": "1- Vision intro",
+      "path": "Vision/1- Vision intro.md"
     },
     {
-      "basename": "Remove URLs",
-      "path": "copilot/copilot-custom-prompts/Remove URLs.md"
+      "basename": "3-LLM Redteaming",
+      "path": "LLMs/3-LLM Redteaming.md"
     },
     {
-      "basename": "Translate to Chinese",
-      "path": "copilot/copilot-custom-prompts/Translate to Chinese.md"
-    },
-    {
-      "basename": "Summarize",
-      "path": "copilot/copilot-custom-prompts/Summarize.md"
-    },
-    {
-      "basename": "Simplify",
-      "path": "copilot/copilot-custom-prompts/Simplify.md"
-    },
-    {
-      "basename": "Make longer",
-      "path": "copilot/copilot-custom-prompts/Make longer.md"
-    },
-    {
-      "basename": "Generate table of contents",
-      "path": "copilot/copilot-custom-prompts/Generate table of contents.md"
-    },
-    {
-      "basename": "Fix grammar and spelling",
-      "path": "copilot/copilot-custom-prompts/Fix grammar and spelling.md"
-    },
-    {
-      "basename": "Generate glossary",
-      "path": "copilot/copilot-custom-prompts/Generate glossary.md"
-    },
-    {
-      "basename": "Explain like I am 5",
-      "path": "copilot/copilot-custom-prompts/Explain like I am 5.md"
+      "basename": "1-NLP Intro and cheatsheet",
+      "path": "LLMs/1-NLP Intro and cheatsheet.md"
     },
     {
       "basename": "LLM Evaluation",
@@ -79,10 +59,6 @@
     {
       "basename": "LLM Evaluation tools",
       "path": "Writerside/AI tools reviews/LLM Evaluation tools.md"
-    },
-    {
-      "basename": "Pasted image 20240420005706",
-      "path": "Pasted image 20240420005706.png"
     },
     {
       "basename": "README",
