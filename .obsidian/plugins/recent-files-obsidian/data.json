@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "NLP Intro and cheatsheet",
-      "path": "NLP Intro and cheatsheet.md"
+      "basename": "1-NLP Intro and cheatsheet",
+      "path": "Writerside/LLMs/1-NLP Intro and cheatsheet.md"
+    },
+    {
+      "basename": "News and updates",
+      "path": "Writerside/Vision/News and updates.md"
     },
     {
       "basename": "LLM Redteaming",
       "path": "LLM Redteaming.md"
+    },
+    {
+      "basename": "Python",
+      "path": "Python.md"
     },
     {
       "basename": "Template (change title)",
@@ -15,10 +23,6 @@
     {
       "basename": "Untitled",
       "path": "Untitled.base"
-    },
-    {
-      "basename": "News and updates",
-      "path": "Writerside/Vision/News and updates.md"
     },
     {
       "basename": "Remove URLs",
