@@ -1,48 +1,80 @@
 {
   "recentFiles": [
     {
-      "basename": "0 - Mathematics of Deep Learning",
-      "path": "AI & Maths/0 - Mathematics of Deep Learning.md"
+      "basename": "1-NLP Intro and cheatsheet",
+      "path": "LLMs/1-NLP Intro and cheatsheet.md"
     },
     {
-      "basename": "Pasted image 20240420005706",
-      "path": "Pasted image 20240420005706.png"
+      "basename": "2-LLM Inference tools",
+      "path": "LLMs/2-LLM Inference tools.md"
     },
     {
-      "basename": "Productivity guide",
-      "path": "Productivity guide.md"
+      "basename": "3- LLM Redteaming",
+      "path": "LLMs/3- LLM Redteaming.md"
+    },
+    {
+      "basename": "4- Prompt engineering",
+      "path": "LLMs/4- Prompt engineering.md"
+    },
+    {
+      "basename": "5- LLM Evaluation and observability tools",
+      "path": "LLMs/5- LLM Evaluation and observability tools.md"
+    },
+    {
+      "basename": "LLM Synthetic Data",
+      "path": "LLMs/LLM Synthetic Data.md"
+    },
+    {
+      "basename": "LLM Metrics and datasets",
+      "path": "LLMs/LLM Metrics and datasets.md"
+    },
+    {
+      "basename": "JSON mode and structured outputs",
+      "path": "LLMs/JSON mode and structured outputs.md"
+    },
+    {
+      "basename": "6- LLM Leaderboards",
+      "path": "LLMs/6- LLM Leaderboards.md"
+    },
+    {
+      "basename": "Comparaison and evaluation Template",
+      "path": "productivity/Comparaison and evaluation Template.md"
     },
     {
       "basename": "To classify",
       "path": "To classify.md"
     },
     {
-      "basename": "Python",
-      "path": "Python.md"
+      "basename": "Productivity guide",
+      "path": "productivity/Productivity guide.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Pasted image 20240420005706",
+      "path": "AI & Maths/Pasted image 20240420005706.png"
     },
     {
       "basename": "Prompts Examples",
-      "path": "Prompts Examples.md"
-    },
-    {
-      "basename": "Prompt engineering",
-      "path": "LLMs/Prompt engineering.md"
-    },
-    {
-      "basename": "Template (change title)",
-      "path": "Template (change title).md"
+      "path": "productivity/Prompts Examples.md"
     },
     {
       "basename": "1- Vision intro",
       "path": "Vision/1- Vision intro.md"
     },
     {
-      "basename": "3-LLM Redteaming",
-      "path": "LLMs/3-LLM Redteaming.md"
+      "basename": "Template (change title)",
+      "path": "Template (change title).md"
     },
     {
-      "basename": "1-NLP Intro and cheatsheet",
-      "path": "LLMs/1-NLP Intro and cheatsheet.md"
+      "basename": "0 - Mathematics of Deep Learning",
+      "path": "AI & Maths/0 - Mathematics of Deep Learning.md"
+    },
+    {
+      "basename": "Python",
+      "path": "Python.md"
     },
     {
       "basename": "LLM Evaluation",
@@ -59,10 +91,6 @@
     {
       "basename": "LLM Evaluation tools",
       "path": "Writerside/AI tools reviews/LLM Evaluation tools.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Todo",

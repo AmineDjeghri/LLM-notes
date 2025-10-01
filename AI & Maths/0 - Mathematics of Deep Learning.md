@@ -119,15 +119,15 @@ When discussing NLL in the context of machine learning models like those used in
 
 2. **NLL and Cross-Entropy**:
    - For classification tasks, each target label can be considered as an event. The NLL for a predicted probability distribution over these labels is calculated using the logarithm of the predicted probabilities. If you use the base-2 logarithm, this calculation directly gives you the cross-entropy in bits.
-   - The formula for cross-entropy in bits is: \( H(p, q) = -\sum p(x) \log_2 q(x) \), where \( p(x) \) is the true probability of outcome \( x \), and \( q(x) \) is the predicted probability of \( x \).
+   - The formula for cross-entropy in bits is:  $H(p, q) = -\sum p(x) \log_2 q(x)$, where \( p(x) \) is the true probability of outcome \( x \), and \( q(x) \) is the predicted probability of \( x \).
 
 3. **Interpretation of NLL in Bits**:
-   - When NLL is expressed in bits, each term \( -\log_2 q(x_i) \) (where \( x_i \) is the true label) measures the number of bits required to encode the event \( x_i \) using the predicted probability \( q \). Lower values of \( q(x_i) \) (when the prediction is uncertain or wrong) lead to higher values of \( -\log_2 q(x_i) \), indicating that more bits are required to encode the event due to the prediction error.
+   - When NLL is expressed in bits, each term  $-\log_2 q(x_i)$  (where \( x_i \) is the true label) measures the number of bits required to encode the event \( x_i \) using the predicted probability  $q$ . Lower values of  $q(x_i)$  (when the prediction is uncertain or wrong) lead to higher values of  $-\log_2 q(x_i)$ , indicating that more bits are required to encode the event due to the prediction error.
    - Minimizing NLL thus means minimizing the average number of bits needed to correctly encode the labels given the predictions. A perfect model, which predicts the true distribution exactly, would have a cross-entropy equal to the entropy of the true distribution (the theoretical lower bound in bits).
 
 ### 3.2. Practical Example
 
-If a model predicts that a certain event has a probability of 0.5, the information content of that event occurring is \( \log_2(2) = 1 \) bit. If the true probability of the event is actually 1 (it always happens), the cross-entropy would be higher because the model's prediction introduces uncertainty (inefficiency in coding).
+If a model predicts that a certain event has a probability of 0.5, the information content of that event occurring is  $\log_2(2) = 1  bit$. If the true probability of the event is actually 1 (it always happens), the cross-entropy would be higher because the model's prediction introduces uncertainty (inefficiency in coding).
 
 In summary, expressing NLL in bits provides a direct interpretation in terms of the efficiency of the prediction. Minimizing NLL in bits can be seen as optimizing the model to reduce the average 'coding cost' in bits, making it as efficient as possible in terms of the information-theoretic encoding of predictions.
 
@@ -140,13 +140,13 @@ Bayesian inference is a method of statistical inference in which Bayes' theorem 
 
 Bayesian inference revolves around updating our belief about the unknown parameters of a model based on observing data. This is expressed mathematically as:
 
-\[ P(\Theta \mid X) = \frac{P(X \mid \Theta) P(\Theta)}{P(X)} \]
+$[ P(\Theta \mid X) = \frac{P(X \mid \Theta) P(\Theta)}{P(X)}]$
 
 where:
-- \( P(\Theta \mid X) \) is the posterior probability of the model parameters \( \Theta \) given the data \( X \).
-- \( P(X \mid \Theta) \) is the likelihood of the data given the model parameters.
-- \( P(\Theta) \) is the prior probability of the model parameters.
-- \( P(X) \) is the marginal likelihood or evidence, which acts as a normalizing constant.
+-  $P(\Theta \mid X)$  is the posterior probability of the model parameters  $\Theta$ given the data  $X$ .
+-  $P(X \mid \Theta)$  is the likelihood of the data given the model parameters.
+-  $P(\Theta)$ is the prior probability of the model parameters.
+- $P(X)$ is the marginal likelihood or evidence, which acts as a normalizing constant.
 
 ### 4.2. Application in Machine Learning
 
@@ -172,7 +172,7 @@ While Bayesian inference has many advantages, it also faces computational challe
 Xavier initialization is designed specifically for keeping the forward and backward propagation scales roughly the same in deep networks. 
 
 #### 5.1.1. Theory and Formula
-The key idea behind Xavier initialization is to maintain the variance of activations and backpropagated gradients throughout the network. For a layer with `n_in` inputs and `n_out` outputs, the Xavier initialization sets a layer’s weights W to be sampled from a distribution with zero mean and a variance of \( \frac{2}{{n_{\text{in}} + n_{\text{out}}}} \) (for the uniform distribution, it ranges between \(-\sqrt{\frac{6}{{n_{\text{in}} + n_{\text{out}}}}}\) and \(\sqrt{\frac{6}{{n_{\text{in}} + n_{\text{out}}}}}\)).
+The key idea behind Xavier initialization is to maintain the variance of activations and backpropagated gradients throughout the network. For a layer with `n_in` inputs and `n_out` outputs, the Xavier initialization sets a layer’s weights W to be sampled from a distribution with zero mean and a variance of \( $\frac{2}{{n_{\text{in}} + n_{\text{out}}}}$ \) (for the uniform distribution, it ranges between $-\sqrt{\frac{6}{{n_{\text{in}} + n_{\text{out}}}}} and \sqrt{\frac{6}{{n_{\text{in}} + n_{\text{out}}}}}$.
 
 #### 5.1.2. When to Use
 Xavier initialization works best with layers followed by a sigmoidal activation function like logistic sigmoid or hyperbolic tangent.
