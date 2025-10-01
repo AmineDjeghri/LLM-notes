@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "1-NLP Intro and cheatsheet",
-      "path": "Writerside/LLMs/1-NLP Intro and cheatsheet.md"
-    },
-    {
       "basename": "News and updates",
       "path": "Writerside/Vision/News and updates.md"
     },
     {
-      "basename": "LLM Redteaming",
-      "path": "LLM Redteaming.md"
+      "basename": "3-LLM Redteaming",
+      "path": "Writerside/LLMs/3-LLM Redteaming.md"
+    },
+    {
+      "basename": "Prompt engineering",
+      "path": "Writerside/LLMs/Prompt engineering.md"
+    },
+    {
+      "basename": "1-NLP Intro and cheatsheet",
+      "path": "Writerside/LLMs/1-NLP Intro and cheatsheet.md"
     },
     {
       "basename": "Python",
