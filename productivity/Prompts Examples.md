@@ -3,6 +3,7 @@
 ```
 ## Easy guides
 - Use ChatGPT to rewrite a prompt
+- [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
 ## Tools / libraries 
 - item 1
@@ -393,3 +394,7 @@ Output Requirements:
 ```
 Create a realistic image by combining the two people from the provided photos into a single frame. Place them side by side, standing close to each other, as if they are posing together. Ensure that both people are looking straight at the camera and displaying a natural, relaxed, and smiling expression. Adapt the lighting, skin tones, shadows, and perspective so that both individuals appear to be in the same environment. Use a single, attractive background, such as a soft-lit indoor studio backdrop, that suits both subjects and enhances them. Adjust posture, alignment, and proportions so they resemble close friends or family members, positioned naturally for a portrait. Avoid harsh retouching or inappropriate lighting. Ensure the final image feels authentic, as if it were taken in one shot. Ensure the character (tone/mood) of the image is not altered.
 ```
+
+### Video
+- [CAMERA SHOTS & MOVES](https://www.reddit.com/r/PromptEngineering/comments/1nvczxl/stop_writing_make_it_cinematic_steal_these_2/)
+- 

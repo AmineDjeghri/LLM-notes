@@ -1,14 +1,13 @@
-Author : Amine DJEGHRI
+```table-of-contents
+```
+## Easy guides
+- item 1
+- item 2
 
-**Table of content**
-- [[#How to estimate the required VRAM to run your model|How to estimate the required VRAM to run your model]]
-- [[#AI Inference tools :|AI Inference tools :]]
-- [[#LLM quantizations and format|LLM quantizations and format]]
-
-
-## AI Inference tools : 
-- Ollama (Best choice) : 
-- LM Studio
+## Tools / libraries 
+### Local 
+- Ollama (Best backend) 
+- LM Studio (Best GUI)
 - Jan
 - GPT4All
 - Llama.cpp
@@ -16,6 +15,12 @@ Author : Amine DJEGHRI
 - localai
 - llamafile
 
+## Papers and research
+- item 1
+## News and updates
+- [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/?tl=fr)
+## Other resources 
+- item 1
 ## LLM quantizations and format
 - GGUF
 - EXL2

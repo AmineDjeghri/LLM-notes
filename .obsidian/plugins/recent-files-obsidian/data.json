@@ -1,40 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "1-NLP Intro and cheatsheet",
-      "path": "LLMs/1-NLP Intro and cheatsheet.md"
-    },
-    {
       "basename": "2-LLM Inference tools",
       "path": "LLMs/2-LLM Inference tools.md"
     },
     {
+      "basename": "Template (change title)",
+      "path": "Template (change title).md"
+    },
+    {
       "basename": "3- LLM Redteaming",
-      "path": "LLMs/3- LLM Redteaming.md"
+      "path": "LLMs/evaluation & redteaming/3- LLM Redteaming.md"
     },
     {
-      "basename": "4- Prompt engineering",
-      "path": "LLMs/4- Prompt engineering.md"
+      "basename": "Prompts Examples",
+      "path": "productivity/Prompts Examples.md"
     },
     {
-      "basename": "5- LLM Evaluation and observability tools",
-      "path": "LLMs/5- LLM Evaluation and observability tools.md"
+      "basename": "Productivity guide",
+      "path": "productivity/Productivity guide.md"
     },
     {
-      "basename": "LLM Synthetic Data",
-      "path": "LLMs/LLM Synthetic Data.md"
+      "basename": "1- Vision intro",
+      "path": "Vision/1- Vision intro.md"
+    },
+    {
+      "basename": "6- LLM Leaderboards",
+      "path": "LLMs/6- LLM Leaderboards.md"
     },
     {
       "basename": "LLM Metrics and datasets",
-      "path": "LLMs/LLM Metrics and datasets.md"
+      "path": "LLMs/evaluation & redteaming/LLM Metrics and datasets.md"
     },
     {
       "basename": "JSON mode and structured outputs",
       "path": "LLMs/JSON mode and structured outputs.md"
     },
     {
-      "basename": "6- LLM Leaderboards",
-      "path": "LLMs/6- LLM Leaderboards.md"
+      "basename": "1-NLP Intro and cheatsheet",
+      "path": "LLMs/1-NLP Intro and cheatsheet.md"
+    },
+    {
+      "basename": "5- LLM Evaluation and observability tools",
+      "path": "LLMs/evaluation & redteaming/5- LLM Evaluation and observability tools.md"
+    },
+    {
+      "basename": "LLM Synthetic Data",
+      "path": "LLMs/LLM Synthetic Data.md"
     },
     {
       "basename": "Comparaison and evaluation Template",
@@ -45,28 +57,12 @@
       "path": "To classify.md"
     },
     {
-      "basename": "Productivity guide",
-      "path": "productivity/Productivity guide.md"
-    },
-    {
       "basename": "README",
       "path": "README.md"
     },
     {
       "basename": "Pasted image 20240420005706",
       "path": "AI & Maths/Pasted image 20240420005706.png"
-    },
-    {
-      "basename": "Prompts Examples",
-      "path": "productivity/Prompts Examples.md"
-    },
-    {
-      "basename": "1- Vision intro",
-      "path": "Vision/1- Vision intro.md"
-    },
-    {
-      "basename": "Template (change title)",
-      "path": "Template (change title).md"
     },
     {
       "basename": "0 - Mathematics of Deep Learning",
