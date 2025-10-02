@@ -4,6 +4,7 @@
 - item 1
 - item 2
 - https://nono.ma/linter-vs-formatter
+- Backend+Frontend+GenAI (https://github.com/AmineDjeghri/generative-ai-project-template)
 
 ## Tools / libraries 
 - leetcode
