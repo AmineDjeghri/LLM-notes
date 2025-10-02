@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Python",
+      "path": "Python.md"
+    },
+    {
       "basename": "2-LLM Inference tools",
       "path": "LLMs/2-LLM Inference tools.md"
     },
@@ -67,10 +71,6 @@
     {
       "basename": "0 - Mathematics of Deep Learning",
       "path": "AI & Maths/0 - Mathematics of Deep Learning.md"
-    },
-    {
-      "basename": "Python",
-      "path": "Python.md"
     },
     {
       "basename": "LLM Evaluation",
