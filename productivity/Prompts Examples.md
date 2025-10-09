@@ -16,6 +16,42 @@
 
 ## Examples
 ### Text prompts
+
+#### Nicegui python app
+
+
+```
+I’m building a Python project that uses **uv** for dependency management and Python **3.13**.  
+Please set up a `pyproject.toml` configured for **uv** and **hatchling** as the build backend.
+
+The project should include:
+
+- A **Python package** that contains all the code (backend logic and frontend).
+    
+- Inside the package, a **NiceGUI frontend** file named `frontend.py`.
+    
+
+**Requirements:**
+
+- The `frontend.py` file should use **NiceGUI** for the UI.
+    
+- The frontend interacts directly with backend Python modules inside the same package — **no FastAPI or other web frameworks**.
+    
+- If state management is needed, use a **dictionary** to manage state (do **not** use `bind`).
+    
+- Use event-driven callbacks like `on_change` and `on_click` for handling UI events — avoid binding.
+    
+
+**Goal:**  
+Set up the initial project structure, configuration, and example code that demonstrates:
+
+- The package setup using hatchling
+    
+- A `frontend.py` file (inside the package) that uses NiceGUI to interact with backend functions
+    
+- Proper `uv` + `pyproject.toml` configuration for Python 3.13
+```
+
 #### Summarize AI conversation to be reused 
 
 ```
