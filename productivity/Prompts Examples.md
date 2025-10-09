@@ -52,6 +52,9 @@ Set up the initial project structure, configuration, and example code that demon
 - Proper `uv` + `pyproject.toml` configuration for Python 3.13
 ```
 
+##### Windsurf rules
+- frontend nicegui : 
+- 
 #### Summarize AI conversation to be reused 
 
 ```
