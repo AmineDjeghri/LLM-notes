@@ -1,6 +1,8 @@
 
 ### layout and width positionning (and responsive design)
--  use Tailwind’s `max-w-xl w-full mx-auto`. It’s simpler and yields a readable, centered single-column layout. (for example the global page)
+-  use Tailwind’s `max-w-xl w-full mx-auto`. It’s simpler and yields a readable, centered single-column layout. (for example the global page). for example : 
+	-     with ui.column().classes("max-w-xl w-full mx-auto p-4 gap-4"):
+	- or : with ui.card().classes("max-w-xl w-full mx-auto p-4 gap-4"):
 - Use `col-12 col-sm-4` only when you’re inside a Quasar grid row and actually want a 1/3-width column on small+ screens. like this :
 
 ```
