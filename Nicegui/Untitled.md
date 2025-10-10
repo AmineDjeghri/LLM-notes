@@ -1,3 +1,8 @@
+
+### layout awidth positionning 
+-  use Tailwind’s `max-w-xl w-full mx-auto`. It’s simpler and yields a readable, centered single-column layout.
+- Use `col-12 col-sm-4` only when you’re inside a Quasar grid row and actually want a 1/3-width column on small+ screens.
+
 - always use a column inside a row, and not a column inside a column 
 ```
 with ui.row().classes("w-full justify-center"):  
@@ -13,3 +18,5 @@ with ui.row().classes("w-full justify-center"):
     with ui.column().classes("col-12 col-md-4 items-center"):  
         self.radar = ui.echart(self._radar_options()).classes("h-96")
 ```
+
+

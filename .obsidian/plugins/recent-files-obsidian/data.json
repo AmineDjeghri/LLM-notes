@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Prompts Examples",
-      "path": "productivity/Prompts Examples.md"
-    },
-    {
       "basename": "Untitled",
       "path": "Nicegui/Untitled.md"
+    },
+    {
+      "basename": "Productivity guide",
+      "path": "productivity/Productivity guide.md"
+    },
+    {
+      "basename": "Prompts Examples",
+      "path": "productivity/Prompts Examples.md"
     },
     {
       "basename": "Python",
@@ -23,10 +27,6 @@
     {
       "basename": "3- LLM Redteaming",
       "path": "LLMs/evaluation & redteaming/3- LLM Redteaming.md"
-    },
-    {
-      "basename": "Productivity guide",
-      "path": "productivity/Productivity guide.md"
     },
     {
       "basename": "1- Vision intro",
