@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Template",
+      "path": "Template.md"
+    },
+    {
+      "basename": "To classify",
+      "path": "To classify.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "Prompts Examples",
       "path": "productivity/Prompts Examples.md"
     },
@@ -19,10 +31,6 @@
     {
       "basename": "2-LLM Inference tools",
       "path": "LLMs/2-LLM Inference tools.md"
-    },
-    {
-      "basename": "Template (change title)",
-      "path": "Template (change title).md"
     },
     {
       "basename": "3- LLM Redteaming",
@@ -59,14 +67,6 @@
     {
       "basename": "Comparaison and evaluation Template",
       "path": "productivity/Comparaison and evaluation Template.md"
-    },
-    {
-      "basename": "To classify",
-      "path": "To classify.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Pasted image 20240420005706",
