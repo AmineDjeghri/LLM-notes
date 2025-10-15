@@ -16,8 +16,9 @@
 
 ## Examples
 ### Text prompts
+#### Coding
 
-#### Nicegui python app
+##### Nicegui python app
 
 
 ```
@@ -53,8 +54,11 @@ Set up the initial project structure, configuration, and example code that demon
 ```
 
 ##### Windsurf rules
-- frontend nicegui : 
-- 
+
+```
+
+```
+
 #### Summarize AI conversation to be reused 
 
 ```
@@ -62,7 +66,7 @@ This chat is getting lengthy. Please provide a concise prompt I can use in a new
 
 ```
 
-#### Technical doc :
+##### Technical doc :
 
 ```
 Generate a comprehensive technical file named README_FOR_AGENT.md in Markdown format that documents the current state of the project. This should include:
