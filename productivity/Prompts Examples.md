@@ -17,6 +17,7 @@
 ## Examples
 ### Text prompts
 #### Coding
+https://github.com/potpie-ai/potpie/wiki/How-to-write-good-prompts-for-generating-code-from-LLMs
 
 ##### Nicegui python app
 
@@ -56,6 +57,36 @@ Set up the initial project structure, configuration, and example code that demon
 ##### Windsurf rules
 
 ```
+- This project uses UV to manage packages, always use uv to install dependencies and run the project, test, files etc.
+
+## Structure
+The frontend uses some functions from the backend. Both are two folders and share the same pyproject.toml found in src/genai_model_assessment/pyproject.toml
+
+### Frontend
+- The Frontend is  built with Nicegui and its folder is src/genai_model_assessment/frontend and the main file is main.py
+- The command 'make run-webui' will run the app with the frontend.
+- If the app is running, no need to re-run the app when updating the code, the auto-reload will take care of it.
+When coding a frontend component in nicegui:
+- Always use the init function to initialize the states and components.
+- Use a method named build to build the UI.
+- Use other methods to update, handle events, etc.
+- You can take a look at the example in src/genai_model_assessment/frontend/components/reusable_table.py
+
+#### Backend
+- The backend is built with python and is in src/genai_model_assessment
+- Central `config_loaders` (e.g., `PerformanceAnalysisYAMLConfig`, `VulnerabilityAnalysisYAMLConfig`, `SyntheticYAMLConfig`) orchestrate workflows
+by parsing YAML configurations and interacting with core processing modules (`performance_analysis`, `vulnerability_analysis`), LLM configurations (`llm_config.py`),
+and dataset preprocessing utilities (`dataset_preprocessing`). The system integrates with DeepEval for model evaluation and Langfuse for observability.
+
+
+#### tips:
+- always use the fastest, shortest way to write code.
+- use functions with typed parameters
+- If you are told to create a script, also define default parmeters in arg parse. the default parameters should be variables defined in the script in the main before argparse.ArgumentParser.
+- if you need to use env parameters, use the 'settings_env.py' file.
+
+
+
 
 ```
 
