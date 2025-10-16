@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Untitled",
+      "path": "Untitled.md"
+    },
+    {
+      "basename": "Thoughts (to publish on my website)",
+      "path": "Thoughts (to publish on my website).md"
+    },
+    {
+      "basename": "Template",
+      "path": "Template.md"
+    },
+    {
+      "basename": "6- LLM Leaderboards",
+      "path": "LLMs/6- LLM Leaderboards.md"
+    },
+    {
       "basename": "2-LLM Inference tools",
       "path": "LLMs/2-LLM Inference tools.md"
     },
@@ -19,10 +35,6 @@
     {
       "basename": "Prompts Examples",
       "path": "productivity/Prompts Examples.md"
-    },
-    {
-      "basename": "Template",
-      "path": "Template.md"
     },
     {
       "basename": "To classify",
@@ -47,10 +59,6 @@
     {
       "basename": "1- Vision intro",
       "path": "Vision/1- Vision intro.md"
-    },
-    {
-      "basename": "6- LLM Leaderboards",
-      "path": "LLMs/6- LLM Leaderboards.md"
     },
     {
       "basename": "JSON mode and structured outputs",
