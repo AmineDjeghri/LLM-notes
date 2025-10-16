@@ -279,13 +279,8 @@
   "foldersToIgnore": [],
   "filesToIgnore": [
     {
-      "label": "readme.md",
-      "match": "",
-      "flags": "i"
-    },
-    {
-      "label": "README*",
-      "match": "",
+      "label": "",
+      "match": "readme*",
       "flags": "i"
     }
   ],
