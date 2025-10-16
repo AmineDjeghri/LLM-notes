@@ -5,12 +5,16 @@
       "path": "Untitled.md"
     },
     {
-      "basename": "Thoughts (to publish on my website)",
-      "path": "Thoughts (to publish on my website).md"
-    },
-    {
       "basename": "Template",
       "path": "Template.md"
+    },
+    {
+      "basename": "To classify",
+      "path": "To classify.md"
+    },
+    {
+      "basename": "Thoughts (to publish on my website)",
+      "path": "Thoughts (to publish on my website).md"
     },
     {
       "basename": "6- LLM Leaderboards",
@@ -35,10 +39,6 @@
     {
       "basename": "Prompts Examples",
       "path": "productivity/Prompts Examples.md"
-    },
-    {
-      "basename": "To classify",
-      "path": "To classify.md"
     },
     {
       "basename": "README",
