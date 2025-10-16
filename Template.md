@@ -3,7 +3,6 @@
 > This template is compatible with the AI Tool 
 > Delete this note when editing it. 
 
-last modification date: <% tp.file.last_modified_date("dddd Do MMMM YYYY HH:mm:ss") %>
 
 ```table-of-contents
 ```
