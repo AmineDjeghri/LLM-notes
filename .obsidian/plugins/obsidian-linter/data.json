@@ -279,7 +279,7 @@
   "foldersToIgnore": [],
   "filesToIgnore": [
     {
-      "label": "a",
+      "label": "",
       "match": "(?:^|/)[Rr][Ee][Aa][Dd][Mm][Ee](?:\\.[A-Za-z0-9._-]+)?$",
       "flags": "i"
     }
