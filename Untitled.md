@@ -3,7 +3,6 @@
 > This template is compatible with the AI Tool 
 > Delete this note when editing it. 
 
-last modification date: Thursday 16th October 2025 21:31:31
 
 ```table-of-contents
 ```
