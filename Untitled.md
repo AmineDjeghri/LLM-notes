@@ -1,9 +1,12 @@
+---
+date modified: Thursday, October 16th 2025, 9:44:04 pm
+---
 > [!note]
 > This is a template of a guide. Copy paste the template and use it. 
 > This template is compatible with the AI Tool 
 > Delete this note when editing it. 
 
-
+d
 ```table-of-contents
 ```
 ## Easy guides

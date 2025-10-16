@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "Template",
       "path": "Template.md"
     },
@@ -39,10 +43,6 @@
     {
       "basename": "Prompts Examples",
       "path": "productivity/Prompts Examples.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Untitled",
