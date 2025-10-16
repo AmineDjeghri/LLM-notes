@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "2-LLM Inference tools",
+      "path": "LLMs/2-LLM Inference tools.md"
+    },
+    {
+      "basename": "5- LLM Evaluation and observability tools",
+      "path": "LLMs/evaluation & redteaming/5- LLM Evaluation and observability tools.md"
+    },
+    {
+      "basename": "LLM Metrics and datasets",
+      "path": "LLMs/evaluation & redteaming/LLM Metrics and datasets.md"
+    },
+    {
+      "basename": "3- LLM Redteaming",
+      "path": "LLMs/evaluation & redteaming/3- LLM Redteaming.md"
+    },
+    {
       "basename": "Prompts Examples",
       "path": "productivity/Prompts Examples.md"
     },
@@ -29,14 +45,6 @@
       "path": "Python.md"
     },
     {
-      "basename": "2-LLM Inference tools",
-      "path": "LLMs/2-LLM Inference tools.md"
-    },
-    {
-      "basename": "3- LLM Redteaming",
-      "path": "LLMs/evaluation & redteaming/3- LLM Redteaming.md"
-    },
-    {
       "basename": "1- Vision intro",
       "path": "Vision/1- Vision intro.md"
     },
@@ -45,20 +53,12 @@
       "path": "LLMs/6- LLM Leaderboards.md"
     },
     {
-      "basename": "LLM Metrics and datasets",
-      "path": "LLMs/evaluation & redteaming/LLM Metrics and datasets.md"
-    },
-    {
       "basename": "JSON mode and structured outputs",
       "path": "LLMs/JSON mode and structured outputs.md"
     },
     {
       "basename": "1-NLP Intro and cheatsheet",
       "path": "LLMs/1-NLP Intro and cheatsheet.md"
-    },
-    {
-      "basename": "5- LLM Evaluation and observability tools",
-      "path": "LLMs/evaluation & redteaming/5- LLM Evaluation and observability tools.md"
     },
     {
       "basename": "LLM Synthetic Data",

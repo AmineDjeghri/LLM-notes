@@ -7,6 +7,7 @@
 - [Jailbreak Cookbook](https://github.com/General-Analysis/GA)
 
 ## Tools / libraries 
+ Opensource libraries:
 - DeepTeam (Deepeval) 
 - promptfoo 
 - Giskard

@@ -10,7 +10,7 @@ Author : Amine DJEGHRI
 - **LLMs testing frameworks** :
 	- promptfoo, 
 	- giskard, 
-	- deep-eval (contains G-Eval and Ragas) (my selection) 
+	- deep-eval / deepteam (contains G-Eval and Ragas) (my selection) 
 	- ragas
 	- G-eval
 - **Guardrails frameworks** 
