@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "0- LLM Leaderboards",
-      "path": "LLMs/0- LLM Leaderboards.md"
-    },
-    {
       "basename": "LLM Metrics and datasets",
       "path": "LLMs/evaluation & redteaming/LLM Metrics and datasets.md"
     },
     {
       "basename": "3- LLM Redteaming",
       "path": "LLMs/evaluation & redteaming/3- LLM Redteaming.md"
+    },
+    {
+      "basename": "0- LLM Leaderboards",
+      "path": "LLMs/0- LLM Leaderboards.md"
+    },
+    {
+      "basename": "Template",
+      "path": "Template.md"
     },
     {
       "basename": "5- LLM Evaluation and observability tools",
@@ -23,10 +27,6 @@
     {
       "basename": "1-NLP Intro and cheatsheet",
       "path": "LLMs/1-NLP Intro and cheatsheet.md"
-    },
-    {
-      "basename": "Template",
-      "path": "Template.md"
     },
     {
       "basename": "Prompts Examples",

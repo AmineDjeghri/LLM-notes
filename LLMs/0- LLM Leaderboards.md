@@ -1,23 +1,26 @@
-## Embeddings : 
+```table-of-contents
+```
+## Leaderboards guide
+### Embeddings : 
 - MTEB (Massive Text Embedding Benchmark) Leaderboard
 	- leaderboard : https://huggingface.co/spaces/mteb/leaderboard
 	- paper : https://arxiv.org/pdf/2210.07316
 	  
-## Function calling
+### Function calling
 - Berkeley Function-Calling Leaderboard  
 	- Leaderboard https://gorilla.cs.berkeley.edu/leaderboard.html
 	- blog : https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html
 	- github : https://github.com/ShishirPatil/gorilla
 
-## Safety 
+### Safety 
 - LLM Safety Leaderboard
 	- leaderboard : https://huggingface.co/spaces/AI-Secure/llm-trustworthy-leaderboard
 
-## Judge / Evaluators
+### Judge / Evaluators
 - Judge Arena : 
 	- blog :  https://huggingface.co/blog/arena-atla
 	- leaderboard : https://huggingface.co/spaces/AtlaAI/judge-arena
-## Chat
+### Chat
 - Chatbot Arena (formerly LMSYS) :using votes / human feedback 
 	- leaderboard (mirror): https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 	- leaderboard (official website): https://lmarena.ai/?leaderboard
@@ -29,13 +32,13 @@
 - Hallucination Leaderboard 
 	- blog : https://huggingface.co/blog/leaderboard-hallucinations
 	- leaderboard : https://huggingface.co/spaces/hallucinations-leaderboard/leaderboard
-## Coding
+### Coding
 - EvalPlus Leaderboard
 	- leaderboard : https://evalplus.github.io/leaderboard.html
 	- github : https://github.com/evalplus/evalplus
 	- paper : https://openreview.net/forum?id=1qvx610Cu7
 
-## Performance  & hardware
+### Performance  & hardware
 - LLM-Perf (latency, throughput, memory & energy)
 	- Leaderboard : https://huggingface.co/spaces/optimum/llm-perf-leaderboard
 - Open LLM Leaderboard (CO2 kg)
@@ -45,8 +48,18 @@
 	- leaderboard : https://huggingface.co/spaces/ArtificialAnalysis/LLM-Performance-Leaderboard
 
 
-## Other leaderboards
+### Other leaderboards
 - HF leaderboards : https://huggingface.co/spaces?sort=trending&search=leaderboard
 - HF Arenas : https://huggingface.co/spaces?sort=trending&search=arena
 - Other leaderboards on huggingface  : https://huggingface.co/docs/leaderboards/leaderboards/finding_page
 - 
+
+## Tools / libraries 
+- item 1
+
+## Papers and research
+- item 1
+## News and updates
+- item 1
+## Other resources 
+- item 1
