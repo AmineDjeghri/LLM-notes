@@ -1,5 +1,5 @@
 ---
-date modified: Friday, October 17th 2025, 1:35:53 pm
+date modified: Friday, October 17th 2025, 1:46:50 pm
 ---
 ```table-of-contents
 ```
@@ -22,11 +22,9 @@ date modified: Friday, October 17th 2025, 1:35:53 pm
 - [x] [awesome-hallucination-detection](https://github.com/EdinburghNLP/awesome-hallucination-detection) : Everything + metrics for each paper ✅ 2025-02-07
 - [x] [FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation](https://arxiv.org/abs/2305.14251) ✅ 2025-02-07
 
-### - Perplexity & Shannon: 
+### Perplexity & Shannon: 
 - [x] https://medium.com/@anudevmanjusatheesh/perplexity-unveiled-key-metric-for-evaluating-llm-output-6ffccf5d0d85 ✅ 2025-03
 - [ ] https://www.comet.com/site/blog/perplexity-for-llm-evaluation/
-	
-
 ### RAG Evaluation
 
 RAG systems are composed of a retrieval and an LLM based generation module, and provide LLMs with knowledge from a reference textual database, which enables them to act as a natural language layer between a user and textual databases, reducing the risk of hallucinations.
