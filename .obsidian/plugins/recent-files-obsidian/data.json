@@ -1,20 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "3_2 - LLM red-teaming evaluation",
-      "path": "LLMs/evaluation/3_2 - LLM red-teaming evaluation.md"
-    },
-    {
-      "basename": "3_1 - LLM performance evaluation",
-      "path": "LLMs/evaluation/3_1 - LLM performance evaluation.md"
-    },
-    {
       "basename": "3_0 - LLM intro evaluation",
       "path": "LLMs/evaluation/3_0 - LLM intro evaluation.md"
     },
     {
+      "basename": "3_2 - LLM red-teaming evaluation",
+      "path": "LLMs/evaluation/3_2 - LLM red-teaming evaluation.md"
+    },
+    {
+      "basename": "LLM Synthetic Data",
+      "path": "LLMs/LLM Synthetic Data.md"
+    },
+    {
+      "basename": "JSON mode and structured outputs",
+      "path": "LLMs/JSON mode and structured outputs.md"
+    },
+    {
       "basename": "0- LLM Leaderboards",
       "path": "LLMs/0- LLM Leaderboards.md"
+    },
+    {
+      "basename": "3_1 - LLM performance evaluation",
+      "path": "LLMs/evaluation/3_1 - LLM performance evaluation.md"
     },
     {
       "basename": "0-",
@@ -71,14 +79,6 @@
     {
       "basename": "1- Vision intro",
       "path": "Vision/1- Vision intro.md"
-    },
-    {
-      "basename": "JSON mode and structured outputs",
-      "path": "LLMs/JSON mode and structured outputs.md"
-    },
-    {
-      "basename": "LLM Synthetic Data",
-      "path": "LLMs/LLM Synthetic Data.md"
     },
     {
       "basename": "Pasted image 20240420005706",
