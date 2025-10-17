@@ -1,5 +1,6 @@
-Author : Amine DJEGHRI
-
+---
+date modified: Friday, October 17th 2025, 1:23:18 pm
+---
 ## LLM Tools
 - **LLM platforms (observability**_,_ **evaluation, monitoring) :** 
 	- langsmith,
@@ -24,4 +25,3 @@ DeepEval / Promptfoo both provide evaluation and red-teaming features.
 ## Papers and sources
 
 - [ ] https://medium.com/@heyamit10/langsmith-vs-langfuse-ef3d493ea74e
-- [ ] https://github.com/huggingface/evaluation-guidebook

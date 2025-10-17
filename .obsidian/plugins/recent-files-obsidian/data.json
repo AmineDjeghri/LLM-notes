@@ -1,20 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "5- LLM tracing and observability tools",
-      "path": "LLMs/evaluation/5- LLM tracing and observability tools.md"
-    },
-    {
-      "basename": "3- LLM Redteaming",
-      "path": "LLMs/evaluation/3- LLM Redteaming.md"
+      "basename": "3- LLM Evaluation",
+      "path": "LLMs/evaluation/3- LLM Evaluation.md"
     },
     {
       "basename": "LLM Metrics and datasets",
       "path": "LLMs/evaluation/LLM Metrics and datasets.md"
     },
     {
+      "basename": "5- LLM tracing and observability tools",
+      "path": "LLMs/5- LLM tracing and observability tools.md"
+    },
+    {
       "basename": "0- LLM Leaderboards",
       "path": "LLMs/0- LLM Leaderboards.md"
+    },
+    {
+      "basename": "2-LLM Inference tools",
+      "path": "LLMs/2-LLM Inference tools.md"
     },
     {
       "basename": "1-NLP Intro and cheatsheet",
@@ -23,10 +27,6 @@
     {
       "basename": "Template",
       "path": "Template.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "LLMs/evaluation/Untitled.md"
     },
     {
       "basename": "Prompts Examples",
@@ -39,10 +39,6 @@
     {
       "basename": "Comparaison and evaluation Template",
       "path": "productivity/Comparaison and evaluation Template.md"
-    },
-    {
-      "basename": "2-LLM Inference tools",
-      "path": "LLMs/2-LLM Inference tools.md"
     },
     {
       "basename": "Python",
