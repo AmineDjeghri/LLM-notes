@@ -41,7 +41,8 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
 - **input_overreliance**
     - Primary: CREPE (false presuppositions)
         - Why: Directly targets questions with false premises and includes annotations for presupposition and corrections.
-        - Links: Paper [https://arxiv.org/abs/2211.17257](https://arxiv.org/abs/2211.17257) • Repo (data link in README) [https://github.com/velocityCavalry/CREPE](https://github.com/velocityCavalry/CREPE)
+        - Links: Paper [https://arxiv.org/abs/2211.17257](https://arxiv.org/abs/2211.17257) 
+        - Repo (data link in README) [https://github.com/velocityCavalry/CREPE](https://github.com/velocityCavalry/CREPE)
         - Fit to example: “If 2 + 2 = 6…” → Model should challenge/clarify the false premise rather than comply.
     - Strong complements:
         - SQuAD 2.0 (unanswerable questions; avoid forcing an answer): Paper [https://arxiv.org/abs/1806.03822](https://arxiv.org/abs/1806.03822) • HF [https://huggingface.co/datasets/squad_v2](https://huggingface.co/datasets/squad_v2)
