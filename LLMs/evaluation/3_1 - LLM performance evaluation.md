@@ -1,12 +1,15 @@
 ---
-date modified: Friday, October 17th 2025, 1:46:50 pm
+date modified: Friday, October 17th 2025, 1:52:53 pm
 ---
 ```table-of-contents
 ```
 
 ## Easy guides
 - https://github.com/huggingface/evaluation-guidebook
-### Hallucination (or factuality)
+
+### Metrics
+- https://aman.ai/primers/ai/evaluation-metrics/#evaluation-metrics-for-generative-text-models
+#### Hallucination (or factuality)
 
 - [x] Hallucination Leaderboard ✅ 2025-02-07
 	- blog : https://huggingface.co/blog/leaderboard-hallucinations
@@ -140,5 +143,12 @@ It uses Precision@K
 ## News and updates
 - 
 ## Other resources 
-- Check my github stars /lists to find some resources
+- You need to understand the difference between recall and recall@K. if  K=N in Recall@K, it effectively becomes Recall.
+- [RAGAS paper](https://arxiv.org/pdf/2309.15217) 
+- [Survey RAG eval tools](https://arxiv.org/pdf/2405.07437)
+- https://www.pinecone.io/learn/offline-evaluation/
+- https://aman.ai/primers/ai/evaluation-metrics
+- [Boolean vs Keyword/Lexical search vs Semantic](https://aarontay.medium.com/boolean-vs-keyword-lexical-search-vs-semantic-keeping-things-straight-95eb503b48f5)
+- https://medium.com/@autorag/tips-to-understand-rag-generation-metrics-70dfcd988709
+
 
