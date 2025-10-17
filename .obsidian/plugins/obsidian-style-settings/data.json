@@ -22,5 +22,6 @@
   "Appearance-dark@@card-layout-open-dark": true,
   "Appearance-dark@@background-underlying-select-dark": "background-underlying-default-dark",
   "Appearance-dark@@theme-dark-style-select": "theme-dark-background-darker",
-  "Editor@@h3-size": "1.20em"
+  "Editor@@h3-size": "1.15em",
+  "Editor@@h4-size": "1.0em"
 }

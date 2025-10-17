@@ -1,5 +1,5 @@
 ---
-date modified: Friday, October 17th 2025, 1:52:53 pm
+date modified: Friday, October 17th 2025, 1:56:00 pm
 ---
 ```table-of-contents
 ```
@@ -8,6 +8,7 @@ date modified: Friday, October 17th 2025, 1:52:53 pm
 - https://github.com/huggingface/evaluation-guidebook
 
 ### Metrics
+#### Global metrics
 - https://aman.ai/primers/ai/evaluation-metrics/#evaluation-metrics-for-generative-text-models
 #### Hallucination (or factuality)
 
@@ -25,10 +26,10 @@ date modified: Friday, October 17th 2025, 1:52:53 pm
 - [x] [awesome-hallucination-detection](https://github.com/EdinburghNLP/awesome-hallucination-detection) : Everything + metrics for each paper ✅ 2025-02-07
 - [x] [FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation](https://arxiv.org/abs/2305.14251) ✅ 2025-02-07
 
-### Perplexity & Shannon: 
+#### Perplexity & Shannon: 
 - [x] https://medium.com/@anudevmanjusatheesh/perplexity-unveiled-key-metric-for-evaluating-llm-output-6ffccf5d0d85 ✅ 2025-03
 - [ ] https://www.comet.com/site/blog/perplexity-for-llm-evaluation/
-### RAG Evaluation
+#### RAG Evaluation
 
 RAG systems are composed of a retrieval and an LLM based generation module, and provide LLMs with knowledge from a reference textual database, which enables them to act as a natural language layer between a user and textual databases, reducing the risk of hallucinations.
 
@@ -118,7 +119,7 @@ NER Metrics :
 This table provides a comprehensive overview of various metrics used to evaluate NER systems, addressing different aspects of performance from entity identification to boundary accuracy and overall classification quality.
 
 These metrics help in understanding how well an information extraction system performs in identifying and classifying relevant entities, relationships, and information from unstructured text.
-### RAG Evaluation Metrics Examples 
+#### RAG Evaluation Metrics Examples 
 See source number 3
 #### Retrieval (IR) Metrics
 - Mean Reciprocal Rank (MRR):
@@ -136,10 +137,11 @@ It uses Precision@K
 ## Tools / libraries 
 - Deepeval
 - promptfoo
+- G-Eval
+- Ragas
 
 ## Papers and research
-- https://github.com/nrimsky/LM-exp
-
+-
 ## News and updates
 - 
 ## Other resources 

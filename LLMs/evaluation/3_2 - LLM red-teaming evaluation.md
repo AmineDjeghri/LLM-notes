@@ -9,6 +9,8 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
 - https://www.promptfoo.dev/docs/red-team/ 
 - https://www.confident-ai.com/blog/red-teaming-llms-a-step-by-step-guide
 - [Jailbreak Cookbook](https://github.com/General-Analysis/GA)
+- https://github.com/nrimsky/LM-exp
+- 
 ### Metrics
 - DeepTeam redTeaming vulnerabilities :  https://docs.confident-ai.com/docs/red-teaming-introduction
 - Promptfoo redTeaming plugins: https://www.promptfoo.dev/docs/red-team/plugins/
