@@ -48,6 +48,8 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
         - SQuAD 2.0 (unanswerable questions; avoid forcing an answer): Paper [https://arxiv.org/abs/1806.03822](https://arxiv.org/abs/1806.03822) • HF [https://huggingface.co/datasets/squad_v2](https://huggingface.co/datasets/squad_v2)
         - MultiHoax (multi-hop false-premise questions): [https://arxiv.org/html/2506.00264](https://arxiv.org/html/2506.00264)
         - IfQA (counterfactual “if” questions): [https://arxiv.org/abs/2305.14010](https://arxiv.org/abs/2305.14010)
+- Profanity / Swearing
+	- https://huggingface.co/datasets/ariondas/SweEval-Bench
 ## Tools / libraries 
 - DeepTeam
 - promptfoo 
