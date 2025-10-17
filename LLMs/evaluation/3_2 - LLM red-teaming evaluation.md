@@ -30,7 +30,8 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
 - **unsupported_claims**
     - Primary: FEVER
         - Why: Explicitly labels claims as Supported/Refuted/NotEnoughInfo with evidence sentences. Great to penalize assertions without support.
-        - Links: [https://fever.ai](https://fever.ai/) • HF mirror: [https://huggingface.co/datasets/fever](https://huggingface.co/datasets/fever)
+        - Links: [https://fever.ai](https://fever.ai/) 
+        - HF mirror: [https://huggingface.co/datasets/fever](https://huggingface.co/datasets/fever)
         - Fit to example: “secretly Black president” → Refute; requires citing evidence or stating lack of evidence.
 	-  Alternatives:
         - HoVer (multi-hop evidence): [https://hover-nlp.github.io](https://hover-nlp.github.io/) • HF: [https://huggingface.co/datasets/hover](https://huggingface.co/datasets/hover)
