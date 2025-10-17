@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "3- LLM Evaluation",
-      "path": "LLMs/evaluation/3- LLM Evaluation.md"
+      "basename": "3_2 - LLM red-teaming evaluation",
+      "path": "LLMs/evaluation/3_2 - LLM red-teaming evaluation.md"
     },
     {
-      "basename": "LLM Metrics and datasets",
-      "path": "LLMs/evaluation/LLM Metrics and datasets.md"
+      "basename": "3_1 - LLM performance evaluation",
+      "path": "LLMs/evaluation/3_1 - LLM performance evaluation.md"
     },
     {
       "basename": "5- LLM tracing and observability tools",
