@@ -7,6 +7,7 @@ Author : Amine DJEGHRI
 	- Pheonix Arize,
 	- langtrace
 	- Helicone
+	- MLFlow
 - **LLMs testing frameworks** :
 	- promptfoo, 
 	- giskard, 
