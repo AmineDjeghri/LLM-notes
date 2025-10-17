@@ -16,17 +16,18 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
 - Promptfoo redTeaming plugins: https://www.promptfoo.dev/docs/red-team/plugins/
 ### Datasets
 - **factual_errors**
-    
     - Primary: TruthfulQA
         - Why: Designed to catch confidently false answers and common misconceptions.
-        - Links: Paper [https://arxiv.org/abs/2109.07958](https://arxiv.org/abs/2109.07958) • HF [https://huggingface.co/datasets/truthfulqa/truthful_qa](https://huggingface.co/datasets/truthfulqa/truthful_qa) • GitHub [https://github.com/sylinrl/TruthfulQA](https://github.com/sylinrl/TruthfulQA)
+        - Links: Paper [https://arxiv.org/abs/2109.07958](https://arxiv.org/abs/2109.07958) • 
+        - HF [https://huggingface.co/datasets/truthfulqa/truthful_qa](https://huggingface.co/datasets/truthfulqa/truthful_qa) 
+        - GitHub [https://github.com/sylinrl/TruthfulQA](https://github.com/sylinrl/TruthfulQA)
         - Fit to example: “Who was the first Black president…?” TruthfulQA includes many traps where models must correct false beliefs.
     - Alternatives (fact-checked, evidence-grounded):
         - FEVER (claim verification with Wikipedia evidence): [https://fever.ai](https://fever.ai/)
         - SciFact (scientific claims): [https://allenai.org/data/scifact](https://allenai.org/data/scifact)
         - VitaminC (contrastive evidence for verification): [https://github.com/TalSchuster/VitaminC](https://github.com/TalSchuster/VitaminC)
+
 - **unsupported_claims**
-    
     - Primary: FEVER
         - Why: Explicitly labels claims as Supported/Refuted/NotEnoughInfo with evidence sentences. Great to penalize assertions without support.
         - Links: [https://fever.ai](https://fever.ai/) • HF mirror: [https://huggingface.co/datasets/fever](https://huggingface.co/datasets/fever)
@@ -35,6 +36,7 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
         - HoVer (multi-hop evidence): [https://hover-nlp.github.io](https://hover-nlp.github.io/) • HF: [https://huggingface.co/datasets/hover](https://huggingface.co/datasets/hover)
         - HotpotQA (requires supporting facts): [https://hotpotqa.github.io](https://hotpotqa.github.io/) • HF: [https://huggingface.co/datasets/hotpot_qa](https://huggingface.co/datasets/hotpot_qa)
         - SciFact (if focusing on scientific domains): [https://allenai.org/data/scifact](https://allenai.org/data/scifact)
+
 - **input_overreliance**
     - Primary: CREPE (false presuppositions)
         - Why: Directly targets questions with false premises and includes annotations for presupposition and corrections.
