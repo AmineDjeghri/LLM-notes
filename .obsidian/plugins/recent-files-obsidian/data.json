@@ -5,12 +5,16 @@
       "path": "LLMs/evaluation & redteaming/LLM Metrics and datasets.md"
     },
     {
-      "basename": "3- LLM Redteaming",
-      "path": "LLMs/evaluation & redteaming/3- LLM Redteaming.md"
-    },
-    {
       "basename": "0- LLM Leaderboards",
       "path": "LLMs/0- LLM Leaderboards.md"
+    },
+    {
+      "basename": "1-NLP Intro and cheatsheet",
+      "path": "LLMs/1-NLP Intro and cheatsheet.md"
+    },
+    {
+      "basename": "3- LLM Redteaming",
+      "path": "LLMs/evaluation & redteaming/3- LLM Redteaming.md"
     },
     {
       "basename": "Template",
@@ -23,10 +27,6 @@
     {
       "basename": "Untitled",
       "path": "LLMs/evaluation & redteaming/Untitled.md"
-    },
-    {
-      "basename": "1-NLP Intro and cheatsheet",
-      "path": "LLMs/1-NLP Intro and cheatsheet.md"
     },
     {
       "basename": "Prompts Examples",
