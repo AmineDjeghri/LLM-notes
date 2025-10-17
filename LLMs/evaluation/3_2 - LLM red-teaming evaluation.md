@@ -15,7 +15,14 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
 - DeepTeam redTeaming vulnerabilities :  https://docs.confident-ai.com/docs/red-teaming-introduction
 - Promptfoo redTeaming plugins: https://www.promptfoo.dev/docs/red-team/plugins/
 ### Datasets
+- Leaked system prompts
+	- https://github.com/asgeirtj/system_prompts_leaks
+	- https://github.com/jujumilk3/leaked-system-prompts
+	- system prompts: https://github.com/dontriskit/awesome-ai-system-prompts
+
 - Catalog of redteaming datasets (jailbreaks, safety..) : https://safetyprompts.com/
+
+
 - **factual_errors**
     - Primary: TruthfulQA
         - Why: Designed to catch confidently false answers and common misconceptions.
