@@ -1,7 +1,9 @@
+---
+date modified: Friday, October 17th 2025, 12:07:26 pm
+---
 ```table-of-contents
 ```
 ## Easy guides
-- item 1
 - https://github.com/rasbt/LLMs-from-scratch
 
 ## Tools / libraries

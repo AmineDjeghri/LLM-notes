@@ -58,8 +58,8 @@
       "yaml-sort-order-for-other-keys": "None"
     },
     "yaml-timestamp": {
-      "enabled": false,
-      "date-created": true,
+      "enabled": true,
+      "date-created": false,
       "date-created-key": "date created",
       "date-created-source-of-truth": "file system",
       "date-modified": true,
@@ -270,14 +270,20 @@
       "enabled": false
     }
   },
-  "lintOnSave": false,
+  "lintOnSave": true,
   "recordLintOnSaveLogs": false,
   "displayChanged": true,
   "lintOnFileChange": false,
   "displayLintOnFileChangeNotice": false,
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [],
-  "filesToIgnore": [],
+  "filesToIgnore": [
+    {
+      "label": "",
+      "match": "(?:^|/)[Rr][Ee][Aa][Dd][Mm][Ee](?:\\.[A-Za-z0-9._-]+)?$",
+      "flags": "i"
+    }
+  ],
   "linterLocale": "system-default",
   "logLevel": "ERROR",
   "lintCommands": [],
