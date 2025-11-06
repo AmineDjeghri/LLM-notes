@@ -7,6 +7,26 @@
 - Backend+Frontend+GenA Tempalte   (https://github.com/AmineDjeghri/generative-ai-project-template)
 - Package library Template https://github.com/AmineDjeghri/python-package-template/
 
+- Comprehension list : 
+	- 
+```python
+
+new_text = "" 
+for i in range(200): 
+	new_text += text
+	
+# - Using string multiplication (fast and clear)
+new_text = text * 200
+
+# Using join (avoids creating many intermediate strings; useful if you want separators):
+new_text = "".join([text] * 200)
+
+```
+
+
+
+
+
 ## Tools / libraries 
 - leetcode
 - chatgpt

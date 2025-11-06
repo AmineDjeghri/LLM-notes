@@ -1,5 +1,5 @@
 ---
-date modified: Thursday, October 16th 2025, 9:51:45 pm
+date modified: Thursday, October 30th 2025, 6:56:42 pm
 ---
 > [!note]
 > This is a template of a guide. Copy paste the template and use it. 
@@ -9,6 +9,8 @@ date modified: Thursday, October 16th 2025, 9:51:45 pm
 
 ```table-of-contents
 ```
+## News and updates
+- item 1
 ## Easy guides
 - item 1
 - item 2
@@ -18,7 +20,6 @@ date modified: Thursday, October 16th 2025, 9:51:45 pm
 
 ## Papers and research
 - item 1
-## News and updates
-- item 1
+
 ## Other resources 
 - item 1

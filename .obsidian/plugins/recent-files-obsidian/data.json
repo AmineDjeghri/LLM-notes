@@ -1,16 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "3_2 - LLM red-teaming evaluation",
-      "path": "LLMs/evaluation/3_2 - LLM red-teaming evaluation.md"
+      "basename": "2-LLM Inference tools",
+      "path": "LLMs/2-LLM Inference tools.md"
     },
     {
-      "basename": "3_1 - LLM performance evaluation",
-      "path": "LLMs/evaluation/3_1 - LLM performance evaluation.md"
-    },
-    {
-      "basename": "3_0 - LLM intro evaluation",
-      "path": "LLMs/evaluation/3_0 - LLM intro evaluation.md"
+      "basename": "Python",
+      "path": "Python.md"
     },
     {
       "basename": "LLM Synthetic Data",
@@ -21,6 +17,38 @@
       "path": "LLMs/JSON mode and structured outputs.md"
     },
     {
+      "basename": "5- LLM tracing and observability tools",
+      "path": "LLMs/5- LLM tracing and observability tools.md"
+    },
+    {
+      "basename": "1-NLP Intro and cheatsheet",
+      "path": "LLMs/1-NLP Intro and cheatsheet.md"
+    },
+    {
+      "basename": "Productivity guide",
+      "path": "productivity/Productivity guide.md"
+    },
+    {
+      "basename": "3_2 - LLM red-teaming evaluation",
+      "path": "LLMs/evaluation/3_2 - LLM red-teaming evaluation.md"
+    },
+    {
+      "basename": "Prompts Examples",
+      "path": "productivity/Prompts Examples.md"
+    },
+    {
+      "basename": "Template",
+      "path": "Template.md"
+    },
+    {
+      "basename": "3_1 - LLM performance evaluation",
+      "path": "LLMs/evaluation/3_1 - LLM performance evaluation.md"
+    },
+    {
+      "basename": "3_0 - LLM intro evaluation",
+      "path": "LLMs/evaluation/3_0 - LLM intro evaluation.md"
+    },
+    {
       "basename": "0- LLM Leaderboards",
       "path": "LLMs/0- LLM Leaderboards.md"
     },
@@ -29,36 +57,8 @@
       "path": "0-.md"
     },
     {
-      "basename": "5- LLM tracing and observability tools",
-      "path": "LLMs/5- LLM tracing and observability tools.md"
-    },
-    {
-      "basename": "2-LLM Inference tools",
-      "path": "LLMs/2-LLM Inference tools.md"
-    },
-    {
-      "basename": "1-NLP Intro and cheatsheet",
-      "path": "LLMs/1-NLP Intro and cheatsheet.md"
-    },
-    {
-      "basename": "Template",
-      "path": "Template.md"
-    },
-    {
-      "basename": "Prompts Examples",
-      "path": "productivity/Prompts Examples.md"
-    },
-    {
-      "basename": "Productivity guide",
-      "path": "productivity/Productivity guide.md"
-    },
-    {
       "basename": "Comparaison and evaluation Template",
       "path": "productivity/Comparaison and evaluation Template.md"
-    },
-    {
-      "basename": "Python",
-      "path": "Python.md"
     },
     {
       "basename": "README",

@@ -6,14 +6,25 @@
 
 ## Tools / libraries 
 ### Local 
-- Ollama (Best backend) 
-- LM Studio (Best GUI)
+- Ollama 
+- vLLM 
+- LM Studio 
 - Jan
 - GPT4All
-- Llama.cpp
+- Llama.cpp (llama-serve) 
+- MLX 
 - text-generation-webui
 - localai
 - llamafile
+- llama-swap 
+
+Best UI :
+
+
+Best Backend
+llama-swap with : 
+- 
+
 
 ## Papers and research
 - item 1

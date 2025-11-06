@@ -1,6 +1,9 @@
 
 ```table-of-contents
 ```
+## News and updates
+- [/r/ChatGPTPromptGenius](https://www.reddit.com/r/ChatGPTPromptGenius)
+- [r/PromptEngineering](https://www.reddit.com/r/PromptEngineering/)
 ## Easy guides
 - Use ChatGPT to rewrite a prompt
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
@@ -8,9 +11,7 @@
 ## Tools / libraries 
 - item 1
 
-## News and updates
-- [/r/ChatGPTPromptGenius](https://www.reddit.com/r/ChatGPTPromptGenius)
-- [r/PromptEngineering](https://www.reddit.com/r/PromptEngineering/)
+
 ## Other resources 
 - item 1
 
