@@ -24,6 +24,7 @@ new_text = "".join([text] * 200)
 ```
 
 - Lists are mutable, so don’t initialize them in a function’s definition
+- Use pathlib instead of os.path since it’s more pythonic
 - 
 
 

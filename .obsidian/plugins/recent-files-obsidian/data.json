@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Untitled",
-      "path": "Nicegui/Untitled.md"
-    },
-    {
       "basename": "Python",
       "path": "Python.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Nicegui/Untitled.md"
     },
     {
       "basename": "2-LLM Inference tools",
