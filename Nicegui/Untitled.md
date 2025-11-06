@@ -1,3 +1,6 @@
+---
+date modified: Thursday, November 6th 2025, 4:54:05 am
+---
 ### CSS
 - Nicegui supports quasar ad tailwind CSS
 - Nicegui uses  [Quasar](https://quasar.dev/) element
@@ -28,3 +31,14 @@ with ui.row().classes("w-full justify-center"):
 
 ### row vs column: 
 - invert justify-center and items-center
+
+
+#### on_click()
+- you should always use an async function . if the function has parameters, you need to wrap it in an async function: 
+	
+```python
+async def _on_load_click(self) -> None:  
+    await self._load_scores(force=True)
+    
+self.load_button = ui.button("Load", on_click=self._on_load_click)
+```

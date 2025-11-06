@@ -23,7 +23,8 @@ new_text = "".join([text] * 200)
 
 ```
 
-
+- Lists are mutable, so don’t initialize them in a function’s definition
+- 
 
 
 
