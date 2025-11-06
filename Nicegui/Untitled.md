@@ -2,7 +2,7 @@
 - Nicegui supports quasar ad tailwind CSS
 - Nicegui uses  [Quasar](https://quasar.dev/) element
 ### layout and width positionning (and responsive design)
--  use Tailwind’s `max-w-xl mx-auto`. It’s simpler and yields a readable, centered single-column layout. (for example the global page). for example : 
+- (Prefered) Use Tailwind’s `max-w-xl mx-auto`. It’s simpler and yields a readable, centered single-column layout. (for example the global page). for example : 
 	-     with ui.column().classes("max-w-xl mx-auto p-4 gap-4"):
 	- or : with ui.card().classes("max-w-xl mx-auto p-4 gap-4"):
 	- or with row 
