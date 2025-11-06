@@ -3,10 +3,12 @@
 ## Easy guides
 - item 1
 - item 2
-- https://nono.ma/linter-vs-formatter
 - Backend+Frontend+GenA Tempalte   (https://github.com/AmineDjeghri/generative-ai-project-template)
 - Package library Template https://github.com/AmineDjeghri/python-package-template/
 
+
+
+## Tips and tricks 
 - Comprehension list : 
 	- 
 ```python
@@ -25,14 +27,19 @@ new_text = "".join([text] * 200)
 
 - Lists are mutable, so don’t initialize them in a function’s definition
 - Use pathlib instead of os.path since it’s more pythonic
+### Mutable 
+- ensure to deepcopy a list of list or dict of list …etc because of inner mutable objects 
 - 
 
+
+### Linters and formaters
+- https://nono.ma/linter-vs-formatter
 
 
 ## Tools / libraries 
 - leetcode
 - chatgpt
-- Pre-commit
+- 
 
 ## Papers and research
 - item 1
