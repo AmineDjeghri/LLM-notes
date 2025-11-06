@@ -25,6 +25,9 @@ new_text = "".join([text] * 200)
 
 ```
 
+-  **[or short-circuit]** : - `value = provided or default` . In Python, `A or B` returns:
+    - `A` if `A` is truthy.
+    - otherwise `B`.
 
 - Use pathlib instead of os.path since it’s more pythonic
 - If you use functions with nested lists/ dictionnaries, add in the docstring an example of how it looks like to make things easier for contributors.
