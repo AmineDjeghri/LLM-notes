@@ -25,11 +25,12 @@ new_text = "".join([text] * 200)
 
 ```
 
-- Lists are mutable, so don’t initialize them in a function’s definition
+
 - Use pathlib instead of os.path since it’s more pythonic
+- If you use functions with nested lists/ dictionnaries, add in the docstring an example of how it looks like to make things easier for contributors.
 ### Mutable 
 - ensure to deepcopy a list of list or dict of list …etc because of inner mutable objects 
-- 
+- Lists are mutable, so don’t initialize them in a function’s definition
 
 
 ### Linters and formaters
