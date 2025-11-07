@@ -45,6 +45,7 @@ dictionary["bogus"] # will raise a KeyError if key is missing
 
 - Use pathlib instead of os.path since it’s more pythonic
 - If you use functions with nested lists/ dictionnaries, add in the docstring an example of how it looks like to make things easier for contributors.
+- Asterix and Slash : https://realpython.com/python-asterisk-and-slash-special-parameters
 ### Mutable 
 - ensure to deepcopy a list of list or dict of list …etc because of inner mutable objects 
 - Lists are mutable, so don’t initialize them in a function’s definition
