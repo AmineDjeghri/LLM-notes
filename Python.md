@@ -1,3 +1,6 @@
+---
+date modified: Friday, November 7th 2025, 12:48:16 am
+---
 ```table-of-contents
 ```
 ## Easy guides
@@ -28,6 +31,17 @@ new_text = "".join([text] * 200)
 -  **[or short-circuit]** : - `value = provided or default` . In Python, `A or B` returns:
     - `A` if `A` is truthy.
     - otherwise `B`.
+-  [Why dict.get(key) instead of dict[key]?] : 
+		
+```python
+dictionary.get("bogus")  # <-- No default specified -- defaults to None
+dictionary.get("bogus", None) # returns `None` just like the previous one
+
+
+dictionary["bogus"] # will raise a KeyError if key is missing 
+
+```
+
 
 - Use pathlib instead of os.path since it’s more pythonic
 - If you use functions with nested lists/ dictionnaries, add in the docstring an example of how it looks like to make things easier for contributors.
