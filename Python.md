@@ -1,5 +1,5 @@
 ---
-date modified: Friday, November 7th 2025, 12:48:16 am
+date modified: Friday, November 7th 2025, 2:09:06 am
 ---
 ```table-of-contents
 ```
@@ -41,7 +41,7 @@ dictionary.get("bogus", None) # returns `None` just like the previous one
 dictionary["bogus"] # will raise a KeyError if key is missing 
 
 ```
-
+- Same thing for ‘getatt’ in class instead of ‘dot’. They are equivalent (unless a third argument is provided to suppress the `AttributeError` when the attribute is not present).
 
 - Use pathlib instead of os.path since it’s more pythonic
 - If you use functions with nested lists/ dictionnaries, add in the docstring an example of how it looks like to make things easier for contributors.
