@@ -15,6 +15,8 @@
 ### Safety 
 - LLM Safety Leaderboard
 	- leaderboard : https://huggingface.co/spaces/AI-Secure/llm-trustworthy-leaderboard
+- dad
+	- https://llmleaderboard.ai/red-teaming/
 
 ### Judge / Evaluators
 - Judge Arena : 

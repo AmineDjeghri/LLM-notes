@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "0- LLM Leaderboards",
+      "path": "LLMs/0- LLM Leaderboards.md"
+    },
+    {
+      "basename": "3_2 - LLM red-teaming evaluation",
+      "path": "LLMs/evaluation/3_2 - LLM red-teaming evaluation.md"
+    },
+    {
+      "basename": "1-NLP Intro and cheatsheet",
+      "path": "LLMs/1-NLP Intro and cheatsheet.md"
+    },
+    {
       "basename": "Python",
       "path": "Python.md"
     },
@@ -25,16 +37,8 @@
       "path": "LLMs/5- LLM tracing and observability tools.md"
     },
     {
-      "basename": "1-NLP Intro and cheatsheet",
-      "path": "LLMs/1-NLP Intro and cheatsheet.md"
-    },
-    {
       "basename": "Productivity guide",
       "path": "productivity/Productivity guide.md"
-    },
-    {
-      "basename": "3_2 - LLM red-teaming evaluation",
-      "path": "LLMs/evaluation/3_2 - LLM red-teaming evaluation.md"
     },
     {
       "basename": "Prompts Examples",
@@ -51,10 +55,6 @@
     {
       "basename": "3_0 - LLM intro evaluation",
       "path": "LLMs/evaluation/3_0 - LLM intro evaluation.md"
-    },
-    {
-      "basename": "0- LLM Leaderboards",
-      "path": "LLMs/0- LLM Leaderboards.md"
     },
     {
       "basename": "0-",
