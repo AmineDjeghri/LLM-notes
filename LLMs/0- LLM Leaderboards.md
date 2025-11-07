@@ -18,6 +18,8 @@ date modified: Friday, November 7th 2025, 3:31:53 pm
 ### Safety 
 - Red Teaming and Safety Testing
 	- https://llmleaderboard.ai/red-teaming/
+- Foundation Model Security Reports
+	- https://www.promptfoo.dev/models
 - (deprecated) LLM Safety Leaderboard
 	- leaderboard : https://huggingface.co/spaces/AI-Secure/llm-trustworthy-leaderboard
 ### Judge / Evaluators

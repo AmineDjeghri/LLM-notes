@@ -17,6 +17,9 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
 ### Metrics
 - DeepTeam redTeaming vulnerabilities :  https://docs.confident-ai.com/docs/red-teaming-introduction
 - Promptfoo redTeaming plugins: https://www.promptfoo.dev/docs/red-team/plugins/
+
+### Benchmarks
+[[0- LLM Leaderboards#Safety]]
 ### Datasets
 - Leaked system prompts
 	- https://github.com/asgeirtj/system_prompts_leaks
