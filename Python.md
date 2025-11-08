@@ -1,5 +1,5 @@
 ---
-date modified: Friday, November 7th 2025, 2:09:06 am
+date modified: Saturday, November 8th 2025, 4:57:14 am
 ---
 ```table-of-contents
 ```
@@ -12,6 +12,8 @@ date modified: Friday, November 7th 2025, 2:09:06 am
 
 
 ## Tips and tricks 
+- If you are on Windows, you do not need WSL to run python apps. Just use UV on windows.
+	- For heavy development stuff like deep learning, I recommand using WSL(ubuntu) with UV and not windows.
 - Comprehension list : 
 	- 
 ```python
