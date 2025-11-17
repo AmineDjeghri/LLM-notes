@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Git",
+      "path": "Git.md"
+    },
+    {
       "basename": "Python",
       "path": "Python.md"
+    },
+    {
+      "basename": "Template",
+      "path": "Template.md"
     },
     {
       "basename": "0- LLM Leaderboards",
@@ -27,10 +35,6 @@
     {
       "basename": "3_0 - LLM intro evaluation",
       "path": "LLMs/evaluation/3_0 - LLM intro evaluation.md"
-    },
-    {
-      "basename": "Template",
-      "path": "Template.md"
     },
     {
       "basename": "5- LLM tracing and observability tools",
@@ -59,10 +63,6 @@
     {
       "basename": "Untitled",
       "path": "Nicegui/Untitled.md"
-    },
-    {
-      "basename": "0-",
-      "path": "0-.md"
     },
     {
       "basename": "README",
