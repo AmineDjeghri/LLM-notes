@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Python",
+      "path": "Python.md"
+    },
+    {
       "basename": "0- LLM Leaderboards",
       "path": "LLMs/0- LLM Leaderboards.md"
     },
@@ -27,10 +31,6 @@
     {
       "basename": "Template",
       "path": "Template.md"
-    },
-    {
-      "basename": "Python",
-      "path": "Python.md"
     },
     {
       "basename": "5- LLM tracing and observability tools",
