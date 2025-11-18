@@ -4,6 +4,7 @@ date modified: Thursday, October 30th 2025, 6:56:42 pm
 ### Rebase vs Merge
 > [!tip]
 > The golden rule of git rebase is to not rebase on any public branch that has shared commit history!
+- https://medium.com/@shikha.ritu17/git-rebase-vs-merge-vs-squash-choosing-the-right-strategy-for-version-control-a9c9bb97040e
 - https://medium.com/@xiaominghu19922/git-merge-vs-scary-git-rebase-5eceead4badc
 - https://www.datacamp.com/blog/git-merge-vs-git-rebase
 	- Before merging into main, merge main into your branche to fix conflicts in your branche and not in the main branche.
