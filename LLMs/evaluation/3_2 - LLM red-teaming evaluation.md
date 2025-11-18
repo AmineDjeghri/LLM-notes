@@ -26,7 +26,9 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
 	- https://github.com/jujumilk3/leaked-system-prompts
 	- system prompts: https://github.com/dontriskit/awesome-ai-system-prompts
 
-- Catalog of redteaming datasets (jailbreaks, safety..) : https://safetyprompts.com/
+	- Catalog of redteaming datasets (jailbreaks, safety..) :
+		- https://safetyprompts.com/
+		- https://responsibleailabs.ai/knowledge-hub/articles/llm-evaluation-benchmarks-2025
 
 
 - **factual_errors**
