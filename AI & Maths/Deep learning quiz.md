@@ -1,0 +1,25 @@
+---
+date modified: Thursday, October 30th 2025, 6:56:42 pm
+---
+> [!note]
+> This is a template of a guide. Copy paste the template and use it. 
+> This template is compatible with the AI Tool 
+> Delete this note when editing it. 
+
+
+```table-of-contents
+```
+## News and updates
+- item 1
+## Easy guides
+- item 1
+- item 2
+
+## Tools / libraries 
+- item 1
+
+## Papers and research
+- item 1
+
+## Other resources 
+- item 1

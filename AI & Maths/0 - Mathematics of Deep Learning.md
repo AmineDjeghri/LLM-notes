@@ -28,15 +28,15 @@ Maximum likelihood estimation is a method that determines values for the paramet
 
 It is extremely useful, for example, when you want to calculate the *joint likelihood* for a set of independent and identically distributed points. Assuming that you have your points:
 
-\[ X = \{x_1, x_2, \ldots, x_N\} \]
+$X = x_1, x_2, \ldots, x_N$
 
 The total likelihood is the product of the likelihood for each point, i.e.:
 
-\[ p(X \mid \Theta) = \prod_{i=1}^N p(x_i \mid \Theta) \]
+$p(X \mid \Theta) = \prod_{i=1}^N p(x_i \mid \Theta)$
 
-where \(\Theta\) are the model parameters: vector of means \(\mu\) and covariance matrix \(\Sigma\). If you use the log-likelihood you will end up with sum instead of product:
+where $\Theta$ are the model parameters: vector of means $\mu$ and covariance matrix $\Sigma$. If you use the log-likelihood you will end up with sum instead of product:
 
-\[ \ln p(X \mid \Theta) = \sum_{i=1}^N \ln p(x_i \mid \Theta) \]
+$\ln p(X \mid \Theta) = \sum_{i=1}^N \ln p(x_i \mid \Theta)$
 
 ### 2.2.1. Transition to Cross-Entropy
 
@@ -46,25 +46,25 @@ In machine learning, particularly in classification tasks, we often deal with th
 
 Given the model's predicted probabilities for each class and the true distribution, cross-entropy is defined as:
 
-\[ H(p, q) = -\sum p(x) \ln q(x) \]
+$H(p, q) = -\sum p(x) \ln q(x)$
 
 #### 2.2.1.1. Derivation from Log-Likelihood to Cross-Entropy
 
 Starting from the log-likelihood for categorical distributions:
 
-\[ \ln p(X \mid \Theta) = \sum_{i=1}^N \ln p(x_i \mid \Theta) \]
+ $\ln p(X \mid \Theta) = \sum_{i=1}^N \ln p(x_i \mid \Theta)$
 
 If \( p \) represents the true labels (in a one-hot encoded form where the actual class label corresponding to each observation is 1 and all others are 0), and \( q \) represents the predicted probabilities by the model, then for each instance \( i \), only the true class \( c \) contributes to the sum, since for all non-true classes \( j \neq c \), \( p(x_i = j \mid \Theta) = 0 \).
 
 Therefore, the log-likelihood simplifies to:
 
-\[ \ln p(X \mid \Theta) = \sum_{i=1}^N \ln q_{c_i} \]
+ $\ln p(X \mid \Theta) = \sum_{i=1}^N \ln q_{c_i}$ 
 
-Where \( q_{c_i} \) is the predicted probability of the true class \( c_i \) for each sample \( i \).
+Where \( $q_{c_i}$ \) is the predicted probability of the true class \( $c_i$ \) for each sample \( i \).
 
 Transforming this into the formula for cross-entropy, we negate this sum to minimize the negative log-likelihood:
 
-\[ H(p, q) = -\sum_{i=1}^N \ln q_{c_i} \]
+ $H(p, q) = -\sum_{i=1}^N \ln q_{c_i}$ 
 
 This result shows that maximizing the likelihood is equivalent to minimizing the cross-entropy between the predicted and actual distributions, a key objective in training classification models.
 

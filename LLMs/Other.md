@@ -1,5 +1,5 @@
-
-## Azure OpenAI and Azure AI Foundry: 
+## JSON mode and structured outputs
+#### Azure OpenAI and Azure AI Foundry: 
 
 All Azure models and details : https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/model-inference/concepts/models.md#azure-openai
 
