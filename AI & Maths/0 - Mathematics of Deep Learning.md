@@ -72,17 +72,17 @@ This result shows that maximizing the likelihood is equivalent to minimizing the
 
 Also in the case of Gaussian, it allows you to avoid computation of the exponential:
 
-\[ p(x \mid \Theta) = \frac{1}{((2\pi)^{\frac{d}{2}} \sqrt{\det \Sigma})} e^{-\frac{1}{2}(x-\mu)^T \Sigma^{-1} (x-\mu)} \]
+$p(x \mid \Theta) = \frac{1}{((2\pi)^{\frac{d}{2}} \sqrt{\det \Sigma})} e^{-\frac{1}{2}(x-\mu)^T \Sigma^{-1} (x-\mu)}$ 
 
 Which becomes:
 
-\[ \ln p(x \mid \Theta) = -\frac{d}{2} \ln(2\pi) - \frac{1}{2} \ln(\det \Sigma) - \frac{1}{2} (x - \mu)^T \Sigma^{-1} (x - \mu) \]
+$\ln p(x \mid \Theta) = -\frac{d}{2} \ln(2\pi) - \frac{1}{2} \ln(\det \Sigma) - \frac{1}{2} (x - \mu)^T \Sigma^{-1} (x - \mu)$
 
 ## 2.4. Order of Likelihoods
 
 ln is a monotonically increasing function, thus log-likelihoods have the same relations of order as the likelihoods:
 
-\[ p(x \mid \Theta_1) > p(x \mid \Theta_2) \Leftrightarrow \ln p(x \mid \Theta_1) > \ln p(x \mid \Theta_2) \]
+$p(x \mid \Theta_1) > p(x \mid \Theta_2) \Leftrightarrow \ln p(x \mid \Theta_1) > \ln p(x \mid \Theta_2)$
 
 ## 2.5. Computational Complexity
 
