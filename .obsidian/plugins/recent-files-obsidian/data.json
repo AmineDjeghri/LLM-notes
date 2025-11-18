@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "3_2 - LLM red-teaming evaluation",
+      "path": "LLMs/evaluation/3_2 - LLM red-teaming evaluation.md"
+    },
+    {
+      "basename": "3_1 - LLM performance evaluation",
+      "path": "LLMs/evaluation/3_1 - LLM performance evaluation.md"
+    },
+    {
       "basename": "0- LLM Leaderboards",
       "path": "LLMs/0- LLM Leaderboards.md"
     },
@@ -9,16 +17,16 @@
       "path": "LLMs/1-NLP Intro and cheatsheet.md"
     },
     {
+      "basename": "Git",
+      "path": "Git.md"
+    },
+    {
+      "basename": "Tips",
+      "path": "Nicegui/Tips.md"
+    },
+    {
       "basename": "2-LLM Inference tools",
       "path": "LLMs/2-LLM Inference tools.md"
-    },
-    {
-      "basename": "3_2 - LLM red-teaming evaluation",
-      "path": "LLMs/evaluation/3_2 - LLM red-teaming evaluation.md"
-    },
-    {
-      "basename": "3_1 - LLM performance evaluation",
-      "path": "LLMs/evaluation/3_1 - LLM performance evaluation.md"
     },
     {
       "basename": "3_0 - LLM intro evaluation",
@@ -55,10 +63,6 @@
     {
       "basename": "Productivity guide",
       "path": "productivity/Productivity guide.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Nicegui/Untitled.md"
     },
     {
       "basename": "README",
