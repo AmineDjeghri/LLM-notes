@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Git",
+      "path": "Git.md"
+    },
+    {
       "basename": "0 - Mathematics of Deep Learning",
       "path": "AI & Maths/0 - Mathematics of Deep Learning.md"
     },
@@ -19,10 +23,6 @@
     {
       "basename": "Template",
       "path": "Template.md"
-    },
-    {
-      "basename": "Git",
-      "path": "Git.md"
     },
     {
       "basename": "1-NLP Intro and cheatsheet",
