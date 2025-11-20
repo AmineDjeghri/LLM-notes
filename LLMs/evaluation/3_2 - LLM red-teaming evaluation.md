@@ -18,6 +18,7 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
 - [Jailbreak Cookbook](https://github.com/General-Analysis/GA)
 - https://github.com/nrimsky/LM-exp
 - https://splx.ai/blog/mcp-security-risks
+- 
 ### Metrics
 - DeepTeam redTeaming vulnerabilities :  https://docs.confident-ai.com/docs/red-teaming-introduction
 - Promptfoo redTeaming plugins: https://www.promptfoo.dev/docs/red-team/plugins/
@@ -40,6 +41,7 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
 - promptfoo 
 - Giskard
 - https://github.com/p-e-w/heretic :  Fully automatic censorship removal for language models
+- https://github.com/General-Analysis/GA : An encyclopedia of jailbreaking techniques to make AI models safer.
 
 ## Papers and research
 - https://github.com/nrimsky/LM-exp
