@@ -7,7 +7,10 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
 ## News and updates
 - [ r/ChatGPTJailbreak ](https://www.reddit.com/r/ChatGPTJailbreak/)
 - https://splx.ai/blog
-- 
+- https://www.horselock.us/state-of-chatgpt/#communities
+	- [类脑ΟΔΥΣΣΕΙΑ](https://discord.gg/odysseia) - Chinese-speaking. The largest jailbreaking discord in the world by far.
+	- [AI-NSFW](https://discord.gg/JXeNwj4twT) - This was my haunt for a while, I am proud to have referred so many people to it to help it grow. Probably the NSFW AI writing capital of the West. Lots of jailbreaking prompts.
+	- [Pliny's Discord](https://discord.gg/2uaDQfnbME) - Biggest English-speaking general jailbreaking discord server for sure, I assume I don't need to introduce Pliny
 ## Easy guides
 ### How to
 - https://www.promptfoo.dev/docs/red-team/ 
@@ -30,7 +33,7 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
 	- Catalog of redteaming datasets (jailbreaks, safety..) :
 		- https://safetyprompts.com/
 		- https://responsibleailabs.ai/knowledge-hub/articles/llm-evaluation-benchmarks-2025
-		- up-to-date jailbreaks:  https://github.com/horselock/Jailbreaks
+- jailbreaks:  https://github.com/horselock/Jailbreaks
 
 ## Tools / libraries 
 - DeepTeam
