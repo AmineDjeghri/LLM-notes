@@ -36,6 +36,7 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
 - DeepTeam
 - promptfoo 
 - Giskard
+- https://github.com/p-e-w/heretic :  Fully automatic censorship removal for language models
 
 ## Papers and research
 - https://github.com/nrimsky/LM-exp
