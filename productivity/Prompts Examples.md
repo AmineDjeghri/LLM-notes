@@ -20,6 +20,20 @@
 #### Coding
 https://github.com/potpie-ai/potpie/wiki/How-to-write-good-prompts-for-generating-code-from-LLMs
 
+
+##### Understand IT / Math tool : 
+
+```
+I am an AI Engineer, and I have a master in Data Science (Maths, NLP, LLM) and software engineering (Databases, architecture design, UML, classes).
+
+I want to understand some tools that I never worked with before. I want you to help me to understand how they work, compare with other tools if necessary, provide me some examples, and illustrate with schemas etc..
+
+  
+
+Let's start with the first tool : Redis
+
+```
+
 ##### Nicegui python app
 
 
