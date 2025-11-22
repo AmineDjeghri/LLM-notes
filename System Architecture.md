@@ -102,7 +102,33 @@ date modified: Thursday, October 30th 2025, 6:56:42 pm
     
     - **Complex Transactions:** "If A pays B, deduct from A and add to B." Doing this safely in NoSQL is much harder than in SQL (ACID).4
 
+### The Architecture Integration (The "Full Stack" View)
 
+In a modern AI production system, you usually use **all of them** together.
+
+**Scenario: Building a ChatGPT Clone**
+
+1. **JSON:**
+    
+    - `model_config.json`: Stores the temperature and max_tokens settings for the LLM.
+        
+2. **SQL (PostgreSQL):**
+    
+    - Stores `Users` (email, password hash) and `SubscriptionPlan` (Free/Pro).
+        
+    - _Why?_ We cannot afford to lose user data or mess up payments.
+        
+3. **NoSQL (MongoDB/Cassandra):**
+    
+    - Stores `ChatHistory`.
+        
+    - _Why?_ Chats vary in length, have no fixed schema, and grow infinitely. We just dump the conversation logs here.
+        
+4. **Redis:**
+    
+    - **Caching:** Stores the context of the _current_ active conversation so the LLM responds instantly.
+        
+    - **Rate Limiting:** Counts how many requests a user made in the last minute to prevent abuse.
 ## Tools / libraries 
 - item 1
 
