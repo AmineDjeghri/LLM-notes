@@ -56,32 +56,7 @@ dictionary["bogus"] # will raise a KeyError if key is missing
 ### Linters and formaters
 - https://nono.ma/linter-vs-formatter
 
-### When should I use databases instead of files 
 
-**Why not using JSON instead of a database ?**
-- moving to SQLite as your first step. It’s local, so you don’t need to deal with remote connections and so on, but it’s optimised much more than a single JSON file.
-- It is immediately slower. JSON is for representing data, not storing it. Additionally, if you have multiple users, how are you going to handle them reading and writing to the same file at the same time? Databases will handle data integrity, concurrency etc and they are heavily optimized. JSON is a data transfer format, not a storage format
-- There's no real benefit to using a Json file rather than a database.
-
-1. When durable writes matter
-    
-2. When more than one thing is updating it
-    
-3. When you're dealing with large data and updating it
-    
-4. When you want to have marketable life skills
-    
-5. When you need to ask the data complex questions
-
-[source](https://www.reddit.com/r/node/comments/dfmrlj/when_should_i_consider_a_database_instead_of/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) 
-
-Redis vs SQL vs others ? 
-|**Tool**|**Best For...**|**Architectural Role**|**Data Integrity**|
-|---|---|---|---|
-|**JSON (File)**|Configuration, Export/Import, Small static datasets.|**Serialization**|None (File System dependent)|
-|**Redis**|Caching, Queues, Real-time counters, Ephemeral state.|**Speed / Buffer**|Variable (Speed > Consistency)|
-|**SQL** (Postgres)|Financial data, Users, Relations, Structured Data.|**System of Record**|High (**ACID**)|
-|**NoSQL** (Mongo)|Logs, Unstructured content, Rapid prototyping.|**Scale / Flexibility**|BASE (Basically Available, Soft state, Eventual consistency)|
 ## Tools / libraries 
 - leetcode
 - chatgpt
