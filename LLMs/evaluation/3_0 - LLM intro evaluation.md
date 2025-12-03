@@ -1,9 +1,11 @@
 ---
-date modified: Friday, October 17th 2025, 2:02:19 pm
+date modified: Tuesday, December 2nd 2025, 10:27:31 am
 ---
 ```table-of-contents
 ```
 ## Easy guides
+LLM evaluation is the process of testing and measuring how well large language models perform
+- https://www.superannotate.com/blog/llm-evaluation-guide
 - https://github.com/huggingface/evaluation-guidebook
 - https://github.com/Hannibal046/Awesome-LLM
 - https://www.confident-ai.com/blog/llm-evaluation-metrics-everything-you-need-for-llm-evaluation

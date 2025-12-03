@@ -13,6 +13,7 @@ date modified: Friday, October 17th 2025, 1:34:34 pm
 	- [Pliny's Discord](https://discord.gg/2uaDQfnbME) - Biggest English-speaking general jailbreaking discord server for sure, I assume I don't need to introduce Pliny
 ## Easy guides
 ### How to
+- take a look at - [[3_0 - LLM intro evaluation]]
 - https://www.promptfoo.dev/docs/red-team/ 
 - https://www.confident-ai.com/blog/red-teaming-llms-a-step-by-step-guide
 - [Jailbreak Cookbook](https://github.com/General-Analysis/GA)

@@ -19,6 +19,10 @@
 
 
 # 2. Statistics and basic ML:
+## 2.0 Turning Products into Sums
+
+The following is a very simple trick, yet used very widely, particularly in Machine Learning. See, **products** are never very good. Here we have a product of 4 numbers, which is not bad, but imagine if we had a million data points. How would the product of a million small probabilities (between 0 and 1) would look? It would be a ridiculously tiny number. In general we want to avoid products as much as we can. What’s better than a product? Well, a **sum**! And how do we turn products into sums? Exactly, using the **logarithm** function, since the following identity will be very helpful:
+![](https://miro.medium.com/v2/resize:fit:251/0*v6hxTSLvcZUiBanI.)
 
 ## 2.1. Intuitive explanation of maximum likelihood estimation
 

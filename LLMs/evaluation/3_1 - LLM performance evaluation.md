@@ -1,12 +1,54 @@
 ---
-date modified: Friday, October 17th 2025, 1:56:00 pm
+date modified: Wednesday, December 3rd 2025, 7:54:33 pm
 ---
 ```table-of-contents
 ```
 
 ## Easy guides
-- https://github.com/huggingface/evaluation-guidebook
+- take a look at - [[3_0 - LLM intro evaluation]]
 
+Classical NLP usecases:
+1. **Summarization (and paraphrasing)**
+2. **Question answering**
+3. **Instruction following**
+4. **named entity recognition**
+5. **relation extraction**
+6. **information extraction**
+7. **classification**
+8. **grammar & syntax**
+
+LLM usecases: 
+1. **structured output**
+2. **Long-context processing** 
+    - Long-document understanding
+3. **Multimodal understanding** -
+    - Visual question answering
+    - Image understanding
+4. **Function calling / Tool use** 
+5. **embeddings**
+6. **Maths**
+7. **Knowledge  & grounding** 
+	- world knowledge
+	- domain expertise
+    - Fact verification
+8. **Creative generation** 
+    - Story writing
+    - Dialogue generation
+    - Poetry/artistic text
+9. **efficiency & infrastructure** 
+	- latency
+	- cost
+	- ttft
+	- context size
+	- CO2
+10. **(later) Reasoning
+11. **(later) Agent capabilities** 
+12. **(Not included) Coding**
+
+### Benchmarks
+- [[0- LLM Leaderboards#Safety]]
+### Datasets
+- 
 ### Metrics
 #### Global metrics
 - https://aman.ai/primers/ai/evaluation-metrics/#evaluation-metrics-for-generative-text-models
@@ -27,6 +69,7 @@ date modified: Friday, October 17th 2025, 1:56:00 pm
 - [x] [FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation](https://arxiv.org/abs/2305.14251) ✅ 2025-02-07
 
 #### Perplexity & Shannon: 
+- [ ] https://medium.com/udacity/shannon-entropy-information-gain-and-picking-balls-from-buckets-5810d35d54b4
 - [x] https://medium.com/@anudevmanjusatheesh/perplexity-unveiled-key-metric-for-evaluating-llm-output-6ffccf5d0d85 ✅ 2025-03
 - [ ] https://www.comet.com/site/blog/perplexity-for-llm-evaluation/
 #### RAG Evaluation
@@ -40,6 +83,11 @@ RAG systems are composed of a retrieval and an LLM based generation module, and 
 		- GitHub : https://github.com/explodinggradients/ragas
 		- Paper : https://arxiv.org/abs/2309.15217
 
+
+General metrics
+- Fastest
+- Latency (TTFT)
+- Context size
 
 Context dependent metrics : 
 - RAG 
