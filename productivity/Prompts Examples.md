@@ -1,3 +1,6 @@
+---
+date modified: Saturday, December 27th 2025, 9:24:31 pm
+---
 
 ```table-of-contents
 ```
@@ -7,12 +10,7 @@
 ## Easy guides
 - Use ChatGPT to rewrite a prompt
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
-<<<<<<< HEAD
-- Notebook LLM (for slides, audio etc..)
-- Gemini (for canvas and images)
-=======
 - [Prompting Guide - Image-to-Image](https://docs.bfl.ai/guides/prompting_guide_kontext_i2i#iterative-editing-with-prompts-while-keeping-character-consistency)
->>>>>>> origin/main
 
 ## Tools / libraries 
 - item 1
