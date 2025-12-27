@@ -7,8 +7,12 @@
 ## Easy guides
 - Use ChatGPT to rewrite a prompt
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
+<<<<<<< HEAD
 - Notebook LLM (for slides, audio etc..)
 - Gemini (for canvas and images)
+=======
+- [Prompting Guide - Image-to-Image](https://docs.bfl.ai/guides/prompting_guide_kontext_i2i#iterative-editing-with-prompts-while-keeping-character-consistency)
+>>>>>>> origin/main
 
 ## Tools / libraries 
 - item 1
@@ -487,10 +491,11 @@ Output Requirements:
 #### Ultimate LLM Personality Injection Collection
 - https://www.reddit.com/r/PromptEngineering/comments/1nv87bt/10_prompts_here_hope_this_might_help_someone/
 
-### Image generation
-### Image editing
+### Image 
 
-#### Two people side by side 
+#### Image editing
+
+##### Two people side by side 
 
 ```
 Create a realistic image by combining the two people from the provided photos into a single frame. Place them side by side, standing close to each other, as if they are posing together. Ensure that both people are looking straight at the camera and displaying a natural, relaxed, and smiling expression. Adapt the lighting, skin tones, shadows, and perspective so that both individuals appear to be in the same environment. Use a single, attractive background, such as a soft-lit indoor studio backdrop, that suits both subjects and enhances them. Adjust posture, alignment, and proportions so they resemble close friends or family members, positioned naturally for a portrait. Avoid harsh retouching or inappropriate lighting. Ensure the final image feels authentic, as if it were taken in one shot. Ensure the character (tone/mood) of the image is not altered.
@@ -502,6 +507,6 @@ Create a realistic image by combining the two people from the provided photos in
 Extract the person from image 1, the sitting person from image 2 , the person in  the image 3. Create a single image showing all individuals side by side against a uniform background. Keep each person’s original appearance, pose, viewing direction, and facial expression completely unchanged. Do not modify body orientation. Do not modify the person.
 ```
 
-### Video
+#### Video
 - [CAMERA SHOTS & MOVES](https://www.reddit.com/r/PromptEngineering/comments/1nvczxl/stop_writing_make_it_cinematic_steal_these_2/)
 - 
