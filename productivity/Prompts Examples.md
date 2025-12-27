@@ -7,6 +7,8 @@
 ## Easy guides
 - Use ChatGPT to rewrite a prompt
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
+- Notebook LLM (for slides, audio etc..)
+- Gemini (for canvas and images)
 
 ## Tools / libraries 
 - item 1
@@ -19,9 +21,19 @@
 ### Text prompts
 #### Coding
 https://github.com/potpie-ai/potpie/wiki/How-to-write-good-prompts-for-generating-code-from-LLMs
+**generate docstring**
 
+```
+add detailed docstrings to `@file.py` (even in nested functions). Use google style.
+```
 
-##### Understand IT / Math tool : 
+**(to try) Code Optimization **
+```
+Analyze this file and check if we can optimize the style, code and performance.
+```
+
+##### Understand IT / Math tool (better in Gemini) : 
+since Gemini can generate very good illustrations, and also canvas, we can laverage it to get very good explanation
 
 ```
 I am an AI Engineer, and I have a master in Data Science (Maths, NLP, LLM) and software engineering (Databases, architecture design, UML, classes).

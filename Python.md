@@ -4,10 +4,9 @@ date modified: Saturday, November 8th 2025, 4:57:14 am
 ```table-of-contents
 ```
 ## Easy guides
-- item 1
-- item 2
 - Backend+Frontend+GenA Tempalte   (https://github.com/AmineDjeghri/generative-ai-project-template)
 - Package library Template https://github.com/AmineDjeghri/python-package-template/
+- Stremio package library 
 
 
 
@@ -52,15 +51,24 @@ dictionary["bogus"] # will raise a KeyError if key is missing
 - ensure to deepcopy a list of list or dict of list …etc because of inner mutable objects 
 - Lists are mutable, so don’t initialize them in a function’s definition
 
-
+### Use Default values if None instead of a condition 
+- Use `_dictionary_.setdefault(_keyname, value_)` : If the key ‘keyname’ doesn't exist in data, it creates it with the value as the default value. If it already exists, it does nothing.
+- same with get and set items etc…
 ### Linters and formaters
 - https://nono.ma/linter-vs-formatter
+
+### max workers (threadpool, async…)
+- Use pydantic env var to control the max workers :
+	- `Field(default=4, gt=0, validation_alias='LLM_MAX_WORKERS')`
+
+- **keep the `min(..., nb_steps)`** because it avoids spawning more threads than tasks (no benefit, only overhead) :
+	- `max_workers = min(int(settings.llm_max_workers), nb_steps) if nb_steps else 1`
 
 
 ## Tools / libraries 
 - leetcode
 - chatgpt
-- 
+- Tell gemini/chatgpt to generate some code that can be optimized and try to optimize it
 
 ## Papers and research
 - item 1
