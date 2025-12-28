@@ -72,7 +72,7 @@ dictionary["bogus"] # will raise a KeyError if key is missing
 **Protocols**
 - https://www.turingtaco.com/static-duck-typing-with-pythons-protocols/
 - Multiple unrelated types should work the same way
-- Duck typing with static type safety
+- Duck typing with static type safety ( _structural typing_ is popularly known as _duck typing_)
 - You don’t control the classes
 ## Tools / libraries 
 - leetcode
