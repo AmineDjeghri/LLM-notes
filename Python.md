@@ -64,7 +64,8 @@ dictionary["bogus"] # will raise a KeyError if key is missing
 - **keep the `min(..., nb_steps)`** because it avoids spawning more threads than tasks (no benefit, only overhead) :
 	- `max_workers = min(int(settings.llm_max_workers), nb_steps) if nb_steps else 1`
 
-
+### # Static Duck Typing and Python’s Protocols
+- https://www.turingtaco.com/static-duck-typing-with-pythons-protocols/
 ## Tools / libraries 
 - leetcode
 - chatgpt
