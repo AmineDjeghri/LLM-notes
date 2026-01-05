@@ -507,7 +507,7 @@ async def start_stream(show_log_component=True):
 **Makefile Commands:**  
 ```bash  
 make docker-up              # Start all servicesmake docker-up-build        # Rebuild and startmake install-package        # Local installationmake run-webui              # Run web UI locallymake run-ollama             # Start Ollama for local models```  
-  
+```
 ---  
   
 ## 7. Key Innovations & Achievements  
