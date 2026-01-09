@@ -26,6 +26,9 @@ Metadata about the table schema such as which column contains which value and th
 - **TableQAKit/SQA**: Sequential question answering on tables  
 - **Geoquery-TableQA**: Geographic data tables
 
+Metadata columns
+
+
 
 ### **Primary Metrics for Table QA**
 
@@ -83,6 +86,19 @@ Metadata about the table schema such as which column contains which value and th
 - **TableBench/TableEval**: Answer Correctness, BERTScore, Faithfulness
 
 
+### 7. Error Analysis  
+  
+**Categorize errors:**  
+1. **Retrieval errors**: Wrong cell identified  
+2. **Computation errors**: Wrong operation applied  
+3. **Type errors**: Wrong answer type  
+4. **Hallucinations**: Fabricated information  
+5. **Format errors**: Correct value, wrong format  
+  
+**For each error category:**  
+- Calculate frequency  
+- Identify patterns  
+- Prioritize fixes
 ## Tools / libraries 
 - item 1
 
