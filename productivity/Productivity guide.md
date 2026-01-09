@@ -14,6 +14,7 @@
 	- blogs, papers..
 	- Give what you found to notebooklm to create slides
 	- **Create slides**: for papers instead of reading them, you can give windsurf pdfs to create a readme, and chat with it to enrich the readme, then copy the content of the readme to notebooklm to create slides. The markdown created by windsurf can have python functions, and code to guide notebooklm for charts and examples geenrations
+	- ask notebooklm questions about your slides, sources to better understand concepts
 - 
 ## Tools / libraries 
 - AwesomeOS  : All productivity apps can be found here
