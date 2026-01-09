@@ -9,25 +9,167 @@
 	- **Comma-Separated Format Data:** Moderate efficiency but prone to misinterpretation.
 	- **Pipe-Separated Format Data:** Similar to Markdown, better than CSV.
 	- The accuracy of the key-value list format improved more than any other format when providing metadata.
-Type of queries:
-- Retrieved directly from the table
-- Requires computation
 
-Different table formatting structures:
+
+**Different table formatting structures:**
 - MD, Piped, comma-separated, json, key-value, Latex, HTML,
 - Not taking into account: Image 
 
-Metadata about the table schema such as which column contains which value and the datatype of each column increases the accuracy.
+### Query Type Classification  
+  
+#### 1. Direct Retrieval Queries  
+  
+Questions where the answer exists directly in a table cell.  
+  
+**Characteristics:**  
+- Single cell lookup  
+- No computation required  
+- Direct mapping from question to cell  
+  
+**Examples:**  
+```  
+Q: "What is Alice's age?"  
+Table: | Name  | Age |  
+       | Alice | 25  |A: "25" (direct lookup)  
+  
+Q: "Which country is Bob from?"  
+Table: | Name | Country |  
+       | Bob  | UK      |A: "UK" (direct lookup)  
+```  
+  
+**Evaluation Metrics:**  
+- Exact Match Accuracy  
+- Cell Accuracy  
+- Retrieval Precision  
+  
+**Difficulty Factors:**  
+- Table size (number of rows/columns)  
+- Ambiguous column names  
+- Multiple matching entities
+
+### 2. Computation-Required Queries  
+  
+Questions requiring operations on table data.  
+  
+> **Research Finding** (Wolff & Hulsebos, 2025): LLMs show significant performance degradation on aggregation and complex calculation queries compared to simple lookup tasks. Evaluation revealed that traditional metrics (BLEU, BERTScore) fail to reliably distinguish correct from incorrect answers for analytical queries.  
+  
+#### 2.1 Aggregation Queries  
+  
+**Operations:** COUNT, SUM, AVG, MAX, MIN  
+  
+**Examples:**  
+```  
+Q: "How many players are from Australia?"  
+Operation: COUNT(rows WHERE Country = 'Australia')  
+A: "3"  
+  
+Q: "What is the total score?"  
+Operation: SUM(Score column)  
+A: "245"  
+  
+Q: "What is the average age?"  
+Operation: AVG(Age column)  
+A: "27.5"  
+```  
+  
+**Evaluation Metrics:**  
+- Numerical Accuracy (with tolerance)  
+- Type-Aware Accuracy  
+- Operation Accuracy  
+  
+#### 2.2 Comparison Queries  
+  
+**Operations:** >, <, =, >=, <=, BETWEEN  
+  
+**Examples:**  
+```  
+Q: "Which player has the highest score?"  
+Operation: MAX(Score) → find corresponding Name  
+A: "Alice"  
+  
+Q: "List players older than 25"  
+Operation: SELECT Name WHERE Age > 25  
+A: ["Bob", "Charlie"]  
+```  
+  
+**Evaluation Metrics:**  
+- Exact Match  
+- Partial Credit (for list answers)  
+- Ranking Quality (NDCG for ordered lists)  
+  
+#### 2.3 Arithmetic Queries  
+  
+**Operations:** +, -, ×, ÷, %  
+  
+**Examples:**  
+```  
+Q: "What is the difference between the highest and lowest score?"  
+Operation: MAX(Score) - MIN(Score)  
+A: "15"  
+  
+Q: "What percentage of players are from USA?"  
+Operation: (COUNT(Country='USA') / COUNT(*)) × 100  
+A: "40%"  
+```  
+  
+**Evaluation Metrics:**  
+- Numerical Accuracy (±0.01 tolerance)  
+- Unit Consistency  
+- Format Matching  
+  
+#### 2.4 Multi-Hop Queries  
+  
+**Operations:** Multiple sequential reasoning steps  
+  
+**Examples:**  
+```  
+Q: "What is the average age of players from Australia?"  
+Steps:  
+  1. Filter rows WHERE Country = 'Australia'  2. Calculate AVG(Age) on filtered rowsA: "28.3"  
+  
+Q: "Which country has the most players over 30?"  
+Steps:  
+  2. Filter rows WHERE Age > 30  2. GROUP BY Country  3. COUNT per group  4. Find MAX countA: "USA"  
+```  
+  
+**Evaluation Metrics:**  
+- End-to-end Accuracy  
+- Hop Accuracy (per step)  
+- Reasoning Chain Correctness  
+  
+#### 2.5 Temporal Queries  
+  
+**Operations:** Date/time comparisons, duration calculations  
+  
+**Examples:**  
+```  
+Q: "How many events occurred after 2020?"  
+Operation: COUNT(rows WHERE Year > 2020)  
+A: "12"  
+  
+Q: "What is the time difference between first and last event?"  
+Operation: MAX(Date) - MIN(Date)  
+A: "5 years"  
+```  
+  
+**Evaluation Metrics:**  
+- Date Format Normalization  
+- Temporal Accuracy  
+- Unit Consistency
+
+
 
 - **WikiTableQuestions**: Wikipedia tables with natural language questions  
 - **TableVQA**: Visual table question answering  
 - **TableBench**: Comprehensive table understanding benchmark  
 - **TableEval**: Multi-dimensional table evaluation  
 - **TableQAKit/SQA**: Sequential question answering on tables  
-- **Geoquery-TableQA**: Geographic data tables
+- **Geoquery-TableQA**: Geographic data tables  
+- **TQA-Bench**: Multi-table reasoning with varying complexity levels
 
-Metadata columns
+### Metadata columns:
 
+Metadata about the table schema such as which column contains which value and the datatype of each column increases the accuracy.
 
 
 ### **Primary Metrics for Table QA**
