@@ -14,7 +14,8 @@ Type of queries:
 - Requires computation
 
 Different table formatting structures:
-- MD, Piped, comma-separated, json, key-value
+- MD, Piped, comma-separated, json, key-value, Latex, HTML,
+- Not taking into account: Image 
 
 Metadata about the table schema such as which column contains which value and the datatype of each column increases the accuracy.
 
