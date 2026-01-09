@@ -170,7 +170,29 @@ A: "5 years"
 ### Metadata columns:
 
 Metadata about the table schema such as which column contains which value and the datatype of each column increases the accuracy.
-
+{  
+  "difficulty_level": "easy | medium | hard",  
+  "reasoning_type": ["lookup", "aggregation", "comparison", "multi_hop", "arithmetic"],  
+  "num_reasoning_steps": "integer",  
+  "question_type": "factoid | list | boolean | numerical | descriptive",  
+  "answer_type": "entity | number | date | text | boolean",  
+  "answer_length": "integer (tokens)",  
+  "table_num_rows": "integer",  
+  "table_num_cols": "integer",  
+  "table_size_category": "small | medium | large",  
+  "table_domain": "sports | geography | finance | general | ...",  
+  "columns_involved": ["column_name1", "column_name2"],  
+  "answer_in_table": "boolean (direct cell vs computed)",  
+  "requires_numerical_reasoning": "boolean",  
+  "has_ground_truth": "boolean",  
+  "ambiguity_flag": "boolean",  
+  "evaluation_metrics": ["exact_match", "f1", "bertscore"],  
+  "context_size_tokens": "integer",  
+  "num_tables": "integer",  
+  "has_missing_values": "boolean",  
+  "has_duplicate_entities": "boolean",  
+  "requires_foreign_key_resolution": "boolean"  
+}
 
 ### **Primary Metrics for Table QA**
 
