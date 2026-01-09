@@ -79,6 +79,8 @@ leaderboards containing many other benchmarks :
 	- blog : https://huggingface.co/docs/leaderboards/open_llm_leaderboard/emissions
 - Artificial Analysis LLM Performance (price, speed)
 	- leaderboard : https://huggingface.co/spaces/ArtificialAnalysis/LLM-Performance-Leaderboard
+- Costs:
+	- [Litellm json pricing ](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json)
 
 ### Datasets
 - GLUE, SuperGLUE, HellaSwag, TruthfulQA, and MMLU,
