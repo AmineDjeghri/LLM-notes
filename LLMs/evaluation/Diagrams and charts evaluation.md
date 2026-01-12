@@ -518,101 +518,9 @@ def evaluate_occlusion_robustness(model, dataset_with_occlusions):
   
 ---  
   
-## Evaluation Pipeline  
-  
-### Step 1: Data Preparation  
-  
-```python  
-import json  
-from PIL import Image  
-  
-def prepare_chart_dataset(raw_data, dataset_name):  
-    """Standardize chart QA datasets"""    standardized = []        for item in raw_data:  
-        # Load and validate image        image = Image.open(item['image_path'])                # Extract metadata  
-        metadata = {            "chart_type": detect_chart_type(image),            "visual_complexity": calculate_complexity(image),            "task_type": classify_task(item['question']),            "answer_type": infer_answer_type(item['ground_truth'])        }                standardized.append({  
-            "question_id": f"{dataset_name}_{item['id']}",            "dataset_source": dataset_name,            "image_path": item['image_path'],            "question": item['question'],            "ground_truth": item['answer'],            "metadata": metadata        })        return standardized  
-```  
-  
-### Step 2: Model Inference  
-  
-```python  
-def run_chart_qa_inference(model, dataset):  
-    """Generate predictions for chart QA"""    predictions = []        for item in dataset:  
-        # Load image        image = load_image(item['image_path'])                # Generate prediction  
-        result = model.predict(            image=image,            question=item['question'],            return_reasoning=True        )                predictions.append({  
-            "question_id": item['question_id'],            "prediction": result['answer'],            "confidence": result.get('confidence', None),            "reasoning": result.get('reasoning', None),            "processing_time_ms": result.get('time_ms', None)        })        return predictions  
-```  
-  
-### Step 3: Metric Calculation  
-  
-```python  
-def evaluate_chart_qa(predictions, ground_truth, metadata):  
-    """Calculate comprehensive metrics"""    results = {        "overall": {},        "by_chart_type": {},        "by_task_type": {},        "by_difficulty": {},        "robustness": {}    }        # Overall metrics  
-    results["overall"]["exact_match"] = calculate_exact_match(predictions, ground_truth)    results["overall"]["relaxed_accuracy"] = calculate_relaxed_accuracy(predictions, ground_truth)    results["overall"]["numerical_accuracy_5pct"] = calculate_numerical_accuracy(        predictions, ground_truth, tolerance=0.05    )        # Stratified by chart type  
-    for chart_type in ["bar_chart", "line_chart", "pie_chart", "scatter_plot"]:        subset = filter_by_chart_type(predictions, ground_truth, metadata, chart_type)        results["by_chart_type"][chart_type] = calculate_metrics(subset)        # Stratified by task type  
-    for task_type in ["value_extraction", "comparison", "composition", "trend_analysis"]:        subset = filter_by_task_type(predictions, ground_truth, metadata, task_type)        results["by_task_type"][task_type] = calculate_metrics(subset)        # LLM-as-judge evaluation  
-    results["overall"]["llm_correctness"] = llm_judge_correctness(        predictions, ground_truth, metadata    )    results["overall"]["llm_reasoning_quality"] = llm_judge_reasoning(        predictions, metadata    )        return results  
-```  
-  
-### Step 4: Error Analysis  
-  
-```python  
-def analyze_errors(predictions, ground_truth, metadata):  
-    """Categorize and analyze errors"""    errors = {        "ocr_errors": [],        "value_extraction_errors": [],        "reasoning_errors": [],        "chart_type_misidentification": [],        "calculation_errors": []    }        for pred, gt, meta in zip(predictions, ground_truth, metadata):  
-        if pred['prediction'] != gt:            error_type = classify_error(pred, gt, meta)            errors[error_type].append({                "question_id": pred['question_id'],                "prediction": pred['prediction'],                "ground_truth": gt,                "metadata": meta            })        # Generate error statistics  
-    error_stats = {        error_type: {            "count": len(error_list),            "percentage": len(error_list) / len(predictions) * 100        }        for error_type, error_list in errors.items()    }        return errors, error_stats  
-```  
-  
-### Complete Pipeline  
-  
-```python  
-def evaluate_chart_understanding(model, datasets, output_dir):  
-    """Full evaluation pipeline for chart understanding"""    all_results = {}        for dataset_name, dataset_path in datasets.items():  
-        print(f"Evaluating on {dataset_name}...")                # Load and prepare data  
-        raw_data = load_dataset(dataset_path)        prepared_data = prepare_chart_dataset(raw_data, dataset_name)                # Run inference  
-        predictions = run_chart_qa_inference(model, prepared_data)                # Calculate metrics  
-        results = evaluate_chart_qa(            predictions=predictions,            ground_truth=[item['ground_truth'] for item in prepared_data],            metadata=[item['metadata'] for item in prepared_data]        )                # Error analysis  
-        errors, error_stats = analyze_errors(            predictions,            [item['ground_truth'] for item in prepared_data],  
-            [item['metadata'] for item in prepared_data]        )                results['error_analysis'] = error_stats  
-        all_results[dataset_name] = results                # Save results  
-        save_json(results, f"{output_dir}/{dataset_name}_results.json")        save_error_examples(errors, f"{output_dir}/{dataset_name}_errors.json")        # Generate report  
-    generate_report(all_results, f"{output_dir}/evaluation_report.html")        return all_results  
-```  
-  
----  
-  
 ## Best Practices  
   
-### 1. Image Quality Considerations  
-  
-✅ **Do:**  
-- Test across multiple resolutions  
-- Validate image loading and preprocessing  
-- Check for corrupted or invalid images  
-- Normalize image formats (PNG, JPG, SVG)  
-  
-❌ **Don't:**  
-- Assume all images are high quality  
-- Ignore resolution effects on performance  
-- Skip validation of image dimensions  
-  
-### 2. Numerical Tolerance Selection  
-  
-**Guidelines:**  
-  
-| Chart Quality | Recommended Tolerance | Use Case |  
-|---------------|----------------------|----------|  
-| High-res, clear scales | ±1-2% | Scientific charts, precise data |  
-| Standard quality | ±5% | Business charts, typical use |  
-| Low-res, unclear | ±10% | Screenshots, compressed images |  
-  
-**Implementation:**  
-```python  
-def adaptive_tolerance(image_quality, chart_type):  
-    """Select tolerance based on image characteristics"""    if image_quality == "high" and chart_type in ["bar_chart", "line_chart"]:        return 0.02  # 2%    elif image_quality == "medium":        return 0.05  # 5%    else:        return 0.10  # 10%  
-```  
-  
-### 3. Handling Multi-Element Answers  
+### 1. Handling Multi-Element Answers  
   
 **For list-type answers:**  
 ```python  
@@ -625,15 +533,8 @@ f1 = f1_score(pred_set={"A", "C"}, gt_set={"A", "C", "E"})
 # F1 = 0.80 (partial credit)  
 ```  
   
-### 4. Chart Type Detection  
-  
-**Automated classification:**  
-```python  
-def detect_chart_type(image):  
-    """    Use heuristics or ML classifier to identify chart type    Helps in stratified evaluation    """    # Option 1: Rule-based (check for specific visual patterns)    # Option 2: Train a classifier    # Option 3: Use vision model to classify        return chart_type  # "bar_chart", "line_chart", etc.  
-```  
-  
-### 5. Stratified Evaluation Priority  
+
+### 2. Stratified Evaluation Priority  
   
 **Always stratify by:**  
 1. **Chart type** (most important for understanding model capabilities)  
@@ -641,35 +542,14 @@ def detect_chart_type(image):
 3. **Visual complexity** (reveals scalability limits)  
 4. **Difficulty level** (standard practice)  
   
-### 6. LLM-as-Judge Best Practices  
-  
-✅ **Do:**  
+### 3. LLM-as-Judge Best Practices  
 - Provide clear evaluation criteria  
 - Use numerical tolerance guidelines in prompts  
 - Include ground truth for anchoring  
 - Log judge reasoning for debugging  
 - Validate with human annotations periodically  
-  
-❌ **Don't:**  
-- Use vague evaluation criteria  
-- Ignore cost considerations (vision + text tokens)  
-- Skip validation against human judgments  
-  
-### 7. Robustness Testing  
-  
-**Required tests:**  
-  
-```python  
-def comprehensive_robustness_suite(model, dataset):  
-    """Test model robustness across variations"""        results = {  
-        # Style variations        "style_robustness": test_style_variations(model, dataset),                # Resolution variations  
-        "resolution_robustness": test_resolutions(model, dataset),                # Occlusion scenarios  
-        "occlusion_robustness": test_occlusions(model, dataset),                # Noise and compression  
-        "noise_robustness": test_noise_levels(model, dataset),                # Color scheme variations  
-        "color_robustness": test_color_schemes(model, dataset)    }        return results  
-```  
-  
-### 8. Error Categorization  
+
+### 4. Error Categorization  
   
 **Standard error types:**  
   
@@ -707,99 +587,7 @@ if "log_scale" in metadata["edge_cases"]:
     # Apply log-scale aware tolerance    pass  
 ```  
   
-### 10. Reproducibility  
-  
-✅ **Ensure:**  
-- Fixed random seeds for sampling  
-- Version-locked dependencies  
-- Saved model checkpoints  
-- Image preprocessing documentation  
-- Timestamped results  
-  
-**Configuration file:**  
-```json  
-{  
-  "experiment_id": "chart_qa_eval_001",  
-  "timestamp": "2025-01-12T09:00:00Z",  
-  "model": {  
-    "name": "gpt-4-vision",  
-    "version": "v1.0",  
-    "parameters": {}  
-  },  
-  "dataset": {  
-    "name": "ChartQA",  
-    "version": "v2.0",  
-    "split": "test"  
-  },  
-  "evaluation": {  
-    "metrics": ["exact_match", "relaxed_accuracy", "numerical_accuracy"],  
-    "numerical_tolerance": 0.05,  
-    "llm_judge_model": "gpt-4"  
-  },  
-  "preprocessing": {  
-    "image_resize": [800, 600],  
-    "normalization": "standard"  
-  }  
-}  
-```  
-  
----  
-  
-## Benchmarks and Datasets  
-  
-### Popular Datasets  
-  
-#### 1. ChartQA  
-- **Size**: 9,608 questions on 4,804 charts  
-- **Chart types**: Bar, line, pie charts  
-- **Source**: Real-world and synthetic  
-- **Tasks**: Value extraction, comparison, reasoning  
-- **URL**: https://github.com/vis-nlp/ChartQA  
-  
-#### 2. PlotQA  
-- **Size**: 28.9M questions on 224K plots  
-- **Chart types**: Bar, line, dot plots  
-- **Source**: Synthetic  
-- **Tasks**: Structural, data retrieval, reasoning  
-- **URL**: https://github.com/NiteshMethani/PlotQA  
-  
-#### 3. FigureQA  
-- **Size**: 100K questions on 100K figures  
-- **Chart types**: Bar, line, pie charts  
-- **Source**: Synthetic  
-- **Tasks**: Binary questions about visual properties  
-- **URL**: https://www.microsoft.com/en-us/research/project/figureqa-dataset/  
-  
-#### 4. DVQA (Data Visualization Question Answering)  
-- **Size**: 3M questions on 300K charts  
-- **Chart types**: Bar charts  
-- **Source**: Synthetic  
-- **Tasks**: Structure, data retrieval, reasoning  
-- **URL**: https://github.com/kushalkafle/DVQA_dataset  
-  
-#### 5. Chart-to-Text  
-- **Size**: 44,096 charts with summaries  
-- **Chart types**: Line, bar, pie charts  
-- **Source**: Statista  
-- **Tasks**: Chart summarization, captioning  
-- **URL**: https://github.com/JasonObeid/Chart2Text  
-  
-#### 6. Diagram Understanding Datasets  
-  
-**AI2D (AI2 Diagrams)**  
-- **Size**: 5,000 diagrams  
-- **Type**: Scientific diagrams  
-- **Tasks**: Element identification, relationship extraction  
-- **URL**: https://allenai.org/data/diagrams  
-  
-**FigureNet**  
-- **Size**: 1.4M figures from scientific papers  
-- **Type**: Mixed (charts, diagrams, plots)  
-- **Tasks**: Classification, parsing  
-- **URL**: https://github.com/allenai/figurenet  
-  
----  
-  
+
 ## Example Evaluation Results  
   
 ```json  
@@ -877,75 +665,7 @@ if "log_scale" in metadata["edge_cases"]:
 - [ ] Perform error analysis with categorization  
 - [ ] Generate comprehensive report with visualizations  
 - [ ] Document configuration and results  
-  
----  
-  
-## Tools & Libraries  
-  
-### Image Processing  
-```bash  
-pip install Pillow opencv-python```  
-  
-### OCR (if needed for ground truth extraction)  
-```bash  
-pip install pytesseract easyocr```  
-  
-### Evaluation Metrics  
-```bash  
-pip install scikit-learn scipy numpy```  
-  
-### Visualization  
-```bash  
-pip install matplotlib seaborn plotly```  
-  
-### Vision-Language Models  
-```bash  
-# OpenAI  
-pip install openai  
-  
-# Anthropic  
-pip install anthropic  
-  
-# Open source models  
-pip install transformers torch  
-```  
-  
----  
-  
-## Additional Resources  
-  
-### Research Papers  
-  
-**Chart Understanding:**  
-- "ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning" (Masry et al., 2022)  
-- "PlotQA: Reasoning over Scientific Plots" (Methani et al., 2020)  
-- "FigureQA: An Annotated Figure Dataset for Visual Reasoning" (Kahou et al., 2018)  
-- "DVQA: Understanding Data Visualizations via Question Answering" (Kafle et al., 2018)  
-  
-**Vision-Language Models:**  
-- "Flamingo: a Visual Language Model for Few-Shot Learning" (Alayrac et al., 2022)  
-- "BLIP-2: Bootstrapping Language-Image Pre-training" (Li et al., 2023)  
-- "GPT-4V(ision) System Card" (OpenAI, 2023)  
-  
-**Diagram Understanding:**  
-- "AI2D: Diagram Understanding with Artificial Intelligence" (Kembhavi et al., 2016)  
-- "Diagram Parse: Generating Textual Descriptions for Diagrams" (Seo et al., 2015)  
-  
-### Tutorials & Guides  
-- Chart QA evaluation notebooks: https://github.com/vis-nlp/ChartQA  
-- Vision-language model fine-tuning: https://huggingface.co/docs/transformers/tasks/visual_question_answering  
-  
----  
-  
-## Contact & Support  
-  
-For questions or contributions to this evaluation framework, please refer to the project documentation or open an issue in the repository.  
-  
-**Last Updated:** January 2025    
-**Version:** 1.0  
-  
----  
-  
+
 ## Appendix: Common Pitfalls  
   
 ### 1. Over-reliance on Exact Match  
