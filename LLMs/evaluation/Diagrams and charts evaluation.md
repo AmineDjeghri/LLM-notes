@@ -1032,8 +1032,6 @@ def calculate_difficulty_score(task_metadata, visual_elements):
   
 ---  
   
-**Last Updated:** January 2025    
-**Version:** 1.0
 
 
 ## Tools / libraries 
