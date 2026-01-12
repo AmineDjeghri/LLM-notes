@@ -848,65 +848,14 @@ Scientific Diagrams:
 Specialized:  
   - map_chart  - gantt_chart  - candlestick_chart  - radar_chart  - sankey_diagram```  
   
-### Level 4: Visual Elements Metadata (REQUIRED)  
+
   
-```json  
-{  
-  "visual_elements": {  
-    "num_data_series": 4,  
-    "num_categories": 4,  
-    "num_data_points": 16,  
-    "total_visual_elements": 16,  
-    "visual_complexity": "moderate",  
-    "complexity_score": 6.5,  
-    "has_overlapping_elements": false,  
-    "has_small_text": false,  
-    "min_text_size_px": 12,  
-    "text_readability": "high",  
-    "num_text_elements": 25,  
-    "axis_info": {  
-      "x_axis": {  
-        "label": "Products",  
-        "type": "categorical",  
-        "categories": ["Product A", "Product B", "Product C", "Product D"],  
-        "num_ticks": 4,  
-        "has_label": true,  
-        "label_rotation": 0  
-      },  
-      "y_axis": {  
-        "label": "Sales ($1000s)",  
-        "type": "numerical",  
-        "scale": "linear",  
-        "range": [0, 100],  
-        "num_ticks": 11,  
-        "has_label": true,  
-        "unit": "$1000s"  
-      },  
-      "y2_axis": null  
-    },  
-    "data_ranges": {  
-      "min_value": 15,  
-      "max_value": 95,  
-      "value_spread": 80  
-    }  
-  }  
-}  
 ```  
   
 **Purpose:** Complexity assessment, visual perception evaluation  
   
 **Complexity Scoring:**  
-```python  
-def calculate_complexity_score(visual_elements):  
-    """    Calculate visual complexity score (0-10)    """    score = 0        # Number of elements (0-3 points)  
-    num_elements = visual_elements['total_visual_elements']    if num_elements < 5:        score += 1    elif num_elements < 15:        score += 2    else:        score += 3        # Number of data series (0-2 points)  
-    num_series = visual_elements['num_data_series']    if num_series > 1:        score += min(num_series - 1, 2)        # Overlapping elements (+2 points)  
-    if visual_elements['has_overlapping_elements']:        score += 2        # Small text (+1 point)  
-    if visual_elements['has_small_text']:        score += 1        # Multiple axes (+1 point)  
-    if visual_elements['axis_info'].get('y2_axis'):        score += 1        # Annotations (+1 point)  
-    if visual_elements.get('has_annotations'):        score += 1        return min(score, 10)  
-```  
-  
+
 ### Level 5: Question & Answer Metadata (REQUIRED)  
   
 ```json  
