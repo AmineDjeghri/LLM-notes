@@ -695,10 +695,396 @@ if "log_scale" in metadata["edge_cases"]:
 ### 7. Ignoring Cost Considerations  
 ❌ **Problem**: Using expensive vision models for every evaluation    
 ✅ **Solution**: Balance between automated metrics and LLM-as-judge  
+
+
+  
+### The Evaluation Pipeline  
+  
+```  
+┌─────────────────────────────────────────────────────────────┐  
+│                    1. DATASET CREATION                      │  
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │  
+│  │ Collect      │→ │ Annotate     │→ │ Extract      │     │  
+│  │ Images       │  │ Questions    │  │ Metadata     │     │  
+│  └──────────────┘  └──────────────┘  └──────────────┘     │  
+│                           ↓                                 │  
+│                  ┌──────────────────┐                       │  
+│                  │ Validate & QC    │                       │  
+│                  └──────────────────┘                       │  
+└─────────────────────────────────────────────────────────────┘  
+                            ↓┌─────────────────────────────────────────────────────────────┐  
+│                    2. MODEL INFERENCE                       │  
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │  
+│  │ Load Image   │→ │ Run Model    │→ │ Extract      │     │  
+│  │ + Question   │  │              │  │ Prediction   │     │  
+│  └──────────────┘  └──────────────┘  └──────────────┘     │  
+└─────────────────────────────────────────────────────────────┘  
+                            ↓┌─────────────────────────────────────────────────────────────┐  
+│                  3. METRIC CALCULATION                      │  
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │  
+│  │ Overall      │  │ Stratified   │  │ Robustness   │     │  
+│  │ Metrics      │  │ by Metadata  │  │ Tests        │     │  
+│  └──────────────┘  └──────────────┘  └──────────────┘     │  
+└─────────────────────────────────────────────────────────────┘  
+                            ↓┌─────────────────────────────────────────────────────────────┐  
+│                    4. ERROR ANALYSIS                        │  
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │  
+│  │ Categorize   │→ │ Pattern      │→ │ Root Cause   │     │  
+│  │ Errors       │  │ Discovery    │  │ Analysis     │     │  
+│  └──────────────┘  └──────────────┘  └──────────────┘     │  
+└─────────────────────────────────────────────────────────────┘  
+                            ↓┌─────────────────────────────────────────────────────────────┐  
+│                   5. REPORT GENERATION                      │  
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │  
+│  │ Aggregate    │→ │ Visualize    │→ │ Generate     │     │  
+│  │ Results      │  │ Findings     │  │ Report       │     │  
+│  └──────────────┘  └──────────────┘  └──────────────┘     │  
+└─────────────────────────────────────────────────────────────┘  
+```  
+  
+### Why Metadata Matters at Each Stage  
+  
+**Stage 1 - Dataset Creation:**  
+- Balance dataset across chart types, difficulties  
+- Ensure coverage of edge cases  
+- Document data provenance  
+  
+**Stage 2 - Model Inference:**  
+- Select appropriate preprocessing  
+- Configure model parameters  
+- Track computational costs  
+  
+**Stage 3 - Metric Calculation:**  
+- Choose metrics based on answer type  
+- Apply appropriate tolerances  
+- Enable stratified analysis  
+  
+**Stage 4 - Error Analysis:**  
+- Group errors by metadata attributes  
+- Identify systematic failures  
+- Prioritize improvements  
+  
+**Stage 5 - Reporting:**  
+- Generate comprehensive breakdowns  
+- Compare across dimensions  
+- Track progress over time  
   
 ---  
   
-**End of Guide**
+## Complete Metadata Schema  
+  
+### Level 1: Core Identifiers (REQUIRED)  
+  
+```json  
+{  
+  "question_id": "chart_qa_001",  
+  "dataset_source": "ChartQA",  
+  "dataset_version": "v2.0",  
+  "split": "train",  
+  "created_at": "2025-01-12T09:00:00Z",  
+  "annotator_id": "annotator_001"  
+}  
+```  
+  
+**Purpose:** Unique identification and tracking  
+  
+### Level 2: Image Metadata (REQUIRED)  
+  
+```json  
+{  
+  "image_metadata": {  
+    "image_path": "/data/charts/chart_001.png",  
+    "image_url": "https://example.com/chart_001.png",  
+    "image_hash": "sha256:abc123def456...",  
+    "image_format": "PNG",  
+    "image_size_bytes": 245678,  
+    "image_resolution": [800, 600],  
+    "image_aspect_ratio": 1.33,  
+    "image_quality": "high",  
+    "dpi": 150,  
+    "color_mode": "RGB",  
+    "has_transparency": false,  
+    "file_created_at": "2025-01-10T14:30:00Z"  
+  }  
+}  
+```  
+  
+**Purpose:** Image validation, preprocessing decisions, quality assessment  
+  
+### Level 3: Chart Structure Metadata (REQUIRED)  
+  
+```json  
+{  
+  "chart_metadata": {  
+    "chart_type": "bar_chart",  
+    "chart_subtype": "vertical_grouped",  
+    "chart_source": "synthetic",  
+    "chart_title": "Quarterly Sales by Product",  
+    "has_title": true,  
+    "has_legend": true,  
+    "legend_position": "top_right",  
+    "legend_entries": ["Product A", "Product B", "Product C", "Product D"],  
+    "has_grid": true,  
+    "grid_type": "horizontal",  
+    "has_annotations": false,  
+    "color_scheme": "default",  
+    "num_colors": 4,  
+    "is_3d": false,  
+    "background_color": "white",  
+    "domain": "business",  
+    "data_source_attribution": "Synthetic data generator v1.0"  
+  }  
+}  
+```  
+  
+**Purpose:** Chart type stratification, domain-specific evaluation  
+  
+**Chart Type Taxonomy:**  
+```  
+Statistical Charts:  
+  - bar_chart (vertical, horizontal, grouped, stacked)  - line_chart (single, multiple, area)  - pie_chart (standard, donut, exploded)  - scatter_plot (standard, bubble, with_regression)  - histogram  - box_plot  - heatmap  
+Scientific Diagrams:  
+  - flowchart  - network_diagram  - tree_diagram  - venn_diagram  - organizational_chart  - circuit_diagram  - molecular_diagram  
+Specialized:  
+  - map_chart  - gantt_chart  - candlestick_chart  - radar_chart  - sankey_diagram```  
+  
+### Level 4: Visual Elements Metadata (REQUIRED)  
+  
+```json  
+{  
+  "visual_elements": {  
+    "num_data_series": 4,  
+    "num_categories": 4,  
+    "num_data_points": 16,  
+    "total_visual_elements": 16,  
+    "visual_complexity": "moderate",  
+    "complexity_score": 6.5,  
+    "has_overlapping_elements": false,  
+    "has_small_text": false,  
+    "min_text_size_px": 12,  
+    "text_readability": "high",  
+    "num_text_elements": 25,  
+    "axis_info": {  
+      "x_axis": {  
+        "label": "Products",  
+        "type": "categorical",  
+        "categories": ["Product A", "Product B", "Product C", "Product D"],  
+        "num_ticks": 4,  
+        "has_label": true,  
+        "label_rotation": 0  
+      },  
+      "y_axis": {  
+        "label": "Sales ($1000s)",  
+        "type": "numerical",  
+        "scale": "linear",  
+        "range": [0, 100],  
+        "num_ticks": 11,  
+        "has_label": true,  
+        "unit": "$1000s"  
+      },  
+      "y2_axis": null  
+    },  
+    "data_ranges": {  
+      "min_value": 15,  
+      "max_value": 95,  
+      "value_spread": 80  
+    }  
+  }  
+}  
+```  
+  
+**Purpose:** Complexity assessment, visual perception evaluation  
+  
+**Complexity Scoring:**  
+```python  
+def calculate_complexity_score(visual_elements):  
+    """    Calculate visual complexity score (0-10)    """    score = 0        # Number of elements (0-3 points)  
+    num_elements = visual_elements['total_visual_elements']    if num_elements < 5:        score += 1    elif num_elements < 15:        score += 2    else:        score += 3        # Number of data series (0-2 points)  
+    num_series = visual_elements['num_data_series']    if num_series > 1:        score += min(num_series - 1, 2)        # Overlapping elements (+2 points)  
+    if visual_elements['has_overlapping_elements']:        score += 2        # Small text (+1 point)  
+    if visual_elements['has_small_text']:        score += 1        # Multiple axes (+1 point)  
+    if visual_elements['axis_info'].get('y2_axis'):        score += 1        # Annotations (+1 point)  
+    if visual_elements.get('has_annotations'):        score += 1        return min(score, 10)  
+```  
+  
+### Level 5: Question & Answer Metadata (REQUIRED)  
+  
+```json  
+{  
+  "question_metadata": {  
+    "question": "What is the sales value for Product A in Q2?",  
+    "question_type": "specific_value",  
+    "question_length_chars": 45,  
+    "question_length_tokens": 11,  
+    "ground_truth": "45",  
+    "ground_truth_type": "numerical",  
+    "ground_truth_unit": "$1000s",  
+    "answer_format": "number",  
+    "acceptable_answers": ["45", "45000", "$45k", "45 thousand"],  
+    "answer_extraction_method": "visual_reading",  
+    "numerical_precision_required": 2  
+  }  
+}  
+```  
+  
+**Answer Type Taxonomy:**  
+```  
+- numerical (integer, float, percentage, currency)  
+- categorical (single_choice, multiple_choice)  
+- boolean (yes/no, true/false)  
+- ordinal (ranking, ordering)  
+- list (unordered_set, ordered_list)  
+- descriptive (short_text, long_text)  
+- comparative (greater_than, less_than, equal)  
+- temporal (date, time, duration)  
+```  
+  
+### Level 6: Task Metadata (REQUIRED)  
+  
+```json  
+{  
+  "task_metadata": {  
+    "task_type": "value_extraction",  
+    "task_category": "direct_reading",  
+    "difficulty": "easy",  
+    "difficulty_score": 2.5,  
+    "num_reasoning_steps": 1,  
+    "reasoning_types": ["visual_perception", "value_reading"],  
+    "requires_calculation": false,  
+    "calculation_type": null,  
+    "requires_comparison": false,  
+    "requires_aggregation": false,  
+    "requires_ocr": true,  
+    "ocr_difficulty": "easy",  
+    "requires_domain_knowledge": false,  
+    "time_estimate_seconds": 15  
+  }  
+}  
+```  
+  
+**Task Type Taxonomy:**  
+```  
+Direct Tasks:  
+  - value_extraction (single_value, multiple_values)  - element_identification (category, series, label)  - structure_understanding (layout, components)  
+Reasoning Tasks:  
+  - comparison (pairwise, ranking, extrema)  - composition (sum, average, percentage)  - trend_analysis (direction, magnitude, pattern)  - correlation_analysis (positive, negative, none)  - outlier_detection  
+Complex Tasks:  
+  - multi_hop_reasoning (2+ steps)  - cross_chart_reasoning (multiple charts)  - temporal_reasoning (time series analysis)  - spatial_reasoning (position, distance, area)```  
+  
+**Difficulty Scoring:**  
+```python  
+def calculate_difficulty_score(task_metadata, visual_elements):  
+    """    Calculate difficulty score (1-10)    """    score = 1  # Base difficulty        # Reasoning steps (0-3 points)  
+    score += min(task_metadata['num_reasoning_steps'] - 1, 3)        # Calculation required (+2 points)  
+    if task_metadata['requires_calculation']:        score += 2        # Visual complexity (0-2 points)  
+    complexity = visual_elements['visual_complexity']    if complexity == 'moderate':        score += 1    elif complexity == 'complex':        score += 2        # OCR difficulty (0-2 points)  
+    ocr_diff = task_metadata.get('ocr_difficulty', 'easy')    if ocr_diff == 'medium':        score += 1    elif ocr_diff == 'hard':        score += 2        # Domain knowledge (+1 point)  
+    if task_metadata['requires_domain_knowledge']:        score += 1        return min(score, 10)  
+```  
+  
+### Level 7: Evaluation Configuration (RECOMMENDED)  
+  
+```json  
+{  
+  "evaluation_config": {  
+    "primary_metric": "numerical_accuracy",  
+    "numerical_tolerance": 0.05,  
+    "tolerance_type": "relative",  
+    "use_llm_judge": true,  
+    "llm_judge_model": "gpt-4",  
+    "normalization_rules": [  
+      "remove_currency_symbols",      "normalize_units",      "case_insensitive"    ],  
+    "acceptable_formats": ["number", "number_with_unit", "formatted_number"],  
+    "evaluation_notes": "Standard numerical extraction with 5% tolerance"  
+  }  
+}  
+```  
+  
+**Purpose:** Specify how to evaluate this specific question  
+  
+### Level 8: Quality & Provenance (RECOMMENDED)  
+  
+```json  
+{  
+  "quality_metadata": {  
+    "annotation_confidence": 0.95,  
+    "human_verified": true,  
+    "verification_count": 2,  
+    "inter_annotator_agreement": 1.0,  
+    "has_ambiguity": false,  
+    "ambiguity_notes": null,  
+    "edge_cases": [],  
+    "known_issues": [],  
+    "review_status": "approved",  
+    "last_reviewed_at": "2025-01-11T16:00:00Z"  
+  },  
+  "provenance": {  
+    "original_source": "Synthetic generator",  
+    "generation_method": "rule_based",  
+    "generation_parameters": {  
+      "template_id": "bar_chart_001",  
+      "seed": 42  
+    },  
+    "modifications": [],  
+    "license": "CC-BY-4.0",  
+    "citation": "ChartQA Dataset v2.0"  
+  }  
+}  
+```  
+  
+### Level 9: Relationships & Context (OPTIONAL)  
+  
+```json  
+{  
+  "relationships": {  
+    "related_questions": ["chart_qa_002", "chart_qa_003"],  
+    "question_group": "quarterly_sales_group",  
+    "variant_of": null,  
+    "parent_chart_id": "chart_001",  
+    "sibling_questions": 5  
+  },  
+  "context": {  
+    "scenario": "Business analytics dashboard",  
+    "user_intent": "Performance monitoring",  
+    "expected_use_case": "Executive reporting",  
+    "background_info": "Q2 2024 sales data across product lines"  
+  }  
+}  
+```  
+  
+## Summary  
+  
+### Critical Metadata Fields  
+  
+**Minimum Required (Level 1-3):**  
+- Question ID, dataset source, split  
+- Image path, resolution, format  
+- Chart type, has_legend, has_title  
+- Question, ground truth, answer type  
+  
+**Recommended (Level 4-6):**  
+- Visual complexity score  
+- Task type, difficulty score  
+- Number of reasoning steps  
+- Evaluation configuration  
+  
+**Optional but Valuable (Level 7-9):**  
+- Quality metrics, verification status  
+- Provenance and licensing  
+- Relationships to other questions  
+  
+### Key Takeaways  
+  
+1. **Automate where possible** - Use ML models and CV techniques for metadata extraction  
+2. **Validate rigorously** - Check completeness, consistency, balance, quality  
+3. **Document thoroughly** - Include provenance, generation methods, known issues  
+4. **Balance carefully** - Ensure representation across chart types, tasks, difficulties  
+5. **Version control** - Track dataset versions and changes over time  
+  
+---  
+  
+**Last Updated:** January 2025    
+**Version:** 1.0
 
 
 ## Tools / libraries 
