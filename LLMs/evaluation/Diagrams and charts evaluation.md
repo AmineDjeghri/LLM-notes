@@ -588,83 +588,6 @@ if "log_scale" in metadata["edge_cases"]:
 ```  
   
 
-## Example Evaluation Results  
-  
-```json  
-{  
-  "experiment_id": "chart_qa_eval_001",  
-  "timestamp": "2025-01-12T09:00:00Z",  
-  "model": "gpt-4-vision-preview",  
-  "dataset": "ChartQA",  
-  "overall_metrics": {  
-    "exact_match": 0.68,  
-    "relaxed_accuracy": 0.76,  
-    "numerical_accuracy_5pct": 0.82,  
-    "llm_correctness": 0.85,  
-    "llm_reasoning_quality": 4.2,  
-    "total_questions": 1000  
-  },  
-  "by_chart_type": {  
-    "bar_chart": {"accuracy": 0.84, "count": 350},  
-    "line_chart": {"accuracy": 0.78, "count": 280},  
-    "pie_chart": {"accuracy": 0.81, "count": 220},  
-    "scatter_plot": {"accuracy": 0.72, "count": 150}  
-  },  
-  "by_task_type": {  
-    "value_extraction": {"accuracy": 0.88, "count": 300},  
-    "comparison": {"accuracy": 0.82, "count": 250},  
-    "composition": {"accuracy": 0.71, "count": 200},  
-    "trend_analysis": {"accuracy": 0.68, "count": 150},  
-    "structural": {"accuracy": 0.75, "count": 100}  
-  },  
-  "by_visual_complexity": {  
-    "simple": {"accuracy": 0.89, "count": 400},  
-    "moderate": {"accuracy": 0.76, "count": 400},  
-    "complex": {"accuracy": 0.62, "count": 200}  
-  },  
-  "robustness_metrics": {  
-    "style_consistency": 0.85,  
-    "resolution_degradation": {  
-      "high_res": 0.85,  
-      "medium_res": 0.82,  
-      "low_res": 0.71  
-    },  
-    "occlusion_robustness": {  
-      "no_occlusion": 0.85,  
-      "partial": 0.73,  
-      "significant": 0.52  
-    }  
-  },  
-  "error_analysis": {  
-    "ocr_errors": {"count": 45, "percentage": 4.5},  
-    "value_extraction_errors": {"count": 82, "percentage": 8.2},  
-    "reasoning_errors": {"count": 58, "percentage": 5.8},  
-    "calculation_errors": {"count": 35, "percentage": 3.5}  
-  },  
-  "performance": {  
-    "avg_processing_time_ms": 1850,  
-    "median_processing_time_ms": 1620,  
-    "p95_processing_time_ms": 3200  
-  }  
-}  
-```  
-  
----  
-  
-## Quick Start Checklist  
-  
-- [ ] Prepare dataset in standardized format  
-- [ ] Validate all images load correctly  
-- [ ] Add required metadata (chart type, task type, difficulty)  
-- [ ] Implement core metrics (EM, relaxed accuracy, numerical accuracy)  
-- [ ] Set appropriate numerical tolerance (typically 5%)  
-- [ ] Configure LLM-as-judge evaluation  
-- [ ] Set up stratified evaluation (by chart type, task type)  
-- [ ] Implement robustness tests (resolution, style, occlusion)  
-- [ ] Run baseline evaluation  
-- [ ] Perform error analysis with categorization  
-- [ ] Generate comprehensive report with visualizations  
-- [ ] Document configuration and results  
 
 ## Appendix: Common Pitfalls  
   
@@ -1032,7 +955,20 @@ def calculate_difficulty_score(task_metadata, visual_elements):
   
 ---  
   
-
+## Quick Start Checklist  
+  
+- [ ] Prepare dataset in standardized format  
+- [ ] Validate all images load correctly  
+- [ ] Add required metadata (chart type, task type, difficulty)  
+- [ ] Implement core metrics (EM, relaxed accuracy, numerical accuracy)  
+- [ ] Set appropriate numerical tolerance (typically 5%)  
+- [ ] Configure LLM-as-judge evaluation  
+- [ ] Set up stratified evaluation (by chart type, task type)  
+- [ ] Implement robustness tests (resolution, style, occlusion)  
+- [ ] Run baseline evaluation  
+- [ ] Perform error analysis with categorization  
+- [ ] Generate comprehensive report with visualizations  
+- [ ] Document configuration and results  
 
 ## Tools / libraries 
 - item 1
