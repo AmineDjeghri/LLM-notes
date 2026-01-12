@@ -13,8 +13,11 @@
 - How to LEARN Something or document your self about something, or do an extensive reseach about it:
 	- blogs, papers..
 	- Give what you found to notebooklm to create slides
-	- **Create slides**: for papers instead of reading them, you can give windsurf pdfs to create a readme, and chat with it to enrich the readme, then copy the content of the readme to notebooklm to create slides. The markdown created by windsurf can have python functions, and code to guide notebooklm for charts and examples geenrations
-	- ask notebooklm questions about your slides, sources to better understand concepts
+	- **Create slides**: 
+		- for papers instead of reading them, you can give windsurf pdfs to create a readme, and chat with it to enrich the readme, then copy the content of the readme to notebooklm to create slides. The markdown created by windsurf can have python functions, and code to guide notebooklm for charts and examples geenrations
+		- ask notebooklm questions about your slides, sources to better understand concepts
+		- You can give one source to notebookLM to generate slides  detailed about it , or multiple sources and it will merge it, you can also give instructions to it.
+		- I usually give 1 source at a time for mathematics, theorical stuff, and i merge the slides later to create my own final slides.
 - 
 ## Tools / libraries 
 - AwesomeOS  : All productivity apps can be found here
