@@ -174,8 +174,8 @@ Metadata about the table schema such as which column contains which value and th
   "difficulty_level": "easy | medium | hard",  
   "reasoning_type": ["lookup", "aggregation", "comparison", "multi_hop", "arithmetic"],  
   "num_reasoning_steps": "integer",  
-  "question_type": "factoid | list | boolean | numerical | descriptive",  
-  "answer_type": "entity | number | date | text | boolean",  
+  ~~"question_type": "factoid | list | boolean | numerical | descriptive",~~  
+  "answer_type": "entity | number | date | text | boolean ",  
   "answer_length": "integer (tokens)",  
   "table_num_rows": "integer",  
   "table_num_cols": "integer",  
