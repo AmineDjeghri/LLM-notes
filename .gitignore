@@ -1,6 +1,6 @@
 .obsidian/plugins/copilot/data.json
 .obsidian/workspace.json
-.idea/
 /.obsidian/plugins/recent-files-obsidian/data.json
-
+.idea/
+.copilot-index/
 **/.DS_Store
