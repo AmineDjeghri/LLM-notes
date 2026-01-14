@@ -202,39 +202,11 @@ Response: CORRECT | PARTIAL | INCORRECT
 | **Arithmetic**    | Calculations              | "Difference between max and min?" → "15"      | Medium      |     |
 | **Multi-hop**     | Sequential operations     | "Average age of Australian players?" → "28.3" | Hard        |     |
 | **Temporal**      | Date/time operations      | "Events after 2020?" → "12"                   | Medium      |     |
+
   
----  
+## Data Examples  
   
-## Best Practices  
-  
-### 🎯 Metric Selection by Data Type  
-  
-| Scenario | Charts | Diagrams | Tables |  
-|----------|--------|----------|--------|  
-| **Baseline Evaluation** | Numerical Accuracy (±5%), LLM-as-Judge | F1 Score, LLM-as-Judge | Exact Match, LLM-as-Judge |  
-| **Production Monitoring** | LLM-as-Judge, Latency | F1 Score, Latency | Exact Match, Numerical Accuracy |  
-| **Research Analysis** | All metrics + robustness tests | F1 + stratified breakdowns | LLM-as-Judge + stratified |  
-| **Error Analysis** | OCR accuracy, Value extraction | Component recall, Relationship precision | Cell accuracy, Operation correctness |  
-  
-  
-**❌ DO NOT USE:**  
-- **BERTScore for numerical answers** (charts, tables) - Unreliable per Wolff & Hulsebos 2025  
-- **BLEU for analytical queries** (tables) - Cannot distinguish correct from incorrect  
-- **Exact Match for charts** - Too strict for visual estimation  
-- **Single overall metric** - Always stratify by task type  
-  
-**✅ DO USE:**  
-- **LLM-as-judge** as primary metric (validated with 93.75% accuracy)  
-- **Numerical tolerance** (±5%) for visual data  
-- **Stratified evaluation** by data type, task type, difficulty  
-- **Robustness tests** (resolution, style, occlusion for images)  
-  
----  
-  
-  
-## Real-World Examples  
-  
-### 📊 Chart Examples (from provided data)  
+### 📊 Chart Examples  
   
 **Value Extraction:**  
 ```  
@@ -266,7 +238,7 @@ Task: trend_analysis | Difficulty: medium | Metric: numerical_accuracy
   
 ---  
   
-### 🔀 Diagram Examples (from provided data)  
+### 🔀 Diagram Examples 
   
 **Component Identification:**  
 ```  
@@ -298,7 +270,7 @@ Task: relationship_extraction | Difficulty: hard | Metric: llm_as_judge
   
 ---  
   
-### 📋 Table Examples (from provided data)  
+### 📋 Table Examples 
   
 **Direct Lookup:**  
 ```  
