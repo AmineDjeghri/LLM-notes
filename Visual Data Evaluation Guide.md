@@ -185,7 +185,7 @@ Task: composition | Difficulty: hard | Metric: numerical_exact_match
   
 ### 🔀 Diagram Examples 
   
-**Component Identification:**  
+**Extraction / Component Identification:**  
 ```  
 Q: According to the diagram, which organisms are found at the 'ZOOPLANKTON' level?  
 A: Shrimp, Copepods, and Pteropods  
