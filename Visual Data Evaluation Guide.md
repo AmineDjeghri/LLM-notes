@@ -7,38 +7,17 @@
 | Aspect                    | Charts                       | Diagrams                                 | Tables                                    |     |
 | ------------------------- | ---------------------------- | ---------------------------------------- | ----------------------------------------- | --- |
 | **Format**                | Image (PNG, JPG, SVG)        | Image (PNG, JPG, SVG)                    | Text (Markdown, CSV, JSON, HTML) or Image |     |
-### Task Complexity  
-  
-| Task Type | Charts | Diagrams | Tables |  
-|-----------|--------|----------|--------|  
-| **Direct Lookup** | Medium (visual reading) | Easy (text identification) | Easy (cell access) |  
-| **Comparison** | Medium (visual comparison) | Medium (relationship tracing) | Easy (value comparison) |  
-| **Aggregation** | Hard (multiple value extraction) | Hard (counting components) | Medium (SQL-like operations) |  
-| **Multi-hop Reasoning** | Very Hard (cross-element reasoning) | Hard (path finding) | Medium (join operations) |  
-| **Trend Analysis** | Medium (pattern recognition) | Medium (flow understanding) | Hard (temporal patterns) |  
-  
+
 ### Evaluation Metrics Priority  
   
-| Metric | Charts | Diagrams | Tables |  
-|--------|--------|----------|--------|  
-| **Exact Match** | Low priority (formatting varies) | Medium priority | High priority (structured answers) |  
-| **Numerical Accuracy (±5%)** | **Primary** | Low priority | **Primary** |  
-| **F1 Score** | Medium (multi-element answers) | **Primary** (component lists) | Medium (list answers) |  
-| **LLM-as-Judge** | **Primary** (semantic equivalence) | **Primary** (structural understanding) | **Primary** (analytical queries) |  
-| **BERTScore** | ⚠️ Unreliable (Wolff & Hulsebos 2025) | Medium (descriptive answers) | ⚠️ Unreliable for numerical |  
-| **Ranking Accuracy** | Medium (ordered comparisons) | Low priority | Medium (ordered results) |  
-  
-### Common Error Types  
-  
-| Error Category | Charts | Diagrams | Tables |  
-|----------------|--------|----------|--------|  
-| **OCR Errors** | 15-25% of failures | 10-20% of failures | 5-10% (image tables only) |  
-| **Value Extraction** | 30-40% of failures | 15-20% of failures | 10-15% of failures |  
-| **Reasoning Errors** | 20-30% of failures | 40-50% of failures | 40-50% of failures |  
-| **Calculation Errors** | 10-15% of failures | 5-10% of failures | 20-30% of failures |  
-| **Hallucinations** | 5-10% of failures | 10-15% of failures | 5-10% of failures |  
-  
----  
+| Metric                       | Charts                                | Diagrams                               | Tables                             |     |
+| ---------------------------- | ------------------------------------- | -------------------------------------- | ---------------------------------- | --- |
+| **Exact Match**              | Low priority (formatting varies)      | Medium priority                        | High priority (structured answers) |     |
+| **Numerical Accuracy (±5%)** | **Primary**                           | Low priority                           | **Primary**                        |     |
+| **F1 Score**                 | Medium (multi-element answers)        | **Primary** (component lists)          | Medium (list answers)              |     |
+| **LLM-as-Judge**             | **Primary** (semantic equivalence)    | **Primary** (structural understanding) | **Primary** (analytical queries)   |     |
+| **BERTScore**                | ⚠️ Unreliable (Wolff & Hulsebos 2025) | Medium (descriptive answers)           | ⚠️ Unreliable for numerical        |     |
+| **Ranking Accuracy**         | Medium (ordered comparisons)          | Low priority                           | Medium (ordered results)           |     |
   
 ## Evaluation Metrics by Data Type  
   
@@ -47,13 +26,8 @@
 #### Primary Metrics  
   
 **1. Numerical Accuracy with Tolerance**  
-```python  
-def numerical_accuracy(pred, gt, tolerance=0.05):  
-    """    Accounts for visual estimation errors    Tolerance: 5% for standard charts, 10% for low-res    """    pred_num = parse_number(pred)  # "45k" → 45000    gt_num = parse_number(gt)    rel_error = abs(pred_num - gt_num) / abs(gt_num)    return rel_error <= tolerance  
-```  
-  
-**When to use:** Value extraction, aggregation tasks    
-**Typical accuracy:** 75-85% for bar/line charts, 65-75% for complex charts  
+
+→ Value extraction, aggregation tasks    
   
 **2. LLM-as-Judge Correctness**  
 ```  
@@ -61,75 +35,27 @@ Prompt: Evaluate if "{prediction}" matches "{ground_truth}" considering visual e
 Response: CORRECT | PARTIAL | INCORRECT  
 ```  
   
-**When to use:** All chart tasks (validated by Wolff & Hulsebos 2025)  **Typical accuracy:** 80-90% correlation with human judgment  
-  
-**3. Relaxed Accuracy**  
-- Normalizes currency symbols, units, formatting  
-- "45000" = "$45k" = "45 thousand"  
-  
-#### Stratified Metrics  
-  
-| Chart Type | Avg Accuracy | Primary Challenge |  
-|------------|--------------|-------------------|  
-| Bar Charts | 85% | Value reading precision |  
-| Line Charts | 78% | Point interpolation |  
-| Pie Charts | 82% | Percentage calculation |  
-| Scatter Plots | 71% | Pattern recognition |  
-| Heatmaps | 68% | Color-to-value mapping |  
-  
----  
+**When to use:** All chart tasks 
   
 ### 🔀 Diagrams: Structural Understanding  
   
 #### Primary Metrics  
   
 **1. F1 Score (Component Extraction)**  
-```python  
-def f1_score(pred_components, gt_components):  
-    """    For multi-element answers like node lists, connections    """    tp = len(pred_components & gt_components)    precision = tp / len(pred_components)    recall = tp / len(gt_components)    return 2 * (precision * recall) / (precision + recall)  
-```  
-  
-**When to use:** Component identification, relationship extraction    
-**Typical F1:** 0.70-0.85 for flowcharts, 0.60-0.75 for complex diagrams  
+
+→ Component identification, relationship extraction    
   
 **2. LLM-as-Judge Structural Correctness**  
-```  
-Prompt: Evaluate if the model correctly identified:  
-1. All key components (nodes, edges, labels)  
-2. Relationships between components  
-3. Sequential/hierarchical structure  
-  
-Response: CORRECT | PARTIAL | INCORRECT + reasoning  
-```  
-  
+
 **3. Exact Match (for counting tasks)**  
 - "How many decision nodes?" → Exact integer match  
-- Typical accuracy: 75-85%  
-  
-#### Stratified Metrics  
-  
-| Diagram Type | Avg Accuracy | Primary Challenge |  
-|--------------|--------------|-------------------|  
-| Flowcharts | 78% | Sequential reasoning |  
-| Network Diagrams | 72% | Connectivity understanding |  
-| Organizational Charts | 82% | Hierarchical structure |  
-| Technical Diagrams | 65% | Domain-specific symbols |  
-| Venn Diagrams | 80% | Set relationships |  
-  
----  
   
 ### 📋 Tables: Logical Reasoning  
   
 #### Primary Metrics  
   
 **1. Exact Match**  
-```python  
-def exact_match(prediction, ground_truth):  
-    """Strict matching for structured answers"""    return normalize(prediction) == normalize(ground_truth)  
-```  
-  
-**When to use:** Direct lookup, categorical answers    
-**Typical accuracy:** 85-95% for lookup, 60-75% for reasoning  
+→ Direct lookup, categorical answers    
   
 **2. Numerical Accuracy (for computed answers)**  
 - Same as charts: ±5% tolerance  
@@ -146,22 +72,8 @@ Prompt: Evaluate table reasoning:
 Response: CORRECT | PARTIAL | INCORRECT  
 ```  
   
-**⚠️ Critical Finding** (Wolff & Hulsebos 2025):  
-- **BERTScore is unreliable** for table QA (inseparable distributions)  
 - **BLEU fails** to distinguish correct from incorrect analytical answers  
 - **LLM-as-judge is validated**: 93.75% accuracy for correct answers  
-  
-#### Stratified Metrics  
-  
-| Query Type | Avg Accuracy | Primary Challenge |  
-|------------|--------------|-------------------|  
-| Direct Lookup | 95% | Cell identification |  
-| Aggregation (SUM, AVG) | 68% | Multi-cell operations |  
-| Comparison (MAX, MIN) | 82% | Value comparison |  
-| Multi-hop Reasoning | 55% | Sequential operations |  
-| Arithmetic Operations | 71% | Calculation accuracy |  
-  
----  
   
 ## Metadata Requirements  
   
@@ -171,27 +83,16 @@ Response: CORRECT | PARTIAL | INCORRECT
 {  
   "question_id": "unique_identifier",  
   "dataset_source": "ChartQA | AI2D | WikiTableQuestions",  
-  "dataset_version": "v2.0",  
-  "split": "train | validation | test",  
-  "created_at": "2025-01-14T16:40:00Z",  
+  "dataset_version": "v1.0",  
+  "date": "2025-01-14T16:40:00Z",  
   "question": "What is the value for Category A?",  
   "ground_truth": "45",  
   "answer_type": "numerical | categorical | boolean | list | descriptive",  
   "task_metadata": {  
-    "task_type": "value_extraction | comparison | composition | trend_analysis | structural",  
+    "task_type": "value_extraction | comparison | composition (aggregation) | trend_analysis | structural ",  
     "difficulty": "easy | medium | hard",  
-    "difficulty_score": 2.5,  
     "num_reasoning_steps": 1,  
-    "requires_calculation": false,  
-    "requires_comparison": false,  
-    "requires_ocr": true  
-  },  
-  "evaluation_config": {  
-    "primary_metric": "numerical_accuracy | exact_match | f1_score",  
-    "numerical_tolerance": 0.05,  
-    "use_llm_judge": true,  
-    "normalization_rules": ["remove_currency", "normalize_units"]  
-  }  
+ 
 }  
 ```  
   
@@ -213,30 +114,11 @@ Response: CORRECT | PARTIAL | INCORRECT
     "chart_subtype": "vertical_grouped | stacked | multi_line",  
     "has_legend": true,  
     "has_title": true,  
-    "has_grid": true,  
-    "num_data_series": 4,  
-    "num_data_points": 16,  
     "domain": "business | scientific | educational"  
-  },  
-  "visual_elements": {  
-    "visual_complexity": "simple | moderate | complex",  
-    "complexity_score": 6.5,  
-    "has_overlapping_elements": false,  
-    "has_small_text": false,  
-    "axis_info": {  
-      "x_axis": {"label": "Products", "type": "categorical"},  
-      "y_axis": {"label": "Sales ($)", "type": "numerical", "scale": "linear"}  
-    }  
-  }  
+  } 
 }  
 ```  
   
-**Complexity Scoring (0-10):**  
-- Elements count: <5 (+1), 5-15 (+2), >15 (+3)  
-- Multiple series: +1-2 points  
-- Overlapping elements: +2 points  
-- Small text: +1 point  
-- Dual axes: +1 point  
   
 ---  
   
@@ -247,24 +129,14 @@ Response: CORRECT | PARTIAL | INCORRECT
   "image_metadata": {  
     "image_path": "/data/diagrams/flowchart_001.png",  
     "image_resolution": [1200, 900],  
-    "image_quality": "high"  
+    "image_quality": "high",
+	"dpi": 150,  
+    "file_size_bytes": 245678  
   },  
   "diagram_metadata": {  
     "diagram_type": "flowchart | network_diagram | organizational_chart | technical_diagram",  
-    "has_annotations": true,  
-    "num_nodes": 12,  
-    "num_edges": 15,  
-    "num_decision_points": 3,  
-    "layout_type": "hierarchical | circular | grid",  
     "domain": "business_process | software_architecture | organizational"  
   },  
-  "structural_elements": {  
-    "structural_complexity": "simple | moderate | complex",  
-    "has_cycles": false,  
-    "max_depth": 4,  
-    "branching_factor": 2.5,  
-    "has_color_coding": true  
-  }  
 }  
 ```  
   
@@ -287,26 +159,11 @@ Response: CORRECT | PARTIAL | INCORRECT
   "data_characteristics": {  
     "has_missing_values": false,  
     "has_duplicate_entities": false,  
-    "has_numerical_columns": true,  
-    "has_temporal_columns": true,  
-    "requires_foreign_key_resolution": false,  
-    "columns_involved": ["name", "score", "country"]  
   },  
-  "query_metadata": {  
-    "reasoning_type": ["lookup", "aggregation", "comparison", "multi_hop"],  
-    "num_reasoning_steps": 2,  
-    "requires_numerical_reasoning": true,  
-    "answer_in_table": false  
-  }  
 }  
 ```  
-  
-**Key Research Finding** (Medium article):  
-- **Markdown format**: Highest accuracy (lower token consumption)  
-- **Key-value format**: Improved accuracy with metadata  
-- **JSON format**: Increased context length (infeasible for some models)  
-- **Metadata impact**: Key-value format improved most with schema metadata  
-  
+
+
 ---  
   
 ## Task Categories  
@@ -337,14 +194,14 @@ Response: CORRECT | PARTIAL | INCORRECT
   
 ### 📋 Table Tasks  
   
-| Task | Description | Example | Difficulty |  
-|------|-------------|---------|------------|  
-| **Direct Lookup** | Single cell access | "What is Alice's age?" → "25" | Easy |  
-| **Aggregation** | COUNT, SUM, AVG, MAX, MIN | "How many players from Australia?" → "3" | Medium |  
-| **Comparison** | Find extrema | "Which player has highest score?" → "Alice" | Easy-Medium |  
-| **Arithmetic** | Calculations | "Difference between max and min?" → "15" | Medium |  
-| **Multi-hop** | Sequential operations | "Average age of Australian players?" → "28.3" | Hard |  
-| **Temporal** | Date/time operations | "Events after 2020?" → "12" | Medium |  
+| Task              | Description               | Example                                       | Difficulty  |     |
+| ----------------- | ------------------------- | --------------------------------------------- | ----------- | --- |
+| **Direct Lookup** | Single cell access        | "What is Alice's age?" → "25"                 | Easy        |     |
+| **Aggregation**   | COUNT, SUM, AVG, MAX, MIN | "How many players from Australia?" → "3"      | Medium      |     |
+| **Comparison**    | Find extrema              | "Which player has highest score?" → "Alice"   | Easy-Medium |     |
+| **Arithmetic**    | Calculations              | "Difference between max and min?" → "15"      | Medium      |     |
+| **Multi-hop**     | Sequential operations     | "Average age of Australian players?" → "28.3" | Hard        |     |
+| **Temporal**      | Date/time operations      | "Events after 2020?" → "12"                   | Medium      |     |
   
 ---  
   
@@ -359,7 +216,6 @@ Response: CORRECT | PARTIAL | INCORRECT
 | **Research Analysis** | All metrics + robustness tests | F1 + stratified breakdowns | LLM-as-Judge + stratified |  
 | **Error Analysis** | OCR accuracy, Value extraction | Component recall, Relationship precision | Cell accuracy, Operation correctness |  
   
-### ⚠️ Critical Warnings  
   
 **❌ DO NOT USE:**  
 - **BERTScore for numerical answers** (charts, tables) - Unreliable per Wolff & Hulsebos 2025  
@@ -374,26 +230,6 @@ Response: CORRECT | PARTIAL | INCORRECT
 - **Robustness tests** (resolution, style, occlusion for images)  
   
 ---  
-  
-### 🔧 Handling Edge Cases  
-  
-#### Charts  
-- **Overlapping elements**: Increase tolerance to ±10%  
-- **Log scales**: Apply log-scale aware normalization  
-- **Dual axes**: Specify which axis in metadata  
-- **3D charts**: Higher tolerance (±10-15%)  
-  
-#### Diagrams  
-- **Ambiguous connections**: Use LLM-as-judge for partial credit  
-- **Missing labels**: OCR confidence scoring  
-- **Complex layouts**: Break into sub-components  
-  
-#### Tables  
-- **Missing values**: Evaluate both accuracy and acknowledgement  
-- **Duplicate rows**: Test deduplication capability  
-- **Structural variations**: Column/row permutation consistency  
-- **Multi-table queries**: Foreign key resolution accuracy  
-  
   
   
 ## Real-World Examples  
