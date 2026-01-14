@@ -232,8 +232,8 @@ Task: aggregation | Difficulty: medium | Metric: numerical_exact_match
   
 **Multi-hop Reasoning:**  
 ```  
-Q: What is the aggregate count of participants spanning every installment of the television program?  
-A: 137  
+Q:  
+A: 
 Task: multi_hop | Difficulty: hard | Metric: numerical_exact_match  
 ```  
   
