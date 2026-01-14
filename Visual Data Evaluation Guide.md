@@ -1,57 +1,12 @@
-# Visual Data Evaluation Guide  
-## Comprehensive Framework for Evaluating Charts, Diagrams, and Tables  
-  
-A unified guide for evaluating vision-language models and LLMs on visual data understanding tasks including charts, diagrams, and structured tables.  
-  
-## 📚 Quick Navigation  
-  
-### Easy Guides  
-- [Overview](#overview)  
-- [Comparison Table: Charts vs Diagrams vs Tables](#comparison-table-charts-vs-diagrams-vs-tables)  
-- [Evaluation Metrics by Data Type](#evaluation-metrics-by-data-type)  
-- [Metadata Requirements](#metadata-requirements)  
-- [Task Categories](#task-categories)  
-- [Best Practices](#best-practices)  
-- [Benchmarks and Datasets](#benchmarks-and-datasets)  
-- [Real-World Examples](#real-world-examples)  
-  
-### External Resources  
-- [Medium: Benchmarking LLMs on Tabular Data](https://medium.com/@anshoo.jani/benchmarking-large-language-models-on-tabular-data-a-comprehensive-evaluation-ed3c3c6523a0)  
-- Research Paper: "How well do LLMs reason over tabular data, really?" (arXiv:2505.07453)  
-  
----  
-  
-## Overview  
-  
-This guide provides a **unified evaluation framework** for three types of visual data:  
-  
-| Data Type | Primary Challenge | Input Modality | Key Capability |  
-|-----------|------------------|----------------|----------------|  
-| **Charts** | Visual-numerical reasoning | Image | OCR + Value extraction + Spatial understanding |  
-| **Diagrams** | Structural understanding | Image | Component identification + Relationship mapping |  
-| **Tables** | Logical reasoning | Text/Image | Cell lookup + Computation + Multi-hop reasoning |  
-  
-### Why Unified Evaluation Matters  
-  
-1. **Cross-modal capabilities**: Modern models handle multiple data types  
-2. **Consistent metrics**: Compare performance across modalities  
-3. **Comprehensive assessment**: Identify strengths and weaknesses holistically  
-4. **Production readiness**: Real-world applications involve mixed data types  
-  
----  
-  
-## Comparison Table: Charts vs Diagrams vs Tables  
-  
-### Input Characteristics  
-  
-| Aspect | Charts | Diagrams | Tables |  
-|--------|--------|----------|--------|  
-| **Format** | Image (PNG, JPG, SVG) | Image (PNG, JPG, SVG) | Text (Markdown, CSV, JSON, HTML) or Image |  
-| **Resolution Dependency** | High (affects value reading) | Medium (affects text/symbol recognition) | Low (text-based) / High (image-based) |  
-| **OCR Required** | Always (labels, values, legends) | Often (node labels, annotations) | Only for image-based tables |  
-| **Typical Size** | 400x300 to 1920x1080 px | 400x300 to 2000x2000 px | 5-1000 rows, 3-50 columns |  
-| **Context Length** | N/A (image tokens) | N/A (image tokens) | 100-100K+ tokens |  
-  
+| Data Type    | Input Modality |
+| ------------ | -------------- |
+| **Charts**   | Image          |
+| **Diagrams** | Image          |
+| **Tables**   | Text/Image     |
+
+| Aspect                    | Charts                       | Diagrams                                 | Tables                                    |     |
+| ------------------------- | ---------------------------- | ---------------------------------------- | ----------------------------------------- | --- |
+| **Format**                | Image (PNG, JPG, SVG)        | Image (PNG, JPG, SVG)                    | Text (Markdown, CSV, JSON, HTML) or Image |     |
 ### Task Complexity  
   
 | Task Type | Charts | Diagrams | Tables |  
