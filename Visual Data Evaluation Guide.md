@@ -164,22 +164,23 @@ Task: value_extraction | Difficulty: easy | Metric: numerical_exact_match
 Q: Who is the top goal scorer among the listed players, and how many goals did they score?  
 A: Thierry Henry with 228 goals  
 Task: comparison | Difficulty: medium | Metric: llm_as_judge  
+
+
 ```  
-  
+
+  ```  
+Q: By how much do favorable views of the United States differ from unfavorable views in 2015?  
+A: 42  
+Task: trend_analysis | Difficulty: medium | Metric: numerical_exact_match  
+```  
+
 **Composition/ Aggregation:**  
 ```  
 Q: What's the sum of the highest value of green bars and the median value of green bars?  
 A: 63  
 Task: composition | Difficulty: hard | Metric: numerical_exact_match  
 ```  
-  
-**Trend Analysis:**  
-```  
-Q: By how much do favorable views of the United States differ from unfavorable views in 2015?  
-A: 42  
-Task: trend_analysis | Difficulty: medium | Metric: numerical_exact_match  
-```  
-  
+
 ---  
   
 ### 🔀 Diagram Examples 
