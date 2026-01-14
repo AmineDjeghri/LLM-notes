@@ -232,7 +232,7 @@ Task: aggregation | Difficulty: medium | Metric: numerical_exact_match
   
 **Multi-hop Reasoning:**  
 ```  
-Q:  
+Q: Please help me draw a bar chart in inches, showing the trends in precipitation, rainfall, and snowfall as indicated in the table. 
 A: 
 Task: multi_hop | Difficulty: hard | Metric: numerical_exact_match  
 ```  
