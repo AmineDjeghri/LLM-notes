@@ -166,7 +166,7 @@ A: Thierry Henry with 228 goals
 Task: comparison | Difficulty: medium | Metric: llm_as_judge  
 ```  
   
-**Composition:**  
+**Composition/ Aggregation:**  
 ```  
 Q: What's the sum of the highest value of green bars and the median value of green bars?  
 A: 63  
