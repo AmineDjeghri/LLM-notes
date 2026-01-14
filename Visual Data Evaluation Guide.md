@@ -144,7 +144,6 @@
 | **Direct Lookup** | Single cell access        | "What is Alice's age?" → "25"                 | Easy        |     |
 | **Aggregation**   | COUNT, SUM, AVG, MAX, MIN | "How many players from Australia?" → "3"      | Medium      |     |
 | **Comparison**    | Find extrema              | "Which player has highest score?" → "Alice"   | Easy-Medium |     |
-| **Arithmetic**    | Calculations              | "Difference between max and min?" → "15"      | Medium      |     |
 | **Multi-hop**     | Sequential operations     | "Average age of Australian players?" → "28.3" | Hard        |     |
 | **Temporal**      | Date/time operations      | "Events after 2020?" → "12"                   | Medium      |     |
 
@@ -245,13 +244,6 @@ A: France
 Task: comparison | Difficulty: medium | Metric: exact_match  
 ```  
   
-**Arithmetic:**  
-```  
-Q: What is the mean figure for the 2001 nationwide ballot in the entirety of Italy's areas?  
-A: 6.16  
-Task: arithmetic | Difficulty: hard | Metric: numerical_exact_match  
-```
-
 
 ## Evaluation Metrics by Data Type  
 Choosing the metric depends on the answer (a composed answer needs LLM as a judge, a single numerical answer needs a numerical accuracy) 
