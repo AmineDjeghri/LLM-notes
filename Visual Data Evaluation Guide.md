@@ -19,62 +19,7 @@
 | **BERTScore**                | ⚠️ Unreliable (Wolff & Hulsebos 2025) | Medium (descriptive answers)           | ⚠️ Unreliable for numerical        |     |
 | **Ranking Accuracy**         | Medium (ordered comparisons)          | Low priority                           | Medium (ordered results)           |     |
   
-## Evaluation Metrics by Data Type  
-  
-### 📊 Charts: Visual-Numerical Reasoning  
-  
-#### Primary Metrics  
-  
-**1. Numerical Accuracy with Tolerance**  
 
-→ Value extraction, aggregation tasks    
-  
-**2. LLM-as-Judge Correctness**  
-```  
-Prompt: Evaluate if "{prediction}" matches "{ground_truth}" considering visual estimation (±5% tolerance) and format variations.  
-Response: CORRECT | PARTIAL | INCORRECT  
-```  
-  
-**When to use:** All chart tasks 
-  
-### 🔀 Diagrams: Structural Understanding  
-  
-#### Primary Metrics  
-  
-**1. F1 Score (Component Extraction)**  
-
-→ Component identification, relationship extraction    
-  
-**2. LLM-as-Judge Structural Correctness**  
-
-**3. Exact Match (for counting tasks)**  
-- "How many decision nodes?" → Exact integer match  
-  
-### 📋 Tables: Logical Reasoning  
-  
-#### Primary Metrics  
-  
-**1. Exact Match**  
-→ Direct lookup, categorical answers    
-  
-**2. Numerical Accuracy (for computed answers)**  
-- Same as charts: ±5% tolerance  
-- Critical for aggregation queries  
-  
-**3. LLM-as-Judge (for analytical queries)**  
-```  
-Prompt: Evaluate table reasoning:  
-- Correct cell identification  
-- Proper operation (SUM, AVG, COUNT, etc.)  
-- Accurate calculation  
-- Handling of edge cases (NULL, duplicates)  
-  
-Response: CORRECT | PARTIAL | INCORRECT  
-```  
-  
-- **BLEU fails** to distinguish correct from incorrect analytical answers  
-- **LLM-as-judge is validated**: 93.75% accuracy for correct answers  
-  
 ## Metadata Requirements  
   
 ### 🎯 Universal Metadata (All Data Types)  
@@ -212,7 +157,7 @@ Response: CORRECT | PARTIAL | INCORRECT
 ```  
 Q: How many pounds did the UK spend on civil defense in 2019/20?  
 A: 46  
-Task: value_extraction | Difficulty: easy | Metric: numerical_accuracy  
+Task: value_extraction | Difficulty: easy | Metric: numerical_exact_match  
 ```  
   
 **Comparison:**  
@@ -226,14 +171,14 @@ Task: comparison | Difficulty: medium | Metric: llm_as_judge
 ```  
 Q: What's the sum of the highest value of green bars and the median value of green bars?  
 A: 63  
-Task: composition | Difficulty: hard | Metric: numerical_accuracy  
+Task: composition | Difficulty: hard | Metric: numerical_exact_match  
 ```  
   
 **Trend Analysis:**  
 ```  
 Q: By how much do favorable views of the United States differ from unfavorable views in 2015?  
 A: 42  
-Task: trend_analysis | Difficulty: medium | Metric: numerical_accuracy  
+Task: trend_analysis | Difficulty: medium | Metric: numerical_exact_match  
 ```  
   
 ---  
@@ -283,14 +228,14 @@ Task: direct_lookup | Difficulty: easy | Metric: exact_match
 ```  
 Q: What is the total amount of winnings for all drivers who drove a Chevrolet car?  
 A: 2880210  
-Task: aggregation | Difficulty: medium | Metric: numerical_accuracy  
+Task: aggregation | Difficulty: medium | Metric: numerical_exact_match  
 ```  
   
 **Multi-hop Reasoning:**  
 ```  
 Q: What is the aggregate count of participants spanning every installment of the television program?  
 A: 137  
-Task: multi_hop | Difficulty: hard | Metric: numerical_accuracy  
+Task: multi_hop | Difficulty: hard | Metric: numerical_exact_match  
 ```  
   
 **Comparison:**  
@@ -304,5 +249,64 @@ Task: comparison | Difficulty: medium | Metric: exact_match
 ```  
 Q: What is the mean figure for the 2001 nationwide ballot in the entirety of Italy's areas?  
 A: 6.16  
-Task: arithmetic | Difficulty: hard | Metric: numerical_accuracy  
+Task: arithmetic | Difficulty: hard | Metric: numerical_exact_match  
 ```
+
+
+## Evaluation Metrics by Data Type  
+Choosing the metric depends on the answer (a composed answer needs LLM as a judge, a single numerical answer needs a numerical accuracy) 
+  
+### 📊 Charts: Visual-Numerical Reasoning  
+  
+#### Primary Metrics  
+  
+**1. Numerical Accuracy with Tolerance**  
+
+→ Value extraction, aggregation tasks    
+  
+**2. LLM-as-Judge Correctness**  
+```  
+Prompt: Evaluate if "{prediction}" matches "{ground_truth}" considering visual estimation (±5% tolerance) and format variations.  
+Response: CORRECT | PARTIAL | INCORRECT  
+```  
+  
+**When to use:** All chart tasks 
+  
+### 🔀 Diagrams: Structural Understanding  
+  
+#### Primary Metrics  
+  
+**1. F1 Score (Component Extraction)**  
+
+→ Component identification, relationship extraction    
+  
+**2. LLM-as-Judge Structural Correctness**  
+
+**3. Exact Match (for counting tasks)**  
+- "How many decision nodes?" → Exact integer match  
+  
+### 📋 Tables: Logical Reasoning  
+  
+#### Primary Metrics  
+  
+**1. Exact Match**  
+→ Direct lookup, categorical answers    
+  
+**2. Numerical Accuracy (for computed answers)**  
+- Same as charts: ±5% tolerance  
+- Critical for aggregation queries  
+  
+**3. LLM-as-Judge (for analytical queries)**  
+```  
+Prompt: Evaluate table reasoning:  
+- Correct cell identification  
+- Proper operation (SUM, AVG, COUNT, etc.)  
+- Accurate calculation  
+- Handling of edge cases (NULL, duplicates)  
+  
+Response: CORRECT | PARTIAL | INCORRECT  
+```  
+  
+- **BLEU fails** to distinguish correct from incorrect analytical answers  
+- **LLM-as-judge is validated**: 93.75% accuracy for correct answers  
+  
