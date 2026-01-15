@@ -26,6 +26,8 @@ table types values :int, merged
   "date": "2025-01-14T16:40:00Z",  
   "question": "What is the value for Category A?",  
   "ground_truth": "45",  
+  "question_complexity": "low | medium | high",  
+  "question_comments":"",
   "answer_type": "numerical | categorical | boolean | list | descriptive",  
   "task_metadata": {  
     "task_type": "value_extraction | comparison | composition (aggregation) | trend_analysis | structural ",  
@@ -89,6 +91,7 @@ table types values :int, merged
     "table_format": "markdown | csv | json | html | latex | image",
     "table_complexity":"low",
     "table_content": "mixed",
+    "table_comments":"",
 	"data_integrity":true,
 	"text":true,
 	"numeric":true,
@@ -108,6 +111,8 @@ table types values :int, merged
     "has_header": true,  
     "has_multi_header":true,
     "has_merged_cells": false,  
+	"has_footnotes": false,  
+	"has_color": false,  
     "domain": "sports | geography | finance | general" ,
 
 }  
