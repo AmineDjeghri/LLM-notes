@@ -1,5 +1,5 @@
 ---
-date modified: Thursday, January 15th 2026, 10:47:25 am
+date modified: Thursday, January 15th 2026, 10:54:14 am
 ---
 | Data Type    | Input Modality |
 | ------------ | -------------- |
@@ -56,6 +56,10 @@ table types values :int, merged
   "chart_metadata": {  
     "chart_type": "bar_chart | line_chart | pie_chart | scatter_plot | heatmap",  
     "chart_subtype": "vertical_grouped | stacked | multi_line",  
+    "chart_complexity":"high | medium | low",
+    "chart_format": "image",
+    "chart_content": "mixed",
+    "chart_comments":"",
     "has_legend": true,  
     "has_title": true,  
     "domain": "business | scientific | educational"  
@@ -156,13 +160,13 @@ table types values :int, merged
   
 ### 📋 Table Tasks  
   
-| Task              | Description               | Example                                       | Difficulty  |     |
-| ----------------- | ------------------------- | --------------------------------------------- | ----------- | --- |
-| **Direct Lookup** | Single cell access        | "What is Alice's age?" → "25"                 | Easy        |     |
-| **Aggregation**   | COUNT, SUM, AVG, MAX, MIN | "How many players from Australia?" → "3"      | Medium      |     |
-| **Comparison**    | Find extrema              | "Which player has highest score?" → "Alice"   | Easy-Medium |     |
-| **Multi-hop**     | Sequential operations     | "Average age of Australian players?" → "28.3" | Hard        |     |
-| **Temporal**      | Date/time operations      | "Events after 2020?" → "12"                   | Medium      |     |
+| Task              | Description               | Example                                     | Difficulty  |     |
+| ----------------- | ------------------------- | ------------------------------------------- | ----------- | --- |
+| **Direct Lookup** | Single cell access        | "What is Alice's age?" → "25"               | Easy        |     |
+| **Aggregation**   | COUNT, SUM, AVG, MAX, MIN | "How many players from Australia?" → "3"    | Medium      |     |
+| **Comparison**    | Find extrema              | "Which player has highest score?" → "Alice" | Easy-Medium |     |
+| **Multi-hop**     | Sequential operations     |                                             | Hard        |     |
+| **Temporal**      | Date/time operations      | "Events after 2020?" → "12"                 | Medium      |     |
 
   
 ## Data Examples  
