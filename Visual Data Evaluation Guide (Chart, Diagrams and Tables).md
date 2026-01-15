@@ -88,12 +88,9 @@
     "context_size_tokens": 2048,  
     "has_header": true,  
     "has_merged_cells": false,  
-    "domain": "sports | geography | finance | general"  
-  },  
-  "data_characteristics": {  
+    "domain": "sports | geography | finance | general" ,
     "has_missing_values": false,  
     "has_duplicate_entities": false,  
-  },  
 }  
 ```  
 
