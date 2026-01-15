@@ -3,10 +3,11 @@
 | **Charts**   | Image          |
 | **Diagrams** | Image          |
 | **Tables**   | Text/Image     |
+|              |                |
 
-| Aspect                    | Charts                       | Diagrams                                 | Tables                                    |     |
-| ------------------------- | ---------------------------- | ---------------------------------------- | ----------------------------------------- | --- |
-| **Format**                | Image (PNG, JPG, SVG)        | Image (PNG, JPG, SVG)                    | Text (Markdown, CSV, JSON, HTML) or Image |     |
+| Aspect     | Charts                | Diagrams              | Tables                                    |     |
+| ---------- | --------------------- | --------------------- | ----------------------------------------- | --- |
+| **Format** | Image (PNG, JPG, SVG) | Image (PNG, JPG, SVG) | Text (Markdown, CSV, JSON, HTML) or Image |     |
 
 ## Metadata Requirements  
   
