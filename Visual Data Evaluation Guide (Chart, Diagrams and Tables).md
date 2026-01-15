@@ -1,3 +1,6 @@
+---
+date modified: Thursday, January 15th 2026, 10:47:25 am
+---
 | Data Type    | Input Modality |
 | ------------ | -------------- |
 | **Charts**   | Image          |
@@ -70,12 +73,16 @@ table types values :int, merged
   "image_metadata": {  
     "image_path": "/data/diagrams/flowchart_001.png",  
     "image_resolution": [1200, 900],  
-    "image_quality": "high",
+    "image_quality": "high | medium | low",
 	"dpi": 150,  
     "file_size_bytes": 245678  
   },  
   "diagram_metadata": {  
     "diagram_type": "flowchart | network_diagram | organizational_chart | technical_diagram",  
+    "diagram_format": "image",
+    "diagram_complexity":"high | medium | low",
+    "diagram_content": "mixed",
+    "diagram_comments":"",
     "domain": "business_process | software_architecture | organizational"  
   },  
 }  
@@ -89,7 +96,7 @@ table types values :int, merged
 {  
   "table_metadata": {  
     "table_format": "markdown | csv | json | html | latex | image",
-    "table_complexity":"low",
+    "table_complexity":"high | medium | low",
     "table_content": "mixed",
     "table_comments":"",
 	"data_integrity":true,
