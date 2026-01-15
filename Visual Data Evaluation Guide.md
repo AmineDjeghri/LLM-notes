@@ -8,18 +8,6 @@
 | ------------------------- | ---------------------------- | ---------------------------------------- | ----------------------------------------- | --- |
 | **Format**                | Image (PNG, JPG, SVG)        | Image (PNG, JPG, SVG)                    | Text (Markdown, CSV, JSON, HTML) or Image |     |
 
-### Evaluation Metrics Priority  
-  
-| Metric                       | Charts                                | Diagrams                               | Tables                             |     |
-| ---------------------------- | ------------------------------------- | -------------------------------------- | ---------------------------------- | --- |
-| **Exact Match**              | Low priority (formatting varies)      | Medium priority                        | High priority (structured answers) |     |
-| **Numerical Accuracy (±5%)** | **Primary**                           | Low priority                           | **Primary**                        |     |
-| **F1 Score**                 | Medium (multi-element answers)        | **Primary** (component lists)          | Medium (list answers)              |     |
-| **LLM-as-Judge**             | **Primary** (semantic equivalence)    | **Primary** (structural understanding) | **Primary** (analytical queries)   |     |
-| **BERTScore**                | ⚠️ Unreliable (Wolff & Hulsebos 2025) | Medium (descriptive answers)           | ⚠️ Unreliable for numerical        |     |
-| **Ranking Accuracy**         | Medium (ordered comparisons)          | Low priority                           | Medium (ordered results)           |     |
-  
-
 ## Metadata Requirements  
   
 ### 🎯 Universal Metadata (All Data Types)  
@@ -191,28 +179,42 @@ Q: According to the diagram, which organisms are found at the 'ZOOPLANKTON' leve
 A: Shrimp, Copepods, and Pteropods  
 Task: component_identification | Difficulty: easy | Metric: f1_score  
 ```  
+  ```  
+Q: According to the CEC DRP communications process, what is the fourth step?  
+A: Regular updates  
+Task: process_flow | Difficulty: medium | Metric: exact_match  
+```  
   
-**Hierarchical Understanding:**  
 ```  
 Q: Based on the given organization chart, who is part of the Design Staff?  
 A: James King and Thomas Harrison (and possibly Anne Davies)  
 Task: hierarchical_understanding | Difficulty: medium | Metric: f1_score  
 ```  
   
-**Process Flow:**  
-```  
-Q: According to the CEC DRP communications process, what is the fourth step?  
-A: Regular updates  
-Task: process_flow | Difficulty: medium | Metric: exact_match  
-```  
-  
-**Relationship Extraction:**  
+**Organizational Hierarchy & Relationship Analysis**  
+
 ```  
 Q: According to the diagram, which department works with both the auditors and the President/CEO?  
 A: Internal Audit Department  
 Task: relationship_extraction | Difficulty: hard | Metric: llm_as_judge  
 ```  
-  
+
+```  
+Q: According to the diagram, who do the President and CEO consult? 
+A: Executive Officers / General Manager
+Task: relationship_extraction | Difficulty: hard | Metric: llm_as_judge  
+```  
+
+
+**Domain specific knowledge  :**  
+Biological & Ecological Taxonomy:
+```  
+Q: Which of the following organisms is the producer in this food web? 
+A: phytoplankton
+Task:  Difficulty: medium | Metric: exact_match  
+```  
+aws, storage …etc
+
 ---  
   
 ### 📋 Table Examples 
@@ -247,59 +249,23 @@ Task: comparison | Difficulty: medium | Metric: exact_match
   
 
 ## Evaluation Metrics by Data Type  
-Choosing the metric depends on the answer (a composed answer needs LLM as a judge, a single numerical answer needs a numerical accuracy) 
+Choosing the metric depends on the answer (a composed answer needs LLM as a judge, a single numerical answer needs a numerical exact match, many answers needs F1 score.) 
   
-### 📊 Charts: Visual-Numerical Reasoning  
   
 #### Primary Metrics  
   
-**1. Numerical Accuracy with Tolerance**  
+**1. Exact Match , Numerical Accuracy with Tolerance**  
 
 → Value extraction, aggregation tasks    
   
 **2. LLM-as-Judge Correctness**  
 ```  
-Prompt: Evaluate if "{prediction}" matches "{ground_truth}" considering visual estimation (±5% tolerance) and format variations.  
+Prompt: Evaluate if "{prediction}" matches "{ground_truth}"
 Response: CORRECT | PARTIAL | INCORRECT  
 ```  
   
-**When to use:** All chart tasks 
+→ composed textual answers
   
-### 🔀 Diagrams: Structural Understanding  
-  
-#### Primary Metrics  
-  
-**1. F1 Score (Component Extraction)**  
+**3. F1 Score**  
 
-→ Component identification, relationship extraction    
-  
-**2. LLM-as-Judge Structural Correctness**  
-
-**3. Exact Match (for counting tasks)**  
-- "How many decision nodes?" → Exact integer match  
-  
-### 📋 Tables: Logical Reasoning  
-  
-#### Primary Metrics  
-  
-**1. Exact Match**  
-→ Direct lookup, categorical answers    
-  
-**2. Numerical Accuracy (for computed answers)**  
-- Same as charts: ±5% tolerance  
-- Critical for aggregation queries  
-  
-**3. LLM-as-Judge (for analytical queries)**  
-```  
-Prompt: Evaluate table reasoning:  
-- Correct cell identification  
-- Proper operation (SUM, AVG, COUNT, etc.)  
-- Accurate calculation  
-- Handling of edge cases (NULL, duplicates)  
-  
-Response: CORRECT | PARTIAL | INCORRECT  
-```  
-  
-- **BLEU fails** to distinguish correct from incorrect analytical answers  
-- **LLM-as-judge is validated**: 93.75% accuracy for correct answers  
-  
+→ answer contains multiple elements.
