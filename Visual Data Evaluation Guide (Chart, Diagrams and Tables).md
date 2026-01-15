@@ -9,6 +9,11 @@
 | ---------- | --------------------- | --------------------- | ----------------------------------------- | --- |
 | **Format** | Image (PNG, JPG, SVG) | Image (PNG, JPG, SVG) | Text (Markdown, CSV, JSON, HTML) or Image |     |
 
+
+complexity quest:
+complexity table:
+table types values :int, merged
+
 ## Metadata Requirements  
   
 ### 🎯 Universal Metadata (All Data Types)  
