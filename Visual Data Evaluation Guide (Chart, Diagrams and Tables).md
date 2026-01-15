@@ -86,16 +86,30 @@ table types values :int, merged
 ```json  
 {  
   "table_metadata": {  
-    "table_format": "markdown | csv | json | html | latex | image",  
+    "table_format": "markdown | csv | json | html | latex | image",
+    "table_complexity":"low",
+    "table_content": "mixed",
+	"data_integrity":true,
+	"text":true,
+	"numeric":true,
+	"percentage":true,
+	"currency":true,
+	"date/time":true,
+	"formula":true,
+	"boolean":true,
+	"symbols":true,
+    "has_missing_values/nulls": false,  
+    "has_duplicate_entities": false,  
+	"table_num_rows",
     "table_num_rows": 25,  
     "table_num_cols": 8,  
     "table_size_category": "small | medium | large",  
     "context_size_tokens": 2048,  
     "has_header": true,  
+    "has_multi_header":true,
     "has_merged_cells": false,  
     "domain": "sports | geography | finance | general" ,
-    "has_missing_values": false,  
-    "has_duplicate_entities": false,  
+
 }  
 ```  
 
