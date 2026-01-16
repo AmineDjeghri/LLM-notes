@@ -25,6 +25,7 @@ table types values :int, merged
 {  
   "question_id": "unique_identifier",  
   "dataset_source": "ChartQA | AI2D | WikiTableQuestions", 
+  "data_type":"Chart | Diagram | Table",
   "dataset_link":"",
   "origin": "public | synthetic" ,
   "dataset_version": "v1.0",  
