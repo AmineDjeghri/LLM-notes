@@ -240,14 +240,14 @@ Task: relationship_extraction | Difficulty: hard | Metric: llm_as_judge
 ```  
 
 
-**Domain specific knowledge  :**  
-Biological & Ecological Taxonomy:
+~~**Domain specific knowledge  :**~~  
+
 ```  
-Q: Which of the following organisms is the producer in this food web? 
-A: phytoplankton
-Task:  Difficulty: medium | Metric: exact_match  
+Q: According to the architecture diagram, which AWS service is under the AWS storage service on the right side?
+A: Amazon Route S3
+Task:  Difficulty: hard | Metric: exact_match  
 ```  
-aws, storage …etc
+
 
 ---  
   
@@ -267,7 +267,7 @@ A: 2880210
 Task: aggregation | Difficulty: medium | Metric: numerical_exact_match  
 ```  
   
-**Multi-hop Reasoning:**  
+**Multi-step Reasoning:**  
 ```  
 Q: Please help me draw a bar chart in inches, showing the trends in precipitation, rainfall, and snowfall as indicated in the table. 
 A: 
