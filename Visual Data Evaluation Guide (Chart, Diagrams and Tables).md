@@ -35,11 +35,12 @@ table types values :int, merged
   "expected_output": "45",  
   "question_complexity": "low | medium | high",  
   "question_comments":"",
-  "output_type": "numerical | categorical | boolean | list | descriptive",  
+  "output_type": "numerical | categorical | boolean | descriptive", 
+  "output_format": "text | xml | json | markdown",   
+  "output_cardinality" :"single item | list",
   "task_metadata": {  
     "task_type": "value_extraction | comparison | composition (aggregation) | trend_analysis | structural ",  
     "task_complexity": "low | medium | high",  
- 
 }  
 ```  
   
