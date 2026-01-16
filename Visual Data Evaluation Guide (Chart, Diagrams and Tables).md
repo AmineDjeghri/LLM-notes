@@ -38,7 +38,7 @@ table types values :int, merged
   "output_type": "numerical | categorical | boolean | list | descriptive",  
   "task_metadata": {  
     "task_type": "value_extraction | comparison | composition (aggregation) | trend_analysis | structural ",  
-    "difficulty": "easy | medium | hard",  
+    "task_complexity": "low | medium | high",  
  
 }  
 ```  
