@@ -151,13 +151,13 @@ table types values :int, merged
   
 ### 🔀 Diagram Tasks  
   
-| Task | Description | Example | Difficulty |  
-|------|-------------|---------|------------|  
-| **Component Identification** | List elements | "How many decision nodes?" → "3" | Easy |  
-| **Relationship Extraction** | Map connections | "What follows Node A?" → "Node B and Node C" | Medium |  
-| **Path Finding** | Trace sequences | "Path from Start to End?" → "Start→A→B→End" | Medium-Hard |  
-| **Hierarchical Understanding** | Understand structure | "Who reports to CEO?" → "VP Sales, VP Engineering" | Medium |  
-| **Process Flow** | Sequential reasoning | "What happens if condition is false?" → "Go to error handler" | Hard |  
+| Task                           | Description          | Example                                                       | Difficulty  |     |
+| ------------------------------ | -------------------- | ------------------------------------------------------------- | ----------- | --- |
+| **Component Identification**   | List elements        | "How many decision nodes?" → "3"                              | Easy        |     |
+| **Relationship Extraction**    | Map connections      | "What follows Node A?" → "Node B and Node C"                  | Medium      |     |
+| **Path Finding**               | Trace sequences      | "Path from Start to End?" → "Start→A→B→End"                   | Medium-Hard |     |
+| **Hierarchical Understanding** | Understand structure | "Who reports to CEO?" → "VP Sales, VP Engineering"            | Medium      |     |
+| **Process Flow**               | Sequential reasoning | "What happens if condition is false?" → "Go to error handler" | Hard        |     |
   
 ---  
   
