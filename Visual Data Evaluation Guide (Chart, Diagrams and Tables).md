@@ -39,7 +39,6 @@ table types values :int, merged
   "task_metadata": {  
     "task_type": "value_extraction | comparison | composition (aggregation) | trend_analysis | structural ",  
     "difficulty": "easy | medium | hard",  
-    "num_reasoning_steps": 1,  
  
 }  
 ```  
