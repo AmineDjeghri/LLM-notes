@@ -24,7 +24,9 @@ table types values :int, merged
 ```json  
 {  
   "question_id": "unique_identifier",  
-  "dataset_source": "ChartQA | AI2D | WikiTableQuestions",  
+  "dataset_source": "ChartQA | AI2D | WikiTableQuestions", 
+  "dataset_link":"",
+  "origin": "public | synthetic" ,
   "dataset_version": "v1.0",  
   "date": "2025-01-14T16:40:00Z",  
   "question": "What is the value for Category A?",  
