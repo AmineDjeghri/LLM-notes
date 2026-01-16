@@ -66,7 +66,6 @@ table types values :int, merged
     "chart_comments":"",
     "has_legend": true,  
     "has_title": true,  
-    "domain": "business | scientific | educational"  
   } 
 }  
 ```  
@@ -91,7 +90,6 @@ table types values :int, merged
     "diagram_complexity":"high | medium | low",
     "diagram_content": "mixed",
     "diagram_comments":"",
-    "domain": "business_process | software_architecture | organizational"  
   },  
 }  
 ```  
@@ -128,7 +126,6 @@ table types values :int, merged
     "has_merged_cells": false,  
 	"has_footnotes": false,  
 	"has_color": false,  
-    "domain": "sports | geography | finance | general" ,
 
 }  
 ```  
@@ -140,13 +137,13 @@ table types values :int, merged
   
 ### 📊 Chart Tasks  
   
-| Task | Description | Example | Difficulty |  
-|------|-------------|---------|------------|  
-| **Value Extraction** | Read explicit values | "What is Q2 sales?" → "$45,000" | Easy-Medium |  
-| **Comparison** | Compare visual elements | "Which product has highest sales?" → "Product A" | Medium |  
-| **Composition** | Calculate aggregates | "What is total across all quarters?" → "250" | Hard |  
-| **Trend Analysis** | Identify patterns | "Describe trend 2020-2023" → "Steady increase with dip in 2022" | Medium-Hard |  
-| **Structural** | Understand layout | "What does legend indicate?" → "Blue=Revenue, Red=Costs" | Easy |  
+| Task                 | Description             | Example                                                         | Difficulty  |     |
+| -------------------- | ----------------------- | --------------------------------------------------------------- | ----------- | --- |
+| **Value Extraction** | Read explicit values    | "What is Q2 sales?" → "$45,000"                                 | Easy-Medium |     |
+| **Comparison**       | Compare visual elements | "Which product has highest sales?" → "Product A"                | Medium      |     |
+| **Composition**      | Calculate aggregates    | "What is total across all quarters?" → "250"                    | Hard        |     |
+| **Trend Analysis**   | Identify patterns       | "Describe trend 2020-2023" → "Steady increase with dip in 2022" | Medium-Hard |     |
+| **Structural**       | Understand layout       | "What does legend indicate?" → "Blue=Revenue, Red=Costs"        | Easy        |     |
   
 ---  
   
