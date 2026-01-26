@@ -1,5 +1,5 @@
 ---
-date modified: Tuesday, December 2nd 2025, 10:27:31 am
+date modified: Tuesday, January 20th 2026, 2:34:56 pm
 ---
 ```table-of-contents
 ```
@@ -9,6 +9,7 @@ LLM evaluation is the process of testing and measuring how well large language m
 - https://github.com/huggingface/evaluation-guidebook
 - https://github.com/Hannibal046/Awesome-LLM
 - https://www.confident-ai.com/blog/llm-evaluation-metrics-everything-you-need-for-llm-evaluation
+- https://www.confident-ai.com/blog/g-eval-the-definitive-guide
 
 ### Two Categories of Metrics
 
@@ -51,7 +52,8 @@ These measure **overall system performance** across a dataset using the result
 
 ## Tools / libraries 
 - [[3_1 - LLM performance evaluation#Tools / libraries]]
-- [[3_2 - LLM red-teaming evaluation#Tools / libraries]]
+- [[3_2 - LLM safety & red-teaming evaluation#Tools / libraries]]
+- 
 ## Papers and research
 -
 ## News and updates
