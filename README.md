@@ -1,4 +1,3 @@
 # LLM-notes
 
 
-dzad
