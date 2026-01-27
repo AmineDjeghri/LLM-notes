@@ -2,6 +2,7 @@
 - item 1
 ## Easy guides
 
+- https://arxiv.org/pdf/2505.07453
 - https://medium.com/@anshoo.jani/benchmarking-large-language-models-on-tabular-data-a-comprehensive-evaluation-ed3c3c6523a0
 	- **Markdown Format Data:** Highest accuracy due to lower token consumption.
 	- **Key-Value List Format Data:** Improved accuracy due to structured metadata.
